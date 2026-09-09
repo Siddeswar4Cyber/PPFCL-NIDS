@@ -9,3 +9,5 @@ reports/cp6/**/*.json -text
 reports/cp7/**/*.json -text
 reports/cp8/**/*.json -text
 docs/CP8-neural-migration-protocol-N1.md -text
+reports/cp8-tests.log -text
+reports/cp8/*.log -text
