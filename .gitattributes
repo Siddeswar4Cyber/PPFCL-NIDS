@@ -7,3 +7,4 @@ docs/project-brief.txt -text
 reports/baselines/runs/*.json -text
 reports/cp6/**/*.json -text
 reports/cp7/**/*.json -text
+reports/cp8/**/*.json -text
