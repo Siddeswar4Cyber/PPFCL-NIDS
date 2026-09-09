@@ -1,0 +1,4 @@
+# Preserve source bytes for the script hashes recorded in audit manifests.
+scripts/*.py -text
+reports/audit/attempts/*.py -text
+docs/project-brief.txt -text

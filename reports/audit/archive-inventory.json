@@ -1,0 +1,167 @@
+{
+  "archives": [
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\02934b58528a226b_NFV3DATA-A11964_A11964.zip",
+      "entries": [
+        {
+          "name": "02934b58528a226b_NFV3DATA-A11964_A11964/FurtherInformation.txt",
+          "bytes": 143,
+          "compressed_bytes": 118,
+          "crc32": "6a409aad"
+        },
+        {
+          "name": "02934b58528a226b_NFV3DATA-A11964_A11964/bag-info.txt",
+          "bytes": 839,
+          "compressed_bytes": 475,
+          "crc32": "82537ee0"
+        },
+        {
+          "name": "02934b58528a226b_NFV3DATA-A11964_A11964/bagit.txt",
+          "bytes": 55,
+          "compressed_bytes": 55,
+          "crc32": "4ba8ed8f"
+        },
+        {
+          "name": "02934b58528a226b_NFV3DATA-A11964_A11964/manifest-sha1.txt",
+          "bytes": 134,
+          "compressed_bytes": 115,
+          "crc32": "9dff4e7c"
+        },
+        {
+          "name": "02934b58528a226b_NFV3DATA-A11964_A11964/tagmanifest-sha1.txt",
+          "bytes": 164,
+          "compressed_bytes": 123,
+          "crc32": "b28c4439"
+        },
+        {
+          "name": "02934b58528a226b_NFV3DATA-A11964_A11964/data/NF-ToN-IoT-v3.csv",
+          "bytes": 5302886266,
+          "compressed_bytes": 417473273,
+          "crc32": "deafe3bf"
+        },
+        {
+          "name": "02934b58528a226b_NFV3DATA-A11964_A11964/data/NetFlow_v3_Features.csv",
+          "bytes": 2935,
+          "compressed_bytes": 994,
+          "crc32": "8cb74630"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\d509c9db7490cf92_NFV3DATA-A11964_A11964.zip",
+      "entries": [
+        {
+          "name": "d509c9db7490cf92_NFV3DATA-A11964_A11964/FurtherInformation.txt",
+          "bytes": 143,
+          "compressed_bytes": 118,
+          "crc32": "610f29c7"
+        },
+        {
+          "name": "d509c9db7490cf92_NFV3DATA-A11964_A11964/bag-info.txt",
+          "bytes": 839,
+          "compressed_bytes": 475,
+          "crc32": "f7dcd7cb"
+        },
+        {
+          "name": "d509c9db7490cf92_NFV3DATA-A11964_A11964/bagit.txt",
+          "bytes": 55,
+          "compressed_bytes": 55,
+          "crc32": "4ba8ed8f"
+        },
+        {
+          "name": "d509c9db7490cf92_NFV3DATA-A11964_A11964/manifest-sha1.txt",
+          "bytes": 134,
+          "compressed_bytes": 116,
+          "crc32": "5597857d"
+        },
+        {
+          "name": "d509c9db7490cf92_NFV3DATA-A11964_A11964/tagmanifest-sha1.txt",
+          "bytes": 164,
+          "compressed_bytes": 121,
+          "crc32": "50535bf1"
+        },
+        {
+          "name": "d509c9db7490cf92_NFV3DATA-A11964_A11964/data/NF-BoT-IoT-v3.csv",
+          "bytes": 3817527532,
+          "compressed_bytes": 72953693,
+          "crc32": "5f6c0d13"
+        },
+        {
+          "name": "d509c9db7490cf92_NFV3DATA-A11964_A11964/data/NetFlow_v3_Features.csv",
+          "bytes": 2935,
+          "compressed_bytes": 994,
+          "crc32": "8cb74630"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\f78acbaa2afe1595_NFV3DATA-A11964_A11964.zip",
+      "entries": [
+        {
+          "name": "f78acbaa2afe1595_NFV3DATA-A11964_A11964/FurtherInformation.txt",
+          "bytes": 143,
+          "compressed_bytes": 118,
+          "crc32": "3d57ddec"
+        },
+        {
+          "name": "f78acbaa2afe1595_NFV3DATA-A11964_A11964/bag-info.txt",
+          "bytes": 839,
+          "compressed_bytes": 474,
+          "crc32": "92e7ca4a"
+        },
+        {
+          "name": "f78acbaa2afe1595_NFV3DATA-A11964_A11964/bagit.txt",
+          "bytes": 55,
+          "compressed_bytes": 55,
+          "crc32": "4ba8ed8f"
+        },
+        {
+          "name": "f78acbaa2afe1595_NFV3DATA-A11964_A11964/manifest-sha1.txt",
+          "bytes": 137,
+          "compressed_bytes": 117,
+          "crc32": "b0ce26dd"
+        },
+        {
+          "name": "f78acbaa2afe1595_NFV3DATA-A11964_A11964/tagmanifest-sha1.txt",
+          "bytes": 164,
+          "compressed_bytes": 120,
+          "crc32": "80d67bf7"
+        },
+        {
+          "name": "f78acbaa2afe1595_NFV3DATA-A11964_A11964/data/NF-CICIDS2018-v3.csv",
+          "bytes": 4222783755,
+          "compressed_bytes": 780110429,
+          "crc32": "b29056d1"
+        },
+        {
+          "name": "f78acbaa2afe1595_NFV3DATA-A11964_A11964/data/NetFlow_v3_Features.csv",
+          "bytes": 2935,
+          "compressed_bytes": 994,
+          "crc32": "8cb74630"
+        }
+      ]
+    }
+  ],
+  "feature_dictionaries": [
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\ND-UNSW-NB15-v3\\NetFlow_v3_Features.csv",
+      "bytes": 2935,
+      "sha256": "abe3ce6e6ff731d72d76e029b512585c0dbcbd8e03ff6dbe2bd04b560723bd67"
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\NF-BoT-IoT-v3\\NetFlow_v3_Features.csv",
+      "bytes": 2935,
+      "sha256": "abe3ce6e6ff731d72d76e029b512585c0dbcbd8e03ff6dbe2bd04b560723bd67"
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\NF-CIC-IDS-2018-v3\\NetFlow_v3_Features.csv",
+      "bytes": 2935,
+      "sha256": "abe3ce6e6ff731d72d76e029b512585c0dbcbd8e03ff6dbe2bd04b560723bd67"
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\NF-ToN-IoT-v3\\NetFlow_v3_Features.csv",
+      "bytes": 2935,
+      "sha256": "abe3ce6e6ff731d72d76e029b512585c0dbcbd8e03ff6dbe2bd04b560723bd67"
+    }
+  ]
+}

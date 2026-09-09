@@ -1,0 +1,9 @@
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+artifacts/audit-work/
+data/
+models/
+*.duckdb
+*.duckdb.wal

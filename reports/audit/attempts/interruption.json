@@ -1,0 +1,14 @@
+{
+  "reason": "Measured count_if optimization before largest families",
+  "pid": 44056,
+  "command": [
+    "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Scripts\\python.exe",
+    "-u",
+    "scripts\\audit_datasets.py",
+    "--root",
+    "C:\\Users\\nimma\\Downloads\\Datasets"
+  ],
+  "completed_family": "ND-UNSW-NB15-v3",
+  "partial_family": "cic-ids-2017",
+  "status": "SUPERSEDED_ATTEMPT"
+}

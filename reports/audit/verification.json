@@ -1,0 +1,9 @@
+{
+  "recorded_utc": "2026-09-09T04:32:10.850731+00:00",
+  "families": 5,
+  "source_csvs": 12,
+  "total_rows": 69765764,
+  "errors": [],
+  "tests": "Four constructed-fixture integration tests; see tests/test_audit.py",
+  "limits": "No classifier training, host-independent split proof or numeric-normalized duplicate equivalence."
+}

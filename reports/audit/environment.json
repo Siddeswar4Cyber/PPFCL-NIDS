@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-09-09T03:14:21.609433+00:00",
+  "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26220-SP0",
+  "processor_identifier": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "cpu_physical": 14,
+  "cpu_logical": 20,
+  "ram": {
+    "total": 34053414912,
+    "available": 22180503552,
+    "percent": 34.9,
+    "used": 11872911360,
+    "free": 22180503552
+  },
+  "disk": {
+    "total": 809699897344,
+    "used": 445409419264,
+    "free": 364290478080
+  },
+  "packages": {
+    "duckdb": "1.5.5",
+    "psutil": "7.2.2"
+  },
+  "nvidia_smi": "NVIDIA GeForce RTX 4050 Laptop GPU, 6141 MiB, 581.86"
+}

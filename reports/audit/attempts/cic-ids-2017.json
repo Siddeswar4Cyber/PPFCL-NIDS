@@ -1,0 +1,127 @@
+{
+  "audit_version": "audit-1.0",
+  "status": "RUNNING",
+  "dataset": "cic-ids-2017",
+  "files": [
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Friday_DDos.csv",
+      "bytes": 77123859,
+      "mtime_ns": 1784820085586598500,
+      "sha256": "6ff1580f5f81c0ae28a26f7631721018577f5f7c5e0feac28b795fcfe7b411ee",
+      "encoding": "utf-8",
+      "physical_lines": 225746,
+      "source_file": 0,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Friday_Morning.csv",
+      "bytes": 58316725,
+      "mtime_ns": 1784820083717993700,
+      "sha256": "53a41c24d570ea83b7ac55b2e94df94e7a8216aeb80a2af0246b6bc8bb543000",
+      "encoding": "utf-8",
+      "physical_lines": 191034,
+      "source_file": 1,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Friday_PortScan.csv",
+      "bytes": 76906168,
+      "mtime_ns": 1784820089704384000,
+      "sha256": "ca1824c51bfbb7b3c72290a11be04366ba8815878c6a1cc5c44cb1cee269e99b",
+      "encoding": "utf-8",
+      "physical_lines": 286468,
+      "source_file": 2,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Monday.csv",
+      "bytes": 176927918,
+      "mtime_ns": 1784820099226334000,
+      "sha256": "852c4beb34eda186f32561fa79df7a0747e92e1a6535b01270820dd9ffe17f34",
+      "encoding": "utf-8",
+      "physical_lines": 529919,
+      "source_file": 3,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Thursday_Infiltration.csv",
+      "bytes": 83102436,
+      "mtime_ns": 1784820089183295300,
+      "sha256": "6bcda3857c2504676034e3ea57762d38393cc734cb377a726bd5cb153961b1b5",
+      "encoding": "utf-8",
+      "physical_lines": 288603,
+      "source_file": 4,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Thursday_Web.csv",
+      "bytes": 52023263,
+      "mtime_ns": 1784820094933017600,
+      "sha256": "d67066211fb1689c78406f1506f4c44704ecb92088353d5c96d96d6474eb819d",
+      "encoding": "utf-8",
+      "physical_lines": 170367,
+      "source_file": 5,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Tuesday.csv",
+      "bytes": 135078995,
+      "mtime_ns": 1784820098418573400,
+      "sha256": "52b8692ae8c7d2ed04671fe2b98335693c0a92c7ab157d8c8b534d6523080851",
+      "encoding": "utf-8",
+      "physical_lines": 445910,
+      "source_file": 6,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Wednesday.csv",
+      "bytes": 225166395,
+      "mtime_ns": 1784820096938778600,
+      "sha256": "893c27dc968bf7a8adef1689f90be55ca4a4dc3088fb63d6ff247ac56856df2a",
+      "encoding": "utf-8",
+      "physical_lines": 692704,
+      "source_file": 7,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    }
+  ]
+}

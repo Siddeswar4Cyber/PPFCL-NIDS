@@ -1,0 +1,28 @@
+tmp1bikbf_f: hash/load latin.csv
+tmp1bikbf_f: column statistics
+tmp1bikbf_f: exact duplicate/conflict grouping
+tmp1bikbf_f: temporal checks
+test_lossless_encoding_and_quoted_fields (test_audit.AuditTests.test_lossless_encoding_and_quoted_fields) ... ok
+tmpwei8d7_0: hash/load sample.csv
+tmpwei8d7_0: column statistics
+tmpwei8d7_0: exact duplicate/conflict grouping
+tmpwei8d7_0: temporal checks
+test_quality_duplicates_conflicts_and_malformed_rows (test_audit.AuditTests.test_quality_duplicates_conflicts_and_malformed_rows) ... ok
+tmpfw49gmd2: hash/load sample.csv
+tmpfw49gmd2: column statistics
+tmpfw49gmd2: exact duplicate/conflict grouping
+tmpfw49gmd2: resume exact grouping
+tmpfw49gmd2: resume temporal checks
+test_resume_after_interruption_preserves_completed_profile (test_audit.AuditTests.test_resume_after_interruption_preserves_completed_profile) ... ok
+tmpvtj1m71w: hash/load one.csv
+tmpvtj1m71w: hash/load two.csv
+tmpvtj1m71w: column statistics
+tmpvtj1m71w: exact duplicate/conflict grouping
+tmpvtj1m71w: predictor-only collisions
+tmpvtj1m71w: temporal checks
+test_temporal_and_cross_file_duplicates (test_audit.AuditTests.test_temporal_and_cross_file_duplicates) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.273s
+
+OK

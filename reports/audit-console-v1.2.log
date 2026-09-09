@@ -1,0 +1,6 @@
+ND-UNSW-NB15-v3: reuse completed audit after full hash verification
+cic-ids-2017: reuse completed audit after full hash verification
+NF-BoT-IoT-v3: hash/load NF-BoT-IoT-v3.csv
+NF-BoT-IoT-v3: column statistics
+NF-BoT-IoT-v3: exact duplicate/conflict grouping
+NF-BoT-IoT-v3: predictor-only collisions

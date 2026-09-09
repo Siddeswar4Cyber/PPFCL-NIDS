@@ -1,0 +1,22 @@
+{
+  "scope": "First 100000 NF-UNSW rows; speed diagnostic, not representative statistics",
+  "threads": 2,
+  "timings": [
+    {
+      "sql_prefix": "CREATE VIEW numeric_view AS SELECT source_file, parsed_row, trim(c000) AS c000,try_cast(trim(c000) A",
+      "elapsed_seconds": 0.0018810000001394656
+    },
+    {
+      "sql_prefix": "SELECT source_file,count(*) AS rows,count_if(c000 IS NULL OR c000='') AS c000_blank,count_if(isnan(n",
+      "elapsed_seconds": 2.1308323000012024
+    },
+    {
+      "sql_prefix": "SELECT approx_top_k(c000,1)[1],approx_top_k(c001,1)[1],approx_top_k(c002,1)[1],approx_top_k(c003,1)[",
+      "elapsed_seconds": 0.34589120000237017
+    },
+    {
+      "sql_prefix": "SELECT count_if(c000 IS NOT DISTINCT FROM '1424255918232'),count_if(c001 IS NOT DISTINCT FROM '14242",
+      "elapsed_seconds": 0.23124879999886616
+    }
+  ]
+}

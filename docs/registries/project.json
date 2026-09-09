@@ -1,0 +1,1089 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-09-09",
+  "evidence_categories": [
+    "LITERATURE EVIDENCE",
+    "OUR EXPERIMENTAL RESULT",
+    "CURRENT DESIGN DECISION",
+    "HYPOTHESIS",
+    "PLANNED / NOT IMPLEMENTED"
+  ],
+  "experiment_statuses": [
+    "PLANNED",
+    "RUNNING",
+    "COMPLETED",
+    "FAILED",
+    "REJECTED",
+    "SUPERSEDED"
+  ],
+  "schemas": {
+    "experiment": [
+      "experiment_id",
+      "date",
+      "research_question",
+      "hypothesis",
+      "architecture_version",
+      "dataset_version",
+      "split_version",
+      "feature_set",
+      "model",
+      "hyperparameters",
+      "seed",
+      "client_configuration",
+      "privacy_configuration",
+      "cl_configuration",
+      "hardware",
+      "environment_versions",
+      "preprocessing_version",
+      "metrics",
+      "runtime",
+      "memory_usage",
+      "artifacts",
+      "logs",
+      "git_commit",
+      "result",
+      "interpretation",
+      "decision",
+      "architecture_impact",
+      "status"
+    ],
+    "decision": [
+      "decision_id",
+      "question",
+      "candidate_alternatives",
+      "evidence_considered",
+      "experiments_used",
+      "selected_option",
+      "why_selected",
+      "rejected_alternatives",
+      "why_rejected",
+      "risks",
+      "trade_offs",
+      "confidence",
+      "architecture_version",
+      "revisit_condition"
+    ],
+    "architecture": [
+      "version",
+      "date",
+      "diagram",
+      "components",
+      "changes_from_previous",
+      "reason_for_change",
+      "supporting_experiments",
+      "supporting_decisions",
+      "known_limitations",
+      "status"
+    ],
+    "failure": [
+      "experiment_id",
+      "what_failed",
+      "error",
+      "suspected_cause",
+      "investigation",
+      "fix",
+      "scientifically_invalid",
+      "rerun_required"
+    ],
+    "claim": [
+      "claim_id",
+      "claim",
+      "evidence_category",
+      "source_ids",
+      "experiment_ids",
+      "limitations",
+      "status"
+    ],
+    "final_results": [
+      "configuration",
+      "feature_set",
+      "model",
+      "fl_method",
+      "privacy",
+      "cl",
+      "macro_f1",
+      "worst_domain_f1",
+      "minority_f1",
+      "privacy_budget",
+      "forgetting",
+      "training_time",
+      "communication",
+      "architecture_version"
+    ]
+  },
+  "experiments": [
+    {
+      "experiment_id": "EXP-001",
+      "date": "2026-09-09",
+      "research_question": "What local data quality and provenance are verified?",
+      "hypothesis": "Header-level impressions may miss row artifacts.",
+      "architecture_version": "A0",
+      "dataset_version": "Source SHA-256 manifests in reports/audit/*.json",
+      "split_version": "N/A - no split fitted",
+      "feature_set": "All source columns, positional IDs retained",
+      "model": "N/A - audit",
+      "hyperparameters": {
+        "audit_versions": [
+          "audit-1.0",
+          "audit-1.1",
+          "audit-1.2",
+          "audit-1.3"
+        ],
+        "duckdb_memory_limit": "4GB",
+        "threads_last_run": 8
+      },
+      "seed": null,
+      "client_configuration": "N/A",
+      "privacy_configuration": "Public benchmark audit outside private-training boundary",
+      "cl_configuration": "N/A",
+      "hardware": "User reported; not yet independently benchmarked",
+      "environment_versions": {
+        "python": "3.13.13",
+        "duckdb": "1.5.5",
+        "psutil": "7.2.2"
+      },
+      "preprocessing_version": "N/A - diagnostics only",
+      "metrics": {
+        "audited_rows": 69765764,
+        "dataset_families": 5,
+        "source_csvs": 12
+      },
+      "runtime": {
+        "family_runtime": {
+          "cic-ids-2017": {
+            "seconds": 209.249,
+            "scope": "Full family invocation",
+            "phase_timings": {
+              "profile_seconds": 116.81625980000172,
+              "exact_grouping_seconds": 41.80397820000144
+            }
+          },
+          "ND-UNSW-NB15-v3": {
+            "seconds": 422.532,
+            "scope": "Full family invocation",
+            "phase_timings": null
+          },
+          "NF-BoT-IoT-v3": {
+            "seconds": 43.483,
+            "scope": "Completion invocation only; earlier stage timings remain in stage_timings; total wall time unavailable across interruption.",
+            "phase_timings": {
+              "profile_seconds": 125.10519120000026,
+              "exact_grouping_seconds": 139.63856730000043,
+              "predictor_grouping_seconds": 41.56930160000002
+            }
+          },
+          "NF-CIC-IDS-2018-v3": {
+            "seconds": 1486.263,
+            "scope": "Full family invocation",
+            "phase_timings": {
+              "profile_seconds": 121.85993059999998,
+              "exact_grouping_seconds": 956.9331767,
+              "predictor_grouping_seconds": 150.98021179999978
+            }
+          },
+          "NF-ToN-IoT-v3": {
+            "seconds": 2680.909,
+            "scope": "Full family invocation",
+            "phase_timings": {
+              "profile_seconds": 1019.7607698000002,
+              "exact_grouping_seconds": 1133.1507453,
+              "predictor_grouping_seconds": 159.63844040000004
+            }
+          }
+        },
+        "latest_invocation_seconds": 4219.9839309,
+        "note": "Earlier interrupted attempts are not included in latest invocation runtime."
+      },
+      "memory_usage": {
+        "latest_invocation_peak_rss_bytes": 6030651392,
+        "note": "Earlier v1.0 run observed 6.28 GiB RSS; whole-session peak was not persisted."
+      },
+      "artifacts": [
+        "reports/CP1-dataset-audit.md",
+        "reports/CP1-findings-and-decisions.md",
+        "reports/audit/verification.json",
+        "reports/audit/environment.json",
+        "reports/audit/archive-provenance.json"
+      ],
+      "logs": [
+        "reports/audit-console.log",
+        "reports/audit-console-v1.1.log",
+        "reports/audit-console-v1.2.log",
+        "reports/audit-errors-v1.2.log",
+        "reports/audit-console-v1.3.log"
+      ],
+      "git_commit": null,
+      "result": "Read-only audit completed for five local families; no model results.",
+      "interpretation": "Duplicate, label, nonfinite-value and temporal findings require explicit preprocessing/split decisions.",
+      "decision": "Advance to split and preprocessing protocol gate; retain raw data.",
+      "architecture_impact": "A0 retained as provisional; no empirical model winner selected.",
+      "status": "COMPLETED"
+    },
+    {
+      "experiment_id": "EXP-002",
+      "date": "2026-09-08",
+      "research_question": "Which split, task and feature protocols are supported?",
+      "hypothesis": "Group/time controls expose leakage and confounding.",
+      "architecture_version": "A0",
+      "dataset_version": "Audited families from EXP-001",
+      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
+      "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
+      "model": "Split manifest and feature contracts",
+      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
+      "seed": null,
+      "client_configuration": "Per-family plan; pilot five logical clients where applicable",
+      "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
+      "cl_configuration": "Per-family plan; tasks require support audit",
+      "hardware": "User reported; not yet independently benchmarked",
+      "environment_versions": "NOT MEASURED",
+      "preprocessing_version": "NOT FITTED",
+      "metrics": null,
+      "runtime": null,
+      "memory_usage": null,
+      "artifacts": [
+        "docs/experiment-plan-A0.md"
+      ],
+      "logs": null,
+      "git_commit": null,
+      "result": null,
+      "interpretation": "No experiment executed",
+      "decision": "PLANNED only",
+      "architecture_impact": "Revisit A0 after valid result",
+      "status": "PLANNED"
+    },
+    {
+      "experiment_id": "EXP-003",
+      "date": "2026-09-08",
+      "research_question": "Which detector offers the best validation trade-off?",
+      "hypothesis": "Compact MLP may trade detection quality for integration cost.",
+      "architecture_version": "A0",
+      "dataset_version": "CIC and audited NF development tracks",
+      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
+      "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
+      "model": "LR; Extra Trees; MLP; conditional XGBoost",
+      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "client_configuration": "Per-family plan; pilot five logical clients where applicable",
+      "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
+      "cl_configuration": "Per-family plan; tasks require support audit",
+      "hardware": "User reported; not yet independently benchmarked",
+      "environment_versions": "NOT MEASURED",
+      "preprocessing_version": "NOT FITTED",
+      "metrics": null,
+      "runtime": null,
+      "memory_usage": null,
+      "artifacts": [
+        "docs/experiment-plan-A0.md"
+      ],
+      "logs": null,
+      "git_commit": null,
+      "result": null,
+      "interpretation": "No experiment executed",
+      "decision": "PLANNED only",
+      "architecture_impact": "Revisit A0 after valid result",
+      "status": "PLANNED"
+    },
+    {
+      "experiment_id": "EXP-004",
+      "date": "2026-09-08",
+      "research_question": "Which FL method handles tested heterogeneity?",
+      "hypothesis": "FedProx/FedAdam may outperform FedAvg in some partitions.",
+      "architecture_version": "A0",
+      "dataset_version": "Locked development track",
+      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
+      "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
+      "model": "Central/local MLP; FedAvg; FedProx; FedAdam",
+      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "client_configuration": "Per-family plan; pilot five logical clients where applicable",
+      "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
+      "cl_configuration": "Per-family plan; tasks require support audit",
+      "hardware": "User reported; not yet independently benchmarked",
+      "environment_versions": "NOT MEASURED",
+      "preprocessing_version": "NOT FITTED",
+      "metrics": null,
+      "runtime": null,
+      "memory_usage": null,
+      "artifacts": [
+        "docs/experiment-plan-A0.md"
+      ],
+      "logs": null,
+      "git_commit": null,
+      "result": null,
+      "interpretation": "No experiment executed",
+      "decision": "PLANNED only",
+      "architecture_impact": "Revisit A0 after valid result",
+      "status": "PLANNED"
+    },
+    {
+      "experiment_id": "EXP-005",
+      "date": "2026-09-08",
+      "research_question": "What private utility/cost frontier is defensible?",
+      "hypothesis": "Noise and clipping can disproportionately affect minority detection.",
+      "architecture_version": "A0",
+      "dataset_version": "Public reference and disjoint curated private population",
+      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
+      "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
+      "model": "Selected neural model",
+      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "client_configuration": "Per-family plan; pilot five logical clients where applicable",
+      "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
+      "cl_configuration": "Per-family plan; tasks require support audit",
+      "hardware": "User reported; not yet independently benchmarked",
+      "environment_versions": "NOT MEASURED",
+      "preprocessing_version": "NOT FITTED",
+      "metrics": null,
+      "runtime": null,
+      "memory_usage": null,
+      "artifacts": [
+        "docs/experiment-plan-A0.md"
+      ],
+      "logs": null,
+      "git_commit": null,
+      "result": null,
+      "interpretation": "No experiment executed",
+      "decision": "PLANNED only",
+      "architecture_impact": "Revisit A0 after valid result",
+      "status": "PLANNED"
+    },
+    {
+      "experiment_id": "EXP-006",
+      "date": "2026-09-08",
+      "research_question": "Which method retains earlier performance?",
+      "hypothesis": "ER/EWC/LwF have different retention/adaptation costs.",
+      "architecture_version": "A0",
+      "dataset_version": "Locked supported task stream",
+      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
+      "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
+      "model": "Frozen; naive; ER; EWC; LwF",
+      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "client_configuration": "Per-family plan; pilot five logical clients where applicable",
+      "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
+      "cl_configuration": "Per-family plan; tasks require support audit",
+      "hardware": "User reported; not yet independently benchmarked",
+      "environment_versions": "NOT MEASURED",
+      "preprocessing_version": "NOT FITTED",
+      "metrics": null,
+      "runtime": null,
+      "memory_usage": null,
+      "artifacts": [
+        "docs/experiment-plan-A0.md"
+      ],
+      "logs": null,
+      "git_commit": null,
+      "result": null,
+      "interpretation": "No experiment executed",
+      "decision": "PLANNED only",
+      "architecture_impact": "Revisit A0 after valid result",
+      "status": "PLANNED"
+    },
+    {
+      "experiment_id": "EXP-007",
+      "date": "2026-09-08",
+      "research_question": "How do DP and CL interact in federation?",
+      "hypothesis": "Component benefits may not survive integration.",
+      "architecture_version": "A0",
+      "dataset_version": "Same locked task/client manifests",
+      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
+      "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
+      "model": "DP off/on \u00c3\u2014 naive/selected privacy-eligible CL",
+      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "client_configuration": "Per-family plan; pilot five logical clients where applicable",
+      "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
+      "cl_configuration": "Per-family plan; tasks require support audit",
+      "hardware": "User reported; not yet independently benchmarked",
+      "environment_versions": "NOT MEASURED",
+      "preprocessing_version": "NOT FITTED",
+      "metrics": null,
+      "runtime": null,
+      "memory_usage": null,
+      "artifacts": [
+        "docs/experiment-plan-A0.md"
+      ],
+      "logs": null,
+      "git_commit": null,
+      "result": null,
+      "interpretation": "No experiment executed",
+      "decision": "PLANNED only",
+      "architecture_impact": "Revisit A0 after valid result",
+      "status": "PLANNED"
+    },
+    {
+      "experiment_id": "EXP-008",
+      "date": "2026-09-08",
+      "research_question": "Does the frozen system generalize?",
+      "hypothesis": "External/temporal performance may be lower than development performance.",
+      "architecture_version": "A0",
+      "dataset_version": "Sealed final and predeclared external domains",
+      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
+      "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
+      "model": "Frozen candidate and registered baselines",
+      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "client_configuration": "Per-family plan; pilot five logical clients where applicable",
+      "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
+      "cl_configuration": "Per-family plan; tasks require support audit",
+      "hardware": "User reported; not yet independently benchmarked",
+      "environment_versions": "NOT MEASURED",
+      "preprocessing_version": "NOT FITTED",
+      "metrics": null,
+      "runtime": null,
+      "memory_usage": null,
+      "artifacts": [
+        "docs/experiment-plan-A0.md"
+      ],
+      "logs": null,
+      "git_commit": null,
+      "result": null,
+      "interpretation": "No experiment executed",
+      "decision": "PLANNED only",
+      "architecture_impact": "Revisit A0 after valid result",
+      "status": "PLANNED"
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "DEC-001",
+      "question": "How are components selected?",
+      "candidate_alternatives": [
+        "Predetermined stack",
+        "Research-guided controlled comparison"
+      ],
+      "evidence_considered": [
+        "User project brief"
+      ],
+      "experiments_used": [],
+      "selected_option": "Research-guided controlled comparison",
+      "why_selected": "Required methodology; final test excluded from selection",
+      "rejected_alternatives": [
+        "Predetermined final stack"
+      ],
+      "why_rejected": "No local evidence",
+      "risks": [
+        "Time and compute"
+      ],
+      "trade_offs": [
+        "Fewer representative candidates under deadline"
+      ],
+      "confidence": "High for process, no component ranking",
+      "architecture_version": null,
+      "revisit_condition": "Candidate scope may change with resources; integrity rules remain"
+    },
+    {
+      "decision_id": "DEC-002",
+      "question": "What is the financial-sector claim?",
+      "candidate_alternatives": [
+        "Bank-traffic benchmark claim",
+        "Financial-network simulation"
+      ],
+      "evidence_considered": [
+        "R001",
+        "R002",
+        "R004",
+        "User brief"
+      ],
+      "experiments_used": [],
+      "selected_option": "Financial-network simulation",
+      "why_selected": "Available benchmark is not bank telemetry",
+      "rejected_alternatives": [
+        "Claim of real-bank deployment or telemetry"
+      ],
+      "why_rejected": "No supporting evidence",
+      "risks": [
+        "Domain realism"
+      ],
+      "trade_offs": [
+        "Public reproducibility versus production realism"
+      ],
+      "confidence": "High",
+      "architecture_version": null,
+      "revisit_condition": "Actual authorized institutional data and deployment evidence"
+    },
+    {
+      "decision_id": "DEC-003",
+      "question": "Can the combination itself be claimed novel?",
+      "candidate_alternatives": [
+        "Novel FL+DP+CL combination",
+        "Conservative integration/experimental contribution"
+      ],
+      "evidence_considered": [
+        "R020"
+      ],
+      "experiments_used": [],
+      "selected_option": "Conservative potential contribution; gap unresolved",
+      "why_selected": "Prior integrated work exists",
+      "rejected_alternatives": [
+        "First-ever combination claim"
+      ],
+      "why_rejected": "Contradicted by prior source",
+      "risks": [
+        "Insufficient detailed related-work coverage"
+      ],
+      "trade_offs": [
+        "Narrower but defensible contribution"
+      ],
+      "confidence": "High against blanket novelty; low for unestablished specific gap",
+      "architecture_version": null,
+      "revisit_condition": "Full related-work matrix supports a narrower original contribution"
+    },
+    {
+      "decision_id": "DEC-004",
+      "question": "How should locally available datasets enter candidate evaluation?",
+      "candidate_alternatives": [
+        "Assume all five share schema",
+        "Separate CICFlowMeter and NetFlow studies",
+        "Verified common semantic feature map"
+      ],
+      "evidence_considered": [
+        "reports/local-data-inventory.json",
+        "R024",
+        "R025"
+      ],
+      "experiments_used": [],
+      "selected_option": "Keep two schema families distinct; research temporal/cross-domain NetFlow track",
+      "why_selected": "CIC headers lack timestamp/IP and differ from common NF headers",
+      "rejected_alternatives": [
+        "Blind concatenation"
+      ],
+      "why_rejected": "Different feature definitions and metadata",
+      "risks": [
+        "Header equality is not semantic or label compatibility",
+        "Scope expansion"
+      ],
+      "trade_offs": [
+        "Temporal metadata versus additional audit cost"
+      ],
+      "confidence": "High for schema separation; tentative for experiment allocation",
+      "architecture_version": null,
+      "revisit_condition": "Full audit, semantic alignment and cost pilot"
+    },
+    {
+      "decision_id": "DEC-005",
+      "question": "How is scope made feasible before September 20?",
+      "candidate_alternatives": [
+        "Implement every reviewed candidate",
+        "Staged representative shortlist"
+      ],
+      "evidence_considered": [
+        "User-reported deadline and hardware"
+      ],
+      "experiments_used": [],
+      "selected_option": "Broad research; narrow staged implementation and explicit deferrals",
+      "why_selected": "Approximately 12 days; 6 GB GPU and 23.7 GB RAM",
+      "rejected_alternatives": [
+        "Unbounded model/FL/privacy/CL grid"
+      ],
+      "why_rejected": "Unjustified cost",
+      "risks": [
+        "Limited seeds and external coverage",
+        "Runtime unmeasured"
+      ],
+      "trade_offs": [
+        "Breadth of experiments versus reliable core"
+      ],
+      "confidence": "Provisional until pilot cost",
+      "architecture_version": null,
+      "revisit_condition": "Measured training/runtime or deadline changes"
+    },
+    {
+      "experiments_used": [],
+      "rejected_alternatives": [],
+      "why_rejected": "Deferred candidates are not empirically rejected.",
+      "confidence": "Provisional; literature/engineering rationale only",
+      "architecture_version": "A0",
+      "decision_id": "DEC-006",
+      "question": "Which models enter A0?",
+      "candidate_alternatives": [
+        "LR",
+        "RF/Extra Trees",
+        "XGBoost/LightGBM",
+        "SVM",
+        "MLP",
+        "CNN/recurrent/AE/transformer"
+      ],
+      "evidence_considered": [
+        "R023",
+        "R040",
+        "R041",
+        "R042",
+        "R043",
+        "R044",
+        "R045",
+        "R046"
+      ],
+      "selected_option": "LR, Extra Trees and compact MLP; conditional boosting challenger",
+      "why_selected": "Strong tabular baselines plus manageable neural integration candidate",
+      "risks": [
+        "Unknown local ranking",
+        "Feature shortcut risk"
+      ],
+      "trade_offs": [
+        "Limited candidate grid versus reproducible comparison"
+      ],
+      "revisit_condition": "EXP-003 shows detection/cost gap or feature/sequence evidence justifies challenger"
+    },
+    {
+      "experiments_used": [],
+      "rejected_alternatives": [],
+      "why_rejected": "Deferred candidates are not empirically rejected.",
+      "confidence": "Provisional; literature/engineering rationale only",
+      "architecture_version": "A0",
+      "decision_id": "DEC-007",
+      "question": "Which FL candidates and client setting?",
+      "candidate_alternatives": [
+        "FedAvg",
+        "FedProx",
+        "FedAdam/Yogi/Adagrad",
+        "SCAFFOLD",
+        "FedNova",
+        "FedPer"
+      ],
+      "evidence_considered": [
+        "R006",
+        "R007",
+        "R008",
+        "R009",
+        "R026",
+        "R027",
+        "R028"
+      ],
+      "selected_option": "Five-client pilot; FedAvg reference with FedProx and FedAdam challengers",
+      "why_selected": "Test heterogeneity with a bounded, nonredundant comparison",
+      "risks": [
+        "Synthetic clients",
+        "Unequal work and objective weighting"
+      ],
+      "trade_offs": [
+        "Server state/tuning versus simple baseline"
+      ],
+      "revisit_condition": "EXP-004 drift, convergence, personalization or variable-work evidence"
+    },
+    {
+      "experiments_used": [],
+      "rejected_alternatives": [],
+      "why_rejected": "Deferred candidates are not empirically rejected.",
+      "confidence": "Provisional; literature/engineering rationale only",
+      "architecture_version": "A0",
+      "decision_id": "DEC-008",
+      "question": "Where must the proposed privacy boundary lie?",
+      "candidate_alternatives": [
+        "FL alone",
+        "Central DP at server",
+        "Client-internal record DP",
+        "Client-level DP",
+        "Secure aggregation",
+        "HE",
+        "SMPC",
+        "TEE"
+      ],
+      "evidence_considered": [
+        "R010",
+        "R011",
+        "R012",
+        "R013",
+        "R035",
+        "R036",
+        "R037",
+        "R038",
+        "R039"
+      ],
+      "selected_option": "Candidate client-internal record-level DP before upload; optional separately verified secure aggregation",
+      "why_selected": "Matches a trusted local process and observing coordinator; explicitly scoped to curated training records",
+      "risks": [
+        "Accounting/sampling not validated",
+        "Private metadata and CL state",
+        "No person/institution-level guarantee"
+      ],
+      "trade_offs": [
+        "Utility and per-example gradient cost; no full-workflow privacy claim"
+      ],
+      "revisit_condition": "Mechanism review fails, trust changes, or utility/resource evidence warrants revisiting protection unit"
+    },
+    {
+      "experiments_used": [],
+      "rejected_alternatives": [],
+      "why_rejected": "Deferred candidates are not empirically rejected.",
+      "confidence": "Provisional; literature/engineering rationale only",
+      "architecture_version": "A0",
+      "decision_id": "DEC-009",
+      "question": "Which continual setting and methods?",
+      "candidate_alternatives": [
+        "Frozen",
+        "Naive",
+        "ER",
+        "EWC",
+        "LwF",
+        "SI",
+        "DER/DER++",
+        "GEM/A-GEM",
+        "Generative replay",
+        "Parameter isolation"
+      ],
+      "evidence_considered": [
+        "R014",
+        "R015",
+        "R022",
+        "R029",
+        "R030",
+        "R031",
+        "R032",
+        "R033",
+        "R034"
+      ],
+      "selected_option": "Fixed-binary time/domain adaptation; frozen, naive, ER, EWC, LwF; privacy eligibility separate",
+      "why_selected": "Measure retention and adaptation without assuming distillation wins",
+      "risks": [
+        "Invalid time ordering",
+        "Insufficient class support",
+        "Unaccounted retained state"
+      ],
+      "trade_offs": [
+        "Replay utility versus storage/privacy; teacher/state cost"
+      ],
+      "revisit_condition": "EXP-002 task support or EXP-006/007 retention/private-compatibility evidence"
+    },
+    {
+      "experiments_used": [],
+      "rejected_alternatives": [],
+      "why_rejected": "Deferred candidates are not empirically rejected.",
+      "confidence": "Provisional; literature/engineering rationale only",
+      "architecture_version": "A0",
+      "decision_id": "DEC-010",
+      "question": "What initial contribution is defensible?",
+      "candidate_alternatives": [
+        "First-ever FL+DP+CL claim",
+        "New algorithm",
+        "Controlled experimental and engineering study"
+      ],
+      "evidence_considered": [
+        "R020",
+        "R026",
+        "reports/CP0-comparative-review.md",
+        "R051",
+        "R052",
+        "R053",
+        "R054"
+      ],
+      "selected_option": "Experimental/engineering contribution hypothesis",
+      "why_selected": "Prior integrations exist; local controlled interactions remain unmeasured",
+      "risks": [
+        "Recent work may overlap",
+        "Limited external validity"
+      ],
+      "trade_offs": [
+        "Conservative contribution scope"
+      ],
+      "revisit_condition": "New literature or final evidence supports a narrower or stronger claim"
+    },
+    {
+      "experiments_used": [],
+      "rejected_alternatives": [],
+      "why_rejected": "Deferred candidates are not empirically rejected.",
+      "confidence": "Provisional; literature/engineering rationale only",
+      "architecture_version": "A0",
+      "decision_id": "DEC-011",
+      "question": "How will candidate selection stay feasible and reproducible?",
+      "candidate_alternatives": [
+        "Unbounded grid",
+        "Finite gated experiments"
+      ],
+      "evidence_considered": [
+        "docs/experiment-plan-A0.md",
+        "User deadline/hardware"
+      ],
+      "selected_option": "Eight planned families; pilot ceilings; paired confirmation seeds; sealed final stage",
+      "why_selected": "Concrete stopping policy sized to the user-reported laptop",
+      "risks": [
+        "Unknown measured cost",
+        "Only minimal seed replication may fit"
+      ],
+      "trade_offs": [
+        "Breadth versus validation depth"
+      ],
+      "revisit_condition": "Measured pilots require registered scope reduction"
+    },
+    {
+      "experiments_used": [],
+      "rejected_alternatives": [],
+      "why_rejected": "Deferred candidates are not empirically rejected.",
+      "confidence": "Provisional; literature/engineering rationale only",
+      "architecture_version": "A0",
+      "decision_id": "DEC-012",
+      "question": "Can A0 be issued?",
+      "candidate_alternatives": [
+        "Wait for empirical winners",
+        "Issue provisional interfaces after initial research"
+      ],
+      "evidence_considered": [
+        "R001-R054",
+        "reports/CP0-comparative-review.md",
+        "reports/CP0-numerical-evidence.md"
+      ],
+      "selected_option": "Issue provisional A0, not a validated/final architecture",
+      "why_selected": "Initial workstreams covered with explicit unknowns, alternatives and gates",
+      "risks": [
+        "Detailed reproduction of deferred methods incomplete",
+        "Privacy proof and data audit pending"
+      ],
+      "trade_offs": [
+        "Progress to measured evidence without pretending research establishes local winners"
+      ],
+      "revisit_condition": "Any failed audit, split, utility, privacy or cost gate"
+    },
+    {
+      "decision_id": "DEC-013",
+      "question": "Can raw rows be split and fitted without a data-quality policy?",
+      "candidate_alternatives": [
+        "Naive row split",
+        "Group-aware split after explicit audit-derived rules"
+      ],
+      "evidence_considered": [
+        "reports/CP1-dataset-audit.md",
+        "reports/CP1-findings-and-decisions.md"
+      ],
+      "experiments_used": [
+        "EXP-001"
+      ],
+      "selected_option": "Register cleaning, duplicate grouping and temporal rules before any fit",
+      "why_selected": "Actual duplicates, conflicting-label features and rate/time issues were observed",
+      "rejected_alternatives": [
+        "Treat file order as time",
+        "Keep both identical CIC Fwd Header Length columns",
+        "Assume valid UTF-8 means undamaged labels"
+      ],
+      "why_rejected": "Contradicted by local audit observations",
+      "risks": [
+        "Rare classes may lose support",
+        "Predictor collisions are not necessarily duplicate events"
+      ],
+      "trade_offs": [
+        "Stricter evaluation may reduce scores or available samples"
+      ],
+      "confidence": "High for observed anomalies; split design remains provisional",
+      "architecture_version": "A0",
+      "revisit_condition": "EXP-002 support and normalized-overlap checks"
+    }
+  ],
+  "architectures": [
+    {
+      "version": "A0",
+      "date": "2026-09-08",
+      "diagram": "docs/architecture/A0.md",
+      "components": [
+        "Two schema tracks",
+        "Audit and sealed manifests",
+        "Classical comparators and MLP candidate",
+        "FedAvg/Prox/Adam candidates",
+        "Client-internal candidate record DP",
+        "Local CL candidates",
+        "Optional secure aggregation",
+        "Separate training/inference/evaluation"
+      ],
+      "changes_from_previous": "First provisional architecture",
+      "reason_for_change": "Initial targeted research gate completed",
+      "supporting_experiments": [],
+      "supporting_decisions": [
+        "DEC-006",
+        "DEC-007",
+        "DEC-008",
+        "DEC-009",
+        "DEC-010",
+        "DEC-011",
+        "DEC-012"
+      ],
+      "known_limitations": [
+        "Not implemented or validated",
+        "No established privacy guarantee",
+        "No audited local row counts or split independence",
+        "One-laptop simulation; no banking data"
+      ],
+      "status": "PROVISIONAL / NOT IMPLEMENTED"
+    }
+  ],
+  "failures": [
+    {
+      "experiment_id": "EXP-001",
+      "what_failed": "Fixture parser initialization",
+      "error": "Empty nullstr list rejected by DuckDB 1.5.5",
+      "suspected_cause": "Unsupported option value",
+      "investigation": "Constructed fixture failed before data audit",
+      "fix": "Explicit force_not_null for all positional columns",
+      "scientifically_invalid": false,
+      "rerun_required": false
+    },
+    {
+      "experiment_id": "EXP-001",
+      "what_failed": "Initial complete-scope attempts interrupted",
+      "error": "v1.0 intentionally stopped for measured optimization; v1.1 and v1.2 processes ended before remaining stages completed",
+      "suspected_cause": "Intentional optimization for v1.0; later process termination cause not established",
+      "investigation": "Completed family artifacts retained; no surviving foreground audit process",
+      "fix": "Resume with full source hash checks and v1.3 staged recovery; all families eventually completed",
+      "scientifically_invalid": false,
+      "rerun_required": false
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "CLM-001",
+      "claim": "The combination of FL, privacy and CL for IDS has prior work.",
+      "evidence_category": "LITERATURE EVIDENCE",
+      "source_ids": [
+        "R020"
+      ],
+      "experiment_ids": [],
+      "limitations": "No exhaustive novelty search claimed.",
+      "status": "SUPPORTED WITHIN REVIEW"
+    },
+    {
+      "claim_id": "CLM-002",
+      "claim": "A0 candidates can be compared in a bounded laptop study.",
+      "evidence_category": "HYPOTHESIS",
+      "source_ids": [],
+      "experiment_ids": [],
+      "limitations": "Resource pilots not run.",
+      "status": "UNTESTED"
+    },
+    {
+      "claim_id": "CLM-003",
+      "claim": "The proposed private training path may provide record-level transcript protection.",
+      "evidence_category": "HYPOTHESIS",
+      "source_ids": [
+        "R011",
+        "R012",
+        "R038"
+      ],
+      "experiment_ids": [],
+      "limitations": "Requires actual mechanism, curation boundary, sampling and release accounting review; no guarantee yet.",
+      "status": "UNESTABLISHED"
+    }
+  ],
+  "final_results": [],
+  "research_tasks": [
+    {
+      "id": "RES-001",
+      "status": "COMPLETED_INITIAL_SCOPE",
+      "goal": "Financial threats, flow observability and threat boundary",
+      "output": "reports/CP0-comparative-review.md",
+      "remaining": "Empirical validation and conditional deeper reproduction; see workstream coverage."
+    },
+    {
+      "id": "RES-002",
+      "status": "COMPLETED_INITIAL_SCOPE",
+      "goal": "Dataset validity and current local editions",
+      "output": "reports/CP0-comparative-review.md",
+      "remaining": "Empirical validation and conditional deeper reproduction; see workstream coverage."
+    },
+    {
+      "id": "RES-003",
+      "status": "COMPLETED_INITIAL_SCOPE",
+      "goal": "Related integrations and conservative gap",
+      "remaining": "Empirical validation and conditional deeper reproduction; see workstream coverage.",
+      "output": "reports/CP0-comparative-review.md"
+    },
+    {
+      "id": "RES-004",
+      "status": "COMPLETED_INITIAL_SCOPE",
+      "goal": "Models, FL, privacy and CL comparison; selected numeric extraction",
+      "output": "reports/CP0-numerical-evidence.md",
+      "remaining": "Selected implementation/accountant review before experiments; deferred methods remain partially verified."
+    },
+    {
+      "id": "RES-005",
+      "status": "COMPLETED_INITIAL_SCOPE",
+      "goal": "Recent FL/CL/IDS intersection check",
+      "output": "reports/CP0-search-notes.md",
+      "remaining": "R052/R053 primary author metadata and full reproduction remain unverified; R054 abstract only."
+    }
+  ],
+  "progress": {
+    "checkpoint": "CP2",
+    "status": "COMPLETE",
+    "architecture_version": "A0",
+    "methodology_version": "M0.2",
+    "completed": [
+      "Initial seven-workstream comparative research",
+      "54-source registry with verification depth",
+      "Eight numerical evidence sections",
+      "Provisional A0 block contracts and diagram",
+      "Eight planned experiment families and stopping rules",
+      "CP0 viva notes",
+      "Isolated pinned audit environment",
+      "Full row audit of five datasets",
+      "Four correctness tests and artifact invariants",
+      "Local ZIP manifest consistency checks"
+    ],
+    "current": [],
+    "next": [
+      "CP3 / EXP-002: finalize split/task/feature manifests and quarantine policy",
+      "CP4: implement deterministic cleaning and fit training-only transforms",
+      "CP5: resource pilot and controlled baselines"
+    ],
+    "blocked": [],
+    "deferred": [
+      "Optional model/FL/CL candidates",
+      "HE/SMPC/TEE implementation",
+      "Secure aggregation until separate feasibility/protocol gate",
+      "No dataset downloads without explicit request"
+    ],
+    "rejected": [
+      "Blind cross-schema pooling",
+      "First-ever combination claim",
+      "Fixed untested winning stack",
+      "FL-alone privacy guarantee"
+    ],
+    "needs_research": [
+      "Implementation-specific privacy accounting",
+      "Detailed reproduction if deferred candidate promoted",
+      "Recent-literature update before submission"
+    ],
+    "needs_validation": [
+      "Numeric-normalized duplicates after proposed transformations",
+      "Cleaning impact on minority support",
+      "Split independence and task support",
+      "All detection, FL, privacy and CL results",
+      "Training-framework CUDA support"
+    ]
+  },
+  "user_constraints": {
+    "dataset_root": "C:\\Users\\nimma\\Downloads\\Datasets",
+    "deadline": "2026-09-20",
+    "deadline_year_basis": "Assumed current year from user saying 20-september",
+    "hardware_source": "User reported; not yet independently benchmarked",
+    "cpu": "13th Gen Intel Core i7-13650HX (2.60 GHz)",
+    "ram_gb": 23.7,
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "vram_gb": 6,
+    "secondary_gpu": "Intel UHD Graphics",
+    "report_format": "No special format required",
+    "no_dataset_download": true,
+    "no_push": true,
+    "hardware_measured": "reports/audit/environment.json; psutil RAM differs from earlier user-reported value"
+  }
+}

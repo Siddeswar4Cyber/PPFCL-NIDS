@@ -1,0 +1,23 @@
+{
+  "audit_version": "audit-1.3",
+  "script_sha256": "b8d81f3d3d4d137708192e71f65dbfaf3275ebe0c5dfb672cc61c916461ca1c3",
+  "arguments": {
+    "root": "C:\\Users\\nimma\\Downloads\\Datasets",
+    "output": "reports\\audit",
+    "family": null,
+    "memory": "4GB",
+    "threads": 8,
+    "resume": true
+  },
+  "elapsed_seconds": 4219.9839309,
+  "peak_process_rss_bytes": 6030651392,
+  "completed_families": [
+    "ND-UNSW-NB15-v3",
+    "cic-ids-2017",
+    "NF-BoT-IoT-v3",
+    "NF-CIC-IDS-2018-v3",
+    "NF-ToN-IoT-v3"
+  ],
+  "total_rows_completed": 69765764,
+  "all_requested_families_completed": true
+}
