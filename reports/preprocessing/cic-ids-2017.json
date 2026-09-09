@@ -1,0 +1,2687 @@
+{
+  "version": "P1",
+  "dataset": "cic-ids-2017",
+  "status": "COMPLETED",
+  "pipelines": [
+    {
+      "protocol": "primary",
+      "fit_rows": 100000,
+      "output_features": 156,
+      "fit_group_set_sha256": "bf86caf49582b3340f805de6da517f2aac6e78392b0eb47f6cbb80c7a9a6bafe",
+      "fit_membership": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\primary\\fit-membership.parquet",
+      "fit_membership_sha256": "1528fbec9ce2611eb2b7d5494287e44075025b47a3cc9f9bf4791a0427b76ef1",
+      "transform_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\primary\\transform.json",
+      "transform_sha256": "73b5280dc558ddbe0b8f87a0b53d651f305052c063d0db786284cb5675fa7fa8",
+      "validation": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2518050
+      },
+      "support": [
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 907398,
+          "groups": 836719
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "bot",
+          "rows": 760,
+          "groups": 755
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ddos",
+          "rows": 50943,
+          "groups": 50939
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 4101,
+          "groups": 4098
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 94720,
+          "groups": 69284
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 2151,
+          "groups": 2109
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 2302,
+          "groups": 2165
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 2681,
+          "groups": 2399
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "heartbleed",
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 17,
+          "groups": 17
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "portscan",
+          "rows": 62751,
+          "groups": 35942
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 2340,
+          "groups": 1247
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 590,
+          "groups": 569
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_sql_injection",
+          "rows": 9,
+          "groups": 9
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 270,
+          "groups": 270
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 231833,
+          "groups": 210029
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "bot",
+          "rows": 206,
+          "groups": 206
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ddos",
+          "rows": 12882,
+          "groups": 12882
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 1022,
+          "groups": 1022
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 30557,
+          "groups": 17218
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 524,
+          "groups": 517
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 593,
+          "groups": 549
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 659,
+          "groups": 563
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 6,
+          "groups": 6
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "portscan",
+          "rows": 15693,
+          "groups": 8983
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 665,
+          "groups": 300
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 155,
+          "groups": 153
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_sql_injection",
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 63,
+          "groups": 63
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 227481,
+          "groups": 208608
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "bot",
+          "rows": 211,
+          "groups": 206
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ddos",
+          "rows": 12772,
+          "groups": 12771
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 999,
+          "groups": 999
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 18479,
+          "groups": 17114
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 517,
+          "groups": 510
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 520,
+          "groups": 492
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 767,
+          "groups": 591
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "heartbleed",
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 2,
+          "groups": 2
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "portscan",
+          "rows": 15864,
+          "groups": 9134
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 767,
+          "groups": 351
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 146,
+          "groups": 142
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 63,
+          "groups": 63
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 451428,
+          "groups": 419444
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "bot",
+          "rows": 375,
+          "groups": 372
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ddos",
+          "rows": 25884,
+          "groups": 25882
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 2142,
+          "groups": 2139
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 44489,
+          "groups": 34282
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 1084,
+          "groups": 1061
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 1167,
+          "groups": 1092
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 1378,
+          "groups": 1160
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 4,
+          "groups": 4
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "portscan",
+          "rows": 31780,
+          "groups": 18060
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 1108,
+          "groups": 658
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 305,
+          "groups": 297
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_sql_injection",
+          "rows": 5,
+          "groups": 5
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 134,
+          "groups": 134
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 451489,
+          "groups": 418263
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "bot",
+          "rows": 414,
+          "groups": 414
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ddos",
+          "rows": 25521,
+          "groups": 25520
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 2024,
+          "groups": 2023
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 37445,
+          "groups": 34663
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 1223,
+          "groups": 1031
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 1213,
+          "groups": 1086
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 2449,
+          "groups": 1216
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "heartbleed",
+          "rows": 1,
+          "groups": 1
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 6,
+          "groups": 6
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "portscan",
+          "rows": 31789,
+          "groups": 18136
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 1015,
+          "groups": 661
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 311,
+          "groups": 309
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_sql_injection",
+          "rows": 4,
+          "groups": 4
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 122,
+          "groups": 122
+        }
+      ],
+      "artifacts": {
+        "train": {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\primary\\train.parquet",
+          "sha256": "1f6f5184dabfe9090e09c3d7dfd5e58bb38dd083e5e220d717ad80791097966e",
+          "binary_support": [
+            {
+              "binary_label": 0,
+              "rows": 83122
+            },
+            {
+              "binary_label": 1,
+              "rows": 16878
+            }
+          ]
+        },
+        "validation": {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\primary\\validation.parquet",
+          "sha256": "9e3eba0245d42db8d9ba797a03896819819425f873b04e9558ad75efc2f2078f",
+          "binary_support": [
+            {
+              "binary_label": 0,
+              "rows": 451489
+            },
+            {
+              "binary_label": 1,
+              "rows": 103537
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 37.589194800000314
+    },
+    {
+      "protocol": "stress",
+      "fit_rows": 100000,
+      "output_features": 156,
+      "fit_group_set_sha256": "dd01d9bd907a463f33a60266579c08d70ee9d5902b5854ed7501375ca0dcc385",
+      "fit_membership": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\stress\\fit-membership.parquet",
+      "fit_membership_sha256": "daea44314cda09233633ba296e190e18c04e13ab0f7ab65bdc33326c9b006962",
+      "transform_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\stress\\transform.json",
+      "transform_sha256": "07dec7553c9829d86fd54fd85d99082a7b1de68095bf2533658cb8fa1111cd01",
+      "validation": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2518050
+      },
+      "support": [
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 715987,
+          "groups": 679163
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 4101,
+          "groups": 4098
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 94720,
+          "groups": 69284
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 2151,
+          "groups": 2109
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 2302,
+          "groups": 2165
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 2681,
+          "groups": 2399
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "heartbleed",
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 17,
+          "groups": 17
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 2340,
+          "groups": 1247
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 590,
+          "groups": 569
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_sql_injection",
+          "rows": 9,
+          "groups": 9
+        },
+        {
+          "role": "development_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 270,
+          "groups": 270
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 744124,
+          "groups": 655940
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "bot",
+          "rows": 1591,
+          "groups": 1581
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ddos",
+          "rows": 102118,
+          "groups": 102112
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 2142,
+          "groups": 2139
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 44489,
+          "groups": 34282
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 1084,
+          "groups": 1061
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 1167,
+          "groups": 1092
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 1378,
+          "groups": 1160
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 4,
+          "groups": 4
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "portscan",
+          "rows": 126097,
+          "groups": 72195
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 1108,
+          "groups": 658
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 305,
+          "groups": 297
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_sql_injection",
+          "rows": 5,
+          "groups": 5
+        },
+        {
+          "role": "excluded_stress",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 134,
+          "groups": 134
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 179630,
+          "groups": 170161
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 1022,
+          "groups": 1022
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 30557,
+          "groups": 17218
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 524,
+          "groups": 517
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 593,
+          "groups": 549
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 659,
+          "groups": 563
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 6,
+          "groups": 6
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 665,
+          "groups": 300
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 155,
+          "groups": 153
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_sql_injection",
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "private_train",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 63,
+          "groups": 63
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 177850,
+          "groups": 169305
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 999,
+          "groups": 999
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 18479,
+          "groups": 17114
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 517,
+          "groups": 510
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 520,
+          "groups": 492
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 767,
+          "groups": 591
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "heartbleed",
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 2,
+          "groups": 2
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 767,
+          "groups": 351
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 146,
+          "groups": 142
+        },
+        {
+          "role": "public_reference",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 63,
+          "groups": 63
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 94254,
+          "groups": 79050
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "bot",
+          "rows": 375,
+          "groups": 372
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ddos",
+          "rows": 25884,
+          "groups": 25882
+        },
+        {
+          "role": "sealed_test",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "portscan",
+          "rows": 31780,
+          "groups": 18060
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 0,
+          "label": "benign",
+          "rows": 357784,
+          "groups": 339444
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_goldeneye",
+          "rows": 2024,
+          "groups": 2023
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_hulk",
+          "rows": 37445,
+          "groups": 34663
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowhttptest",
+          "rows": 1223,
+          "groups": 1031
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "dos_slowloris",
+          "rows": 1213,
+          "groups": 1086
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ftp_patator",
+          "rows": 2449,
+          "groups": 1216
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "heartbleed",
+          "rows": 1,
+          "groups": 1
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "infiltration",
+          "rows": 6,
+          "groups": 6
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "ssh_patator",
+          "rows": 1015,
+          "groups": 661
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_brute_force",
+          "rows": 311,
+          "groups": 309
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_sql_injection",
+          "rows": 4,
+          "groups": 4
+        },
+        {
+          "role": "validation",
+          "task_id": null,
+          "binary_label": 1,
+          "label": "web_attack_xss",
+          "rows": 122,
+          "groups": 122
+        }
+      ],
+      "artifacts": {
+        "train": {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\stress\\train.parquet",
+          "sha256": "a4b54944f8981b6b4b83859e16d05fd966166f2b989153e3ab949185ea91277a",
+          "binary_support": [
+            {
+              "binary_label": 0,
+              "rows": 89191
+            },
+            {
+              "binary_label": 1,
+              "rows": 10809
+            }
+          ]
+        },
+        "validation": {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\stress\\validation.parquet",
+          "sha256": "1aa06698a7f8bd4c5d81f207d3595641d0a7b71b4199b59358f78d31a9f98ba4",
+          "binary_support": [
+            {
+              "binary_label": 0,
+              "rows": 357784
+            },
+            {
+              "binary_label": 1,
+              "rows": 45813
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 37.46977609999976
+    }
+  ],
+  "source_manifest_sha256": "82a7ee93bcefd3aa754229cae4d9cbaa9bcbffb6c3dbcba789c10eb9f0f8b1fc",
+  "contract_sha256": "6c7cddbb2a84dc8c01e8af50e527cb16ea6d171365e15de017e2d8eb6151c90d",
+  "script_sha256": "a8d4420f565c049f451b963cd45979e81a4e65422c7c0ba4ea0e2f0b407f5e4c",
+  "environment": {
+    "duckdb": "1.5.5",
+    "memory_limit": "4GB",
+    "threads": 8
+  },
+  "quality_support": [
+    {
+      "primary_role": "development_train",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 907398,
+      "groups": 836719
+    },
+    {
+      "primary_role": "development_train",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1081,
+      "groups": 1081
+    },
+    {
+      "primary_role": "development_train",
+      "label": "bot",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 760,
+      "groups": 755
+    },
+    {
+      "primary_role": "development_train",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 50943,
+      "groups": 50939
+    },
+    {
+      "primary_role": "development_train",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 5,
+      "groups": 5
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 4101,
+      "groups": 4098
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 4,
+      "groups": 4
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 94720,
+      "groups": 69284
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 62,
+      "groups": 62
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_slowhttptest",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 2151,
+      "groups": 2109
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 2302,
+      "groups": 2165
+    },
+    {
+      "primary_role": "development_train",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 2681,
+      "groups": 2399
+    },
+    {
+      "primary_role": "development_train",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "development_train",
+      "label": "heartbleed",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 3,
+      "groups": 3
+    },
+    {
+      "primary_role": "development_train",
+      "label": "infiltration",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 17,
+      "groups": 17
+    },
+    {
+      "primary_role": "development_train",
+      "label": "portscan",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 62751,
+      "groups": 35942
+    },
+    {
+      "primary_role": "development_train",
+      "label": "ssh_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 2340,
+      "groups": 1247
+    },
+    {
+      "primary_role": "development_train",
+      "label": "ssh_patator",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "development_train",
+      "label": "web_attack_brute_force",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 590,
+      "groups": 569
+    },
+    {
+      "primary_role": "development_train",
+      "label": "web_attack_sql_injection",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 9,
+      "groups": 9
+    },
+    {
+      "primary_role": "development_train",
+      "label": "web_attack_xss",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 270,
+      "groups": 270
+    },
+    {
+      "primary_role": "private_train",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 231833,
+      "groups": 210029
+    },
+    {
+      "primary_role": "private_train",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 267,
+      "groups": 266
+    },
+    {
+      "primary_role": "private_train",
+      "label": "bot",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 206,
+      "groups": 206
+    },
+    {
+      "primary_role": "private_train",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 12882,
+      "groups": 12882
+    },
+    {
+      "primary_role": "private_train",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 2,
+      "groups": 2
+    },
+    {
+      "primary_role": "private_train",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1022,
+      "groups": 1022
+    },
+    {
+      "primary_role": "private_train",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 30557,
+      "groups": 17218
+    },
+    {
+      "primary_role": "private_train",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 23,
+      "groups": 22
+    },
+    {
+      "primary_role": "private_train",
+      "label": "dos_slowhttptest",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 524,
+      "groups": 517
+    },
+    {
+      "primary_role": "private_train",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 593,
+      "groups": 549
+    },
+    {
+      "primary_role": "private_train",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 659,
+      "groups": 563
+    },
+    {
+      "primary_role": "private_train",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "private_train",
+      "label": "infiltration",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 6,
+      "groups": 6
+    },
+    {
+      "primary_role": "private_train",
+      "label": "portscan",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 15693,
+      "groups": 8983
+    },
+    {
+      "primary_role": "private_train",
+      "label": "ssh_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 665,
+      "groups": 300
+    },
+    {
+      "primary_role": "private_train",
+      "label": "web_attack_brute_force",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 155,
+      "groups": 153
+    },
+    {
+      "primary_role": "private_train",
+      "label": "web_attack_sql_injection",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 3,
+      "groups": 3
+    },
+    {
+      "primary_role": "private_train",
+      "label": "web_attack_xss",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 63,
+      "groups": 63
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 227481,
+      "groups": 208608
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 268,
+      "groups": 267
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "bot",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 211,
+      "groups": 206
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 12772,
+      "groups": 12771
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 4,
+      "groups": 4
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 999,
+      "groups": 999
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 18479,
+      "groups": 17114
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 16,
+      "groups": 16
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "dos_slowhttptest",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 517,
+      "groups": 510
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 520,
+      "groups": 492
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 767,
+      "groups": 591
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "heartbleed",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 3,
+      "groups": 3
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "heartbleed",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "infiltration",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 2,
+      "groups": 2
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "infiltration",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "portscan",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 15864,
+      "groups": 9134
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "ssh_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 767,
+      "groups": 351
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "ssh_patator",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "web_attack_brute_force",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 146,
+      "groups": 142
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "web_attack_xss",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 63,
+      "groups": 63
+    },
+    {
+      "primary_role": "quarantine_conflict",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": false,
+      "quality_eligible": false,
+      "rows": 736,
+      "groups": 698
+    },
+    {
+      "primary_role": "quarantine_conflict",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": false,
+      "rows": 6,
+      "groups": 3
+    },
+    {
+      "primary_role": "quarantine_conflict",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": false,
+      "rows": 5224,
+      "groups": 130
+    },
+    {
+      "primary_role": "quarantine_conflict",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "quarantine_conflict",
+      "label": "portscan",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": false,
+      "rows": 1053,
+      "groups": 564
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 451428,
+      "groups": 419444
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 527,
+      "groups": 525
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "bot",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 375,
+      "groups": 372
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 25884,
+      "groups": 25882
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 4,
+      "groups": 4
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 2142,
+      "groups": 2139
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 44489,
+      "groups": 34282
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 29,
+      "groups": 29
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "dos_slowhttptest",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1084,
+      "groups": 1061
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1167,
+      "groups": 1092
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1378,
+      "groups": 1160
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "heartbleed",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "infiltration",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 4,
+      "groups": 4
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "portscan",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 31780,
+      "groups": 18060
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "ssh_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1108,
+      "groups": 658
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "web_attack_brute_force",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 305,
+      "groups": 297
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "web_attack_sql_injection",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 5,
+      "groups": 5
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "web_attack_xss",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 134,
+      "groups": 134
+    },
+    {
+      "primary_role": "validation",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 451489,
+      "groups": 418263
+    },
+    {
+      "primary_role": "validation",
+      "label": "benign",
+      "binary_label": 0,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 589,
+      "groups": 584
+    },
+    {
+      "primary_role": "validation",
+      "label": "bot",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 414,
+      "groups": 414
+    },
+    {
+      "primary_role": "validation",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 25521,
+      "groups": 25520
+    },
+    {
+      "primary_role": "validation",
+      "label": "ddos",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 4,
+      "groups": 4
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 2024,
+      "groups": 2023
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 37445,
+      "groups": 34663
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 29,
+      "groups": 29
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_slowhttptest",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1223,
+      "groups": 1031
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1213,
+      "groups": 1086
+    },
+    {
+      "primary_role": "validation",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 2449,
+      "groups": 1216
+    },
+    {
+      "primary_role": "validation",
+      "label": "ftp_patator",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "validation",
+      "label": "heartbleed",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "validation",
+      "label": "heartbleed",
+      "binary_label": 1,
+      "quality_invalid": true,
+      "quality_eligible": false,
+      "rows": 2,
+      "groups": 2
+    },
+    {
+      "primary_role": "validation",
+      "label": "infiltration",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 6,
+      "groups": 6
+    },
+    {
+      "primary_role": "validation",
+      "label": "portscan",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 31789,
+      "groups": 18136
+    },
+    {
+      "primary_role": "validation",
+      "label": "ssh_patator",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 1015,
+      "groups": 661
+    },
+    {
+      "primary_role": "validation",
+      "label": "web_attack_brute_force",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 311,
+      "groups": 309
+    },
+    {
+      "primary_role": "validation",
+      "label": "web_attack_sql_injection",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 4,
+      "groups": 4
+    },
+    {
+      "primary_role": "validation",
+      "label": "web_attack_xss",
+      "binary_label": 1,
+      "quality_invalid": false,
+      "quality_eligible": true,
+      "rows": 122,
+      "groups": 122
+    }
+  ],
+  "feature_quality": [
+    {
+      "id": "c000",
+      "name": "Destination Port",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c001",
+      "name": "Flow Duration",
+      "source_missing_rows": 0,
+      "negative_rows": 115,
+      "minus1_rows": 109
+    },
+    {
+      "id": "c002",
+      "name": "Total Fwd Packets",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c003",
+      "name": "Total Backward Packets",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c004",
+      "name": "Total Length of Fwd Packets",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c005",
+      "name": "Total Length of Bwd Packets",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c006",
+      "name": "Fwd Packet Length Max",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c007",
+      "name": "Fwd Packet Length Min",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c008",
+      "name": "Fwd Packet Length Mean",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c009",
+      "name": "Fwd Packet Length Std",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c010",
+      "name": "Bwd Packet Length Max",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c011",
+      "name": "Bwd Packet Length Min",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c012",
+      "name": "Bwd Packet Length Mean",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c013",
+      "name": "Bwd Packet Length Std",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c014",
+      "name": "Flow Bytes/s",
+      "source_missing_rows": 2867,
+      "negative_rows": 85,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c015",
+      "name": "Flow Packets/s",
+      "source_missing_rows": 2867,
+      "negative_rows": 115,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c016",
+      "name": "Flow IAT Mean",
+      "source_missing_rows": 0,
+      "negative_rows": 115,
+      "minus1_rows": 109
+    },
+    {
+      "id": "c017",
+      "name": "Flow IAT Std",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c018",
+      "name": "Flow IAT Max",
+      "source_missing_rows": 0,
+      "negative_rows": 115,
+      "minus1_rows": 109
+    },
+    {
+      "id": "c019",
+      "name": "Flow IAT Min",
+      "source_missing_rows": 0,
+      "negative_rows": 2891,
+      "minus1_rows": 2754
+    },
+    {
+      "id": "c020",
+      "name": "Fwd IAT Total",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c021",
+      "name": "Fwd IAT Mean",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c022",
+      "name": "Fwd IAT Std",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c023",
+      "name": "Fwd IAT Max",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c024",
+      "name": "Fwd IAT Min",
+      "source_missing_rows": 0,
+      "negative_rows": 17,
+      "minus1_rows": 15
+    },
+    {
+      "id": "c025",
+      "name": "Bwd IAT Total",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c026",
+      "name": "Bwd IAT Mean",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c027",
+      "name": "Bwd IAT Std",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c028",
+      "name": "Bwd IAT Max",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c029",
+      "name": "Bwd IAT Min",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c030",
+      "name": "Fwd PSH Flags",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c031",
+      "name": "Bwd PSH Flags",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c032",
+      "name": "Fwd URG Flags",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c033",
+      "name": "Bwd URG Flags",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c034",
+      "name": "Fwd Header Length",
+      "source_missing_rows": 0,
+      "negative_rows": 35,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c035",
+      "name": "Bwd Header Length",
+      "source_missing_rows": 0,
+      "negative_rows": 22,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c036",
+      "name": "Fwd Packets/s",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c037",
+      "name": "Bwd Packets/s",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c038",
+      "name": "Min Packet Length",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c039",
+      "name": "Max Packet Length",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c040",
+      "name": "Packet Length Mean",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c041",
+      "name": "Packet Length Std",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c042",
+      "name": "Packet Length Variance",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c043",
+      "name": "FIN Flag Count",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c044",
+      "name": "SYN Flag Count",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c045",
+      "name": "RST Flag Count",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c046",
+      "name": "PSH Flag Count",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c047",
+      "name": "ACK Flag Count",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c048",
+      "name": "URG Flag Count",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c049",
+      "name": "CWE Flag Count",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c050",
+      "name": "ECE Flag Count",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c051",
+      "name": "Down/Up Ratio",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c052",
+      "name": "Average Packet Size",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c053",
+      "name": "Avg Fwd Segment Size",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c054",
+      "name": "Avg Bwd Segment Size",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c056",
+      "name": "Fwd Avg Bytes/Bulk",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c057",
+      "name": "Fwd Avg Packets/Bulk",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c058",
+      "name": "Fwd Avg Bulk Rate",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c059",
+      "name": "Bwd Avg Bytes/Bulk",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c060",
+      "name": "Bwd Avg Packets/Bulk",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c061",
+      "name": "Bwd Avg Bulk Rate",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c062",
+      "name": "Subflow Fwd Packets",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c063",
+      "name": "Subflow Fwd Bytes",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c064",
+      "name": "Subflow Bwd Packets",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c065",
+      "name": "Subflow Bwd Bytes",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c066",
+      "name": "Init_Win_bytes_forward",
+      "source_missing_rows": 0,
+      "negative_rows": 1001189,
+      "minus1_rows": 1001189
+    },
+    {
+      "id": "c067",
+      "name": "Init_Win_bytes_backward",
+      "source_missing_rows": 0,
+      "negative_rows": 1441552,
+      "minus1_rows": 1441552
+    },
+    {
+      "id": "c068",
+      "name": "act_data_pkt_fwd",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c069",
+      "name": "min_seg_size_forward",
+      "source_missing_rows": 0,
+      "negative_rows": 35,
+      "minus1_rows": 1
+    },
+    {
+      "id": "c070",
+      "name": "Active Mean",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c071",
+      "name": "Active Std",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c072",
+      "name": "Active Max",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c073",
+      "name": "Active Min",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c074",
+      "name": "Idle Mean",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c075",
+      "name": "Idle Std",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c076",
+      "name": "Idle Max",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    },
+    {
+      "id": "c077",
+      "name": "Idle Min",
+      "source_missing_rows": 0,
+      "negative_rows": 0,
+      "minus1_rows": 0
+    }
+  ],
+  "cleaned": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\cic-ids-2017\\cleaned.parquet",
+    "sha256": "22372798c9c1ebe69803a7253d4fd98e632226786776504f76f37e670cfaefa8",
+    "rows": 2830743
+  },
+  "elapsed_seconds": 173.79932879999978,
+  "sampled_peak_process_rss_bytes": 4518547456
+}

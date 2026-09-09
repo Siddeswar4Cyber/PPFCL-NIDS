@@ -958,6 +958,42 @@
       "confidence": "High for verified membership invariants; limited for real deployment generalization",
       "architecture_version": "A0",
       "revisit_condition": "CP4 transformed-overlap or semantic checks fail"
+    },
+    {
+      "decision_id": "DEC-015",
+      "question": "Which initial preprocessing preserves S1 and permitted fitting boundaries?",
+      "candidate_alternatives": [
+        "Silent zero replacement and global scaling",
+        "P1 medians, explicit indicators and non-clipping binary64 scaling"
+      ],
+      "evidence_considered": [
+        "docs/CP4-preprocessing-P1.md",
+        "reports/CP4-preprocessing-results.md"
+      ],
+      "experiments_used": [
+        "EXP-002"
+      ],
+      "selected_option": "P1 for the initial non-private CPU pilot",
+      "why_selected": "All five fitting scopes and transformed equality checks pass",
+      "rejected_alternatives": [
+        "Clipping negative values to zero",
+        "Fitting CL preprocessing on both tasks",
+        "Using development-fitted parameters as a DP preprocessing release"
+      ],
+      "why_rejected": "Would erase distinctions, leak future statistics, or exceed the reviewed privacy boundary",
+      "risks": [
+        "Nominal codes treated numerically",
+        "Minority sample support",
+        "Unverified historical extractor semantics"
+      ],
+      "trade_offs": [
+        "Indicator features increase width",
+        "Conservative quality exclusions reduce population",
+        "No float32 guarantee"
+      ],
+      "confidence": "High for persisted numeric/role checks; predictive utility untested",
+      "architecture_version": "A0",
+      "revisit_condition": "Baseline resource/utility evidence, encoding comparison, precision or privacy mechanism change"
     }
   ],
   "architectures": [
@@ -1029,6 +1065,16 @@
       "suspected_cause": "SQL identifier choice",
       "investigation": "Fixture failed before any source processing",
       "fix": "Renamed field binary_label; all three split fixtures passed",
+      "scientifically_invalid": false,
+      "rerun_required": false
+    },
+    {
+      "experiment_id": "EXP-002",
+      "what_failed": "External dictionary exact-key lookup",
+      "error": "Eight IAT dictionary keys contain trailing whitespace",
+      "suspected_cause": "Dictionary formatting",
+      "investigation": "Trimmed unique keys match headers; ambiguous descriptions remain unresolved",
+      "fix": "Explicit whitespace normalization with uniqueness check; preserve original bytes",
       "scientifically_invalid": false,
       "rerun_required": false
     }
@@ -1107,7 +1153,7 @@
     }
   ],
   "progress": {
-    "checkpoint": "CP3",
+    "checkpoint": "CP4",
     "status": "COMPLETE",
     "architecture_version": "A0",
     "methodology_version": "M0.2",
@@ -1124,12 +1170,13 @@
       "Local ZIP manifest consistency checks",
       "S1 labels/features/groups and split manifests",
       "Two supported NF capture-period tasks",
-      "Three sealed external source contracts"
+      "Three sealed external source contracts",
+      "P1 deterministic cleaning and five permitted-sample preprocessors",
+      "Persisted vector and transformed-overlap verification"
     ],
     "current": [],
     "next": [
-      "CP4: deterministic cleaning, training-only imputation/encoding/scaling, transformed-overlap checks",
-      "CP5 / EXP-003: baseline resource pilot after CP4 passes"
+      "CP5 / EXP-003: pinned CPU baseline stack, bounded 100000-record pilot and selection-only validation"
     ],
     "blocked": [],
     "deferred": [
@@ -1150,11 +1197,11 @@
       "Recent-literature update before submission"
     ],
     "needs_validation": [
-      "CP4 transformed-feature overlap and training-only fitting",
-      "External feature semantics and cross-domain overlap",
-      "Host/session dependence remains unresolved",
-      "Training framework CUDA support",
-      "All detection, FL, DP and CL results"
+      "Baseline detection utility and runtime",
+      "Float32/GPU precision and transformed overlap",
+      "External extractor semantics and cross-domain overlap",
+      "Privacy-specific preprocessing and release accounting",
+      "All FL and CL model results"
     ]
   },
   "user_constraints": {
@@ -1171,5 +1218,67 @@
     "no_dataset_download": true,
     "no_push": true,
     "hardware_measured": "reports/audit/environment.json; psutil RAM differs from earlier user-reported value"
-  }
+  },
+  "runs": [
+    {
+      "run_id": "RUN-002-P1",
+      "experiment_id": "EXP-002",
+      "status": "COMPLETED",
+      "date": "2026-09-09",
+      "protocol": "docs/CP4-preprocessing-P1.md",
+      "result": "Five verified finite baseline preprocessors and model-ready training/validation artifacts",
+      "metrics": {
+        "pipelines": 5,
+        "fit_rows_each": 100000,
+        "merged_S1_groups": 0,
+        "verified_ledger_rows": 5196167
+      },
+      "git_commit": null,
+      "preprocessing_version": "P1",
+      "split_version": "S1",
+      "architecture_version": "A0",
+      "seed": 17,
+      "model": "N/A - preprocessing",
+      "dataset_version": "EXP-001 source hashes, S1 memberships",
+      "feature_set": "77 CIC / 49 NF inputs; 156 / 98 encoded numeric and indicator fields",
+      "hyperparameters": {
+        "fit_sample_cap": 100000,
+        "imputation": "permitted-sample exact median",
+        "scaling": "power-of-two maximum absolute",
+        "dtype": "float64",
+        "feature_selection": false
+      },
+      "hardware": "reports/audit/environment.json",
+      "privacy_configuration": "No privacy claim; development-fitted preprocessors excluded from privacy-confirmatory authorization",
+      "cl_configuration": "NF transform fitted on task 1 only; frozen for task 2",
+      "runtime": {
+        "cic-ids-2017": 173.79932879999978,
+        "ND-UNSW-NB15-v3": 130.13671270000032
+      },
+      "memory_usage": {
+        "cic-ids-2017": 4518547456,
+        "ND-UNSW-NB15-v3": 4285591552
+      },
+      "artifacts": [
+        "reports/CP4-preprocessing-results.md",
+        "reports/preprocessing/verification.json",
+        "reports/preprocessing/transforms",
+        "reports/preprocessing/external-schema-check.json"
+      ],
+      "logs": [
+        "reports/preprocess-console-P1.log",
+        "reports/preprocess-tests-P1.log"
+      ],
+      "decision": "Advance to bounded non-private CPU baseline pilot; retain precision/privacy/external gates",
+      "research_question": "Can permitted-sample preprocessing preserve S1 separation and finite input values?",
+      "hypothesis": "Explicit indicators and non-clipping scaling can preserve admitted group distinctions without fitting on forbidden roles.",
+      "client_configuration": "N/A - preprocessing",
+      "architecture_impact": "A0 preprocessing component implemented; model/FL/DP/CL choices remain provisional",
+      "environment_versions": {
+        "python": "3.13.13",
+        "duckdb": "1.5.5",
+        "psutil": "7.2.2"
+      }
+    }
+  ]
 }

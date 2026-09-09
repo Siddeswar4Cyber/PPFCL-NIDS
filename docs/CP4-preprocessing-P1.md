@@ -1,0 +1,37 @@
+# CP4: deterministic cleaning and preprocessing P1
+
+2026-09-09. M0.4 extends S1 without changing its role assignments. Goal: produce finite, reproducible baseline inputs while preventing fitting or transformation from weakening the split boundary. No classifier is trained at this checkpoint.
+
+## Predeclared rules
+
+Retain all 77 CIC or 49 NetFlow numeric candidate fields from S1. Labels, identifiers, timestamps and CIC's duplicate header column never become predictors. No learned constant removal, feature selection, clipping, winsorization or log transformation is applied. Port, protocol and other extractor codes retain their numeric representation for this initial baseline; numerical distance between nominal codes is not a semantic claim. One-hot/other encodings and shortcut ablations require separately registered comparisons and fresh overlap checks.
+
+Trim and cast according to S1. Blank/NaN/infinity/uncastable values become missing. In CIC, the two initial-window fields' exact -1 values are treated as unavailable observations and receive dedicated sentinel indicators. This is a declared handling policy, not a verified reconstruction of the old extractor's packet state. Other negative predictor values (including window values below -1) make the entire S1 group quality-ineligible. Source values and membership rows remain available in the ledger. Negative elapsed times, lengths and counts are not interpreted as physically valid measurements.
+
+Each input field always receives a missing indicator, even if the permitted fitting sample contains no missing observations. The CIC window fields additionally receive their sentinel indicators. This avoids confusing an imputed value with an observed value, or collapsing an unavailable-window sentinel into another missing-value origin. Output dimensions are 156 for CIC and 98 for NetFlow. No raw group ID, row ID, role or label enters the vector.
+
+Fit each field's exact median on the permitted training sample, ignoring missing values; an entirely missing fitting column uses the fixed fallback zero. Scale each imputed numeric field by a positive power of two at least as large as its maximum absolute fitting value, with a minimum divisor of one. This maximum-absolute scaling variant preserves binary64 values under normal-range division more reliably than centering or arbitrary clipping. It does not assert optimal model utility. Retain double precision and test finite outputs, exact reversibility of scaling for observed values, and actual transformed-vector overlap. Held-out values may exceed the fitting range; they are never clipped. Float32/GPU conversion requires a later precision/overlap check.
+
+## Fitting scopes and reuse
+
+Five artifacts are built: CIC primary, CIC Friday stress, NF primary, NF chronological stress, and NF CL. Each fits on at most 100,000 quality-eligible development_train group representatives, chosen by sorting SHA-256('pilot17|' + group_id), with group_id as tie-breaker. No label influences sampling. The row IDs and ordered group digest of the fit population are saved. The model pilot must train on that same population; increasing it requires a new fitted artifact version.
+
+Primary and stress artifacts use only their respective S1 role. The NF CL artifact fits exclusively on task 1 development_train, then remains frozen for task 2. Fitting on both capture periods would reveal future feature statistics. Public-reference and private populations are excluded from these non-private development fits. Privacy-specific preprocessing must later be fitted on the appropriate public-reference scope or use a reviewed private estimator. These development artifacts are not automatically authorized for a privacy-confirmatory claim.
+
+The cleaned Parquet ledger includes all source memberships, normalized features, unavailable-window indicators and quality eligibility. Each pipeline stores fit-group membership and model-ready fitting/validation Parquet files. Final/private/reference data are transformed only transiently for the label-independent finite/equality gate; no performance scores or final prediction files are generated. Final-test access remains sealed under the S1 scientific protocol. Physical files are local research artifacts, not a cryptographic access-control system.
+
+## Acceptance and limits
+
+Verify source and S1 manifest hashes, row coverage, rederived S1 group IDs, and one cleaned representation per S1 group. Count quality exclusions and missing/sentinel rows by class and role. Every protocol/task must retain benign and attack support. Compare transformed vectors on their actual values: no transformed vector may belong to multiple S1 groups or cross roles. Check that scaling reverses exactly for all observed admitted values. Stop on a failure; do not change a held-out role or choose exclusions after model scores. Save failures and introduce a new version for any revised rule.
+
+Constructed tests must show that forbidden-role and future-task values cannot affect fitted parameters, missing and sentinel inputs remain distinguishable, invalid negatives are flagged, unknown future numeric codes remain finite, and transform serialization reproduces values. Audit/S1 tests remain regression checks. All fitted parameters, fit IDs, cleaned/model-ready artifact hashes, environment, runtime and sampled process RSS are recorded.
+
+External dictionaries are checked for matching ordered names and documented units; metadata identifies both corpora as NetFlow v3, but the exact local extractor binaries/configurations are not available. Therefore schema-compatible transfer remains conditional on that extraction-equivalence limitation. External model-ready artifacts and cross-domain transformed-overlap checks are deferred to the external-evaluation gate; no zero-shot accuracy claim is allowed merely because headers match.
+
+References: the [scikit-learn leakage guidance](https://scikit-learn.org/stable/common_pitfalls.html) explains why fitted transformations must exclude held-out data. The [CIC feature descriptions](https://www.unb.ca/cic/datasets/ids-2018.html) describe duration, counts and initial-window features; [current author extractor code](https://github.com/ahlashkari/CICFlowMeter/blob/master/src/main/java/cic/cs/unb/ca/jnetpcap/BasicFlow.java) does not establish which historical build generated these local files. P1 uses pinned DuckDB operations rather than claiming to reproduce a scikit-learn estimator.
+
+## Reproduction at this checkpoint
+
+Use the pinned audit environment. Run `python -m unittest discover -s tests -v`, `python scripts/preprocess_p1.py`, `python scripts/check_external_schema.py`, then `python scripts/finalize_cp4.py`. Substitute `.venv\Scripts\python.exe` for `python` in PowerShell. The build refuses to overwrite existing P1 output; use the completed artifacts already present. The finalizer also updates CP4 registry state and should not be rerun as a general status command after later checkpoints.
+
+Model-ready files are under `data/processed/P1/<dataset>/<protocol>/train.parquet` and `validation.parquet`. Read only the `vector` column as model inputs; labels and row/group identifiers are separate metadata. `transform.json` specifies output order, exact fitting population and the double-precision parameters. Expanding the pilot population, changing dtype, adding an encoding or selecting features requires a new version and renewed checks.

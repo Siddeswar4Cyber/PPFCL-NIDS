@@ -1,0 +1,16 @@
+cic-ids-2017: verify/stage Friday_DDos.csv
+cic-ids-2017: verify/stage Friday_Morning.csv
+cic-ids-2017: verify/stage Friday_PortScan.csv
+cic-ids-2017: verify/stage Monday.csv
+cic-ids-2017: verify/stage Thursday_Infiltration.csv
+cic-ids-2017: verify/stage Thursday_Web.csv
+cic-ids-2017: verify/stage Tuesday.csv
+cic-ids-2017: verify/stage Wednesday.csv
+cic-ids-2017/primary: fit permitted pilot and verify all eligible groups
+cic-ids-2017/stress: fit permitted pilot and verify all eligible groups
+cic-ids-2017: COMPLETED
+ND-UNSW-NB15-v3: verify/stage NF-UNSW-NB15-v3.csv
+ND-UNSW-NB15-v3/primary: fit permitted pilot and verify all eligible groups
+ND-UNSW-NB15-v3/stress: fit permitted pilot and verify all eligible groups
+ND-UNSW-NB15-v3/cl: fit permitted pilot and verify all eligible groups
+ND-UNSW-NB15-v3: COMPLETED

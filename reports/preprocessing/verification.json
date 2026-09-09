@@ -1,0 +1,83 @@
+{
+  "status": "PASSED",
+  "version": "P1",
+  "checks": [
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "fit_scope_and_sampling": "PASSED",
+      "fit_parameters_recomputed": "PASSED",
+      "artifact_hashes": "PASSED",
+      "model_ready_rows_and_vectors": "PASSED",
+      "binary_role_task_support": "PASSED",
+      "transformed_overlap": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2518050
+      }
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "fit_scope_and_sampling": "PASSED",
+      "fit_parameters_recomputed": "PASSED",
+      "artifact_hashes": "PASSED",
+      "model_ready_rows_and_vectors": "PASSED",
+      "binary_role_task_support": "PASSED",
+      "transformed_overlap": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2518050
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "fit_scope_and_sampling": "PASSED",
+      "fit_parameters_recomputed": "PASSED",
+      "artifact_hashes": "PASSED",
+      "model_ready_rows_and_vectors": "PASSED",
+      "binary_role_task_support": "PASSED",
+      "transformed_overlap": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2138042
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "fit_scope_and_sampling": "PASSED",
+      "fit_parameters_recomputed": "PASSED",
+      "artifact_hashes": "PASSED",
+      "model_ready_rows_and_vectors": "PASSED",
+      "binary_role_task_support": "PASSED",
+      "transformed_overlap": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2138042
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "cl",
+      "fit_scope_and_sampling": "PASSED",
+      "fit_parameters_recomputed": "PASSED",
+      "artifact_hashes": "PASSED",
+      "model_ready_rows_and_vectors": "PASSED",
+      "binary_role_task_support": "PASSED",
+      "transformed_overlap": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2138042
+      }
+    }
+  ],
+  "tests": "Four P1 fixtures plus seven existing audit/split fixtures",
+  "limitation": "Binary64 development artifacts; no DP preprocessing authorization, float32 guarantee, or external performance evaluation"
+}

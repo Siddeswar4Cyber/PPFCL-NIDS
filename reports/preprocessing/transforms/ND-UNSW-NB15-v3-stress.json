@@ -1,0 +1,611 @@
+{
+  "version": "P1",
+  "protocol": "stress",
+  "fit_predicate": "quality_eligible AND representative AND stress_role='development_train'",
+  "fit_rows": 100000,
+  "fit_label_support": [
+    {
+      "label": "analysis",
+      "binary_label": 1,
+      "rows": 52
+    },
+    {
+      "label": "backdoor",
+      "binary_label": 1,
+      "rows": 227
+    },
+    {
+      "label": "benign",
+      "binary_label": 0,
+      "rows": 97056
+    },
+    {
+      "label": "dos",
+      "binary_label": 1,
+      "rows": 131
+    },
+    {
+      "label": "exploits",
+      "binary_label": 1,
+      "rows": 1028
+    },
+    {
+      "label": "fuzzers",
+      "binary_label": 1,
+      "rows": 884
+    },
+    {
+      "label": "generic",
+      "binary_label": 1,
+      "rows": 129
+    },
+    {
+      "label": "reconnaissance",
+      "binary_label": 1,
+      "rows": 412
+    },
+    {
+      "label": "shellcode",
+      "binary_label": 1,
+      "rows": 78
+    },
+    {
+      "label": "worms",
+      "binary_label": 1,
+      "rows": 3
+    }
+  ],
+  "fit_group_set_sha256": "558824ae7809c014d9c5a5c2cbc11b4f5524e534a91035c4899365e953a595f7",
+  "sampling": "SHA256(pilot17|group_id),group_id; at most 100000 representatives",
+  "parameters": [
+    {
+      "input_id": "c003",
+      "name": "L4_SRC_PORT",
+      "median": 32855.5,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 65534.0,
+      "scale": 65536.0
+    },
+    {
+      "input_id": "c005",
+      "name": "L4_DST_PORT",
+      "median": 143.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 65531.0,
+      "scale": 65536.0
+    },
+    {
+      "input_id": "c006",
+      "name": "PROTOCOL",
+      "median": 6.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 89.0,
+      "scale": 128.0
+    },
+    {
+      "input_id": "c007",
+      "name": "L7_PROTO",
+      "median": 36.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 383.0,
+      "scale": 512.0
+    },
+    {
+      "input_id": "c008",
+      "name": "IN_BYTES",
+      "median": 1920.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 9178650.0,
+      "scale": 16777216.0
+    },
+    {
+      "input_id": "c009",
+      "name": "IN_PKTS",
+      "median": 23.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 6820.0,
+      "scale": 8192.0
+    },
+    {
+      "input_id": "c010",
+      "name": "OUT_BYTES",
+      "median": 3080.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 3566620.0,
+      "scale": 4194304.0
+    },
+    {
+      "input_id": "c011",
+      "name": "OUT_PKTS",
+      "median": 24.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 2668.0,
+      "scale": 4096.0
+    },
+    {
+      "input_id": "c012",
+      "name": "TCP_FLAGS",
+      "median": 27.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 30.0,
+      "scale": 32.0
+    },
+    {
+      "input_id": "c013",
+      "name": "CLIENT_TCP_FLAGS",
+      "median": 27.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 27.0,
+      "scale": 32.0
+    },
+    {
+      "input_id": "c014",
+      "name": "SERVER_TCP_FLAGS",
+      "median": 27.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 27.0,
+      "scale": 32.0
+    },
+    {
+      "input_id": "c015",
+      "name": "FLOW_DURATION_MILLISECONDS",
+      "median": 46.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 120290.0,
+      "scale": 131072.0
+    },
+    {
+      "input_id": "c016",
+      "name": "DURATION_IN",
+      "median": 43.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 120290.0,
+      "scale": 131072.0
+    },
+    {
+      "input_id": "c017",
+      "name": "DURATION_OUT",
+      "median": 44.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 90159.0,
+      "scale": 131072.0
+    },
+    {
+      "input_id": "c018",
+      "name": "MIN_TTL",
+      "median": 31.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 254.0,
+      "scale": 256.0
+    },
+    {
+      "input_id": "c019",
+      "name": "MAX_TTL",
+      "median": 32.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 255.0,
+      "scale": 256.0
+    },
+    {
+      "input_id": "c020",
+      "name": "LONGEST_FLOW_PKT",
+      "median": 900.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 1505.0,
+      "scale": 2048.0
+    },
+    {
+      "input_id": "c021",
+      "name": "SHORTEST_FLOW_PKT",
+      "median": 52.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 1505.0,
+      "scale": 2048.0
+    },
+    {
+      "input_id": "c022",
+      "name": "MIN_IP_PKT_LEN",
+      "median": 52.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 665.0,
+      "scale": 1024.0
+    },
+    {
+      "input_id": "c023",
+      "name": "MAX_IP_PKT_LEN",
+      "median": 900.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 1505.0,
+      "scale": 2048.0
+    },
+    {
+      "input_id": "c024",
+      "name": "SRC_TO_DST_SECOND_BYTES",
+      "median": 125.1851851851852,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 97460,
+      "fit_max_abs": 4412.0,
+      "scale": 8192.0
+    },
+    {
+      "input_id": "c025",
+      "name": "DST_TO_SRC_SECOND_BYTES",
+      "median": 52.986079545454544,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 97460,
+      "fit_max_abs": 5616.0,
+      "scale": 8192.0
+    },
+    {
+      "input_id": "c026",
+      "name": "RETRANSMITTED_IN_BYTES",
+      "median": 595.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 4589197.0,
+      "scale": 8388608.0
+    },
+    {
+      "input_id": "c027",
+      "name": "RETRANSMITTED_IN_PKTS",
+      "median": 6.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 3407.0,
+      "scale": 4096.0
+    },
+    {
+      "input_id": "c028",
+      "name": "RETRANSMITTED_OUT_BYTES",
+      "median": 970.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 1783142.0,
+      "scale": 2097152.0
+    },
+    {
+      "input_id": "c029",
+      "name": "RETRANSMITTED_OUT_PKTS",
+      "median": 6.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 1330.0,
+      "scale": 2048.0
+    },
+    {
+      "input_id": "c030",
+      "name": "SRC_TO_DST_AVG_THROUGHPUT",
+      "median": 452524.5,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 24000000.0,
+      "scale": 33554432.0
+    },
+    {
+      "input_id": "c031",
+      "name": "DST_TO_SRC_AVG_THROUGHPUT",
+      "median": 712000.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 23530666.0,
+      "scale": 33554432.0
+    },
+    {
+      "input_id": "c032",
+      "name": "NUM_PKTS_UP_TO_128_BYTES",
+      "median": 42.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 1270.0,
+      "scale": 2048.0
+    },
+    {
+      "input_id": "c033",
+      "name": "NUM_PKTS_128_TO_256_BYTES",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 168.0,
+      "scale": 256.0
+    },
+    {
+      "input_id": "c034",
+      "name": "NUM_PKTS_256_TO_512_BYTES",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 364.0,
+      "scale": 512.0
+    },
+    {
+      "input_id": "c035",
+      "name": "NUM_PKTS_512_TO_1024_BYTES",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 264.0,
+      "scale": 512.0
+    },
+    {
+      "input_id": "c036",
+      "name": "NUM_PKTS_1024_TO_1514_BYTES",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 5924.0,
+      "scale": 8192.0
+    },
+    {
+      "input_id": "c037",
+      "name": "TCP_WIN_MAX_IN",
+      "median": 14480.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 65508.0,
+      "scale": 65536.0
+    },
+    {
+      "input_id": "c038",
+      "name": "TCP_WIN_MAX_OUT",
+      "median": 14480.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 65256.0,
+      "scale": 65536.0
+    },
+    {
+      "input_id": "c039",
+      "name": "ICMP_TYPE",
+      "median": 23296.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 65280.0,
+      "scale": 65536.0
+    },
+    {
+      "input_id": "c040",
+      "name": "ICMP_IPV4_TYPE",
+      "median": 91.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 255.0,
+      "scale": 256.0
+    },
+    {
+      "input_id": "c041",
+      "name": "DNS_QUERY_ID",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 65535.0,
+      "scale": 65536.0
+    },
+    {
+      "input_id": "c042",
+      "name": "DNS_QUERY_TYPE",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 255.0,
+      "scale": 256.0
+    },
+    {
+      "input_id": "c043",
+      "name": "DNS_TTL_ANSWER",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 851973.0,
+      "scale": 1048576.0
+    },
+    {
+      "input_id": "c044",
+      "name": "FTP_COMMAND_RET_CODE",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 331.0,
+      "scale": 512.0
+    },
+    {
+      "input_id": "c045",
+      "name": "SRC_TO_DST_IAT_MIN",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 11998.0,
+      "scale": 16384.0
+    },
+    {
+      "input_id": "c046",
+      "name": "SRC_TO_DST_IAT_MAX",
+      "median": 7.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 59828.0,
+      "scale": 65536.0
+    },
+    {
+      "input_id": "c047",
+      "name": "SRC_TO_DST_IAT_AVG",
+      "median": 1.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 19942.0,
+      "scale": 32768.0
+    },
+    {
+      "input_id": "c048",
+      "name": "SRC_TO_DST_IAT_STDDEV",
+      "median": 1.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 28203.0,
+      "scale": 32768.0
+    },
+    {
+      "input_id": "c049",
+      "name": "DST_TO_SRC_IAT_MIN",
+      "median": 0.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 417.0,
+      "scale": 512.0
+    },
+    {
+      "input_id": "c050",
+      "name": "DST_TO_SRC_IAT_MAX",
+      "median": 8.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 36500.0,
+      "scale": 65536.0
+    },
+    {
+      "input_id": "c051",
+      "name": "DST_TO_SRC_IAT_AVG",
+      "median": 1.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 12166.0,
+      "scale": 16384.0
+    },
+    {
+      "input_id": "c052",
+      "name": "DST_TO_SRC_IAT_STDDEV",
+      "median": 1.0,
+      "all_missing_fallback": false,
+      "observed_fit_rows": 100000,
+      "fit_max_abs": 17206.0,
+      "scale": 32768.0
+    }
+  ],
+  "sentinel_fields": [],
+  "output_names": [
+    "c003_scaled",
+    "c005_scaled",
+    "c006_scaled",
+    "c007_scaled",
+    "c008_scaled",
+    "c009_scaled",
+    "c010_scaled",
+    "c011_scaled",
+    "c012_scaled",
+    "c013_scaled",
+    "c014_scaled",
+    "c015_scaled",
+    "c016_scaled",
+    "c017_scaled",
+    "c018_scaled",
+    "c019_scaled",
+    "c020_scaled",
+    "c021_scaled",
+    "c022_scaled",
+    "c023_scaled",
+    "c024_scaled",
+    "c025_scaled",
+    "c026_scaled",
+    "c027_scaled",
+    "c028_scaled",
+    "c029_scaled",
+    "c030_scaled",
+    "c031_scaled",
+    "c032_scaled",
+    "c033_scaled",
+    "c034_scaled",
+    "c035_scaled",
+    "c036_scaled",
+    "c037_scaled",
+    "c038_scaled",
+    "c039_scaled",
+    "c040_scaled",
+    "c041_scaled",
+    "c042_scaled",
+    "c043_scaled",
+    "c044_scaled",
+    "c045_scaled",
+    "c046_scaled",
+    "c047_scaled",
+    "c048_scaled",
+    "c049_scaled",
+    "c050_scaled",
+    "c051_scaled",
+    "c052_scaled",
+    "c003_missing",
+    "c005_missing",
+    "c006_missing",
+    "c007_missing",
+    "c008_missing",
+    "c009_missing",
+    "c010_missing",
+    "c011_missing",
+    "c012_missing",
+    "c013_missing",
+    "c014_missing",
+    "c015_missing",
+    "c016_missing",
+    "c017_missing",
+    "c018_missing",
+    "c019_missing",
+    "c020_missing",
+    "c021_missing",
+    "c022_missing",
+    "c023_missing",
+    "c024_missing",
+    "c025_missing",
+    "c026_missing",
+    "c027_missing",
+    "c028_missing",
+    "c029_missing",
+    "c030_missing",
+    "c031_missing",
+    "c032_missing",
+    "c033_missing",
+    "c034_missing",
+    "c035_missing",
+    "c036_missing",
+    "c037_missing",
+    "c038_missing",
+    "c039_missing",
+    "c040_missing",
+    "c041_missing",
+    "c042_missing",
+    "c043_missing",
+    "c044_missing",
+    "c045_missing",
+    "c046_missing",
+    "c047_missing",
+    "c048_missing",
+    "c049_missing",
+    "c050_missing",
+    "c051_missing",
+    "c052_missing"
+  ],
+  "dtype": "float64",
+  "fit_role": "development_train",
+  "private_use": "NOT AUTHORIZED as a privacy-confirmatory preprocessing release",
+  "dataset": "ND-UNSW-NB15-v3",
+  "source_split_sha256": "1d125b7dfeda44dcb13bed04dd5c07f63cb743c216183073d6a3e2b42c80259c",
+  "cleaned_sha256": "7d5a843147e8cfce3cfd6a082639b6b221fdd7f8ff3543c42e49a19bddbf0ad4",
+  "fit_membership_sha256": "37eddd52fde091542172cb8379c8dcac74f13e554170a3601f731c5eb76e6b27"
+}

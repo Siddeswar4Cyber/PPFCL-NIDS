@@ -32,8 +32,8 @@ class SplitTests(unittest.TestCase):
     def test_time_boundary_exclusion_seal_and_determinism(self):
         def build(reverse):
             con=self.connection(); period=16484*86400000
-            rows=[(0,i,[i],'benign' if i%2 else 'attack',i%2,period-100+i,period-99+i,False) for i in range(1,1001)]
-            rows += [(1,1,[1],'benign',1,period+100,period+101,False)]
+            rows=[(0,i,[i],'benign' if i%2 else 'attack',0 if i%2 else 1,period-100+i,period-99+i,False) for i in range(1,1001)]
+            rows += [(1,1,[1],'benign',0,period+100,period+101,False)]
             con.executemany('INSERT INTO n VALUES (?,?,?,?,?,?,?,?)',list(reversed(rows)) if reverse else rows)
             relations(con,False,[period+300,period+600]); summarize(con)
             self.assertEqual(con.execute('SELECT DISTINCT task_role FROM membership WHERE group_id=(SELECT group_id FROM membership WHERE source_file=1)').fetchone()[0],'excluded_task_boundary')
