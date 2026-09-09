@@ -212,7 +212,7 @@
         "reports/audit-errors-v1.2.log",
         "reports/audit-console-v1.3.log"
       ],
-      "git_commit": null,
+      "git_commit": "0ac605c1e9870fe14cf72f33155d94cac23eb9e5",
       "result": "Read-only audit completed for five local families; no model results.",
       "interpretation": "Duplicate, label, nonfinite-value and temporal findings require explicit preprocessing/split decisions.",
       "decision": "Advance to split and preprocessing protocol gate; retain raw data.",
@@ -277,7 +277,7 @@
       "logs": [
         "reports/split-console-S1.log"
       ],
-      "git_commit": null,
+      "git_commit": "72c81bd0012550fd1e52896e647e131d36b6952f",
       "result": "Two complete row-level development-family manifests and three external source seals; no model scores",
       "interpretation": "Binary roles/tasks supported; rare-class conclusions restricted by unique-group support",
       "decision": "Accept S1; advance to CP4 transformations and transformed-overlap checks",
