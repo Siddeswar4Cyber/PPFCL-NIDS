@@ -1,0 +1,176 @@
+{
+  "version": "N1",
+  "status": "PREPARATION_PASSED_RUNTIME_PENDING",
+  "checkpoint_complete": false,
+  "git_commit": "d574237712d190faebdbc6f4fbbadefecbbe7f2c",
+  "bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\selection.json",
+      "sha256": "630f6d5d851043bcde425f0f056ad0a5b8b579f074b415854d1a76732aad7067"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\prepare_cp8.py",
+      "sha256": "29afd0c3e6486fd3c30eca4c033963693d6d787f580f705ab6756612197add1f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\neural_migration.py",
+      "sha256": "ef849b89397d56e5efecc2de262224c52754775f9cd5e2684e4e6e2a47847e15"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\docs\\CP8-neural-migration-protocol-N1.md",
+      "sha256": "ed3bae8edd164026a024a6ab7ac3eeb2a007acdedbcc44898b429ebdd9d3d431"
+    }
+  ],
+  "checks": [
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "representation": "categorical_augmented",
+      "preprocessing_version": "P2",
+      "rows": 533069,
+      "width": 172,
+      "max_abs_delta": 2.168404344971009e-18,
+      "decision_disagreements_05": 0,
+      "status": "PASSED",
+      "bindings": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-primary-mlp-categorical_augmented-s17.json",
+          "sha256": "e0b357753eb91c4004d008a3eaa6c405cdfe6de38e060f633e7bc24b3545ff10"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\cic-ids-2017-primary.json",
+          "sha256": "a60428238346f57454a667da2260a8abb7b64a80e4624b11dec3ad4c00782ecb"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\primary\\mlp\\categorical_augmented\\s17\\model.joblib",
+          "sha256": "e2beec84ca40a98d7744118d4e38511e9cd045e2419f89456dfd74e2f3e90141",
+          "bytes": 415454
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\primary\\mlp\\categorical_augmented\\s17\\validation-probabilities.npy",
+          "sha256": "006354ed196520dc130a8c2b4ff7397edf8aaf758f1c376d5a1d167e779b09fe",
+          "rows": 533069
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\transform.json",
+          "sha256": "7a3f53a4825c898758a969e0cccece5fe8c90419d73af7032ac564aa8f543a28"
+        }
+      ]
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "representation": "categorical_augmented",
+      "preprocessing_version": "P2",
+      "rows": 391594,
+      "width": 172,
+      "max_abs_delta": 9.693522803355793e-26,
+      "decision_disagreements_05": 0,
+      "status": "PASSED",
+      "bindings": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-mlp-categorical_augmented-s17.json",
+          "sha256": "cc93cd891f8c45f0cc7d211de69815eaa9d85b72737cf69ea1644d2c42462693"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\cic-ids-2017-stress.json",
+          "sha256": "9550c281a7264bd91d930efde74b1f80db298c4fef3917fe371ec20dab5ad18a"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s17\\model.joblib",
+          "sha256": "13a4b61afdf5271f7d5830d5591c67db56018753b816886a5bdaa0b99853d537",
+          "bytes": 415578
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s17\\validation-probabilities.npy",
+          "sha256": "def02227326af05d614053a6550408283dcc52e830f6318b980898e7ca8e5811",
+          "rows": 391594
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\transform.json",
+          "sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3"
+        }
+      ]
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "representation": "full",
+      "preprocessing_version": "P1",
+      "rows": 472509,
+      "width": 98,
+      "max_abs_delta": 3.5998900258307764e-21,
+      "decision_disagreements_05": 0,
+      "status": "PASSED",
+      "bindings": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-primary-mlp-s17.json",
+          "sha256": "6cbfc7efd8041f30a45dfb459ef9a7d8c6b0d4f7a82269aecdf2d5a42abfbd2e"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\ND-UNSW-NB15-v3-primary.json",
+          "sha256": "0656dcd0fb92e8a0c8dbeb0d5e800132f42320269ae33a1a2f002e4333be3b98"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\ND-UNSW-NB15-v3\\primary\\mlp\\model.joblib",
+          "sha256": "da2a90700297b9bf7c5c0fa00dc9808c47edd8e33924953325b3b7652fb81f2b",
+          "bytes": 267317
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\ND-UNSW-NB15-v3\\primary\\mlp\\validation-probabilities.npy",
+          "sha256": "5a8766c18c4353e3fa542e62d8027a512cab483f8ba98a67ec30058dbe963b31",
+          "rows": 472509
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\transform.json",
+          "sha256": "63fa5268ebf96bb4a59e65604b57f55649afee16227d3d6dcc66eafabb912bbe"
+        }
+      ]
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "representation": "full",
+      "preprocessing_version": "P1",
+      "rows": 82067,
+      "width": 98,
+      "max_abs_delta": 1.1858461261560205e-20,
+      "decision_disagreements_05": 0,
+      "status": "PASSED",
+      "bindings": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-stress-mlp-s17.json",
+          "sha256": "eb41cc10dde6e93cfdeef4b777d6456b2cd6bab634d4cb76bec92be9a54d3a9b"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\ND-UNSW-NB15-v3-stress.json",
+          "sha256": "97396f177c42bcfae3de041ca668e4fb298a045f3bed508b61e58012a39b2746"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\ND-UNSW-NB15-v3\\stress\\mlp\\model.joblib",
+          "sha256": "7b918a4efbd308dbd0ff32eee13ce0a6ebdd9f8ff90c24fcba3a08ce525f1343",
+          "bytes": 267682
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\ND-UNSW-NB15-v3\\stress\\mlp\\validation-probabilities.npy",
+          "sha256": "2cc9b8ab4c5af4e471a0915a8ee9e1d136500d05f6cdd0acf90b90ecc50e23c6",
+          "rows": 82067
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\stress\\transform.json",
+          "sha256": "71b3c74e032171007ee2787b5b220ac7427ca6ac7e92ba5e5ebb5bb01c0396b0"
+        }
+      ]
+    }
+  ],
+  "new_model_fits": 0,
+  "torch_executed": false,
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "elapsed_seconds": 7.692294599999514,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 2429636608,
+  "supervised_wall_seconds": 9.18123259999993,
+  "rss_scope": "Worker and descendants, sampled every 0.5 seconds",
+  "resource_limit_stop": null
+}

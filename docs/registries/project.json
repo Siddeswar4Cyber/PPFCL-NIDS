@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "evidence_categories": [
     "LITERATURE EVIDENCE",
     "OUR EXPERIMENTAL RESULT",
@@ -364,7 +364,9 @@
         "reports/cp6/selection.json",
         "reports/cp6/seed-summary.json",
         "reports/CP7-host-client-results.md",
-        "reports/cp7/host-feasibility.json"
+        "reports/cp7/host-feasibility.json",
+        "docs/CP8-neural-migration-protocol-N1.md",
+        "reports/CP8-preparation-status.md"
       ],
       "logs": [
         "reports/cp6-feature-gates.log",
@@ -376,7 +378,7 @@
       "git_commit": "52461c2be9f1fcea545d62c301a676cb6141adb2",
       "result": "B1/B2 model comparisons and H1 host feasibility complete; no supported host-disjoint binary challenge under registered rules",
       "interpretation": "Source-corpus validation evidence; all NF attacks share one endpoint component; final detector freeze remains open",
-      "decision": "Proceed only with explicit S1 synthetic-client scope; revisit neural stability at CP8",
+      "decision": "N1 preparation passes; defer Torch and training conclusions until runtime gates and registered stability fits",
       "architecture_impact": "Centralized pilot components implemented; A0 candidate methods remain provisional",
       "status": "RUNNING",
       "dependency_lock": "requirements-baseline.txt"
@@ -1327,6 +1329,39 @@
       "confidence": "High for verified manifests and support; limited for external generalization",
       "architecture_version": "A0",
       "revisit_condition": "Approved new split/data or subsequent migration/FL evidence"
+    },
+    {
+      "decision_id": "DEC-024",
+      "question": "What constitutes a supported neural migration?",
+      "candidate_alternatives": [
+        "Assume optimizer equivalence from matching parameter names",
+        "Separate prediction equivalence and controlled fresh training"
+      ],
+      "evidence_considered": [
+        "docs/CP8-neural-migration-protocol-N1.md",
+        "reports/CP8-preparation-status.md",
+        "R061"
+      ],
+      "experiments_used": [
+        "EXP-003"
+      ],
+      "selected_option": "Separate prediction/serialization gates and native-Adam stability trials",
+      "why_selected": "Scikit and Torch Adam epsilon placement differs; CIC seed sensitivity is unresolved",
+      "rejected_alternatives": [
+        "Treat NumPy reconstruction as a successful Torch migration"
+      ],
+      "why_rejected": "Torch has not executed locally",
+      "risks": [
+        "Validation reuse",
+        "Three-seed uncertainty",
+        "Runtime compatibility pending"
+      ],
+      "trade_offs": [
+        "24 bounded fresh fits before FL pilot decisions"
+      ],
+      "confidence": "Preparation verified; runtime and model conclusions pending",
+      "architecture_version": "A0",
+      "revisit_condition": "Executed N1 gates and stability evidence"
     }
   ],
   "architectures": [
@@ -1774,10 +1809,10 @@
     }
   ],
   "progress": {
-    "checkpoint": "CP7",
-    "status": "COMPLETE",
+    "checkpoint": "CP8",
+    "status": "IN_PROGRESS_AWAITING_PACKAGE_APPROVAL",
     "architecture_version": "A0",
-    "methodology_version": "M0.2",
+    "methodology_version": "M0.8",
     "completed": [
       "Initial seven-workstream comparative research",
       "54-source registry with verification depth",
@@ -1799,14 +1834,20 @@
       "B2 representation gates, valid comparisons and three-seed sensitivity",
       "Grouped permutation and NF endpoint-overlap diagnostics",
       "H1 host feasibility with explicit support rejections",
-      "Twelve verified C1 logical-client manifests"
+      "Twelve verified C1 logical-client manifests",
+      "N1 four saved-model NumPy prediction-layout checks"
     ],
-    "current": [],
+    "current": [
+      "N1 protocol and local prediction-layout preparation complete; CPU/CUDA migration and fresh training unexecuted"
+    ],
     "next": [
-      "CP8: verify neural framework migration, precision and optimizer stability",
-      "Preregister comparable central/local/FL pilots on fixed C1 manifests"
+      "Approve pinned PyTorch package download",
+      "Verify N1 CPU/CUDA/optimizer gates and execute the fixed stability comparison",
+      "Preregister comparable central/local/FL pilots on C1"
     ],
-    "blocked": [],
+    "blocked": [
+      "Automatic approval review rejected PyTorch installation; explicit download authorization required"
+    ],
     "deferred": [
       "Optional model/FL/CL candidates",
       "HE/SMPC/TEE implementation",
@@ -33162,5 +33203,22 @@
       },
       "result": "Four fixed candidates rejected for support; independent-host binary evaluation unestablished"
     }
-  ]
+  ],
+  "neural_migration_preparation": {
+    "status": "PREPARATION_VERIFIED_RUNTIME_PENDING",
+    "checkpoint_complete": false,
+    "script_sha256": "ff4d0166f2229c78a431bd8e8193c9d125a554c7127f1cd7f10d90e285570610",
+    "preparation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\preparation.json",
+      "sha256": "3a64a96aef38e6e4f18bfec0620ecf7cf431b4f52c9d24b7233fb0d339b462ef"
+    },
+    "test_log": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8-tests.log",
+      "sha256": "b697bb6e8ca5d4b692c02612e9f0ffa923171db19113fa5c4bf0b3ed6596ac4f"
+    },
+    "tests_passed": 29,
+    "numpy_prediction_gates_passed": 4,
+    "torch_gates_executed": 0,
+    "new_model_fits": 0
+  }
 }

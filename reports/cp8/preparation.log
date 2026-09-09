@@ -1,0 +1,4 @@
+cic-ids-2017/primary: PASSED; 533069 rows; max delta 2.17e-18
+cic-ids-2017/stress: PASSED; 391594 rows; max delta 9.69e-26
+ND-UNSW-NB15-v3/primary: PASSED; 472509 rows; max delta 3.6e-21
+ND-UNSW-NB15-v3/stress: PASSED; 82067 rows; max delta 1.19e-20

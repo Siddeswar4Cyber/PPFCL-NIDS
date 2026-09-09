@@ -1,0 +1,17 @@
+{
+  "status": "PREPARATION_VERIFIED_RUNTIME_PENDING",
+  "checkpoint_complete": false,
+  "script_sha256": "ff4d0166f2229c78a431bd8e8193c9d125a554c7127f1cd7f10d90e285570610",
+  "preparation": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\preparation.json",
+    "sha256": "3a64a96aef38e6e4f18bfec0620ecf7cf431b4f52c9d24b7233fb0d339b462ef"
+  },
+  "test_log": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8-tests.log",
+    "sha256": "b697bb6e8ca5d4b692c02612e9f0ffa923171db19113fa5c4bf0b3ed6596ac4f"
+  },
+  "tests_passed": 29,
+  "numpy_prediction_gates_passed": 4,
+  "torch_gates_executed": 0,
+  "new_model_fits": 0
+}
