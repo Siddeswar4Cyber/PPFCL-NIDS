@@ -1,0 +1,1223 @@
+{
+  "version": "H1",
+  "run_id": "H1-NF-host-feasibility",
+  "experiment_id": "EXP-003",
+  "status": "COMPLETED",
+  "source_sha256": "4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5",
+  "cleaned": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\cleaned.parquet",
+    "sha256": "7d5a843147e8cfce3cfd6a082639b6b221fdd7f8ff3543c42e49a19bddbf0ad4",
+    "rows": 2365424
+  },
+  "script_sha256": "213a69f34c9028f94f4333ba188598291d1be29eb6e4de95997289884c41c4f9",
+  "git_commit": "10c22108106806ad2489137fbe11116fbd33d71d",
+  "CIC_host_status": "UNAVAILABLE: supplied CSV has no endpoint metadata",
+  "protocols": [
+    {
+      "protocol": "primary",
+      "permitted_rows": 1417626,
+      "permitted_support": [
+        {
+          "original_role": "development_train",
+          "label": "analysis",
+          "rows": 485,
+          "groups": 485
+        },
+        {
+          "original_role": "development_train",
+          "label": "backdoor",
+          "rows": 1700,
+          "groups": 1685
+        },
+        {
+          "original_role": "development_train",
+          "label": "benign",
+          "rows": 895468,
+          "groups": 810506
+        },
+        {
+          "original_role": "development_train",
+          "label": "dos",
+          "rows": 2422,
+          "groups": 2405
+        },
+        {
+          "original_role": "development_train",
+          "label": "exploits",
+          "rows": 16870,
+          "groups": 16864
+        },
+        {
+          "original_role": "development_train",
+          "label": "fuzzers",
+          "rows": 13341,
+          "groups": 13162
+        },
+        {
+          "original_role": "development_train",
+          "label": "generic",
+          "rows": 7154,
+          "groups": 3046
+        },
+        {
+          "original_role": "development_train",
+          "label": "reconnaissance",
+          "rows": 6716,
+          "groups": 6650
+        },
+        {
+          "original_role": "development_train",
+          "label": "shellcode",
+          "rows": 895,
+          "groups": 895
+        },
+        {
+          "original_role": "development_train",
+          "label": "worms",
+          "rows": 66,
+          "groups": 66
+        },
+        {
+          "original_role": "validation",
+          "label": "analysis",
+          "rows": 228,
+          "groups": 228
+        },
+        {
+          "original_role": "validation",
+          "label": "backdoor",
+          "rows": 895,
+          "groups": 889
+        },
+        {
+          "original_role": "validation",
+          "label": "benign",
+          "rows": 447731,
+          "groups": 405263
+        },
+        {
+          "original_role": "validation",
+          "label": "dos",
+          "rows": 1170,
+          "groups": 1167
+        },
+        {
+          "original_role": "validation",
+          "label": "exploits",
+          "rows": 8646,
+          "groups": 8641
+        },
+        {
+          "original_role": "validation",
+          "label": "fuzzers",
+          "rows": 6539,
+          "groups": 6475
+        },
+        {
+          "original_role": "validation",
+          "label": "generic",
+          "rows": 3320,
+          "groups": 1551
+        },
+        {
+          "original_role": "validation",
+          "label": "reconnaissance",
+          "rows": 3451,
+          "groups": 3418
+        },
+        {
+          "original_role": "validation",
+          "label": "shellcode",
+          "rows": 493,
+          "groups": 493
+        },
+        {
+          "original_role": "validation",
+          "label": "worms",
+          "rows": 36,
+          "groups": 36
+        }
+      ],
+      "missing_endpoint_group_rows": 0,
+      "endpoint_count": 42,
+      "initial_endpoint_components": 4,
+      "feature_groups_bridging_initial_components": 0,
+      "components": [
+        {
+          "component_id": "4ee5a2c27c156414d95b404087a78606a9bb9d0a9f62f7d92cf2e99027bc17d4",
+          "rows": 1327258,
+          "groups": 1214189,
+          "benign": 1327258,
+          "attack": 0,
+          "endpoints": 20
+        },
+        {
+          "component_id": "936fcb3b239cfcb63cc26f18903b661042b1e646fc20266a4b226da2aa81a57c",
+          "rows": 90350,
+          "groups": 69718,
+          "benign": 15923,
+          "attack": 74427,
+          "endpoints": 20
+        },
+        {
+          "component_id": "02dfab1a263cad5da6ec9d0a28ab49dcd2135af7f58d74e8ca18ebd4d537eaa7",
+          "rows": 17,
+          "groups": 17,
+          "benign": 17,
+          "attack": 0,
+          "endpoints": 1
+        },
+        {
+          "component_id": "d5b2bbaa450da98cfc6f59213ee608866a265884a7436dd5175762e8e608760d",
+          "rows": 1,
+          "groups": 1,
+          "benign": 1,
+          "attack": 0,
+          "endpoints": 1
+        }
+      ],
+      "attack_containing_components": 1,
+      "no_discard_two_sided_attack_support_possible": false,
+      "address_flags": {
+        "unspecified": 0,
+        "multicast": 1
+      },
+      "candidates": [
+        {
+          "method": "components",
+          "status": "INFEASIBLE_UNDER_FIXED_RULE",
+          "reasons": [
+            "validation: fewer than 1000 rows",
+            "validation: fewer than 20 benign rows",
+            "validation: fewer than 20 attack rows"
+          ],
+          "support": [
+            {
+              "partition": "excluded_role_side_mismatch",
+              "rows": 472509,
+              "groups": 428161,
+              "benign": 447731,
+              "attack": 24778
+            },
+            {
+              "partition": "train",
+              "rows": 945117,
+              "groups": 855764,
+              "benign": 895468,
+              "attack": 49649
+            }
+          ],
+          "canonical_support": [
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "analysis",
+              "rows": 228,
+              "groups": 228
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "backdoor",
+              "rows": 895,
+              "groups": 889
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "benign",
+              "rows": 447731,
+              "groups": 405263
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "dos",
+              "rows": 1170,
+              "groups": 1167
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "exploits",
+              "rows": 8646,
+              "groups": 8641
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "fuzzers",
+              "rows": 6539,
+              "groups": 6475
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "generic",
+              "rows": 3320,
+              "groups": 1551
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "reconnaissance",
+              "rows": 3451,
+              "groups": 3418
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "shellcode",
+              "rows": 493,
+              "groups": 493
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "worms",
+              "rows": 36,
+              "groups": 36
+            },
+            {
+              "partition": "train",
+              "label": "analysis",
+              "rows": 485,
+              "groups": 485
+            },
+            {
+              "partition": "train",
+              "label": "backdoor",
+              "rows": 1700,
+              "groups": 1685
+            },
+            {
+              "partition": "train",
+              "label": "benign",
+              "rows": 895468,
+              "groups": 810506
+            },
+            {
+              "partition": "train",
+              "label": "dos",
+              "rows": 2422,
+              "groups": 2405
+            },
+            {
+              "partition": "train",
+              "label": "exploits",
+              "rows": 16870,
+              "groups": 16864
+            },
+            {
+              "partition": "train",
+              "label": "fuzzers",
+              "rows": 13341,
+              "groups": 13162
+            },
+            {
+              "partition": "train",
+              "label": "generic",
+              "rows": 7154,
+              "groups": 3046
+            },
+            {
+              "partition": "train",
+              "label": "reconnaissance",
+              "rows": 6716,
+              "groups": 6650
+            },
+            {
+              "partition": "train",
+              "label": "shellcode",
+              "rows": 895,
+              "groups": 895
+            },
+            {
+              "partition": "train",
+              "label": "worms",
+              "rows": 66,
+              "groups": 66
+            }
+          ],
+          "shared_endpoints": 0,
+          "shared_groups": 0,
+          "original_role_violations": 0,
+          "artifact": {
+            "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\host-feasibility\\H1\\ND-UNSW-NB15-v3\\primary\\components.parquet",
+            "sha256": "71beab2d19b04e5debd6c3dbd55b07ba8ba96565a17f13c28d6b650bd73420f6",
+            "rows": 1417626
+          },
+          "model_scored": false
+        },
+        {
+          "method": "endpoint_filter",
+          "status": "INFEASIBLE_UNDER_FIXED_RULE",
+          "reasons": [
+            "validation: fewer than 20 benign rows"
+          ],
+          "support": [
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "rows": 349124,
+              "groups": 284302,
+              "benign": 325880,
+              "attack": 23244
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "rows": 357408,
+              "groups": 334603,
+              "benign": 339173,
+              "attack": 18235
+            },
+            {
+              "partition": "train",
+              "rows": 709886,
+              "groups": 663812,
+              "benign": 678144,
+              "attack": 31742
+            },
+            {
+              "partition": "validation",
+              "rows": 1208,
+              "groups": 1208,
+              "benign": 2,
+              "attack": 1206
+            }
+          ],
+          "canonical_support": [
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "analysis",
+              "rows": 314,
+              "groups": 314
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "backdoor",
+              "rows": 790,
+              "groups": 777
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "benign",
+              "rows": 325880,
+              "groups": 261369
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "dos",
+              "rows": 1108,
+              "groups": 1093
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "exploits",
+              "rows": 8426,
+              "groups": 8423
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "fuzzers",
+              "rows": 7307,
+              "groups": 7123
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "generic",
+              "rows": 1075,
+              "groups": 1035
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "reconnaissance",
+              "rows": 3678,
+              "groups": 3622
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "shellcode",
+              "rows": 500,
+              "groups": 500
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "worms",
+              "rows": 46,
+              "groups": 46
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "analysis",
+              "rows": 150,
+              "groups": 150
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "backdoor",
+              "rows": 659,
+              "groups": 657
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "benign",
+              "rows": 339173,
+              "groups": 318147
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "dos",
+              "rows": 878,
+              "groups": 877
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "exploits",
+              "rows": 6287,
+              "groups": 6283
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "fuzzers",
+              "rows": 4500,
+              "groups": 4481
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "generic",
+              "rows": 2991,
+              "groups": 1251
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "reconnaissance",
+              "rows": 2401,
+              "groups": 2388
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "shellcode",
+              "rows": 346,
+              "groups": 346
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "worms",
+              "rows": 23,
+              "groups": 23
+            },
+            {
+              "partition": "train",
+              "label": "analysis",
+              "rows": 222,
+              "groups": 222
+            },
+            {
+              "partition": "train",
+              "label": "backdoor",
+              "rows": 1112,
+              "groups": 1106
+            },
+            {
+              "partition": "train",
+              "label": "benign",
+              "rows": 678144,
+              "groups": 636251
+            },
+            {
+              "partition": "train",
+              "label": "dos",
+              "rows": 1563,
+              "groups": 1559
+            },
+            {
+              "partition": "train",
+              "label": "exploits",
+              "rows": 10287,
+              "groups": 10283
+            },
+            {
+              "partition": "train",
+              "label": "fuzzers",
+              "rows": 7734,
+              "groups": 7694
+            },
+            {
+              "partition": "train",
+              "label": "generic",
+              "rows": 6367,
+              "groups": 2270
+            },
+            {
+              "partition": "train",
+              "label": "reconnaissance",
+              "rows": 3918,
+              "groups": 3888
+            },
+            {
+              "partition": "train",
+              "label": "shellcode",
+              "rows": 506,
+              "groups": 506
+            },
+            {
+              "partition": "train",
+              "label": "worms",
+              "rows": 33,
+              "groups": 33
+            },
+            {
+              "partition": "validation",
+              "label": "analysis",
+              "rows": 27,
+              "groups": 27
+            },
+            {
+              "partition": "validation",
+              "label": "backdoor",
+              "rows": 34,
+              "groups": 34
+            },
+            {
+              "partition": "validation",
+              "label": "benign",
+              "rows": 2,
+              "groups": 2
+            },
+            {
+              "partition": "validation",
+              "label": "dos",
+              "rows": 43,
+              "groups": 43
+            },
+            {
+              "partition": "validation",
+              "label": "exploits",
+              "rows": 516,
+              "groups": 516
+            },
+            {
+              "partition": "validation",
+              "label": "fuzzers",
+              "rows": 339,
+              "groups": 339
+            },
+            {
+              "partition": "validation",
+              "label": "generic",
+              "rows": 41,
+              "groups": 41
+            },
+            {
+              "partition": "validation",
+              "label": "reconnaissance",
+              "rows": 170,
+              "groups": 170
+            },
+            {
+              "partition": "validation",
+              "label": "shellcode",
+              "rows": 36,
+              "groups": 36
+            }
+          ],
+          "shared_endpoints": 0,
+          "shared_groups": 0,
+          "original_role_violations": 0,
+          "artifact": {
+            "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\host-feasibility\\H1\\ND-UNSW-NB15-v3\\primary\\endpoint_filter.parquet",
+            "sha256": "6d1e245d40fc00b9c67714295e997e6068ea820bd9f1c9087b36a950a0190c68",
+            "rows": 1417626
+          },
+          "model_scored": false
+        }
+      ]
+    },
+    {
+      "protocol": "stress",
+      "permitted_rows": 601023,
+      "permitted_support": [
+        {
+          "original_role": "development_train",
+          "label": "analysis",
+          "rows": 219,
+          "groups": 219
+        },
+        {
+          "original_role": "development_train",
+          "label": "backdoor",
+          "rows": 1221,
+          "groups": 1207
+        },
+        {
+          "original_role": "development_train",
+          "label": "benign",
+          "rows": 503838,
+          "groups": 488498
+        },
+        {
+          "original_role": "development_train",
+          "label": "dos",
+          "rows": 699,
+          "groups": 697
+        },
+        {
+          "original_role": "development_train",
+          "label": "exploits",
+          "rows": 5190,
+          "groups": 5190
+        },
+        {
+          "original_role": "development_train",
+          "label": "fuzzers",
+          "rows": 4664,
+          "groups": 4652
+        },
+        {
+          "original_role": "development_train",
+          "label": "generic",
+          "rows": 685,
+          "groups": 685
+        },
+        {
+          "original_role": "development_train",
+          "label": "reconnaissance",
+          "rows": 2055,
+          "groups": 2048
+        },
+        {
+          "original_role": "development_train",
+          "label": "shellcode",
+          "rows": 366,
+          "groups": 366
+        },
+        {
+          "original_role": "development_train",
+          "label": "worms",
+          "rows": 19,
+          "groups": 19
+        },
+        {
+          "original_role": "validation",
+          "label": "analysis",
+          "rows": 60,
+          "groups": 60
+        },
+        {
+          "original_role": "validation",
+          "label": "backdoor",
+          "rows": 31,
+          "groups": 31
+        },
+        {
+          "original_role": "validation",
+          "label": "benign",
+          "rows": 74360,
+          "groups": 73957
+        },
+        {
+          "original_role": "validation",
+          "label": "dos",
+          "rows": 442,
+          "groups": 441
+        },
+        {
+          "original_role": "validation",
+          "label": "exploits",
+          "rows": 3225,
+          "groups": 3225
+        },
+        {
+          "original_role": "validation",
+          "label": "fuzzers",
+          "rows": 2226,
+          "groups": 2220
+        },
+        {
+          "original_role": "validation",
+          "label": "generic",
+          "rows": 429,
+          "groups": 429
+        },
+        {
+          "original_role": "validation",
+          "label": "reconnaissance",
+          "rows": 1116,
+          "groups": 1114
+        },
+        {
+          "original_role": "validation",
+          "label": "shellcode",
+          "rows": 164,
+          "groups": 164
+        },
+        {
+          "original_role": "validation",
+          "label": "worms",
+          "rows": 14,
+          "groups": 14
+        }
+      ],
+      "missing_endpoint_group_rows": 0,
+      "endpoint_count": 41,
+      "initial_endpoint_components": 3,
+      "feature_groups_bridging_initial_components": 0,
+      "components": [
+        {
+          "component_id": "4ee5a2c27c156414d95b404087a78606a9bb9d0a9f62f7d92cf2e99027bc17d4",
+          "rows": 577982,
+          "groups": 562283,
+          "benign": 577982,
+          "attack": 0,
+          "endpoints": 20
+        },
+        {
+          "component_id": "936fcb3b239cfcb63cc26f18903b661042b1e646fc20266a4b226da2aa81a57c",
+          "rows": 23032,
+          "groups": 22944,
+          "benign": 207,
+          "attack": 22825,
+          "endpoints": 20
+        },
+        {
+          "component_id": "02dfab1a263cad5da6ec9d0a28ab49dcd2135af7f58d74e8ca18ebd4d537eaa7",
+          "rows": 9,
+          "groups": 9,
+          "benign": 9,
+          "attack": 0,
+          "endpoints": 1
+        }
+      ],
+      "attack_containing_components": 1,
+      "no_discard_two_sided_attack_support_possible": false,
+      "address_flags": {
+        "unspecified": 0,
+        "multicast": 1
+      },
+      "candidates": [
+        {
+          "method": "components",
+          "status": "INFEASIBLE_UNDER_FIXED_RULE",
+          "reasons": [
+            "validation: fewer than 1000 rows",
+            "validation: fewer than 20 benign rows",
+            "validation: fewer than 20 attack rows"
+          ],
+          "support": [
+            {
+              "partition": "excluded_role_side_mismatch",
+              "rows": 82067,
+              "groups": 81655,
+              "benign": 74360,
+              "attack": 7707
+            },
+            {
+              "partition": "train",
+              "rows": 518956,
+              "groups": 503581,
+              "benign": 503838,
+              "attack": 15118
+            }
+          ],
+          "canonical_support": [
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "analysis",
+              "rows": 60,
+              "groups": 60
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "backdoor",
+              "rows": 31,
+              "groups": 31
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "benign",
+              "rows": 74360,
+              "groups": 73957
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "dos",
+              "rows": 442,
+              "groups": 441
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "exploits",
+              "rows": 3225,
+              "groups": 3225
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "fuzzers",
+              "rows": 2226,
+              "groups": 2220
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "generic",
+              "rows": 429,
+              "groups": 429
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "reconnaissance",
+              "rows": 1116,
+              "groups": 1114
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "shellcode",
+              "rows": 164,
+              "groups": 164
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "worms",
+              "rows": 14,
+              "groups": 14
+            },
+            {
+              "partition": "train",
+              "label": "analysis",
+              "rows": 219,
+              "groups": 219
+            },
+            {
+              "partition": "train",
+              "label": "backdoor",
+              "rows": 1221,
+              "groups": 1207
+            },
+            {
+              "partition": "train",
+              "label": "benign",
+              "rows": 503838,
+              "groups": 488498
+            },
+            {
+              "partition": "train",
+              "label": "dos",
+              "rows": 699,
+              "groups": 697
+            },
+            {
+              "partition": "train",
+              "label": "exploits",
+              "rows": 5190,
+              "groups": 5190
+            },
+            {
+              "partition": "train",
+              "label": "fuzzers",
+              "rows": 4664,
+              "groups": 4652
+            },
+            {
+              "partition": "train",
+              "label": "generic",
+              "rows": 685,
+              "groups": 685
+            },
+            {
+              "partition": "train",
+              "label": "reconnaissance",
+              "rows": 2055,
+              "groups": 2048
+            },
+            {
+              "partition": "train",
+              "label": "shellcode",
+              "rows": 366,
+              "groups": 366
+            },
+            {
+              "partition": "train",
+              "label": "worms",
+              "rows": 19,
+              "groups": 19
+            }
+          ],
+          "shared_endpoints": 0,
+          "shared_groups": 0,
+          "original_role_violations": 0,
+          "artifact": {
+            "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\host-feasibility\\H1\\ND-UNSW-NB15-v3\\stress\\components.parquet",
+            "sha256": "7345bb8917f4b04e45305add1bf7065ad85e63dc1db4ab2bc3e40acfe6037aa9",
+            "rows": 601023
+          },
+          "model_scored": false
+        },
+        {
+          "method": "endpoint_filter",
+          "status": "INFEASIBLE_UNDER_FIXED_RULE",
+          "reasons": [
+            "validation: fewer than 1000 rows",
+            "validation: fewer than 20 benign rows"
+          ],
+          "support": [
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "rows": 131442,
+              "groups": 124046,
+              "benign": 123378,
+              "attack": 8064
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "rows": 64563,
+              "groups": 64321,
+              "benign": 59272,
+              "attack": 5291
+            },
+            {
+              "partition": "train",
+              "rows": 404579,
+              "groups": 396430,
+              "benign": 395547,
+              "attack": 9032
+            },
+            {
+              "partition": "validation",
+              "rows": 439,
+              "groups": 439,
+              "benign": 1,
+              "attack": 438
+            }
+          ],
+          "canonical_support": [
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "analysis",
+              "rows": 119,
+              "groups": 119
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "backdoor",
+              "rows": 340,
+              "groups": 332
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "benign",
+              "rows": 123378,
+              "groups": 116002
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "dos",
+              "rows": 386,
+              "groups": 385
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "exploits",
+              "rows": 2818,
+              "groups": 2818
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "fuzzers",
+              "rows": 2610,
+              "groups": 2606
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "generic",
+              "rows": 358,
+              "groups": 358
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "reconnaissance",
+              "rows": 1207,
+              "groups": 1200
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "shellcode",
+              "rows": 213,
+              "groups": 213
+            },
+            {
+              "partition": "excluded_cross_or_mixed_group",
+              "label": "worms",
+              "rows": 13,
+              "groups": 13
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "analysis",
+              "rows": 36,
+              "groups": 36
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "backdoor",
+              "rows": 80,
+              "groups": 80
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "benign",
+              "rows": 59272,
+              "groups": 59036
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "dos",
+              "rows": 328,
+              "groups": 327
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "exploits",
+              "rows": 2248,
+              "groups": 2248
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "fuzzers",
+              "rows": 1369,
+              "groups": 1364
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "generic",
+              "rows": 313,
+              "groups": 313
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "reconnaissance",
+              "rows": 794,
+              "groups": 794
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "shellcode",
+              "rows": 114,
+              "groups": 114
+            },
+            {
+              "partition": "excluded_role_side_mismatch",
+              "label": "worms",
+              "rows": 9,
+              "groups": 9
+            },
+            {
+              "partition": "train",
+              "label": "analysis",
+              "rows": 124,
+              "groups": 124
+            },
+            {
+              "partition": "train",
+              "label": "backdoor",
+              "rows": 832,
+              "groups": 826
+            },
+            {
+              "partition": "train",
+              "label": "benign",
+              "rows": 395547,
+              "groups": 387416
+            },
+            {
+              "partition": "train",
+              "label": "dos",
+              "rows": 407,
+              "groups": 406
+            },
+            {
+              "partition": "train",
+              "label": "exploits",
+              "rows": 3193,
+              "groups": 3193
+            },
+            {
+              "partition": "train",
+              "label": "fuzzers",
+              "rows": 2738,
+              "groups": 2729
+            },
+            {
+              "partition": "train",
+              "label": "generic",
+              "rows": 424,
+              "groups": 424
+            },
+            {
+              "partition": "train",
+              "label": "reconnaissance",
+              "rows": 1121,
+              "groups": 1119
+            },
+            {
+              "partition": "train",
+              "label": "shellcode",
+              "rows": 182,
+              "groups": 182
+            },
+            {
+              "partition": "train",
+              "label": "worms",
+              "rows": 11,
+              "groups": 11
+            },
+            {
+              "partition": "validation",
+              "label": "benign",
+              "rows": 1,
+              "groups": 1
+            },
+            {
+              "partition": "validation",
+              "label": "dos",
+              "rows": 20,
+              "groups": 20
+            },
+            {
+              "partition": "validation",
+              "label": "exploits",
+              "rows": 156,
+              "groups": 156
+            },
+            {
+              "partition": "validation",
+              "label": "fuzzers",
+              "rows": 173,
+              "groups": 173
+            },
+            {
+              "partition": "validation",
+              "label": "generic",
+              "rows": 19,
+              "groups": 19
+            },
+            {
+              "partition": "validation",
+              "label": "reconnaissance",
+              "rows": 49,
+              "groups": 49
+            },
+            {
+              "partition": "validation",
+              "label": "shellcode",
+              "rows": 21,
+              "groups": 21
+            }
+          ],
+          "shared_endpoints": 0,
+          "shared_groups": 0,
+          "original_role_violations": 0,
+          "artifact": {
+            "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\host-feasibility\\H1\\ND-UNSW-NB15-v3\\stress\\endpoint_filter.parquet",
+            "sha256": "067fcccd6bc9ba700d3438b9d0d6881e4fb7c51933908a9ba23500621cacfb0e",
+            "rows": 601023
+          },
+          "model_scored": false
+        }
+      ]
+    }
+  ],
+  "final_private_public_external_population_used": false,
+  "model_scored": false,
+  "memory_limit": "4GB",
+  "threads": 4,
+  "elapsed_seconds": 35.278111999999965
+}

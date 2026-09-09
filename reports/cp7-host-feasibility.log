@@ -1,0 +1,4 @@
+H1/primary: development graph
+H1/primary: 4 components; components=INFEASIBLE_UNDER_FIXED_RULE, endpoint_filter=INFEASIBLE_UNDER_FIXED_RULE
+H1/stress: development graph
+H1/stress: 3 components; components=INFEASIBLE_UNDER_FIXED_RULE, endpoint_filter=INFEASIBLE_UNDER_FIXED_RULE

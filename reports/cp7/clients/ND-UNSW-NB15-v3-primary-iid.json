@@ -1,0 +1,473 @@
+{
+  "version": "C1",
+  "run_id": "C1-ND-UNSW-NB15-v3-primary-iid",
+  "experiment_id": "EXP-004",
+  "dataset": "ND-UNSW-NB15-v3",
+  "protocol": "primary",
+  "requested_scenario": "iid",
+  "alpha": null,
+  "seed": 17,
+  "scope_tag": "C1|17|ND-UNSW-NB15-v3|primary|iid",
+  "clients": 5,
+  "status": "COMPLETED",
+  "script_sha256": "cdb028e2185b566ff9b29e7e1757f7c56c411e18bc62cd0fec6d449e28a52f84",
+  "git_commit": "cd4cb57043353335e71ac6d6b41cc5632df50def",
+  "preprocessing_version": "P1",
+  "parent_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\train.parquet",
+      "sha256": "1364ad0bc2e6b18027d57021ab05875ad6801affc18d5b070af829e1bbece155",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 94696
+        },
+        {
+          "binary_label": 1,
+          "rows": 5304
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\validation.parquet",
+      "sha256": "639c981babdf0f65ffa5d57c4e0666472eac2828f97755dbec2c4f87cad4a926",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 447731
+        },
+        {
+          "binary_label": 1,
+          "rows": 24778
+        }
+      ]
+    }
+  },
+  "transform_sha256": "63fa5268ebf96bb4a59e65604b57f55649afee16227d3d6dcc66eafabb912bbe",
+  "fit_group_set_sha256": "c6b273618837b9f46462332a7c841ebb85c39001615d4ca69825e89b6b0f16f4",
+  "attempts": [
+    {
+      "attempt": 1,
+      "method": "uniform_iid",
+      "probabilities": {
+        "analysis": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "backdoor": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "benign": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "dos": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "exploits": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "fuzzers": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "generic": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "reconnaissance": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "shellcode": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "worms": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "training_support": [
+        {
+          "client_id": 0,
+          "rows": 20087,
+          "benign": 18987,
+          "attack": 1100
+        },
+        {
+          "client_id": 1,
+          "rows": 20072,
+          "benign": 19049,
+          "attack": 1023
+        },
+        {
+          "client_id": 2,
+          "rows": 19920,
+          "benign": 18826,
+          "attack": 1094
+        },
+        {
+          "client_id": 3,
+          "rows": 19852,
+          "benign": 18847,
+          "attack": 1005
+        },
+        {
+          "client_id": 4,
+          "rows": 20069,
+          "benign": 18987,
+          "attack": 1082
+        }
+      ],
+      "accepted": true
+    }
+  ],
+  "actual_method": "uniform_iid",
+  "probabilities": {
+    "analysis": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "backdoor": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "benign": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "dos": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "exploits": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "fuzzers": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "generic": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "reconnaissance": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "shellcode": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "worms": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ]
+  },
+  "final_private_public_external_access": false,
+  "validation_used_for_acceptance": false,
+  "interpretation": "Synthetic label-aware evaluation ownership; shared centralized development preprocessing; no host separation or privacy guarantee",
+  "artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\clients\\C1\\ND-UNSW-NB15-v3\\primary\\iid\\memberships.parquet",
+    "sha256": "756019d07d38e593271f90be7b1f31b04e8760b4ed3fe0c96e98e8190ea57a27",
+    "rows": 572509
+  },
+  "support": [
+    {
+      "client_id": 0,
+      "rows": 20087,
+      "benign": 18987,
+      "attack": 1100,
+      "partition": "train",
+      "groups": 20087,
+      "fraction_of_partition": 0.20087,
+      "attack_prevalence": 0.05476178622989993,
+      "canonical_support": {
+        "analysis": 11,
+        "backdoor": 42,
+        "benign": 18987,
+        "dos": 64,
+        "exploits": 379,
+        "fuzzers": 317,
+        "generic": 77,
+        "reconnaissance": 182,
+        "shellcode": 28,
+        "worms": 0
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 1,
+      "rows": 20072,
+      "benign": 19049,
+      "attack": 1023,
+      "partition": "train",
+      "groups": 20072,
+      "fraction_of_partition": 0.20072,
+      "attack_prevalence": 0.05096652052610602,
+      "canonical_support": {
+        "analysis": 9,
+        "backdoor": 29,
+        "benign": 19049,
+        "dos": 57,
+        "exploits": 389,
+        "fuzzers": 302,
+        "generic": 59,
+        "reconnaissance": 156,
+        "shellcode": 22,
+        "worms": 0
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 2,
+      "rows": 19920,
+      "benign": 18826,
+      "attack": 1094,
+      "partition": "train",
+      "groups": 19920,
+      "fraction_of_partition": 0.1992,
+      "attack_prevalence": 0.054919678714859435,
+      "canonical_support": {
+        "analysis": 15,
+        "backdoor": 44,
+        "benign": 18826,
+        "dos": 56,
+        "exploits": 438,
+        "fuzzers": 305,
+        "generic": 69,
+        "reconnaissance": 144,
+        "shellcode": 18,
+        "worms": 5
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 3,
+      "rows": 19852,
+      "benign": 18847,
+      "attack": 1005,
+      "partition": "train",
+      "groups": 19852,
+      "fraction_of_partition": 0.19852,
+      "attack_prevalence": 0.05062462220431191,
+      "canonical_support": {
+        "analysis": 11,
+        "backdoor": 39,
+        "benign": 18847,
+        "dos": 53,
+        "exploits": 367,
+        "fuzzers": 301,
+        "generic": 50,
+        "reconnaissance": 162,
+        "shellcode": 19,
+        "worms": 3
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 4,
+      "rows": 20069,
+      "benign": 18987,
+      "attack": 1082,
+      "partition": "train",
+      "groups": 20069,
+      "fraction_of_partition": 0.20069,
+      "attack_prevalence": 0.053913996711345856,
+      "canonical_support": {
+        "analysis": 19,
+        "backdoor": 40,
+        "benign": 18987,
+        "dos": 63,
+        "exploits": 412,
+        "fuzzers": 287,
+        "generic": 76,
+        "reconnaissance": 164,
+        "shellcode": 19,
+        "worms": 2
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 0,
+      "rows": 94220,
+      "benign": 89275,
+      "attack": 4945,
+      "partition": "validation",
+      "groups": 85546,
+      "fraction_of_partition": 0.19940360924342182,
+      "attack_prevalence": 0.052483549140309914,
+      "canonical_support": {
+        "analysis": 44,
+        "backdoor": 181,
+        "benign": 89275,
+        "dos": 240,
+        "exploits": 1736,
+        "fuzzers": 1354,
+        "generic": 548,
+        "reconnaissance": 733,
+        "shellcode": 103,
+        "worms": 6
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 1,
+      "rows": 94354,
+      "benign": 89356,
+      "attack": 4998,
+      "partition": "validation",
+      "groups": 85373,
+      "fraction_of_partition": 0.19968720172525814,
+      "attack_prevalence": 0.0529707272611654,
+      "canonical_support": {
+        "analysis": 55,
+        "backdoor": 177,
+        "benign": 89356,
+        "dos": 232,
+        "exploits": 1757,
+        "fuzzers": 1268,
+        "generic": 749,
+        "reconnaissance": 655,
+        "shellcode": 97,
+        "worms": 8
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 2,
+      "rows": 94694,
+      "benign": 89723,
+      "attack": 4971,
+      "partition": "validation",
+      "groups": 85865,
+      "fraction_of_partition": 0.2004067647388727,
+      "attack_prevalence": 0.05249540625594019,
+      "canonical_support": {
+        "analysis": 49,
+        "backdoor": 205,
+        "benign": 89723,
+        "dos": 230,
+        "exploits": 1714,
+        "fuzzers": 1286,
+        "generic": 641,
+        "reconnaissance": 722,
+        "shellcode": 116,
+        "worms": 8
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 3,
+      "rows": 94693,
+      "benign": 89782,
+      "attack": 4911,
+      "partition": "validation",
+      "groups": 85836,
+      "fraction_of_partition": 0.20040464837706795,
+      "attack_prevalence": 0.051862334069044176,
+      "canonical_support": {
+        "analysis": 35,
+        "backdoor": 176,
+        "benign": 89782,
+        "dos": 225,
+        "exploits": 1718,
+        "fuzzers": 1349,
+        "generic": 675,
+        "reconnaissance": 636,
+        "shellcode": 92,
+        "worms": 5
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 4,
+      "rows": 94548,
+      "benign": 89595,
+      "attack": 4953,
+      "partition": "validation",
+      "groups": 85541,
+      "fraction_of_partition": 0.2000977759153794,
+      "attack_prevalence": 0.05238608960527986,
+      "canonical_support": {
+        "analysis": 45,
+        "backdoor": 156,
+        "benign": 89595,
+        "dos": 243,
+        "exploits": 1721,
+        "fuzzers": 1282,
+        "generic": 707,
+        "reconnaissance": 705,
+        "shellcode": 85,
+        "worms": 9
+      },
+      "balanced_evaluation_eligible": true
+    }
+  ],
+  "elapsed_seconds": 1.456867200000488
+}

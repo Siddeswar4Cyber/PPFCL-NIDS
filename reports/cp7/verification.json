@@ -1,0 +1,216 @@
+{
+  "status": "PASSED",
+  "client_checks": [
+    {
+      "run_id": "C1-cic-ids-2017-primary-iid",
+      "status": "PASSED",
+      "rows": 633069,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-cic-ids-2017-primary-dirichlet_a1",
+      "status": "PASSED",
+      "rows": 633069,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-cic-ids-2017-primary-dirichlet_a0p1",
+      "status": "PASSED",
+      "rows": 633069,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-cic-ids-2017-stress-iid",
+      "status": "PASSED",
+      "rows": 491594,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-cic-ids-2017-stress-dirichlet_a1",
+      "status": "PASSED",
+      "rows": 491594,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-cic-ids-2017-stress-dirichlet_a0p1",
+      "status": "PASSED",
+      "rows": 491594,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-ND-UNSW-NB15-v3-primary-iid",
+      "status": "PASSED",
+      "rows": 572509,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-ND-UNSW-NB15-v3-primary-dirichlet_a1",
+      "status": "PASSED",
+      "rows": 572509,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-ND-UNSW-NB15-v3-primary-dirichlet_a0p1",
+      "status": "PASSED",
+      "rows": 572509,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-ND-UNSW-NB15-v3-stress-iid",
+      "status": "PASSED",
+      "rows": 182067,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-ND-UNSW-NB15-v3-stress-dirichlet_a1",
+      "status": "PASSED",
+      "rows": 182067,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    },
+    {
+      "run_id": "C1-ND-UNSW-NB15-v3-stress-dirichlet_a0p1",
+      "status": "PASSED",
+      "rows": 182067,
+      "exact_parent_rows": true,
+      "independent_hash_assignment": true,
+      "training_only_attempts_reproduced": true,
+      "group_role_ownership": true,
+      "source_commit_verified": true
+    }
+  ],
+  "host_checks": [
+    {
+      "protocol": "primary",
+      "method": "components",
+      "status": "PASSED",
+      "source_reconstruction": true,
+      "endpoint_and_group_separation": true,
+      "support_decision_verified": true
+    },
+    {
+      "protocol": "primary",
+      "method": "endpoint_filter",
+      "status": "PASSED",
+      "source_reconstruction": true,
+      "endpoint_and_group_separation": true,
+      "support_decision_verified": true
+    },
+    {
+      "protocol": "stress",
+      "method": "components",
+      "status": "PASSED",
+      "source_reconstruction": true,
+      "endpoint_and_group_separation": true,
+      "support_decision_verified": true
+    },
+    {
+      "protocol": "stress",
+      "method": "endpoint_filter",
+      "status": "PASSED",
+      "source_reconstruction": true,
+      "endpoint_and_group_separation": true,
+      "support_decision_verified": true
+    }
+  ],
+  "report_bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\cic-ids-2017-primary-iid.json",
+      "sha256": "a2c4f52c79a2bbe0d3790251cb2db3d7eb3aef774c10e81b69495e5c1033a7a7"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\cic-ids-2017-primary-dirichlet_a1.json",
+      "sha256": "f1b8023e0755adfd60a049210b1690002c4538d69eb476f39b10d63b0b913f74"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\cic-ids-2017-primary-dirichlet_a0p1.json",
+      "sha256": "94a678b93d25cd1f10bf2842b0b823677adef184d0be154590984ffcccc09090"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\cic-ids-2017-stress-iid.json",
+      "sha256": "5567e13580c6a722931c5099c3b2a8a65032f7fbb23c6dcb32d33dc2f01f2753"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\cic-ids-2017-stress-dirichlet_a1.json",
+      "sha256": "9ff0fb1c44cc2f6599e16552d136e075913a0d1500f1342a7d5b8f85ce0ed87a"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\cic-ids-2017-stress-dirichlet_a0p1.json",
+      "sha256": "65c6d8fd8cd0a1ee235e4c1a6de209196364a931a7a15ca39f550249efbf050e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\ND-UNSW-NB15-v3-primary-iid.json",
+      "sha256": "f1187c59f621508a4b11b41c16706c936d5ec5767bec2418b1ac00e63b2ac20e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\ND-UNSW-NB15-v3-primary-dirichlet_a1.json",
+      "sha256": "bee3ae180eb565c95b237f24b73e2b7824ca86f50f16dc752ff2e04d0777498c"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\ND-UNSW-NB15-v3-primary-dirichlet_a0p1.json",
+      "sha256": "5a23705e983592b3ae61b41264adb33baee6f09356cf77d25af8cfd1781857c9"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\ND-UNSW-NB15-v3-stress-iid.json",
+      "sha256": "1684db1dc84f357e970f56eb322289f2b7ce7184206283baad434d3d37a79fe1"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\ND-UNSW-NB15-v3-stress-dirichlet_a1.json",
+      "sha256": "d53e362f8df25c764603df5f424394412ac1596f16f4a03fe03fa73d6abd8c39"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\clients\\ND-UNSW-NB15-v3-stress-dirichlet_a0p1.json",
+      "sha256": "65b9691210d31e0405d98ef84726cdcdab16f4078a0a728f2d58f447edd43c83"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\host-feasibility.json",
+      "sha256": "26a1b5213a834d0a2aedfbeeb791bf42714b68bb8fbd05a41d09f1a9917282ba"
+    }
+  ],
+  "source_and_parent_hashes_verified": true,
+  "final_test_model_scores_exposed": false,
+  "verification_script_sha256": "c5981b71d0249389aeaa19b9404c71f999eccfd63e5789ba4d623b8bca176940"
+}

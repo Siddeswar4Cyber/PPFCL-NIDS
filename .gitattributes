@@ -3,6 +3,7 @@ scripts/*.py -text
 reports/audit/attempts/*.py -text
 docs/project-brief.txt -text
 
-# B2 selection and feature-spec bindings hash exact report bytes.
+# Selection, feature-spec and client bindings hash exact report bytes.
 reports/baselines/runs/*.json -text
 reports/cp6/**/*.json -text
+reports/cp7/**/*.json -text

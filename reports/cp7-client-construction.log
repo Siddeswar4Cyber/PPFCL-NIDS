@@ -1,0 +1,12 @@
+cic-ids-2017/primary/iid: COMPLETED, 1 attempt(s), uniform_iid
+cic-ids-2017/primary/dirichlet_a1: COMPLETED, 1 attempt(s), pure_dirichlet
+cic-ids-2017/primary/dirichlet_a0p1: COMPLETED, 21 attempt(s), dirichlet_uniform10_fallback
+cic-ids-2017/stress/iid: COMPLETED, 1 attempt(s), uniform_iid
+cic-ids-2017/stress/dirichlet_a1: COMPLETED, 1 attempt(s), pure_dirichlet
+cic-ids-2017/stress/dirichlet_a0p1: COMPLETED, 21 attempt(s), dirichlet_uniform10_fallback
+ND-UNSW-NB15-v3/primary/iid: COMPLETED, 1 attempt(s), uniform_iid
+ND-UNSW-NB15-v3/primary/dirichlet_a1: COMPLETED, 1 attempt(s), pure_dirichlet
+ND-UNSW-NB15-v3/primary/dirichlet_a0p1: COMPLETED, 10 attempt(s), pure_dirichlet
+ND-UNSW-NB15-v3/stress/iid: COMPLETED, 1 attempt(s), uniform_iid
+ND-UNSW-NB15-v3/stress/dirichlet_a1: COMPLETED, 2 attempt(s), pure_dirichlet
+ND-UNSW-NB15-v3/stress/dirichlet_a0p1: COMPLETED, 21 attempt(s), dirichlet_uniform10_fallback

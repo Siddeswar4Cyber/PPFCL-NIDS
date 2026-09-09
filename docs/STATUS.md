@@ -1,10 +1,10 @@
 # Project status
 
-Updated: 2026-09-09.
+Updated: 2026-09-10.
 
-Current checkpoint: CP6 feature comparisons, seed sensitivity and shortcut diagnostics COMPLETE. CP0 through CP5 remain complete. EXP-003 remains open for host-aware split feasibility and final detector selection; no final model is frozen.
+Current checkpoint: CP7 host feasibility and client contracts COMPLETE. CP0 through CP6 remain complete. EXP-003 remains open for final detector selection and neural stability; EXP-004 has completed client preparation but has no model trials yet.
 
-Architecture: A0, data pipeline and centralized comparisons implemented; model/FL/DP/CL choices PROVISIONAL. Methodology: M0.6 / S1 / CIC P2 / NF P1 / B2. DEC-018 through DEC-020 record the rejected reduced-feature comparisons, guarded representation selection and host-overlap limits.
+Architecture: A0, data pipeline, centralized comparisons and logical-client ownership implemented; model/FL/DP/CL choices PROVISIONAL. Methodology: M0.7 / S1 / CIC P2 / NF P1 / B2 / C1 / H1. DEC-021 through DEC-023 record host-support rejection, client allocation and the narrowed synthetic-client scope.
 
 Completed: Seven research workstreams, 59-source registry (54 initial sources plus five implementation/methodology references) with explicit reading depth, numerical literature comparison, financial-threat observability matrix, A0 component contracts, experiment budgets and selection gates. The isolated audit environment uses Python 3.13.13, DuckDB 1.5.5 and psutil 7.2.2. EXP-001 audited all 69,765,764 rows across 12 CSVs in five dataset families. Four audit integration tests passed; artifact invariants and all 15 local archive-manifest comparisons passed. Raw source files were not modified.
 
@@ -12,7 +12,7 @@ Latest findings: CIC2017 has 308,381 excess identical rows, 698 conflicting feat
 
 Validation evidence: [verification.json](../reports/audit/verification.json), per-family source hashes and statistics, [run.json](../reports/audit/run.json), [environment](../reports/audit/environment.json), and tests/test_audit.py. The last resumed invocation took 4,219.984 seconds and peaked at 6,030,651,392 bytes of process RSS. Earlier attempts are additional work; BoT's 43.483 seconds cover its resumed completion segment only. No total runtime across all interruptions is claimed.
 
-Experiment state: EXP-001 and EXP-002 COMPLETED; EXP-003 RUNNING; EXP-004 through EXP-008 PLANNED. Sixteen B1 and 36 B2 model runs are complete, alongside RUN-002-P1. Twelve selected model/namespace combinations have seeds 17, 29 and 43 with fixed training populations. There are no final-test detection results or established privacy guarantees. All generated matrices, model files and saved validation predictions remain local and ignored by Git.
+Experiment state: EXP-001 and EXP-002 COMPLETED; EXP-003 and EXP-004 RUNNING; EXP-005 through EXP-008 PLANNED. Sixteen B1 and 36 B2 model runs are complete, alongside RUN-002-P1, twelve C1 allocation runs and H1 feasibility. Twelve selected model/namespace combinations have seeds 17, 29 and 43. EXP-004 is in client-preparation phase with zero FL model runs. There are no final-test detection results or established privacy guarantees. Large derived artifacts remain local and ignored by Git.
 
 CP3 results: 5,196,167 row memberships cover CIC2017 and NF-UNSW. The accepted conflict policy quarantines 7,020 and 3,647 rows respectively. Group-role overlap, source/hash binding, row coverage, stress boundaries and binary support pass. Both NF capture periods support the two-task CL design; 242,973 rows spanning those periods are excluded from CL only. CIC Heartbleed, Infiltration and SQL Injection have limited independent class support. See [split results](../reports/CP3-split-results.md) and [S1 protocol](CP3-split-protocol-S1.md).
 
@@ -26,13 +26,17 @@ CP6 results: 36 new fits, eight grouped-permutation model diagnostics and two NF
 
 CIC primary augmented Extra Trees has three-seed macro-F1 0.982703 ± 0.000372 (sample SD); augmented MLP has 0.950916 ± 0.022140, exposing fixed-budget instability. NF full Extra Trees has primary macro-F1 0.999358 ± 0.000087. These are conditional validation-seed summaries, not population confidence intervals. Over 99.95% of NF validation rows reuse training endpoint pairs. Unseen-pair subsets are benign-only (213 and 25 rows); B1 tree false-positive rates there are 7.04% and 28%, with no estimate of unseen-pair attack detection. Jointly permuting NF TTL/windows causes large model-score drops, without proving a causal shortcut.
 
-Next action: CP7 assesses host-aware split feasibility and client partition contracts before FL comparison. Reduced-feature experiments need a separately registered common population and grouping rule. Neural framework migration must verify precision/training behavior and investigate MLP stability. Privacy-confirmatory preprocessing needs a separately reviewed public/private mechanism; existing development transforms are not approved for that claim. Final-test and external scores stay sealed.
+CP7 results: Twelve C1 manifests partition unchanged training and validation matrices into five clients each under IID and two requested Dirichlet settings. Every client meets the training support floors; all validation clients meet the binary evaluation floor. Seventy rejected allocation attempts are preserved, and three scopes use the registered 10% uniform mixture. Independent source/ownership reconstruction and all 26 tests pass. See [results](../reports/CP7-host-client-results.md) and [verification](../reports/CP7-checkpoint-verification.md).
+
+H1 finds four primary and three stress endpoint components, with all attacks in one component per scope. A no-discard two-class host split is unsupported. The fixed filtering candidates retain only 2 and 1 benign validation rows and are rejected. No candidate is scored and no S1 role is reassigned. C1 is explicitly synthetic and non-private; it does not repair host independence or supply private/CL-specific clients.
+
+Next action: CP8 verifies neural-framework migration, precision and optimizer stability before registered central/local/FL comparisons on identical C1 assignments. Reduced-feature or stronger host-generalization studies require separately approved split/data designs. Privacy-confirmatory preprocessing needs a reviewed public/private mechanism; existing development transforms are not approved for that claim. Final-test and external scores stay sealed.
 
 Open decisions: NetFlow 57-versus-53-feature provenance discrepancy; external field semantics and any new transform-induced duplicates; minority support; realistic temporal tasks and client grouping; training budgets; private sampling/release accounting; final candidate winners and thresholds. Shared headers and matching local archives do not prove publisher authenticity or equivalent extraction semantics.
 
 User context: local data at C:\Users\nimma\Downloads\Datasets; deadline September 20, assumed 2026; no special report format. Reported i7-13650HX and RTX 4050 Laptop GPU with 6 GB VRAM were detected. psutil measured about 31.7 GiB RAM, differing from the earlier reported 23.7 GB. Training-framework CUDA support is not yet tested.
 
-Blocked: None for CP7 feasibility work. Reduced-feature scores are invalid under existing S1; independent-host performance is unestablished. Privacy-confirmatory training requires mechanism/accounting review; final evaluation requires a selection freeze. External model scores must remain outside selection.
+Blocked: None for scoped CP8 migration work. Reduced-feature scores are invalid under existing S1, and the registered H1 candidates lack two-class support. Privacy-confirmatory training requires mechanism/accounting review; final evaluation requires a selection freeze. External model scores must remain outside selection.
 
 Deferred: Optional model/FL/CL alternatives, HE/SMPC/TEE, secure aggregation pending feasibility, and final report/slides pending measured evidence. No datasets were downloaded and no repository push is authorized.
 
@@ -40,4 +44,4 @@ Rejected: Blind cross-schema concatenation, a first-ever FL+DP+CL claim, a fixed
 
 Risks: Attack/day confounding, missing CIC grouping metadata, ambiguous feature semantics, rare-class support, synthetic-client realism, replay/privacy incompatibility, runtime and domain shift. Implementation-specific privacy proof/accountant review and a literature refresh remain pending.
 
-Git milestone: Local branch codex/cp6-feature-validation. B2 rules were preregistered in 6734173. Runner/gates were committed in 7ea7b84, and the diagnostic implementation in 52461c2. Every B2 run records its executed-source commit and hashes; selection-report bindings remain immutable. No push has been performed.
+Git milestone: Local branch codex/cp7-host-client-contracts. C1/H1 rules were preregistered in b7453f1; client and host construction source was committed in cd4cb57 and 10c2210. Executed-source hashes and parent/manifests are verified. Bound CP7 report bytes are preserved across Git checkout. No push has been performed.

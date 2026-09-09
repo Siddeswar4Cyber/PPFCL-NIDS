@@ -1,0 +1,579 @@
+{
+  "version": "C1",
+  "run_id": "C1-cic-ids-2017-primary-dirichlet_a1",
+  "experiment_id": "EXP-004",
+  "dataset": "cic-ids-2017",
+  "protocol": "primary",
+  "requested_scenario": "dirichlet_a1",
+  "alpha": 1.0,
+  "seed": 17,
+  "scope_tag": "C1|17|cic-ids-2017|primary|dirichlet_a1",
+  "clients": 5,
+  "status": "COMPLETED",
+  "script_sha256": "cdb028e2185b566ff9b29e7e1757f7c56c411e18bc62cd0fec6d449e28a52f84",
+  "git_commit": "cd4cb57043353335e71ac6d6b41cc5632df50def",
+  "preprocessing_version": "P2",
+  "parent_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\train.parquet",
+      "sha256": "9b64332e8cca684e33e4b75619c874400fadd914b174dc39fe79a60341b70478",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 82804
+        },
+        {
+          "binary_label": 1,
+          "rows": 17196
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\validation.parquet",
+      "sha256": "58a8dd64c8751bc211d3439d9a2f74a52edca1987bbb898a68bb135ab6147602",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 429553
+        },
+        {
+          "binary_label": 1,
+          "rows": 103516
+        }
+      ]
+    }
+  },
+  "transform_sha256": "7a3f53a4825c898758a969e0cccece5fe8c90419d73af7032ac564aa8f543a28",
+  "fit_group_set_sha256": "9e3b8c95ee4a3afa1a2904cfc1cdb7d918b055e44ffe5baedc02e0eed48d8bca",
+  "attempts": [
+    {
+      "attempt": 1,
+      "method": "pure_dirichlet",
+      "probabilities": {
+        "benign": [
+          0.47240992270646465,
+          0.1754270524072443,
+          0.02019328996983516,
+          0.188600393030258,
+          0.1433693418861979
+        ],
+        "bot": [
+          0.5691990376645102,
+          0.05058132591356399,
+          0.12801543895293693,
+          0.16716506705845757,
+          0.0850391304105313
+        ],
+        "ddos": [
+          0.15756573068057747,
+          0.2069251742587814,
+          0.46208780588486087,
+          0.1157057336034534,
+          0.05771555557232674
+        ],
+        "dos_goldeneye": [
+          0.44643377202503265,
+          0.20892151192762823,
+          0.14449703898875702,
+          0.03847345980686523,
+          0.16167421725171688
+        ],
+        "dos_hulk": [
+          0.10672540026824731,
+          0.07230609193253405,
+          0.23466529444932768,
+          0.11509976032469049,
+          0.47120345302520045
+        ],
+        "dos_slowhttptest": [
+          0.21008707100134327,
+          0.09075218608770563,
+          0.4181733273170046,
+          0.14095528164861995,
+          0.14003213394532685
+        ],
+        "dos_slowloris": [
+          0.26280732470050117,
+          0.22732114424474884,
+          0.15838747681532478,
+          0.2396185386035155,
+          0.11186551563590974
+        ],
+        "ftp_patator": [
+          0.05877480929410641,
+          0.11501698709618506,
+          0.159518233059282,
+          0.6102152877413416,
+          0.05647468280908493
+        ],
+        "infiltration": [
+          0.07712736144056351,
+          0.06261137540873699,
+          0.15415021814819607,
+          0.5171329243689667,
+          0.18897812063353667
+        ],
+        "portscan": [
+          0.1544345186817228,
+          0.1807471057619388,
+          0.29765496929055507,
+          0.1596505240092255,
+          0.20751288225655787
+        ],
+        "ssh_patator": [
+          0.06176816100390965,
+          0.30927674267927735,
+          0.13628114095901095,
+          0.010831996833495195,
+          0.48184195852430695
+        ],
+        "web_attack_brute_force": [
+          0.2347124765247315,
+          0.17361929968075493,
+          0.15593901856782735,
+          0.04228170738921689,
+          0.3934474978374694
+        ],
+        "web_attack_sql_injection": [
+          0.011509965142813314,
+          0.19013405564849623,
+          0.0653712565298948,
+          0.11521717514434941,
+          0.6177675475344462
+        ],
+        "web_attack_xss": [
+          0.1633196085648728,
+          0.11089229274209057,
+          0.03328752350927005,
+          0.04787884325130038,
+          0.6446217319324663
+        ]
+      },
+      "training_support": [
+        {
+          "client_id": 0,
+          "rows": 41745,
+          "benign": 39211,
+          "attack": 2534
+        },
+        {
+          "client_id": 1,
+          "rows": 17200,
+          "benign": 14696,
+          "attack": 2504
+        },
+        {
+          "client_id": 2,
+          "rows": 6990,
+          "benign": 1653,
+          "attack": 5337
+        },
+        {
+          "client_id": 3,
+          "rows": 17779,
+          "benign": 15544,
+          "attack": 2235
+        },
+        {
+          "client_id": 4,
+          "rows": 16286,
+          "benign": 11700,
+          "attack": 4586
+        }
+      ],
+      "accepted": true
+    }
+  ],
+  "actual_method": "pure_dirichlet",
+  "probabilities": {
+    "benign": [
+      0.47240992270646465,
+      0.1754270524072443,
+      0.02019328996983516,
+      0.188600393030258,
+      0.1433693418861979
+    ],
+    "bot": [
+      0.5691990376645102,
+      0.05058132591356399,
+      0.12801543895293693,
+      0.16716506705845757,
+      0.0850391304105313
+    ],
+    "ddos": [
+      0.15756573068057747,
+      0.2069251742587814,
+      0.46208780588486087,
+      0.1157057336034534,
+      0.05771555557232674
+    ],
+    "dos_goldeneye": [
+      0.44643377202503265,
+      0.20892151192762823,
+      0.14449703898875702,
+      0.03847345980686523,
+      0.16167421725171688
+    ],
+    "dos_hulk": [
+      0.10672540026824731,
+      0.07230609193253405,
+      0.23466529444932768,
+      0.11509976032469049,
+      0.47120345302520045
+    ],
+    "dos_slowhttptest": [
+      0.21008707100134327,
+      0.09075218608770563,
+      0.4181733273170046,
+      0.14095528164861995,
+      0.14003213394532685
+    ],
+    "dos_slowloris": [
+      0.26280732470050117,
+      0.22732114424474884,
+      0.15838747681532478,
+      0.2396185386035155,
+      0.11186551563590974
+    ],
+    "ftp_patator": [
+      0.05877480929410641,
+      0.11501698709618506,
+      0.159518233059282,
+      0.6102152877413416,
+      0.05647468280908493
+    ],
+    "infiltration": [
+      0.07712736144056351,
+      0.06261137540873699,
+      0.15415021814819607,
+      0.5171329243689667,
+      0.18897812063353667
+    ],
+    "portscan": [
+      0.1544345186817228,
+      0.1807471057619388,
+      0.29765496929055507,
+      0.1596505240092255,
+      0.20751288225655787
+    ],
+    "ssh_patator": [
+      0.06176816100390965,
+      0.30927674267927735,
+      0.13628114095901095,
+      0.010831996833495195,
+      0.48184195852430695
+    ],
+    "web_attack_brute_force": [
+      0.2347124765247315,
+      0.17361929968075493,
+      0.15593901856782735,
+      0.04228170738921689,
+      0.3934474978374694
+    ],
+    "web_attack_sql_injection": [
+      0.011509965142813314,
+      0.19013405564849623,
+      0.0653712565298948,
+      0.11521717514434941,
+      0.6177675475344462
+    ],
+    "web_attack_xss": [
+      0.1633196085648728,
+      0.11089229274209057,
+      0.03328752350927005,
+      0.04787884325130038,
+      0.6446217319324663
+    ]
+  },
+  "final_private_public_external_access": false,
+  "validation_used_for_acceptance": false,
+  "interpretation": "Synthetic label-aware evaluation ownership; shared centralized development preprocessing; no host separation or privacy guarantee",
+  "artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\clients\\C1\\cic-ids-2017\\primary\\dirichlet_a1\\memberships.parquet",
+    "sha256": "7b9fc7d459a7e7f9f2e28a90a6e1855cf4f40fe2cd077d5cf5f4854370b18ea6",
+    "rows": 633069
+  },
+  "support": [
+    {
+      "client_id": 0,
+      "rows": 41745,
+      "benign": 39211,
+      "attack": 2534,
+      "partition": "train",
+      "groups": 41745,
+      "fraction_of_partition": 0.41745,
+      "attack_prevalence": 0.06070188046472631,
+      "canonical_support": {
+        "benign": 39211,
+        "bot": 37,
+        "ddos": 821,
+        "dos_goldeneye": 171,
+        "dos_hulk": 781,
+        "dos_slowhttptest": 54,
+        "dos_slowloris": 56,
+        "ftp_patator": 9,
+        "heartbleed": 0,
+        "infiltration": 0,
+        "portscan": 580,
+        "ssh_patator": 5,
+        "web_attack_brute_force": 16,
+        "web_attack_sql_injection": 0,
+        "web_attack_xss": 4
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 1,
+      "rows": 17200,
+      "benign": 14696,
+      "attack": 2504,
+      "partition": "train",
+      "groups": 17200,
+      "fraction_of_partition": 0.172,
+      "attack_prevalence": 0.1455813953488372,
+      "canonical_support": {
+        "benign": 14696,
+        "bot": 3,
+        "ddos": 1061,
+        "dos_goldeneye": 100,
+        "dos_hulk": 517,
+        "dos_slowhttptest": 10,
+        "dos_slowloris": 61,
+        "ftp_patator": 24,
+        "heartbleed": 0,
+        "infiltration": 0,
+        "portscan": 666,
+        "ssh_patator": 47,
+        "web_attack_brute_force": 11,
+        "web_attack_sql_injection": 0,
+        "web_attack_xss": 4
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 2,
+      "rows": 6990,
+      "benign": 1653,
+      "attack": 5337,
+      "partition": "train",
+      "groups": 6990,
+      "fraction_of_partition": 0.0699,
+      "attack_prevalence": 0.763519313304721,
+      "canonical_support": {
+        "benign": 1653,
+        "bot": 12,
+        "ddos": 2363,
+        "dos_goldeneye": 60,
+        "dos_hulk": 1703,
+        "dos_slowhttptest": 80,
+        "dos_slowloris": 34,
+        "ftp_patator": 36,
+        "heartbleed": 0,
+        "infiltration": 2,
+        "portscan": 1013,
+        "ssh_patator": 21,
+        "web_attack_brute_force": 11,
+        "web_attack_sql_injection": 0,
+        "web_attack_xss": 2
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 3,
+      "rows": 17779,
+      "benign": 15544,
+      "attack": 2235,
+      "partition": "train",
+      "groups": 17779,
+      "fraction_of_partition": 0.17779,
+      "attack_prevalence": 0.12571010743011418,
+      "canonical_support": {
+        "benign": 15544,
+        "bot": 21,
+        "ddos": 617,
+        "dos_goldeneye": 13,
+        "dos_hulk": 819,
+        "dos_slowhttptest": 23,
+        "dos_slowloris": 60,
+        "ftp_patator": 122,
+        "heartbleed": 0,
+        "infiltration": 1,
+        "portscan": 554,
+        "ssh_patator": 0,
+        "web_attack_brute_force": 3,
+        "web_attack_sql_injection": 0,
+        "web_attack_xss": 2
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 4,
+      "rows": 16286,
+      "benign": 11700,
+      "attack": 4586,
+      "partition": "train",
+      "groups": 16286,
+      "fraction_of_partition": 0.16286,
+      "attack_prevalence": 0.2815915510254206,
+      "canonical_support": {
+        "benign": 11700,
+        "bot": 10,
+        "ddos": 298,
+        "dos_goldeneye": 55,
+        "dos_hulk": 3287,
+        "dos_slowhttptest": 31,
+        "dos_slowloris": 26,
+        "ftp_patator": 17,
+        "heartbleed": 0,
+        "infiltration": 0,
+        "portscan": 753,
+        "ssh_patator": 75,
+        "web_attack_brute_force": 20,
+        "web_attack_sql_injection": 1,
+        "web_attack_xss": 13
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 0,
+      "rows": 217128,
+      "benign": 202301,
+      "attack": 14827,
+      "partition": "validation",
+      "groups": 205470,
+      "fraction_of_partition": 0.4073168764268791,
+      "attack_prevalence": 0.06828690910430714,
+      "canonical_support": {
+        "benign": 202301,
+        "bot": 232,
+        "ddos": 4036,
+        "dos_goldeneye": 919,
+        "dos_hulk": 3955,
+        "dos_slowhttptest": 223,
+        "dos_slowloris": 324,
+        "ftp_patator": 95,
+        "heartbleed": 0,
+        "infiltration": 2,
+        "portscan": 4918,
+        "ssh_patator": 34,
+        "web_attack_brute_force": 66,
+        "web_attack_sql_injection": 0,
+        "web_attack_xss": 23
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 1,
+      "rows": 92240,
+      "benign": 76485,
+      "attack": 15755,
+      "partition": "validation",
+      "groups": 84433,
+      "fraction_of_partition": 0.17303576084897077,
+      "attack_prevalence": 0.17080442324371206,
+      "canonical_support": {
+        "benign": 76485,
+        "bot": 13,
+        "ddos": 5312,
+        "dos_goldeneye": 414,
+        "dos_hulk": 2622,
+        "dos_slowhttptest": 121,
+        "dos_slowloris": 265,
+        "ftp_patator": 837,
+        "heartbleed": 0,
+        "infiltration": 0,
+        "portscan": 5722,
+        "ssh_patator": 391,
+        "web_attack_brute_force": 46,
+        "web_attack_sql_injection": 1,
+        "web_attack_xss": 11
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 2,
+      "rows": 40145,
+      "benign": 8574,
+      "attack": 31571,
+      "partition": "validation",
+      "groups": 34766,
+      "fraction_of_partition": 0.07530920012231063,
+      "attack_prevalence": 0.7864242122306638,
+      "canonical_support": {
+        "benign": 8574,
+        "bot": 66,
+        "ddos": 11788,
+        "dos_goldeneye": 309,
+        "dos_hulk": 8739,
+        "dos_slowhttptest": 459,
+        "dos_slowloris": 211,
+        "ftp_patator": 205,
+        "heartbleed": 0,
+        "infiltration": 0,
+        "portscan": 9617,
+        "ssh_patator": 124,
+        "web_attack_brute_force": 51,
+        "web_attack_sql_injection": 0,
+        "web_attack_xss": 2
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 3,
+      "rows": 94945,
+      "benign": 80879,
+      "attack": 14066,
+      "partition": "validation",
+      "groups": 88137,
+      "fraction_of_partition": 0.1781101508435118,
+      "attack_prevalence": 0.1481489283269261,
+      "canonical_support": {
+        "benign": 80879,
+        "bot": 66,
+        "ddos": 2970,
+        "dos_goldeneye": 80,
+        "dos_hulk": 4344,
+        "dos_slowhttptest": 139,
+        "dos_slowloris": 264,
+        "ftp_patator": 1234,
+        "heartbleed": 1,
+        "infiltration": 4,
+        "portscan": 4931,
+        "ssh_patator": 17,
+        "web_attack_brute_force": 11,
+        "web_attack_sql_injection": 0,
+        "web_attack_xss": 5
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 4,
+      "rows": 88611,
+      "benign": 61314,
+      "attack": 27297,
+      "partition": "validation",
+      "groups": 81445,
+      "fraction_of_partition": 0.16622801175832772,
+      "attack_prevalence": 0.3080543047702881,
+      "canonical_support": {
+        "benign": 61314,
+        "bot": 37,
+        "ddos": 1415,
+        "dos_goldeneye": 300,
+        "dos_hulk": 17769,
+        "dos_slowhttptest": 281,
+        "dos_slowloris": 146,
+        "ftp_patator": 78,
+        "heartbleed": 0,
+        "infiltration": 0,
+        "portscan": 6601,
+        "ssh_patator": 449,
+        "web_attack_brute_force": 137,
+        "web_attack_sql_injection": 3,
+        "web_attack_xss": 81
+      },
+      "balanced_evaluation_eligible": true
+    }
+  ],
+  "elapsed_seconds": 1.5580166999998255
+}

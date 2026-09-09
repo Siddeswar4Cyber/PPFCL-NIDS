@@ -1,0 +1,582 @@
+{
+  "version": "C1",
+  "run_id": "C1-ND-UNSW-NB15-v3-stress-dirichlet_a1",
+  "experiment_id": "EXP-004",
+  "dataset": "ND-UNSW-NB15-v3",
+  "protocol": "stress",
+  "requested_scenario": "dirichlet_a1",
+  "alpha": 1.0,
+  "seed": 17,
+  "scope_tag": "C1|17|ND-UNSW-NB15-v3|stress|dirichlet_a1",
+  "clients": 5,
+  "status": "COMPLETED",
+  "script_sha256": "cdb028e2185b566ff9b29e7e1757f7c56c411e18bc62cd0fec6d449e28a52f84",
+  "git_commit": "cd4cb57043353335e71ac6d6b41cc5632df50def",
+  "preprocessing_version": "P1",
+  "parent_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\stress\\train.parquet",
+      "sha256": "3632b6d89999c893ae8d96cd0cb49db8bbdd96c334945043f5c82958e2c23049",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 97056
+        },
+        {
+          "binary_label": 1,
+          "rows": 2944
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\stress\\validation.parquet",
+      "sha256": "d3a5781f0b110ab0b792f85b9b3fe3da811dc8d6d92dc2fae1b9661d6989671b",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 74360
+        },
+        {
+          "binary_label": 1,
+          "rows": 7707
+        }
+      ]
+    }
+  },
+  "transform_sha256": "71b3c74e032171007ee2787b5b220ac7427ca6ac7e92ba5e5ebb5bb01c0396b0",
+  "fit_group_set_sha256": "558824ae7809c014d9c5a5c2cbc11b4f5524e534a91035c4899365e953a595f7",
+  "attempts": [
+    {
+      "attempt": 1,
+      "method": "pure_dirichlet",
+      "probabilities": {
+        "analysis": [
+          0.24614825466998183,
+          0.00012872585400114215,
+          0.3179480853125476,
+          0.43159047234285297,
+          0.004184461820616535
+        ],
+        "backdoor": [
+          0.04832959561468035,
+          0.29928341865120334,
+          0.29899044183790513,
+          0.04004257503306771,
+          0.31335396886314343
+        ],
+        "benign": [
+          0.0034111356742386155,
+          0.12255433468832667,
+          0.5520911823292992,
+          0.006149597244303293,
+          0.3157937500638323
+        ],
+        "dos": [
+          0.09602144670706995,
+          0.19754346039280035,
+          0.018315025951644835,
+          0.5135623022239544,
+          0.17455776472453058
+        ],
+        "exploits": [
+          0.02116082793526458,
+          0.17794581582965197,
+          0.5885930440003884,
+          0.09351232216130255,
+          0.11878799007339254
+        ],
+        "fuzzers": [
+          0.13589702976636228,
+          0.022293739329747563,
+          0.29833033932114916,
+          0.48544270104751797,
+          0.05803619053522304
+        ],
+        "generic": [
+          0.03486557930146606,
+          0.5493093610970343,
+          0.10614948703433441,
+          0.018789842911555343,
+          0.2908857296556098
+        ],
+        "reconnaissance": [
+          0.46336288395495756,
+          0.14464555139773805,
+          0.1093249437000708,
+          0.24525372315566896,
+          0.03741289779156464
+        ],
+        "shellcode": [
+          0.04052052951553987,
+          0.44137756698664476,
+          0.06310461275898398,
+          0.23846576966982108,
+          0.21653152106901036
+        ],
+        "worms": [
+          0.3394619081616711,
+          0.030622938016286905,
+          0.02559238016773804,
+          0.06884583121986301,
+          0.535476942434441
+        ]
+      },
+      "training_support": [
+        {
+          "client_id": 0,
+          "rows": 696,
+          "benign": 330,
+          "attack": 366
+        },
+        {
+          "client_id": 1,
+          "rows": 12240,
+          "benign": 11743,
+          "attack": 497
+        },
+        {
+          "client_id": 2,
+          "rows": 54874,
+          "benign": 53877,
+          "attack": 997
+        },
+        {
+          "client_id": 3,
+          "rows": 1327,
+          "benign": 583,
+          "attack": 744
+        },
+        {
+          "client_id": 4,
+          "rows": 30863,
+          "benign": 30523,
+          "attack": 340
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "method": "pure_dirichlet",
+      "probabilities": {
+        "analysis": [
+          0.24530734279109812,
+          0.33207155197151994,
+          0.24232672928151963,
+          0.13893519056950776,
+          0.041359185386354726
+        ],
+        "backdoor": [
+          0.03228097430474122,
+          0.7477684570393194,
+          0.017120554758247773,
+          0.16966073371044035,
+          0.033169280187251175
+        ],
+        "benign": [
+          0.3707429429263258,
+          0.006466796764195047,
+          0.053969113770703236,
+          0.44155886825041213,
+          0.1272622782883638
+        ],
+        "dos": [
+          0.05200322428803347,
+          0.36739795164663264,
+          0.017422925587199822,
+          0.05545429298731334,
+          0.5077216054908207
+        ],
+        "exploits": [
+          0.2062274562689621,
+          0.17270102426690556,
+          0.001059412485194818,
+          0.2919345421963695,
+          0.3280775647825681
+        ],
+        "fuzzers": [
+          0.1574309901390523,
+          0.049866821676831236,
+          0.6082427077306907,
+          0.09207144944959451,
+          0.0923880310038314
+        ],
+        "generic": [
+          0.22604221249220685,
+          0.061282519557513945,
+          0.18120258732133307,
+          0.3153092655835872,
+          0.21616341504535883
+        ],
+        "reconnaissance": [
+          0.1760164906530798,
+          0.04505545711872047,
+          0.6335565810942948,
+          0.1296282699069791,
+          0.01574320122692571
+        ],
+        "shellcode": [
+          0.11868704666678179,
+          0.24764543775339992,
+          0.4111874231623216,
+          0.19509526626459178,
+          0.027384826152905054
+        ],
+        "worms": [
+          0.3347614154890858,
+          0.09948051231770114,
+          0.5141379448343693,
+          0.009271505562575605,
+          0.042348621796268075
+        ]
+      },
+      "training_support": [
+        {
+          "client_id": 0,
+          "rows": 36595,
+          "benign": 36080,
+          "attack": 515
+        },
+        {
+          "client_id": 1,
+          "rows": 1144,
+          "benign": 646,
+          "attack": 498
+        },
+        {
+          "client_id": 2,
+          "rows": 6125,
+          "benign": 5262,
+          "attack": 863
+        },
+        {
+          "client_id": 3,
+          "rows": 43235,
+          "benign": 42700,
+          "attack": 535
+        },
+        {
+          "client_id": 4,
+          "rows": 12901,
+          "benign": 12368,
+          "attack": 533
+        }
+      ],
+      "accepted": true
+    }
+  ],
+  "actual_method": "pure_dirichlet",
+  "probabilities": {
+    "analysis": [
+      0.24530734279109812,
+      0.33207155197151994,
+      0.24232672928151963,
+      0.13893519056950776,
+      0.041359185386354726
+    ],
+    "backdoor": [
+      0.03228097430474122,
+      0.7477684570393194,
+      0.017120554758247773,
+      0.16966073371044035,
+      0.033169280187251175
+    ],
+    "benign": [
+      0.3707429429263258,
+      0.006466796764195047,
+      0.053969113770703236,
+      0.44155886825041213,
+      0.1272622782883638
+    ],
+    "dos": [
+      0.05200322428803347,
+      0.36739795164663264,
+      0.017422925587199822,
+      0.05545429298731334,
+      0.5077216054908207
+    ],
+    "exploits": [
+      0.2062274562689621,
+      0.17270102426690556,
+      0.001059412485194818,
+      0.2919345421963695,
+      0.3280775647825681
+    ],
+    "fuzzers": [
+      0.1574309901390523,
+      0.049866821676831236,
+      0.6082427077306907,
+      0.09207144944959451,
+      0.0923880310038314
+    ],
+    "generic": [
+      0.22604221249220685,
+      0.061282519557513945,
+      0.18120258732133307,
+      0.3153092655835872,
+      0.21616341504535883
+    ],
+    "reconnaissance": [
+      0.1760164906530798,
+      0.04505545711872047,
+      0.6335565810942948,
+      0.1296282699069791,
+      0.01574320122692571
+    ],
+    "shellcode": [
+      0.11868704666678179,
+      0.24764543775339992,
+      0.4111874231623216,
+      0.19509526626459178,
+      0.027384826152905054
+    ],
+    "worms": [
+      0.3347614154890858,
+      0.09948051231770114,
+      0.5141379448343693,
+      0.009271505562575605,
+      0.042348621796268075
+    ]
+  },
+  "final_private_public_external_access": false,
+  "validation_used_for_acceptance": false,
+  "interpretation": "Synthetic label-aware evaluation ownership; shared centralized development preprocessing; no host separation or privacy guarantee",
+  "artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\clients\\C1\\ND-UNSW-NB15-v3\\stress\\dirichlet_a1\\memberships.parquet",
+    "sha256": "06d28018cc616e2c1b971087ec840578209372a373cfda6bf40ff71aa632a73a",
+    "rows": 182067
+  },
+  "support": [
+    {
+      "client_id": 0,
+      "rows": 36595,
+      "benign": 36080,
+      "attack": 515,
+      "partition": "train",
+      "groups": 36595,
+      "fraction_of_partition": 0.36595,
+      "attack_prevalence": 0.014072960786992758,
+      "canonical_support": {
+        "analysis": 14,
+        "backdoor": 9,
+        "benign": 36080,
+        "dos": 9,
+        "exploits": 234,
+        "fuzzers": 142,
+        "generic": 28,
+        "reconnaissance": 69,
+        "shellcode": 9,
+        "worms": 1
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 1,
+      "rows": 1144,
+      "benign": 646,
+      "attack": 498,
+      "partition": "train",
+      "groups": 1144,
+      "fraction_of_partition": 0.01144,
+      "attack_prevalence": 0.4353146853146853,
+      "canonical_support": {
+        "analysis": 15,
+        "backdoor": 177,
+        "benign": 646,
+        "dos": 49,
+        "exploits": 178,
+        "fuzzers": 31,
+        "generic": 6,
+        "reconnaissance": 24,
+        "shellcode": 17,
+        "worms": 1
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 2,
+      "rows": 6125,
+      "benign": 5262,
+      "attack": 863,
+      "partition": "train",
+      "groups": 6125,
+      "fraction_of_partition": 0.06125,
+      "attack_prevalence": 0.14089795918367348,
+      "canonical_support": {
+        "analysis": 10,
+        "backdoor": 2,
+        "benign": 5262,
+        "dos": 2,
+        "exploits": 2,
+        "fuzzers": 542,
+        "generic": 21,
+        "reconnaissance": 255,
+        "shellcode": 28,
+        "worms": 1
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 3,
+      "rows": 43235,
+      "benign": 42700,
+      "attack": 535,
+      "partition": "train",
+      "groups": 43235,
+      "fraction_of_partition": 0.43235,
+      "attack_prevalence": 0.01237423383832543,
+      "canonical_support": {
+        "analysis": 10,
+        "backdoor": 33,
+        "benign": 42700,
+        "dos": 7,
+        "exploits": 284,
+        "fuzzers": 78,
+        "generic": 46,
+        "reconnaissance": 56,
+        "shellcode": 21,
+        "worms": 0
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 4,
+      "rows": 12901,
+      "benign": 12368,
+      "attack": 533,
+      "partition": "train",
+      "groups": 12901,
+      "fraction_of_partition": 0.12901,
+      "attack_prevalence": 0.04131462677311836,
+      "canonical_support": {
+        "analysis": 3,
+        "backdoor": 6,
+        "benign": 12368,
+        "dos": 64,
+        "exploits": 330,
+        "fuzzers": 91,
+        "generic": 28,
+        "reconnaissance": 8,
+        "shellcode": 3,
+        "worms": 0
+      },
+      "balanced_evaluation_eligible": null
+    },
+    {
+      "client_id": 0,
+      "rows": 29008,
+      "benign": 27619,
+      "attack": 1389,
+      "partition": "validation",
+      "groups": 28864,
+      "fraction_of_partition": 0.3534672889224658,
+      "attack_prevalence": 0.04788334252619967,
+      "canonical_support": {
+        "analysis": 16,
+        "backdoor": 0,
+        "benign": 27619,
+        "dos": 22,
+        "exploits": 691,
+        "fuzzers": 355,
+        "generic": 103,
+        "reconnaissance": 185,
+        "shellcode": 14,
+        "worms": 3
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 1,
+      "rows": 1507,
+      "benign": 523,
+      "attack": 984,
+      "partition": "validation",
+      "groups": 1507,
+      "fraction_of_partition": 0.018363044829224903,
+      "attack_prevalence": 0.6529528865295289,
+      "canonical_support": {
+        "analysis": 23,
+        "backdoor": 24,
+        "benign": 523,
+        "dos": 163,
+        "exploits": 547,
+        "fuzzers": 106,
+        "generic": 23,
+        "reconnaissance": 47,
+        "shellcode": 48,
+        "worms": 3
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 2,
+      "rows": 6305,
+      "benign": 4077,
+      "attack": 2228,
+      "partition": "validation",
+      "groups": 6271,
+      "fraction_of_partition": 0.07682747023773258,
+      "attack_prevalence": 0.353370340999207,
+      "canonical_support": {
+        "analysis": 14,
+        "backdoor": 0,
+        "benign": 4077,
+        "dos": 9,
+        "exploits": 3,
+        "fuzzers": 1318,
+        "generic": 88,
+        "reconnaissance": 728,
+        "shellcode": 60,
+        "worms": 8
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 3,
+      "rows": 34181,
+      "benign": 32684,
+      "attack": 1497,
+      "partition": "validation",
+      "groups": 34007,
+      "fraction_of_partition": 0.41650115149816613,
+      "attack_prevalence": 0.04379626108071736,
+      "canonical_support": {
+        "analysis": 5,
+        "backdoor": 7,
+        "benign": 32684,
+        "dos": 18,
+        "exploits": 943,
+        "fuzzers": 214,
+        "generic": 134,
+        "reconnaissance": 140,
+        "shellcode": 36,
+        "worms": 0
+      },
+      "balanced_evaluation_eligible": true
+    },
+    {
+      "client_id": 4,
+      "rows": 11066,
+      "benign": 9457,
+      "attack": 1609,
+      "partition": "validation",
+      "groups": 11006,
+      "fraction_of_partition": 0.13484104451241058,
+      "attack_prevalence": 0.14540032532080246,
+      "canonical_support": {
+        "analysis": 2,
+        "backdoor": 0,
+        "benign": 9457,
+        "dos": 230,
+        "exploits": 1041,
+        "fuzzers": 233,
+        "generic": 81,
+        "reconnaissance": 16,
+        "shellcode": 6,
+        "worms": 0
+      },
+      "balanced_evaluation_eligible": true
+    }
+  ],
+  "elapsed_seconds": 0.44428140000036365
+}
