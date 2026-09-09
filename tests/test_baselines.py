@@ -1,12 +1,13 @@
 import sys
 import unittest
 import warnings
+import json
 from pathlib import Path
 import numpy as np
 from threadpoolctl import threadpool_limits
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from baseline_metrics import evaluate,threshold_for_fpr
-from run_baseline_pilot import make_model,load_partition
+from run_baseline_pilot import make_model,load_partition,model_complexity
 
 
 class BaselineTests(unittest.TestCase):
@@ -40,6 +41,7 @@ class BaselineTests(unittest.TestCase):
                 model=make_model(kind); model.fit(x,y); p=model.predict_proba(x)
                 self.assertTrue(np.isfinite(p).all()); self.assertTrue(np.allclose(p.sum(axis=1),1))
                 self.assertEqual(list(model.classes_),[0,1])
+                json.dumps(model_complexity(model),allow_nan=False)
 
 
 if __name__=='__main__': unittest.main()

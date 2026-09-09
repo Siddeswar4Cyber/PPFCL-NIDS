@@ -1,0 +1,343 @@
+{
+  "run_id": "B1-cic-ids-2017-stress-logistic-s17",
+  "experiment_id": "EXP-003",
+  "dataset": "cic-ids-2017",
+  "protocol": "stress",
+  "model_kind": "logistic",
+  "seed": 17,
+  "status": "COMPLETED",
+  "script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "git_commit": null,
+  "preprocessing_version": "P2",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 391594,
+  "input_features": 156,
+  "fit_group_set_sha256": "67bf1227ee11c2ef13db4e401658a6932e442af33a6a93577d77bc80b82c11f6",
+  "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\train.parquet",
+      "sha256": "fa2f035d2937b17dc206953ed0263e2cb573bebd84a58cf30f8d8163eb05708a",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 88991
+        },
+        {
+          "binary_label": 1,
+          "rows": 11009
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\validation.parquet",
+      "sha256": "c1539e7f413479e807494d67fca153ca42dab1c5bc690d2bfe52e528d1d2aff2",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 345802
+        },
+        {
+          "binary_label": 1,
+          "rows": 45792
+        }
+      ]
+    }
+  },
+  "load_seconds": 0.8822270000000572,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "version": "0.3.34.106.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ]
+  },
+  "hardware": "reports/audit/environment.json",
+  "class_support": {
+    "train": {
+      "benign": 88991,
+      "dos_goldeneye": 540,
+      "dos_hulk": 9326,
+      "dos_slowhttptest": 264,
+      "dos_slowloris": 297,
+      "ftp_patator": 281,
+      "infiltration": 3,
+      "ssh_patator": 181,
+      "web_attack_brute_force": 81,
+      "web_attack_sql_injection": 1,
+      "web_attack_xss": 35
+    },
+    "validation": {
+      "benign": 345802,
+      "dos_goldeneye": 2022,
+      "dos_hulk": 37429,
+      "dos_slowhttptest": 1223,
+      "dos_slowloris": 1210,
+      "ftp_patator": 2449,
+      "heartbleed": 1,
+      "infiltration": 6,
+      "ssh_patator": 1015,
+      "web_attack_brute_force": 311,
+      "web_attack_sql_injection": 4,
+      "web_attack_xss": 122
+    }
+  },
+  "hyperparameters": {
+    "C": 1,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0,
+    "max_iter": 500,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 17,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float64",
+  "warnings": [],
+  "model_roundtrip_max_abs_delta": 0.0,
+  "fit_seconds": 0.5238752999994176,
+  "validation_prediction_seconds": 0.05440529999941646,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.9684520191831335,
+    "attack_precision": 0.9786430002862868,
+    "attack_recall": 0.7465059399021663,
+    "attack_f1": 0.8469562201134759,
+    "binary_macro_f1": 0.9146848019108633,
+    "benign_fpr": 0.0021573038906657566,
+    "average_precision": 0.9484492113189167,
+    "roc_auc": 0.9902000408465186,
+    "confusion": {
+      "tn": 345056,
+      "fp": 746,
+      "fn": 11608,
+      "tp": 34184
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.8432245301681504
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.834673648775014
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.785772690106296
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.22644628099173553
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.0
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.0
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.0009852216748768472
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.006430868167202572
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.3935794297350763,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.9673335137923461,
+    "attack_precision": 0.9133680729532018,
+    "attack_recall": 0.7961652690426275,
+    "attack_f1": 0.850749054930695,
+    "binary_macro_f1": 0.9162043720487048,
+    "benign_fpr": 0.009999942163434566,
+    "average_precision": 0.9484492113189167,
+    "roc_auc": 0.9902000408465186,
+    "confusion": {
+      "tn": 342344,
+      "fp": 3458,
+      "fn": 9334,
+      "tp": 36458
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.9268051434223541
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.8758983675759437
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.821749795584628
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.6537190082644628
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.0
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.0
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.0009852216748768472
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.00964630225080386
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": [
+    45
+  ],
+  "loss_curve": [],
+  "complexity": {
+    "parameters": 157
+  },
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 0.4970999998477055,
+    "batch_p95_ms": 0.5541500000617816,
+    "measurements_ms": [
+      0.5195999992793077,
+      0.5584999998973217,
+      0.4970999998477055,
+      0.4573999995045597,
+      0.5440000004455214,
+      0.4304999993109959,
+      0.3650999997262261
+    ]
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\cic-ids-2017\\stress\\logistic\\model.joblib",
+    "sha256": "52869e3fada1b19cca5579dc093bc4b6927fe536882c9360602ed485ea7f2bcc",
+    "bytes": 1172
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\cic-ids-2017\\stress\\logistic\\validation-probabilities.npy",
+    "sha256": "94c5e76c3c60331f671a0ac4040df8d984ae059d57783a127b79445327fef52f",
+    "rows": 391594
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "model_roundtrip_verified": true,
+  "worker_seconds": 1.9819846999998845,
+  "sampled_peak_process_rss_bytes": 1072889856,
+  "rss_scope": "Worker process tree, including Windows launcher; sampled every 0.5s",
+  "supervised_wall_seconds": 3.57926309999948,
+  "exit_code": 0,
+  "log": "reports\\baselines\\logs\\B1-cic-ids-2017-stress-logistic-s17.log",
+  "resource_limit_stop": null
+}

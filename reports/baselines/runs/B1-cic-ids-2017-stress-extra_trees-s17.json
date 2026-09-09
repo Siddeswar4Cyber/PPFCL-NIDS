@@ -1,0 +1,347 @@
+{
+  "run_id": "B1-cic-ids-2017-stress-extra_trees-s17",
+  "experiment_id": "EXP-003",
+  "dataset": "cic-ids-2017",
+  "protocol": "stress",
+  "model_kind": "extra_trees",
+  "seed": 17,
+  "status": "COMPLETED",
+  "script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "git_commit": null,
+  "preprocessing_version": "P2",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 391594,
+  "input_features": 156,
+  "fit_group_set_sha256": "67bf1227ee11c2ef13db4e401658a6932e442af33a6a93577d77bc80b82c11f6",
+  "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\train.parquet",
+      "sha256": "fa2f035d2937b17dc206953ed0263e2cb573bebd84a58cf30f8d8163eb05708a",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 88991
+        },
+        {
+          "binary_label": 1,
+          "rows": 11009
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\validation.parquet",
+      "sha256": "c1539e7f413479e807494d67fca153ca42dab1c5bc690d2bfe52e528d1d2aff2",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 345802
+        },
+        {
+          "binary_label": 1,
+          "rows": 45792
+        }
+      ]
+    }
+  },
+  "load_seconds": 0.8872510999999577,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "version": "0.3.34.106.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ]
+  },
+  "hardware": "reports/audit/environment.json",
+  "class_support": {
+    "train": {
+      "benign": 88991,
+      "dos_goldeneye": 540,
+      "dos_hulk": 9326,
+      "dos_slowhttptest": 264,
+      "dos_slowloris": 297,
+      "ftp_patator": 281,
+      "infiltration": 3,
+      "ssh_patator": 181,
+      "web_attack_brute_force": 81,
+      "web_attack_sql_injection": 1,
+      "web_attack_xss": 35
+    },
+    "validation": {
+      "benign": 345802,
+      "dos_goldeneye": 2022,
+      "dos_hulk": 37429,
+      "dos_slowhttptest": 1223,
+      "dos_slowloris": 1210,
+      "ftp_patator": 2449,
+      "heartbleed": 1,
+      "infiltration": 6,
+      "ssh_patator": 1015,
+      "web_attack_brute_force": 311,
+      "web_attack_sql_injection": 4,
+      "web_attack_xss": 122
+    }
+  },
+  "hyperparameters": {
+    "bootstrap": false,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 20,
+    "max_features": "sqrt",
+    "max_leaf_nodes": 4096,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 64,
+    "n_jobs": 4,
+    "oob_score": false,
+    "random_state": 17,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float32",
+  "warnings": [],
+  "model_roundtrip_max_abs_delta": 1.3877787807814457e-17,
+  "fit_seconds": 2.6515650999999707,
+  "validation_prediction_seconds": 0.4838974000003873,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.9819353718392008,
+    "attack_precision": 0.9983011583011583,
+    "attack_recall": 0.8469601677148847,
+    "attack_f1": 0.9164244701212164,
+    "binary_macro_f1": 0.9531488605655857,
+    "benign_fpr": 0.0001908606659302144,
+    "average_precision": 0.9909223423401418,
+    "roc_auc": 0.9986264538792939,
+    "confusion": {
+      "tn": 345736,
+      "fp": 66,
+      "fn": 7008,
+      "tp": 38784
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.9515331355093967
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.8761922573405648
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.821749795584628
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.9487603305785124
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.5271539403838301
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.0
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.5921182266009852
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.06430868167202572
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.12741582027591547,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.9879288242414337,
+    "attack_precision": 0.928447718214636,
+    "attack_recall": 0.9716544374563243,
+    "attack_f1": 0.9495598356719842,
+    "binary_macro_f1": 0.9713519373349427,
+    "benign_fpr": 0.009916079143556139,
+    "average_precision": 0.9909223423401418,
+    "roc_auc": 0.9986264538792939,
+    "confusion": {
+      "tn": 342373,
+      "fp": 3429,
+      "fn": 1298,
+      "tp": 44494
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 1.0
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9976488818830319
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.9632052330335241
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 1.0
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.7043691302572479
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 1.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.6666666666666666
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.6029556650246305
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.909967845659164
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.5
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.9508196721311475
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": [],
+  "loss_curve": [],
+  "complexity": {
+    "nodes": 37998,
+    "leaves": 19031
+  },
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 12.96600000023318,
+    "batch_p95_ms": 13.276809999661054,
+    "measurements_ms": [
+      12.941100000716688,
+      12.683299999480369,
+      13.353999999708321,
+      13.096699999550765,
+      12.96600000023318,
+      13.063100000181294,
+      12.239100000442704
+    ]
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\cic-ids-2017\\stress\\extra_trees\\model.joblib",
+    "sha256": "9e4759e999aca2856ca18cae516226e5b55c1a53cd3d0c0e4bbf13b5734464cd",
+    "bytes": 962287
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\cic-ids-2017\\stress\\extra_trees\\validation-probabilities.npy",
+    "sha256": "de848852279e2f266e77d951375f9034609637c9168b6e569861eccbc053052a",
+    "rows": 391594
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "model_roundtrip_verified": true,
+  "worker_seconds": 4.713080300000001,
+  "sampled_peak_process_rss_bytes": 1005367296,
+  "rss_scope": "Worker process tree, including Windows launcher; sampled every 0.5s",
+  "supervised_wall_seconds": 6.119699399999263,
+  "exit_code": 0,
+  "log": "reports\\baselines\\logs\\B1-cic-ids-2017-stress-extra_trees-s17.log",
+  "resource_limit_stop": null
+}

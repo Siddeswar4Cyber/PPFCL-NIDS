@@ -1,0 +1,14 @@
+B1-cic-ids-2017-primary-prior-s17: START
+B1-cic-ids-2017-primary-prior-s17: COMPLETED
+B1-cic-ids-2017-primary-logistic-s17: START
+B1-cic-ids-2017-primary-logistic-s17: COMPLETED
+B1-cic-ids-2017-primary-extra_trees-s17: START
+B1-cic-ids-2017-primary-extra_trees-s17: FAILED
+Traceback (most recent call last):
+  File "C:\Users\nimma\OneDrive\Documents\ChatGPT\capstone-project witj astra\scripts\run_baseline_pilot.py", line 161, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "C:\Users\nimma\OneDrive\Documents\ChatGPT\capstone-project witj astra\scripts\run_baseline_pilot.py", line 158, in main
+    if result['status']!='COMPLETED': raise RuntimeError(f'{run_id} failed; preserve evidence and investigate')
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: B1-cic-ids-2017-primary-extra_trees-s17 failed; preserve evidence and investigate

@@ -1,0 +1,352 @@
+{
+  "run_id": "B1-cic-ids-2017-primary-logistic-s17",
+  "experiment_id": "EXP-003",
+  "dataset": "cic-ids-2017",
+  "protocol": "primary",
+  "model_kind": "logistic",
+  "seed": 17,
+  "status": "COMPLETED",
+  "script_sha256": "e098b14e0ebd06b6f4d54a0f72e5760689ea1eb12ff62df0d32f80f9fde8f4be",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "git_commit": null,
+  "preprocessing_version": "P2",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 533069,
+  "input_features": 156,
+  "fit_group_set_sha256": "9e3b8c95ee4a3afa1a2904cfc1cdb7d918b055e44ffe5baedc02e0eed48d8bca",
+  "transform_sha256": "7a3f53a4825c898758a969e0cccece5fe8c90419d73af7032ac564aa8f543a28",
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\train.parquet",
+      "sha256": "9b64332e8cca684e33e4b75619c874400fadd914b174dc39fe79a60341b70478",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 82804
+        },
+        {
+          "binary_label": 1,
+          "rows": 17196
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\validation.parquet",
+      "sha256": "58a8dd64c8751bc211d3439d9a2f74a52edca1987bbb898a68bb135ab6147602",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 429553
+        },
+        {
+          "binary_label": 1,
+          "rows": 103516
+        }
+      ]
+    }
+  },
+  "load_seconds": 1.172876699999506,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "version": "0.3.34.106.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ]
+  },
+  "hardware": "reports/audit/environment.json",
+  "class_support": {
+    "train": {
+      "benign": 82804,
+      "bot": 83,
+      "ddos": 5160,
+      "dos_goldeneye": 399,
+      "dos_hulk": 7107,
+      "dos_slowhttptest": 198,
+      "dos_slowloris": 237,
+      "ftp_patator": 208,
+      "infiltration": 3,
+      "portscan": 3566,
+      "ssh_patator": 148,
+      "web_attack_brute_force": 61,
+      "web_attack_sql_injection": 1,
+      "web_attack_xss": 25
+    },
+    "validation": {
+      "benign": 429553,
+      "bot": 414,
+      "ddos": 25521,
+      "dos_goldeneye": 2022,
+      "dos_hulk": 37429,
+      "dos_slowhttptest": 1223,
+      "dos_slowloris": 1210,
+      "ftp_patator": 2449,
+      "heartbleed": 1,
+      "infiltration": 6,
+      "portscan": 31789,
+      "ssh_patator": 1015,
+      "web_attack_brute_force": 311,
+      "web_attack_sql_injection": 4,
+      "web_attack_xss": 122
+    }
+  },
+  "hyperparameters": {
+    "C": 1,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0,
+    "max_iter": 500,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 17,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float64",
+  "warnings": [],
+  "model_roundtrip_max_abs_delta": 0.0,
+  "fit_seconds": 0.8910905000002458,
+  "validation_prediction_seconds": 0.08510879999994359,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 533069,
+    "attack_prevalence": 0.19418874479663983,
+    "accuracy": 0.9252498269454799,
+    "attack_precision": 0.8597647112005153,
+    "attack_recall": 0.7349395262568106,
+    "attack_f1": 0.7924667843731609,
+    "binary_macro_f1": 0.8734411461376292,
+    "benign_fpr": 0.028888169795112592,
+    "average_precision": 0.9149998550012308,
+    "roc_auc": 0.9761783583458463,
+    "confusion": {
+      "tn": 417144,
+      "fp": 12409,
+      "fn": 27438,
+      "tp": 76078
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 429553,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 414,
+        "binary_attack_recall": 0.0
+      },
+      "ddos": {
+        "support": 25521,
+        "binary_attack_recall": 0.6385721562634693
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.6904055390702275
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9477410564001175
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.7841373671300081
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.5
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.0012249897917517355
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.0
+      },
+      "portscan": {
+        "support": 31789,
+        "binary_attack_recall": 0.6712384787190537
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.0019704433497536944
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.040983606557377046
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.712365639753362,
+    "rows": 533069,
+    "attack_prevalence": 0.19418874479663983,
+    "accuracy": 0.903534064070505,
+    "attack_precision": 0.9292223522238519,
+    "attack_recall": 0.5447273851385294,
+    "attack_f1": 0.6868251329179836,
+    "binary_macro_f1": 0.8149056496941108,
+    "benign_fpr": 0.009998766159239954,
+    "average_precision": 0.9149998550012308,
+    "roc_auc": 0.9761783583458463,
+    "confusion": {
+      "tn": 425258,
+      "fp": 4295,
+      "fn": 47128,
+      "tp": 56388
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 429553,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 414,
+        "binary_attack_recall": 0.0
+      },
+      "ddos": {
+        "support": 25521,
+        "binary_attack_recall": 0.6238783746718389
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.5306627101879328
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9116994843570494
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.6500408830744072
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.4900826446280992
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.0012249897917517355
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.0
+      },
+      "portscan": {
+        "support": 31789,
+        "binary_attack_recall": 0.1217716820283746
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.0019704433497536944
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.040983606557377046
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": [
+    76
+  ],
+  "loss_curve": [],
+  "complexity": {
+    "parameters": 157
+  },
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 0.4593999992721365,
+    "batch_p95_ms": 0.5455400001665112,
+    "measurements_ms": [
+      0.5615000000034343,
+      0.4593999992721365,
+      0.38439999934780644,
+      0.508300000547024,
+      0.37450000036187703,
+      0.42860000030486844,
+      0.48739999965619063
+    ]
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1-initial-attempt\\cic-ids-2017\\primary\\logistic\\model.joblib",
+    "sha256": "633273483a9db4d27b32e13f683ab2aab66281ee4659e666f453c871d85445ef",
+    "bytes": 1169
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1-initial-attempt\\cic-ids-2017\\primary\\logistic\\validation-probabilities.npy",
+    "sha256": "8042a48429d3d92e8de73a8ffd904a4f5e48c49dd3fbb9b11ecc4cb878a32e38",
+    "rows": 533069
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "model_roundtrip_verified": true,
+  "worker_seconds": 3.127437699999973,
+  "supervised_wall_seconds": 5.034129900000153,
+  "exit_code": 0,
+  "log": "reports\\baselines\\initial-attempt\\logs\\B1-cic-ids-2017-primary-logistic-s17.log",
+  "resource_limit_stop": null,
+  "attempt": "initial",
+  "superseded_for_reporting": true,
+  "rerun_reason": "Fix NumPy tree-size serialization and include actual Windows Python child in RSS monitoring; unchanged data/model settings.",
+  "sampled_launcher_rss_bytes": 4820992,
+  "actual_worker_peak_rss_bytes": null
+}

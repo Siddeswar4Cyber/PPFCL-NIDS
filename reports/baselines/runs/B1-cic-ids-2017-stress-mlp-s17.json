@@ -1,0 +1,369 @@
+{
+  "run_id": "B1-cic-ids-2017-stress-mlp-s17",
+  "experiment_id": "EXP-003",
+  "dataset": "cic-ids-2017",
+  "protocol": "stress",
+  "model_kind": "mlp",
+  "seed": 17,
+  "status": "COMPLETED",
+  "script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "git_commit": null,
+  "preprocessing_version": "P2",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 391594,
+  "input_features": 156,
+  "fit_group_set_sha256": "67bf1227ee11c2ef13db4e401658a6932e442af33a6a93577d77bc80b82c11f6",
+  "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\train.parquet",
+      "sha256": "fa2f035d2937b17dc206953ed0263e2cb573bebd84a58cf30f8d8163eb05708a",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 88991
+        },
+        {
+          "binary_label": 1,
+          "rows": 11009
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\validation.parquet",
+      "sha256": "c1539e7f413479e807494d67fca153ca42dab1c5bc690d2bfe52e528d1d2aff2",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 345802
+        },
+        {
+          "binary_label": 1,
+          "rows": 45792
+        }
+      ]
+    }
+  },
+  "load_seconds": 0.8876814000004742,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "version": "0.3.34.106.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ]
+  },
+  "hardware": "reports/audit/environment.json",
+  "class_support": {
+    "train": {
+      "benign": 88991,
+      "dos_goldeneye": 540,
+      "dos_hulk": 9326,
+      "dos_slowhttptest": 264,
+      "dos_slowloris": 297,
+      "ftp_patator": 281,
+      "infiltration": 3,
+      "ssh_patator": 181,
+      "web_attack_brute_force": 81,
+      "web_attack_sql_injection": 1,
+      "web_attack_xss": 35
+    },
+    "validation": {
+      "benign": 345802,
+      "dos_goldeneye": 2022,
+      "dos_hulk": 37429,
+      "dos_slowhttptest": 1223,
+      "dos_slowloris": 1210,
+      "ftp_patator": 2449,
+      "heartbleed": 1,
+      "infiltration": 6,
+      "ssh_patator": 1015,
+      "web_attack_brute_force": 311,
+      "web_attack_sql_injection": 4,
+      "web_attack_xss": 122
+    }
+  },
+  "hyperparameters": {
+    "activation": "relu",
+    "alpha": 0.0001,
+    "batch_size": 256,
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "early_stopping": false,
+    "epsilon": 1e-08,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "learning_rate": "constant",
+    "learning_rate_init": 0.001,
+    "max_fun": 15000,
+    "max_iter": 10,
+    "momentum": 0.9,
+    "n_iter_no_change": 11,
+    "nesterovs_momentum": true,
+    "power_t": 0.5,
+    "random_state": 17,
+    "shuffle": true,
+    "solver": "adam",
+    "tol": 0,
+    "validation_fraction": 0.1,
+    "verbose": false,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float64",
+  "warnings": [
+    {
+      "category": "ConvergenceWarning",
+      "message": "Stochastic Optimizer: Maximum iterations (10) reached and the optimization hasn't converged yet."
+    }
+  ],
+  "model_roundtrip_max_abs_delta": 0.0,
+  "fit_seconds": 2.8001599000008355,
+  "validation_prediction_seconds": 0.2610617000000275,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.982900657313442,
+    "attack_precision": 0.9919220896874528,
+    "attack_recall": 0.8607835429769392,
+    "attack_f1": 0.9217116801122414,
+    "binary_macro_f1": 0.956056927121703,
+    "benign_fpr": 0.0009282768752060427,
+    "average_precision": 0.9862872184869911,
+    "roc_auc": 0.9975940104978256,
+    "confusion": {
+      "tn": 345481,
+      "fp": 321,
+      "fn": 6375,
+      "tp": 39417
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.923837784371909
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.8930241256779502
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.8626328699918234
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.9396694214876034
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.5308289097590854
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.3333333333333333
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.5950738916256157
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.08360128617363344
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.2414594836092445,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.9850304141534344,
+    "attack_precision": 0.9261836656278017,
+    "attack_recall": 0.947501747030049,
+    "attack_f1": 0.9367214318098405,
+    "binary_macro_f1": 0.9641162730694992,
+    "benign_fpr": 0.009999942163434566,
+    "average_precision": 0.9862872184869911,
+    "roc_auc": 0.9975940104978256,
+    "confusion": {
+      "tn": 342344,
+      "fp": 3458,
+      "fn": 2404,
+      "tp": 43388
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.9713155291790306
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9888856234470598
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.8675388389206868
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.9586776859504132
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.532462229481421
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.3333333333333333
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.5980295566502463
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.6495176848874598
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.6147540983606558
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": 10,
+  "loss_curve": [
+    0.13461868084070275,
+    0.0527683272288765,
+    0.04072508747577571,
+    0.03483466631370798,
+    0.03155992602439879,
+    0.028985788470934307,
+    0.02646174337233646,
+    0.02466701776364464,
+    0.02288922365028132,
+    0.02155437740132538
+  ],
+  "complexity": {
+    "parameters": 12161
+  },
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 2.30939999983093,
+    "batch_p95_ms": 2.680689999851893,
+    "measurements_ms": [
+      2.2787999996580766,
+      2.520600000025297,
+      2.325899999959802,
+      2.30939999983093,
+      2.749299999777577,
+      2.284400000462483,
+      2.1278000003803754
+    ]
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\cic-ids-2017\\stress\\mlp\\model.joblib",
+    "sha256": "f1cabec57e66301418d3ff20ffed4774ebf26c46e5e46556270df9c79676adb5",
+    "bytes": 383245
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\cic-ids-2017\\stress\\mlp\\validation-probabilities.npy",
+    "sha256": "c3595a19d06b0f9763024836f1bb6f0003524ec66865a02ea18110b63e26db58",
+    "rows": 391594
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "model_roundtrip_verified": true,
+  "worker_seconds": 4.479608499999813,
+  "sampled_peak_process_rss_bytes": 1230782464,
+  "rss_scope": "Worker process tree, including Windows launcher; sampled every 0.5s",
+  "supervised_wall_seconds": 6.111593599999651,
+  "exit_code": 0,
+  "log": "reports\\baselines\\logs\\B1-cic-ids-2017-stress-mlp-s17.log",
+  "resource_limit_stop": null
+}

@@ -34,3 +34,7 @@ All validation predictions are saved locally for reproducibility. Recompute metr
 Use validation results to identify feasible candidates and data/metric failures. Any preliminary ranking is single-seed, fixed-budget evidence. EXP-003 remains in progress for controlled feature/encoding/model comparisons and repeat seeds; final model selection and test exposure are later gates. A0's detector and integration candidates may diverge.
 
 References: [Extra Trees](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html), [MLPClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html), and [average precision](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html). Installed versions are pinned in requirements-baseline.txt; local behavior and artifact checks govern the run.
+
+## Execution note after the pilot
+
+The initial tree report failed to serialize a NumPy integer, and initial RAM monitoring measured only the Windows launcher. Those attempts are preserved. The corrected supervisor samples the sum of the worker and its descendants. All 16 retained runs use unchanged model configurations and population rules; this infrastructure fix does not add independent confirmation seeds. See [checkpoint verification](../reports/CP5-checkpoint-verification.md) for reproducibility commands and retained evidence.

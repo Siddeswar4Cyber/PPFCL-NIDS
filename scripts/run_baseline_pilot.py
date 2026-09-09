@@ -72,6 +72,14 @@ def make_model(kind):
 def identity(dataset,protocol,kind): return f'B1-{dataset}-{protocol}-{kind}-s17'
 
 
+def model_complexity(model):
+    result={}
+    if hasattr(model,'coefs_'): result['parameters']=int(sum(a.size for a in model.coefs_+model.intercepts_))
+    if hasattr(model,'coef_'): result['parameters']=int(model.coef_.size+model.intercept_.size)
+    if hasattr(model,'estimators_'): result.update(nodes=int(sum(t.tree_.node_count for t in model.estimators_)),leaves=int(sum(t.tree_.n_leaves for t in model.estimators_)))
+    return result
+
+
 def worker(dataset,protocol,kind):
     began=time.perf_counter(); run_id=identity(dataset,protocol,kind)
     output=ROOT/'reports/baselines/runs'/f'{run_id}.json'
@@ -112,10 +120,7 @@ def worker(dataset,protocol,kind):
             latency=[]; batch=xv[:4096]; model.predict_proba(batch)
             for _ in range(7):
                 tick=time.perf_counter(); model.predict_proba(batch); latency.append((time.perf_counter()-tick)*1000)
-            complexity={}
-            if hasattr(model,'coefs_'): complexity['parameters']=sum(a.size for a in model.coefs_+model.intercepts_)
-            if hasattr(model,'coef_'): complexity['parameters']=model.coef_.size+model.intercept_.size
-            if hasattr(model,'estimators_'): complexity.update(nodes=sum(t.tree_.node_count for t in model.estimators_),leaves=sum(t.tree_.n_leaves for t in model.estimators_))
+            complexity=model_complexity(model)
             result.update(status='COMPLETED',fit_seconds=fit_seconds,validation_prediction_seconds=prediction_seconds,metrics_05=default,metrics_fpr01=calibrated,
                 iterations=np.asarray(getattr(model,'n_iter_',[])).tolist(),loss_curve=getattr(model,'loss_curve_',[]),complexity=complexity,
                 latency={'batch_rows':len(batch),'warmup_batches':1,'repetitions':7,'batch_p50_ms':float(np.percentile(latency,50)),'batch_p95_ms':float(np.percentile(latency,95)),'measurements_ms':latency},
@@ -144,14 +149,24 @@ def main():
                     proc=subprocess.Popen([sys.executable,'-u',str(Path(__file__)),'--worker','--dataset',dataset,'--protocol',protocol,'--model',kind],cwd=ROOT,env=env,stdout=handle,stderr=subprocess.STDOUT,creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
                     observed=psutil.Process(proc.pid)
                     while proc.poll() is None:
-                        try: peak=max(peak,observed.memory_info().rss)
+                        try:
+                            process_tree=[observed]+observed.children(recursive=True)
+                            rss=0
+                            for member in process_tree:
+                                try: rss+=member.memory_info().rss
+                                except psutil.NoSuchProcess: pass
+                            peak=max(peak,rss)
                         except psutil.NoSuchProcess: break
                         if peak>12*2**30 or time.perf_counter()-began>600:
-                            stopped='RSS or wall-time cap exceeded'; proc.kill(); break
+                            stopped='RSS or wall-time cap exceeded'
+                            for member in reversed(process_tree):
+                                try: member.kill()
+                                except psutil.NoSuchProcess: pass
+                            break
                         time.sleep(0.5)
                     code=proc.wait()
                 result=json.loads(output.read_text()) if output.exists() else {'run_id':run_id,'status':'FAILED'}
-                result.update(sampled_peak_process_rss_bytes=peak,supervised_wall_seconds=time.perf_counter()-began,exit_code=code,log=str(log.relative_to(ROOT)),resource_limit_stop=stopped)
+                result.update(sampled_peak_process_rss_bytes=peak,rss_scope='Worker process tree, including Windows launcher; sampled every 0.5s',supervised_wall_seconds=time.perf_counter()-began,exit_code=code,log=str(log.relative_to(ROOT)),resource_limit_stop=stopped)
                 if code!=0: result.update(status='FAILED',supervisor_error=stopped or 'Worker failed; see log')
                 write_json(output,result)
                 print(f'{run_id}: {result["status"]}',flush=True)

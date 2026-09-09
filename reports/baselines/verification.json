@@ -1,0 +1,136 @@
+{
+  "version": "B1",
+  "status": "PASSED",
+  "runs": 16,
+  "checks": [
+    {
+      "run_id": "B1-cic-ids-2017-primary-prior-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-cic-ids-2017-primary-logistic-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-cic-ids-2017-primary-extra_trees-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-cic-ids-2017-primary-mlp-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-cic-ids-2017-stress-prior-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-cic-ids-2017-stress-logistic-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-cic-ids-2017-stress-extra_trees-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-cic-ids-2017-stress-mlp-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-ND-UNSW-NB15-v3-primary-prior-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-ND-UNSW-NB15-v3-primary-logistic-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-ND-UNSW-NB15-v3-primary-extra_trees-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-ND-UNSW-NB15-v3-primary-mlp-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-ND-UNSW-NB15-v3-stress-prior-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-ND-UNSW-NB15-v3-stress-logistic-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-ND-UNSW-NB15-v3-stress-extra_trees-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    },
+    {
+      "run_id": "B1-ND-UNSW-NB15-v3-stress-mlp-s17",
+      "saved_metric_recomputation": "PASSED",
+      "input_and_model_hashes": "PASSED",
+      "same_scope_training_population": "PASSED",
+      "resource_limits": "PASSED",
+      "final_external_access": false
+    }
+  ],
+  "limits": "Validation-only, one fixed configuration and seed per model/namespace; no generalization or privacy guarantee"
+}

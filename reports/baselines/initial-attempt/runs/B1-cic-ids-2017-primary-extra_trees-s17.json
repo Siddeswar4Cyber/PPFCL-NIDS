@@ -1,0 +1,22 @@
+{
+  "run_id": "B1-cic-ids-2017-primary-extra_trees-s17",
+  "experiment_id": "EXP-003",
+  "dataset": "cic-ids-2017",
+  "protocol": "primary",
+  "model_kind": "extra_trees",
+  "seed": 17,
+  "status": "FAILED",
+  "script_sha256": "e098b14e0ebd06b6f4d54a0f72e5760689ea1eb12ff62df0d32f80f9fde8f4be",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "git_commit": null,
+  "supervised_wall_seconds": 8.037266799999998,
+  "exit_code": 1,
+  "log": "reports\\baselines\\initial-attempt\\logs\\B1-cic-ids-2017-primary-extra_trees-s17.log",
+  "resource_limit_stop": null,
+  "supervisor_error": "Worker failed; see log",
+  "attempt": "initial",
+  "superseded_for_reporting": true,
+  "rerun_reason": "Fix NumPy tree-size serialization and include actual Windows Python child in RSS monitoring; unchanged data/model settings.",
+  "sampled_launcher_rss_bytes": 4820992,
+  "actual_worker_peak_rss_bytes": null
+}

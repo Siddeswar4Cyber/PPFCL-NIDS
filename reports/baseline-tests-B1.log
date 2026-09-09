@@ -1,0 +1,40 @@
+tmp8a740pch: hash/load latin.csv
+tmp8a740pch: column statistics
+tmp8a740pch: exact duplicate/conflict grouping
+tmp8a740pch: temporal checks
+test_lossless_encoding_and_quoted_fields (test_audit.AuditTests.test_lossless_encoding_and_quoted_fields) ... ok
+tmp054_h619: hash/load sample.csv
+tmp054_h619: column statistics
+tmp054_h619: exact duplicate/conflict grouping
+tmp054_h619: temporal checks
+test_quality_duplicates_conflicts_and_malformed_rows (test_audit.AuditTests.test_quality_duplicates_conflicts_and_malformed_rows) ... ok
+tmp5q9w6g3h: hash/load sample.csv
+tmp5q9w6g3h: column statistics
+tmp5q9w6g3h: exact duplicate/conflict grouping
+tmp5q9w6g3h: resume exact grouping
+tmp5q9w6g3h: resume temporal checks
+test_resume_after_interruption_preserves_completed_profile (test_audit.AuditTests.test_resume_after_interruption_preserves_completed_profile) ... ok
+tmput_475oi: hash/load one.csv
+tmput_475oi: hash/load two.csv
+tmput_475oi: column statistics
+tmput_475oi: exact duplicate/conflict grouping
+tmput_475oi: predictor-only collisions
+tmput_475oi: temporal checks
+test_temporal_and_cross_file_duplicates (test_audit.AuditTests.test_temporal_and_cross_file_duplicates) ... ok
+test_all_estimators_fit_and_emit_finite_binary_probabilities (test_baselines.BaselineTests.test_all_estimators_fit_and_emit_finite_binary_probabilities) ... ok
+test_confusion_and_absent_family (test_baselines.BaselineTests.test_confusion_and_absent_family) ... ok
+test_float32_can_merge_float64_inputs (test_baselines.BaselineTests.test_float32_can_merge_float64_inputs) ... ok
+test_invalid_probability_and_sealed_access_rejected (test_baselines.BaselineTests.test_invalid_probability_and_sealed_access_rejected) ... ok
+test_ties_do_not_exceed_false_positive_budget (test_baselines.BaselineTests.test_ties_do_not_exceed_false_positive_budget) ... ok
+test_all_missing_column_has_explicit_fixed_fallback (test_preprocessing.PreprocessingTests.test_all_missing_column_has_explicit_fixed_fallback) ... ok
+test_forbidden_roles_and_future_tasks_do_not_change_fit (test_preprocessing.PreprocessingTests.test_forbidden_roles_and_future_tasks_do_not_change_fit) ... ok
+test_missing_sentinel_and_negative_policy (test_preprocessing.PreprocessingTests.test_missing_sentinel_and_negative_policy) ... ok
+test_saved_transform_preserves_missing_distinction_and_future_range (test_preprocessing.PreprocessingTests.test_saved_transform_preserves_missing_distinction_and_future_range) ... ok
+test_conflicts_are_quarantined_and_cross_file_groups_stay_together (test_splits.SplitTests.test_conflicts_are_quarantined_and_cross_file_groups_stay_together) ... ok
+test_normalized_missing_and_signed_zero_equivalence (test_splits.SplitTests.test_normalized_missing_and_signed_zero_equivalence) ... ok
+test_time_boundary_exclusion_seal_and_determinism (test_splits.SplitTests.test_time_boundary_exclusion_seal_and_determinism) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 19.923s
+
+OK
