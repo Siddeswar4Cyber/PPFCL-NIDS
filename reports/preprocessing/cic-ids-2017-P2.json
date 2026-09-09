@@ -1,0 +1,1220 @@
+{
+  "version": "P2",
+  "dataset": "cic-ids-2017",
+  "status": "COMPLETED",
+  "source_P1_cleaned_sha256": "22372798c9c1ebe69803a7253d4fd98e632226786776504f76f37e670cfaefa8",
+  "script_sha256": "d6e82dc9137bb09d32224df2ac0b2451901f571105658baf5bbcedbbb2bd4955",
+  "pipelines": [
+    {
+      "protocol": "primary",
+      "fit_rows": 100000,
+      "fit_group_set_sha256": "9e3b8c95ee4a3afa1a2904cfc1cdb7d918b055e44ffe5baedc02e0eed48d8bca",
+      "fit_membership": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\fit-membership.parquet",
+      "fit_membership_sha256": "bd7835b977884191d6f627e8ee4d9405f1727abba3b4d4fb9490aee1c1a56118",
+      "output_features": 156,
+      "transform_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\transform.json",
+      "transform_sha256": "7a3f53a4825c898758a969e0cccece5fe8c90419d73af7032ac564aa8f543a28",
+      "artifacts": {
+        "train": {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\train.parquet",
+          "sha256": "9b64332e8cca684e33e4b75619c874400fadd914b174dc39fe79a60341b70478",
+          "binary_support": [
+            {
+              "binary_label": 0,
+              "rows": 82804
+            },
+            {
+              "binary_label": 1,
+              "rows": 17196
+            }
+          ]
+        },
+        "validation": {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\validation.parquet",
+          "sha256": "58a8dd64c8751bc211d3439d9a2f74a52edca1987bbb898a68bb135ab6147602",
+          "binary_support": [
+            {
+              "binary_label": 0,
+              "rows": 429553
+            },
+            {
+              "binary_label": 1,
+              "rows": 103516
+            }
+          ]
+        }
+      },
+      "support": [
+        {
+          "role": "development_train",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 860499,
+          "groups": 818609
+        },
+        {
+          "role": "development_train",
+          "label": "bot",
+          "binary_label": 1,
+          "rows": 760,
+          "groups": 755
+        },
+        {
+          "role": "development_train",
+          "label": "ddos",
+          "binary_label": 1,
+          "rows": 50943,
+          "groups": 50939
+        },
+        {
+          "role": "development_train",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 4100,
+          "groups": 4097
+        },
+        {
+          "role": "development_train",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 94691,
+          "groups": 69278
+        },
+        {
+          "role": "development_train",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 2151,
+          "groups": 2109
+        },
+        {
+          "role": "development_train",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 2290,
+          "groups": 2153
+        },
+        {
+          "role": "development_train",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 2681,
+          "groups": 2399
+        },
+        {
+          "role": "development_train",
+          "label": "heartbleed",
+          "binary_label": 1,
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "development_train",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 17,
+          "groups": 17
+        },
+        {
+          "role": "development_train",
+          "label": "portscan",
+          "binary_label": 1,
+          "rows": 62751,
+          "groups": 35942
+        },
+        {
+          "role": "development_train",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 2340,
+          "groups": 1247
+        },
+        {
+          "role": "development_train",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 590,
+          "groups": 569
+        },
+        {
+          "role": "development_train",
+          "label": "web_attack_sql_injection",
+          "binary_label": 1,
+          "rows": 9,
+          "groups": 9
+        },
+        {
+          "role": "development_train",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 270,
+          "groups": 270
+        },
+        {
+          "role": "private_train",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 215742,
+          "groups": 205446
+        },
+        {
+          "role": "private_train",
+          "label": "bot",
+          "binary_label": 1,
+          "rows": 206,
+          "groups": 206
+        },
+        {
+          "role": "private_train",
+          "label": "ddos",
+          "binary_label": 1,
+          "rows": 12882,
+          "groups": 12882
+        },
+        {
+          "role": "private_train",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 1021,
+          "groups": 1021
+        },
+        {
+          "role": "private_train",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 30549,
+          "groups": 17214
+        },
+        {
+          "role": "private_train",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 524,
+          "groups": 517
+        },
+        {
+          "role": "private_train",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 591,
+          "groups": 547
+        },
+        {
+          "role": "private_train",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 659,
+          "groups": 563
+        },
+        {
+          "role": "private_train",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 6,
+          "groups": 6
+        },
+        {
+          "role": "private_train",
+          "label": "portscan",
+          "binary_label": 1,
+          "rows": 15693,
+          "groups": 8983
+        },
+        {
+          "role": "private_train",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 665,
+          "groups": 300
+        },
+        {
+          "role": "private_train",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 155,
+          "groups": 153
+        },
+        {
+          "role": "private_train",
+          "label": "web_attack_sql_injection",
+          "binary_label": 1,
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "private_train",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 63,
+          "groups": 63
+        },
+        {
+          "role": "public_reference",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 216017,
+          "groups": 204102
+        },
+        {
+          "role": "public_reference",
+          "label": "bot",
+          "binary_label": 1,
+          "rows": 211,
+          "groups": 206
+        },
+        {
+          "role": "public_reference",
+          "label": "ddos",
+          "binary_label": 1,
+          "rows": 12772,
+          "groups": 12771
+        },
+        {
+          "role": "public_reference",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 998,
+          "groups": 998
+        },
+        {
+          "role": "public_reference",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 18476,
+          "groups": 17113
+        },
+        {
+          "role": "public_reference",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 517,
+          "groups": 510
+        },
+        {
+          "role": "public_reference",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 519,
+          "groups": 491
+        },
+        {
+          "role": "public_reference",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 767,
+          "groups": 591
+        },
+        {
+          "role": "public_reference",
+          "label": "heartbleed",
+          "binary_label": 1,
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "public_reference",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 2,
+          "groups": 2
+        },
+        {
+          "role": "public_reference",
+          "label": "portscan",
+          "binary_label": 1,
+          "rows": 15864,
+          "groups": 9134
+        },
+        {
+          "role": "public_reference",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 767,
+          "groups": 351
+        },
+        {
+          "role": "public_reference",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 146,
+          "groups": 142
+        },
+        {
+          "role": "public_reference",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 63,
+          "groups": 63
+        },
+        {
+          "role": "sealed_test",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 428823,
+          "groups": 410245
+        },
+        {
+          "role": "sealed_test",
+          "label": "bot",
+          "binary_label": 1,
+          "rows": 375,
+          "groups": 372
+        },
+        {
+          "role": "sealed_test",
+          "label": "ddos",
+          "binary_label": 1,
+          "rows": 25884,
+          "groups": 25882
+        },
+        {
+          "role": "sealed_test",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 2139,
+          "groups": 2136
+        },
+        {
+          "role": "sealed_test",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 44452,
+          "groups": 34276
+        },
+        {
+          "role": "sealed_test",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 1084,
+          "groups": 1061
+        },
+        {
+          "role": "sealed_test",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 1162,
+          "groups": 1087
+        },
+        {
+          "role": "sealed_test",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 1378,
+          "groups": 1160
+        },
+        {
+          "role": "sealed_test",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 4,
+          "groups": 4
+        },
+        {
+          "role": "sealed_test",
+          "label": "portscan",
+          "binary_label": 1,
+          "rows": 31780,
+          "groups": 18060
+        },
+        {
+          "role": "sealed_test",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 1108,
+          "groups": 658
+        },
+        {
+          "role": "sealed_test",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 305,
+          "groups": 297
+        },
+        {
+          "role": "sealed_test",
+          "label": "web_attack_sql_injection",
+          "binary_label": 1,
+          "rows": 5,
+          "groups": 5
+        },
+        {
+          "role": "sealed_test",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 134,
+          "groups": 134
+        },
+        {
+          "role": "validation",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 429553,
+          "groups": 409067
+        },
+        {
+          "role": "validation",
+          "label": "bot",
+          "binary_label": 1,
+          "rows": 414,
+          "groups": 414
+        },
+        {
+          "role": "validation",
+          "label": "ddos",
+          "binary_label": 1,
+          "rows": 25521,
+          "groups": 25520
+        },
+        {
+          "role": "validation",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 2022,
+          "groups": 2021
+        },
+        {
+          "role": "validation",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 37429,
+          "groups": 34660
+        },
+        {
+          "role": "validation",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 1223,
+          "groups": 1031
+        },
+        {
+          "role": "validation",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 1210,
+          "groups": 1083
+        },
+        {
+          "role": "validation",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 2449,
+          "groups": 1216
+        },
+        {
+          "role": "validation",
+          "label": "heartbleed",
+          "binary_label": 1,
+          "rows": 1,
+          "groups": 1
+        },
+        {
+          "role": "validation",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 6,
+          "groups": 6
+        },
+        {
+          "role": "validation",
+          "label": "portscan",
+          "binary_label": 1,
+          "rows": 31789,
+          "groups": 18136
+        },
+        {
+          "role": "validation",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 1015,
+          "groups": 661
+        },
+        {
+          "role": "validation",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 311,
+          "groups": 309
+        },
+        {
+          "role": "validation",
+          "label": "web_attack_sql_injection",
+          "binary_label": 1,
+          "rows": 4,
+          "groups": 4
+        },
+        {
+          "role": "validation",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 122,
+          "groups": 122
+        }
+      ],
+      "validation": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2472405
+      },
+      "float32_gate": {
+        "status": "PASSED",
+        "nonfinite_vectors": 0,
+        "merged_vectors": 0
+      }
+    },
+    {
+      "protocol": "stress",
+      "fit_rows": 100000,
+      "fit_group_set_sha256": "67bf1227ee11c2ef13db4e401658a6932e442af33a6a93577d77bc80b82c11f6",
+      "fit_membership": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\fit-membership.parquet",
+      "fit_membership_sha256": "b36a238496e5c6d3285913233cfae1dda5f3cd465bc3b31cc09abd77ed1d5ee7",
+      "output_features": 156,
+      "transform_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\transform.json",
+      "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+      "artifacts": {
+        "train": {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\train.parquet",
+          "sha256": "fa2f035d2937b17dc206953ed0263e2cb573bebd84a58cf30f8d8163eb05708a",
+          "binary_support": [
+            {
+              "binary_label": 0,
+              "rows": 88991
+            },
+            {
+              "binary_label": 1,
+              "rows": 11009
+            }
+          ]
+        },
+        "validation": {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\validation.parquet",
+          "sha256": "c1539e7f413479e807494d67fca153ca42dab1c5bc690d2bfe52e528d1d2aff2",
+          "binary_support": [
+            {
+              "binary_label": 0,
+              "rows": 345802
+            },
+            {
+              "binary_label": 1,
+              "rows": 45792
+            }
+          ]
+        }
+      },
+      "support": [
+        {
+          "role": "development_train",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 689366,
+          "groups": 664955
+        },
+        {
+          "role": "development_train",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 4100,
+          "groups": 4097
+        },
+        {
+          "role": "development_train",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 94691,
+          "groups": 69278
+        },
+        {
+          "role": "development_train",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 2151,
+          "groups": 2109
+        },
+        {
+          "role": "development_train",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 2290,
+          "groups": 2153
+        },
+        {
+          "role": "development_train",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 2681,
+          "groups": 2399
+        },
+        {
+          "role": "development_train",
+          "label": "heartbleed",
+          "binary_label": 1,
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "development_train",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 17,
+          "groups": 17
+        },
+        {
+          "role": "development_train",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 2340,
+          "groups": 1247
+        },
+        {
+          "role": "development_train",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 590,
+          "groups": 569
+        },
+        {
+          "role": "development_train",
+          "label": "web_attack_sql_injection",
+          "binary_label": 1,
+          "rows": 9,
+          "groups": 9
+        },
+        {
+          "role": "development_train",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 270,
+          "groups": 270
+        },
+        {
+          "role": "excluded_stress",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 685724,
+          "groups": 640901
+        },
+        {
+          "role": "excluded_stress",
+          "label": "bot",
+          "binary_label": 1,
+          "rows": 1591,
+          "groups": 1581
+        },
+        {
+          "role": "excluded_stress",
+          "label": "ddos",
+          "binary_label": 1,
+          "rows": 102118,
+          "groups": 102112
+        },
+        {
+          "role": "excluded_stress",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 2139,
+          "groups": 2136
+        },
+        {
+          "role": "excluded_stress",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 44452,
+          "groups": 34276
+        },
+        {
+          "role": "excluded_stress",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 1084,
+          "groups": 1061
+        },
+        {
+          "role": "excluded_stress",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 1162,
+          "groups": 1087
+        },
+        {
+          "role": "excluded_stress",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 1378,
+          "groups": 1160
+        },
+        {
+          "role": "excluded_stress",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 4,
+          "groups": 4
+        },
+        {
+          "role": "excluded_stress",
+          "label": "portscan",
+          "binary_label": 1,
+          "rows": 126097,
+          "groups": 72195
+        },
+        {
+          "role": "excluded_stress",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 1108,
+          "groups": 658
+        },
+        {
+          "role": "excluded_stress",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 305,
+          "groups": 297
+        },
+        {
+          "role": "excluded_stress",
+          "label": "web_attack_sql_injection",
+          "binary_label": 1,
+          "rows": 5,
+          "groups": 5
+        },
+        {
+          "role": "excluded_stress",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 134,
+          "groups": 134
+        },
+        {
+          "role": "private_train",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 173763,
+          "groups": 166561
+        },
+        {
+          "role": "private_train",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 1021,
+          "groups": 1021
+        },
+        {
+          "role": "private_train",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 30549,
+          "groups": 17214
+        },
+        {
+          "role": "private_train",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 524,
+          "groups": 517
+        },
+        {
+          "role": "private_train",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 591,
+          "groups": 547
+        },
+        {
+          "role": "private_train",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 659,
+          "groups": 563
+        },
+        {
+          "role": "private_train",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 6,
+          "groups": 6
+        },
+        {
+          "role": "private_train",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 665,
+          "groups": 300
+        },
+        {
+          "role": "private_train",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 155,
+          "groups": 153
+        },
+        {
+          "role": "private_train",
+          "label": "web_attack_sql_injection",
+          "binary_label": 1,
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "private_train",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 63,
+          "groups": 63
+        },
+        {
+          "role": "public_reference",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 172006,
+          "groups": 165768
+        },
+        {
+          "role": "public_reference",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 998,
+          "groups": 998
+        },
+        {
+          "role": "public_reference",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 18476,
+          "groups": 17113
+        },
+        {
+          "role": "public_reference",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 517,
+          "groups": 510
+        },
+        {
+          "role": "public_reference",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 519,
+          "groups": 491
+        },
+        {
+          "role": "public_reference",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 767,
+          "groups": 591
+        },
+        {
+          "role": "public_reference",
+          "label": "heartbleed",
+          "binary_label": 1,
+          "rows": 3,
+          "groups": 3
+        },
+        {
+          "role": "public_reference",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 2,
+          "groups": 2
+        },
+        {
+          "role": "public_reference",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 767,
+          "groups": 351
+        },
+        {
+          "role": "public_reference",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 146,
+          "groups": 142
+        },
+        {
+          "role": "public_reference",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 63,
+          "groups": 63
+        },
+        {
+          "role": "sealed_test",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 83973,
+          "groups": 77067
+        },
+        {
+          "role": "sealed_test",
+          "label": "bot",
+          "binary_label": 1,
+          "rows": 375,
+          "groups": 372
+        },
+        {
+          "role": "sealed_test",
+          "label": "ddos",
+          "binary_label": 1,
+          "rows": 25884,
+          "groups": 25882
+        },
+        {
+          "role": "sealed_test",
+          "label": "portscan",
+          "binary_label": 1,
+          "rows": 31780,
+          "groups": 18060
+        },
+        {
+          "role": "validation",
+          "label": "benign",
+          "binary_label": 0,
+          "rows": 345802,
+          "groups": 332217
+        },
+        {
+          "role": "validation",
+          "label": "dos_goldeneye",
+          "binary_label": 1,
+          "rows": 2022,
+          "groups": 2021
+        },
+        {
+          "role": "validation",
+          "label": "dos_hulk",
+          "binary_label": 1,
+          "rows": 37429,
+          "groups": 34660
+        },
+        {
+          "role": "validation",
+          "label": "dos_slowhttptest",
+          "binary_label": 1,
+          "rows": 1223,
+          "groups": 1031
+        },
+        {
+          "role": "validation",
+          "label": "dos_slowloris",
+          "binary_label": 1,
+          "rows": 1210,
+          "groups": 1083
+        },
+        {
+          "role": "validation",
+          "label": "ftp_patator",
+          "binary_label": 1,
+          "rows": 2449,
+          "groups": 1216
+        },
+        {
+          "role": "validation",
+          "label": "heartbleed",
+          "binary_label": 1,
+          "rows": 1,
+          "groups": 1
+        },
+        {
+          "role": "validation",
+          "label": "infiltration",
+          "binary_label": 1,
+          "rows": 6,
+          "groups": 6
+        },
+        {
+          "role": "validation",
+          "label": "ssh_patator",
+          "binary_label": 1,
+          "rows": 1015,
+          "groups": 661
+        },
+        {
+          "role": "validation",
+          "label": "web_attack_brute_force",
+          "binary_label": 1,
+          "rows": 311,
+          "groups": 309
+        },
+        {
+          "role": "validation",
+          "label": "web_attack_sql_injection",
+          "binary_label": 1,
+          "rows": 4,
+          "groups": 4
+        },
+        {
+          "role": "validation",
+          "label": "web_attack_xss",
+          "binary_label": 1,
+          "rows": 122,
+          "groups": 122
+        }
+      ],
+      "validation": {
+        "finite_shape_failures": 0,
+        "observed_roundtrip_failures": 0,
+        "merged_S1_groups": 0,
+        "verified_groups": 2472405
+      },
+      "float32_gate": {
+        "status": "PASSED",
+        "nonfinite_vectors": 0,
+        "merged_vectors": 0
+      }
+    }
+  ],
+  "excluded_groups": 45645,
+  "exclusion_support": [
+    {
+      "primary_role": "development_train",
+      "label": "benign",
+      "binary_label": 0,
+      "rows": 46899,
+      "groups": 18110
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "rows": 29,
+      "groups": 6
+    },
+    {
+      "primary_role": "development_train",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "rows": 12,
+      "groups": 12
+    },
+    {
+      "primary_role": "private_train",
+      "label": "benign",
+      "binary_label": 0,
+      "rows": 16091,
+      "groups": 4583
+    },
+    {
+      "primary_role": "private_train",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "private_train",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "rows": 8,
+      "groups": 4
+    },
+    {
+      "primary_role": "private_train",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "rows": 2,
+      "groups": 2
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "benign",
+      "binary_label": 0,
+      "rows": 11464,
+      "groups": 4506
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "rows": 3,
+      "groups": 1
+    },
+    {
+      "primary_role": "public_reference",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "rows": 1,
+      "groups": 1
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "benign",
+      "binary_label": 0,
+      "rows": 22605,
+      "groups": 9199
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "rows": 3,
+      "groups": 3
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "rows": 37,
+      "groups": 6
+    },
+    {
+      "primary_role": "sealed_test",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "rows": 5,
+      "groups": 5
+    },
+    {
+      "primary_role": "validation",
+      "label": "benign",
+      "binary_label": 0,
+      "rows": 21936,
+      "groups": 9196
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_goldeneye",
+      "binary_label": 1,
+      "rows": 2,
+      "groups": 2
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_hulk",
+      "binary_label": 1,
+      "rows": 16,
+      "groups": 3
+    },
+    {
+      "primary_role": "validation",
+      "label": "dos_slowloris",
+      "binary_label": 1,
+      "rows": 3,
+      "groups": 3
+    }
+  ],
+  "cleaned": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\cleaned.parquet",
+    "sha256": "14b7015d3aeeea4397b57cc7c93e3735d1470a86fff300acc79d1f8221d64030",
+    "rows": 2830743
+  },
+  "exclusions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\precision-exclusions.parquet",
+    "sha256": "dd1cbe502588843cb29feb564b632a8edbcd4ce7cadd447b3a29a9af0ec5f3a0"
+  },
+  "elapsed_seconds": 146.24468590000015
+}

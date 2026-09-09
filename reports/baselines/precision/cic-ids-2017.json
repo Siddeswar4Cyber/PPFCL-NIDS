@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "cic-ids-2017",
+    "protocol": "primary",
+    "dtype": "float32",
+    "nonfinite_vectors": 0,
+    "merged_vectors": 22813,
+    "groups_in_merged_vectors": 45645,
+    "cross_role_vectors": 16892,
+    "status": "REJECTED_FOR_P1_TREE_INPUT",
+    "cleaned_sha256": "22372798c9c1ebe69803a7253d4fd98e632226786776504f76f37e670cfaefa8",
+    "transform_sha256": "73b5280dc558ddbe0b8f87a0b53d651f305052c063d0db786284cb5675fa7fa8"
+  },
+  {
+    "dataset": "cic-ids-2017",
+    "protocol": "stress",
+    "dtype": "float32",
+    "nonfinite_vectors": 0,
+    "merged_vectors": 22813,
+    "groups_in_merged_vectors": 45645,
+    "cross_role_vectors": 16892,
+    "status": "REJECTED_FOR_P1_TREE_INPUT",
+    "cleaned_sha256": "22372798c9c1ebe69803a7253d4fd98e632226786776504f76f37e670cfaefa8",
+    "transform_sha256": "07dec7553c9829d86fd54fd85d99082a7b1de68095bf2533658cb8fa1111cd01"
+  }
+]

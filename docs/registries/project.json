@@ -286,26 +286,22 @@
     },
     {
       "experiment_id": "EXP-003",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "research_question": "Which detector offers the best validation trade-off?",
       "hypothesis": "Compact MLP may trade detection quality for integration cost.",
       "architecture_version": "A0",
       "dataset_version": "CIC and audited NF development tracks",
-      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
+      "split_version": "S1 with pre-score P2 CIC precision exclusions",
       "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
-      "model": "LR; Extra Trees; MLP; conditional XGBoost",
-      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
-      "seed": [
-        17,
-        29,
-        43
-      ],
+      "model": "B1 prior/LR/Extra Trees/MLP pilot",
+      "hyperparameters": "docs/CP5-baseline-protocol-B1.md; exact estimator parameters saved per run",
+      "seed": 17,
       "client_configuration": "Per-family plan; pilot five logical clients where applicable",
       "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
       "cl_configuration": "Per-family plan; tasks require support audit",
       "hardware": "User reported; not yet independently benchmarked",
       "environment_versions": "NOT MEASURED",
-      "preprocessing_version": "NOT FITTED",
+      "preprocessing_version": "CIC P2; NF P1",
       "metrics": null,
       "runtime": null,
       "memory_usage": null,
@@ -315,10 +311,10 @@
       "logs": null,
       "git_commit": null,
       "result": null,
-      "interpretation": "No experiment executed",
+      "interpretation": "Bounded pilot in progress; feature/model selection and confirmation seeds remain outstanding",
       "decision": "PLANNED only",
       "architecture_impact": "Revisit A0 after valid result",
-      "status": "PLANNED"
+      "status": "RUNNING"
     },
     {
       "experiment_id": "EXP-004",
@@ -1153,8 +1149,8 @@
     }
   ],
   "progress": {
-    "checkpoint": "CP4",
-    "status": "COMPLETE",
+    "checkpoint": "CP5",
+    "status": "IN_PROGRESS",
     "architecture_version": "A0",
     "methodology_version": "M0.2",
     "completed": [
@@ -1174,7 +1170,9 @@
       "P1 deterministic cleaning and five permitted-sample preprocessors",
       "Persisted vector and transformed-overlap verification"
     ],
-    "current": [],
+    "current": [
+      "B1 fixed-budget binary baseline pilot after P2 precision gate"
+    ],
     "next": [
       "CP5 / EXP-003: pinned CPU baseline stack, bounded 100000-record pilot and selection-only validation"
     ],

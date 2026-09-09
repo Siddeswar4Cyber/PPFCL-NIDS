@@ -1,0 +1,5 @@
+P2: collect primary float32 collision groups
+P2: collect stress float32 collision groups
+P2/primary: refit and verify precision
+P2/stress: refit and verify precision
+P2 complete; all CIC candidates must use this population

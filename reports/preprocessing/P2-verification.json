@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "source_roles_unchanged": true,
+  "parameters_refitted_on_new_permitted_samples": true,
+  "model_ready_vectors_reproduced": true,
+  "both_binary_classes_in_every_role": true,
+  "excluded_groups": 45645,
+  "excluded_rows": 119119
+}

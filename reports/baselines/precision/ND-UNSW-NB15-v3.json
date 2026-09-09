@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "ND-UNSW-NB15-v3",
+    "protocol": "primary",
+    "dtype": "float32",
+    "nonfinite_vectors": 0,
+    "merged_vectors": 0,
+    "groups_in_merged_vectors": 0,
+    "cross_role_vectors": 0,
+    "status": "PASSED",
+    "cleaned_sha256": "7d5a843147e8cfce3cfd6a082639b6b221fdd7f8ff3543c42e49a19bddbf0ad4",
+    "transform_sha256": "63fa5268ebf96bb4a59e65604b57f55649afee16227d3d6dcc66eafabb912bbe"
+  },
+  {
+    "dataset": "ND-UNSW-NB15-v3",
+    "protocol": "stress",
+    "dtype": "float32",
+    "nonfinite_vectors": 0,
+    "merged_vectors": 0,
+    "groups_in_merged_vectors": 0,
+    "cross_role_vectors": 0,
+    "status": "PASSED",
+    "cleaned_sha256": "7d5a843147e8cfce3cfd6a082639b6b221fdd7f8ff3543c42e49a19bddbf0ad4",
+    "transform_sha256": "71b3c74e032171007ee2787b5b220ac7427ca6ac7e92ba5e5ebb5bb01c0396b0"
+  }
+]
