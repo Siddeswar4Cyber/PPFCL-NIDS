@@ -1,0 +1,245 @@
+{
+  "run_id": "B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s29",
+  "experiment_id": "EXP-003",
+  "architecture_version": "A0",
+  "version": "B2",
+  "status": "COMPLETED",
+  "dataset": "ND-UNSW-NB15-v3",
+  "protocol": "primary",
+  "model_kind": "logistic",
+  "representation": "categorical_augmented",
+  "seed": 29,
+  "preregistration_commit": "6734173",
+  "git_commit": "52461c2be9f1fcea545d62c301a676cb6141adb2",
+  "script_sha256": "0dc918bfc2876f5541588b81b014a20f7f5af6af1ec6d0c745175f6c48e34b1f",
+  "features_script_sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4",
+  "baseline_script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "feature_spec_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\ND-UNSW-NB15-v3-primary.json",
+  "feature_spec_sha256": "0656dcd0fb92e8a0c8dbeb0d5e800132f42320269ae33a1a2f002e4333be3b98",
+  "client_configuration": "Centralized CPU",
+  "privacy_configuration": "Non-private development only",
+  "cl_configuration": "No CL model training",
+  "preprocessing_version": "P1",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 472509,
+  "input_features": 153,
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\train.parquet",
+      "sha256": "1364ad0bc2e6b18027d57021ab05875ad6801affc18d5b070af829e1bbece155",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 94696
+        },
+        {
+          "binary_label": 1,
+          "rows": 5304
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\validation.parquet",
+      "sha256": "639c981babdf0f65ffa5d57c4e0666472eac2828f97755dbec2c4f87cad4a926",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 447731
+        },
+        {
+          "binary_label": 1,
+          "rows": 24778
+        }
+      ]
+    }
+  },
+  "fit_group_set_sha256": "c6b273618837b9f46462332a7c841ebb85c39001615d4ca69825e89b6b0f16f4",
+  "transform_sha256": "63fa5268ebf96bb4a59e65604b57f55649afee16227d3d6dcc66eafabb912bbe",
+  "hyperparameters": {
+    "C": 1,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0,
+    "max_iter": 500,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 29,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float64",
+  "load_seconds": 1.5658668999994916,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3"
+  },
+  "hardware": "reports/audit/environment.json",
+  "warnings": [],
+  "fit_seconds": 0.3287422000003062,
+  "validation_prediction_seconds": 0.07168850000016391,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 472509,
+    "attack_prevalence": 0.05243921279806311,
+    "accuracy": 0.9995513312973933,
+    "attack_precision": 0.9966841892438334,
+    "attack_recall": 0.9947534102833159,
+    "attack_f1": 0.9957178637795912,
+    "binary_macro_f1": 0.9977405635857006,
+    "benign_fpr": 0.00018314568345725448,
+    "average_precision": 0.9974346122179212,
+    "roc_auc": 0.9994853866582536,
+    "confusion": {
+      "tn": 447649,
+      "fp": 82,
+      "fn": 130,
+      "tp": 24648
+    },
+    "attack_family_recall": {
+      "analysis": {
+        "support": 228,
+        "binary_attack_recall": 1.0
+      },
+      "backdoor": {
+        "support": 895,
+        "binary_attack_recall": 0.9899441340782122
+      },
+      "benign": {
+        "support": 447731,
+        "binary_attack_recall": null
+      },
+      "dos": {
+        "support": 1170,
+        "binary_attack_recall": 0.9794871794871794
+      },
+      "exploits": {
+        "support": 8646,
+        "binary_attack_recall": 0.9924820726347444
+      },
+      "fuzzers": {
+        "support": 6539,
+        "binary_attack_recall": 0.9974002141000153
+      },
+      "generic": {
+        "support": 3320,
+        "binary_attack_recall": 0.9957831325301205
+      },
+      "reconnaissance": {
+        "support": 3451,
+        "binary_attack_recall": 0.9997102289191538
+      },
+      "shellcode": {
+        "support": 493,
+        "binary_attack_recall": 1.0
+      },
+      "worms": {
+        "support": 36,
+        "binary_attack_recall": 1.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.014251185415177791,
+    "rows": 472509,
+    "attack_prevalence": 0.05243921279806311,
+    "accuracy": 0.9904615573459976,
+    "attack_precision": 0.846809238665526,
+    "attack_recall": 0.9987892485269191,
+    "attack_f1": 0.9165416736107254,
+    "binary_macro_f1": 0.9557416986875982,
+    "benign_fpr": 0.009999307619977174,
+    "average_precision": 0.9974346122179212,
+    "roc_auc": 0.9994853866582536,
+    "confusion": {
+      "tn": 443254,
+      "fp": 4477,
+      "fn": 30,
+      "tp": 24748
+    },
+    "attack_family_recall": {
+      "analysis": {
+        "support": 228,
+        "binary_attack_recall": 1.0
+      },
+      "backdoor": {
+        "support": 895,
+        "binary_attack_recall": 0.9955307262569832
+      },
+      "benign": {
+        "support": 447731,
+        "binary_attack_recall": null
+      },
+      "dos": {
+        "support": 1170,
+        "binary_attack_recall": 0.9974358974358974
+      },
+      "exploits": {
+        "support": 8646,
+        "binary_attack_recall": 0.9994216978949804
+      },
+      "fuzzers": {
+        "support": 6539,
+        "binary_attack_recall": 0.9974002141000153
+      },
+      "generic": {
+        "support": 3320,
+        "binary_attack_recall": 1.0
+      },
+      "reconnaissance": {
+        "support": 3451,
+        "binary_attack_recall": 0.9997102289191538
+      },
+      "shellcode": {
+        "support": 493,
+        "binary_attack_recall": 1.0
+      },
+      "worms": {
+        "support": 36,
+        "binary_attack_recall": 1.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": [
+    21
+  ],
+  "loss_curve": [],
+  "complexity": {
+    "parameters": 154
+  },
+  "model_roundtrip_max_abs_delta": 0.0,
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 0.5752000006395974,
+    "batch_p95_ms": 0.6850299998404807
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\ND-UNSW-NB15-v3\\primary\\logistic\\categorical_augmented\\s29\\model.joblib",
+    "sha256": "c295b1d25a61bf247918b1e0f93debf8a78c0ea41eb0d06b055073d5f2a42370",
+    "bytes": 2398
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\ND-UNSW-NB15-v3\\primary\\logistic\\categorical_augmented\\s29\\validation-probabilities.npy",
+    "sha256": "87e9aa70e5dfef37641c758591cb21d35569ace4f3aa80323eb1a83cfbb77196",
+    "rows": 472509
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "worker_seconds": 2.6976684000001114,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 1480105984,
+  "supervised_wall_seconds": 4.1154310000001715,
+  "rss_scope": "Sum of worker and descendants, sampled every 0.5s",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\logs\\B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s29.log"
+}

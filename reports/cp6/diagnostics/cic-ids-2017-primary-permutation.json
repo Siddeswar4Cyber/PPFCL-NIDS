@@ -1,0 +1,2118 @@
+{
+  "version": "B2",
+  "dataset": "cic-ids-2017",
+  "protocol": "primary",
+  "status": "COMPLETED",
+  "script_sha256": "63e638d7429f3f6efc7d271478bd5728fdd0519bf72231096b96e4cb337d5158",
+  "validation_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\validation.parquet",
+    "sha256": "58a8dd64c8751bc211d3439d9a2f74a52edca1987bbb898a68bb135ab6147602",
+    "binary_support": [
+      {
+        "binary_label": 0,
+        "rows": 429553
+      },
+      {
+        "binary_label": 1,
+        "rows": 103516
+      }
+    ]
+  },
+  "subset_rows": 50000,
+  "selection_seed": 17,
+  "row_indices_sha256": "3418879dc846ac6317d70e9d520a8be361e2a75980346514bbc03cc2cc5e85eb",
+  "runs": [
+    {
+      "model_kind": "extra_trees",
+      "baseline_run_id": "B1-cic-ids-2017-primary-extra_trees-s17",
+      "model_sha256": "d80fe4df7223a7d12e9f89b9c738db36395f51719c3ed8bb2c343be4da2156c6",
+      "control_metrics_05": {
+        "threshold": 0.5,
+        "rows": 50000,
+        "attack_prevalence": 0.19488,
+        "accuracy": 0.9838,
+        "attack_precision": 0.9972172751558326,
+        "attack_recall": 0.9194376026272578,
+        "attack_f1": 0.9567492524562153,
+        "binary_macro_f1": 0.9733913601586126,
+        "benign_fpr": 0.0006210254372019078,
+        "average_precision": 0.9906310639613027,
+        "roc_auc": 0.9969199305275465,
+        "confusion": {
+          "tn": 40231,
+          "fp": 25,
+          "fn": 785,
+          "tp": 8959
+        },
+        "attack_family_recall": {
+          "benign": {
+            "support": 40256,
+            "binary_attack_recall": null
+          },
+          "bot": {
+            "support": 41,
+            "binary_attack_recall": 0.04878048780487805
+          },
+          "ddos": {
+            "support": 2351,
+            "binary_attack_recall": 0.994470438111442
+          },
+          "dos_goldeneye": {
+            "support": 190,
+            "binary_attack_recall": 0.9473684210526315
+          },
+          "dos_hulk": {
+            "support": 3616,
+            "binary_attack_recall": 0.8711283185840708
+          },
+          "dos_slowhttptest": {
+            "support": 111,
+            "binary_attack_recall": 0.8018018018018018
+          },
+          "dos_slowloris": {
+            "support": 126,
+            "binary_attack_recall": 0.7698412698412699
+          },
+          "ftp_patator": {
+            "support": 222,
+            "binary_attack_recall": 0.4954954954954955
+          },
+          "heartbleed": {
+            "support": 0,
+            "binary_attack_recall": null
+          },
+          "infiltration": {
+            "support": 1,
+            "binary_attack_recall": 0.0
+          },
+          "portscan": {
+            "support": 2963,
+            "binary_attack_recall": 0.9942625717178535
+          },
+          "ssh_patator": {
+            "support": 87,
+            "binary_attack_recall": 0.5402298850574713
+          },
+          "web_attack_brute_force": {
+            "support": 29,
+            "binary_attack_recall": 0.0
+          },
+          "web_attack_sql_injection": {
+            "support": 0,
+            "binary_attack_recall": null
+          },
+          "web_attack_xss": {
+            "support": 7,
+            "binary_attack_recall": 0.0
+          }
+        },
+        "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+      },
+      "changes": [
+        {
+          "group": "service",
+          "fields": [
+            "Destination Port"
+          ],
+          "columns": [
+            0,
+            77
+          ],
+          "permutation_seed": 17,
+          "array_key": "service_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.9811,
+            "attack_precision": 0.9968379446640316,
+            "attack_recall": 0.9058908045977011,
+            "attack_f1": 0.9491908167105758,
+            "binary_macro_f1": 0.968790811360165,
+            "benign_fpr": 0.0006955484896661367,
+            "average_precision": 0.9849216533407914,
+            "roc_auc": 0.9937604330233957,
+            "confusion": {
+              "tn": 40228,
+              "fp": 28,
+              "fn": 917,
+              "tp": 8827
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.024390243902439025
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.9617184176945981
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.9105263157894737
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8606194690265486
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.7747747747747747
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.7698412698412699
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.46846846846846846
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.9942625717178535
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.5402298850574713
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.004600548798447623,
+          "average_precision_drop": 0.005709410620511335
+        },
+        {
+          "group": "service",
+          "fields": [
+            "Destination Port"
+          ],
+          "columns": [
+            0,
+            77
+          ],
+          "permutation_seed": 29,
+          "array_key": "service_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.98114,
+            "attack_precision": 0.9969508752117447,
+            "attack_recall": 0.9059934318555009,
+            "attack_f1": 0.9492983493736222,
+            "binary_macro_f1": 0.9688568625530536,
+            "benign_fpr": 0.0006707074721780604,
+            "average_precision": 0.9846787574577587,
+            "roc_auc": 0.9936326588242473,
+            "confusion": {
+              "tn": 40229,
+              "fp": 27,
+              "fn": 916,
+              "tp": 8828
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.0
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.9621437686091026
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.9052631578947369
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8614491150442478
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.7747747747747747
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.7698412698412699
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.46396396396396394
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.9942625717178535
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.5402298850574713
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.004534497605559018,
+          "average_precision_drop": 0.005952306503544058
+        },
+        {
+          "group": "service",
+          "fields": [
+            "Destination Port"
+          ],
+          "columns": [
+            0,
+            77
+          ],
+          "permutation_seed": 43,
+          "array_key": "service_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.98174,
+            "attack_precision": 0.9970730609028481,
+            "attack_recall": 0.9089696223316913,
+            "attack_f1": 0.9509851291136522,
+            "binary_macro_f1": 0.96988259564822,
+            "benign_fpr": 0.0006458664546899841,
+            "average_precision": 0.9846567481311006,
+            "roc_auc": 0.9936124385317383,
+            "confusion": {
+              "tn": 40230,
+              "fp": 26,
+              "fn": 887,
+              "tp": 8857
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.024390243902439025
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.9710761378136963
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.9315789473684211
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8625553097345132
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.7837837837837838
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.7698412698412699
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.45045045045045046
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.9942625717178535
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.5402298850574713
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0035087645103926146,
+          "average_precision_drop": 0.005974315830202137
+        },
+        {
+          "group": "window_segment",
+          "fields": [
+            "Init_Win_bytes_forward",
+            "Init_Win_bytes_backward",
+            "min_seg_size_forward"
+          ],
+          "columns": [
+            65,
+            66,
+            68,
+            142,
+            143,
+            145,
+            154,
+            155
+          ],
+          "permutation_seed": 17,
+          "array_key": "window_segment_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.92952,
+            "attack_precision": 0.9903815830968149,
+            "attack_recall": 0.6446018062397373,
+            "attack_f1": 0.7809275146089768,
+            "binary_macro_f1": 0.8694660691952336,
+            "benign_fpr": 0.001515302066772655,
+            "average_precision": 0.9358547884778916,
+            "roc_auc": 0.9740456210588849,
+            "confusion": {
+              "tn": 40195,
+              "fp": 61,
+              "fn": 3463,
+              "tp": 6281
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.0
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.6741811994895789
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.6210526315789474
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8362831858407079
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.18018018018018017
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.35714285714285715
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.13063063063063063
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.48835639554505567
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.14942528735632185
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.10392529096337899,
+          "average_precision_drop": 0.05477627548341113
+        },
+        {
+          "group": "window_segment",
+          "fields": [
+            "Init_Win_bytes_forward",
+            "Init_Win_bytes_backward",
+            "min_seg_size_forward"
+          ],
+          "columns": [
+            65,
+            66,
+            68,
+            142,
+            143,
+            145,
+            154,
+            155
+          ],
+          "permutation_seed": 29,
+          "array_key": "window_segment_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.92798,
+            "attack_precision": 0.9899505503270059,
+            "attack_recall": 0.6369047619047619,
+            "attack_f1": 0.7751202148254543,
+            "binary_macro_f1": 0.8661222658420079,
+            "benign_fpr": 0.0015649841017488077,
+            "average_precision": 0.9342690480007988,
+            "roc_auc": 0.9736861018871668,
+            "confusion": {
+              "tn": 40193,
+              "fp": 63,
+              "fn": 3538,
+              "tp": 6206
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.0
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.6690769885155253
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.6368421052631579
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8373893805309734
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.22522522522522523
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.3492063492063492
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.11261261261261261
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.46574417819777253
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.11494252873563218
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.1072690943166047,
+          "average_precision_drop": 0.05636201596050394
+        },
+        {
+          "group": "window_segment",
+          "fields": [
+            "Init_Win_bytes_forward",
+            "Init_Win_bytes_backward",
+            "min_seg_size_forward"
+          ],
+          "columns": [
+            65,
+            66,
+            68,
+            142,
+            143,
+            145,
+            154,
+            155
+          ],
+          "permutation_seed": 43,
+          "array_key": "window_segment_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.9292,
+            "attack_precision": 0.989428841905964,
+            "attack_recall": 0.6435755336617406,
+            "attack_f1": 0.7798781246113667,
+            "binary_macro_f1": 0.8688470439067701,
+            "benign_fpr": 0.001664348171701113,
+            "average_precision": 0.9369862134262646,
+            "roc_auc": 0.975106553535615,
+            "confusion": {
+              "tn": 40189,
+              "fp": 67,
+              "fn": 3473,
+              "tp": 6271
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.0
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.6771586558911101
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.6
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.84375
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.23423423423423423
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.2857142857142857
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.11711711711711711
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.4741815727303409
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.2413793103448276
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.10454431625184246,
+          "average_precision_drop": 0.05364485053503809
+        },
+        {
+          "group": "active_idle",
+          "fields": [
+            "Active Mean",
+            "Active Std",
+            "Active Max",
+            "Active Min",
+            "Idle Mean",
+            "Idle Std",
+            "Idle Max",
+            "Idle Min"
+          ],
+          "columns": [
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "permutation_seed": 17,
+          "array_key": "active_idle_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.98262,
+            "attack_precision": 0.9954225745227196,
+            "attack_recall": 0.9150246305418719,
+            "attack_f1": 0.9535318966900166,
+            "binary_macro_f1": 0.9714214791633455,
+            "benign_fpr": 0.0010184817170111288,
+            "average_precision": 0.986480595589686,
+            "roc_auc": 0.9952730990462355,
+            "confusion": {
+              "tn": 40215,
+              "fp": 41,
+              "fn": 828,
+              "tp": 8916
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.04878048780487805
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.9940450871969375
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.6947368421052632
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8797013274336283
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.8018018018018018
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.753968253968254
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.4369369369369369
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.9942625717178535
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.42528735632183906
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0019698809952670704,
+          "average_precision_drop": 0.0041504683716167
+        },
+        {
+          "group": "active_idle",
+          "fields": [
+            "Active Mean",
+            "Active Std",
+            "Active Max",
+            "Active Min",
+            "Idle Mean",
+            "Idle Std",
+            "Idle Max",
+            "Idle Min"
+          ],
+          "columns": [
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "permutation_seed": 29,
+          "array_key": "active_idle_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.9829,
+            "attack_precision": 0.9955401940015609,
+            "attack_recall": 0.9163587848932676,
+            "attack_f1": 0.9543098380804788,
+            "binary_macro_f1": 0.9718957755117539,
+            "benign_fpr": 0.0009936406995230524,
+            "average_precision": 0.9870093548596133,
+            "roc_auc": 0.9954592817584862,
+            "confusion": {
+              "tn": 40216,
+              "fp": 40,
+              "fn": 815,
+              "tp": 8929
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.024390243902439025
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.993619736282433
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.7210526315789474
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8813606194690266
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.7927927927927928
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.753968253968254
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.44594594594594594
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.9942625717178535
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.45977011494252873
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0014955846468587275,
+          "average_precision_drop": 0.003621709101689463
+        },
+        {
+          "group": "active_idle",
+          "fields": [
+            "Active Mean",
+            "Active Std",
+            "Active Max",
+            "Active Min",
+            "Idle Mean",
+            "Idle Std",
+            "Idle Max",
+            "Idle Min"
+          ],
+          "columns": [
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "permutation_seed": 43,
+          "array_key": "active_idle_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.98306,
+            "attack_precision": 0.9960967993754879,
+            "attack_recall": 0.9166666666666666,
+            "attack_f1": 0.9547325102880658,
+            "binary_macro_f1": 0.972156448159078,
+            "benign_fpr": 0.0008694356120826709,
+            "average_precision": 0.9872563403610283,
+            "roc_auc": 0.9955447403142874,
+            "confusion": {
+              "tn": 40221,
+              "fp": 35,
+              "fn": 812,
+              "tp": 8932
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.04878048780487805
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.9948957890259464
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.6947368421052632
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8810840707964602
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.8018018018018018
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.7619047619047619
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.46396396396396394
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.9942625717178535
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.4482758620689655
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.001234911999534627,
+          "average_precision_drop": 0.003374723600274465
+        }
+      ],
+      "saved_predictions": {
+        "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\diagnostics\\B2\\cic-ids-2017\\primary\\extra_trees-permutation.npz",
+        "sha256": "83a9991d031d17b9e353fec5e177548cc45b913293ba7e2c0455fc6325299303"
+      }
+    },
+    {
+      "model_kind": "mlp",
+      "baseline_run_id": "B1-cic-ids-2017-primary-mlp-s17",
+      "model_sha256": "c904c11c78000fc102591d6cc58a237bb8ba14307f866714389c4a78e6201728",
+      "control_metrics_05": {
+        "threshold": 0.5,
+        "rows": 50000,
+        "attack_prevalence": 0.19488,
+        "accuracy": 0.96642,
+        "attack_precision": 0.9251449657353716,
+        "attack_recall": 0.9005541871921182,
+        "attack_f1": 0.9126839669249571,
+        "binary_macro_f1": 0.945948401607605,
+        "benign_fpr": 0.01763712241653418,
+        "average_precision": 0.9777516522666101,
+        "roc_auc": 0.993674606084279,
+        "confusion": {
+          "tn": 39546,
+          "fp": 710,
+          "fn": 969,
+          "tp": 8775
+        },
+        "attack_family_recall": {
+          "benign": {
+            "support": 40256,
+            "binary_attack_recall": null
+          },
+          "bot": {
+            "support": 41,
+            "binary_attack_recall": 0.3170731707317073
+          },
+          "ddos": {
+            "support": 2351,
+            "binary_attack_recall": 0.9774564015312633
+          },
+          "dos_goldeneye": {
+            "support": 190,
+            "binary_attack_recall": 0.9210526315789473
+          },
+          "dos_hulk": {
+            "support": 3616,
+            "binary_attack_recall": 0.8525995575221239
+          },
+          "dos_slowhttptest": {
+            "support": 111,
+            "binary_attack_recall": 0.9369369369369369
+          },
+          "dos_slowloris": {
+            "support": 126,
+            "binary_attack_recall": 0.746031746031746
+          },
+          "ftp_patator": {
+            "support": 222,
+            "binary_attack_recall": 0.30180180180180183
+          },
+          "heartbleed": {
+            "support": 0,
+            "binary_attack_recall": null
+          },
+          "infiltration": {
+            "support": 1,
+            "binary_attack_recall": 0.0
+          },
+          "portscan": {
+            "support": 2963,
+            "binary_attack_recall": 0.9767127910901113
+          },
+          "ssh_patator": {
+            "support": 87,
+            "binary_attack_recall": 0.5402298850574713
+          },
+          "web_attack_brute_force": {
+            "support": 29,
+            "binary_attack_recall": 0.0
+          },
+          "web_attack_sql_injection": {
+            "support": 0,
+            "binary_attack_recall": null
+          },
+          "web_attack_xss": {
+            "support": 7,
+            "binary_attack_recall": 0.0
+          }
+        },
+        "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+      },
+      "changes": [
+        {
+          "group": "service",
+          "fields": [
+            "Destination Port"
+          ],
+          "columns": [
+            0,
+            77
+          ],
+          "permutation_seed": 17,
+          "array_key": "service_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.94214,
+            "attack_precision": 0.9005964214711729,
+            "attack_recall": 0.7903325123152709,
+            "attack_f1": 0.8418693632139929,
+            "binary_macro_f1": 0.9032307467192906,
+            "benign_fpr": 0.021114864864864864,
+            "average_precision": 0.9013322424247555,
+            "roc_auc": 0.9455685977865634,
+            "confusion": {
+              "tn": 39406,
+              "fp": 850,
+              "fn": 2043,
+              "tp": 7701
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.3170731707317073
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.8404934070608252
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.7736842105263158
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.7248340707964602
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.7747747747747747
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.6031746031746031
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.30180180180180183
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.8997637529530881
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.5402298850574713
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.06896551724137931
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.04271765488831436,
+          "average_precision_drop": 0.07641940984185458
+        },
+        {
+          "group": "service",
+          "fields": [
+            "Destination Port"
+          ],
+          "columns": [
+            0,
+            77
+          ],
+          "permutation_seed": 29,
+          "array_key": "service_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.94284,
+            "attack_precision": 0.9037288930581614,
+            "attack_recall": 0.790948275862069,
+            "attack_f1": 0.8435858143607706,
+            "binary_macro_f1": 0.9043080794591637,
+            "benign_fpr": 0.02039447535771065,
+            "average_precision": 0.9016674030371281,
+            "roc_auc": 0.9449857401750308,
+            "confusion": {
+              "tn": 39435,
+              "fp": 821,
+              "fn": 2037,
+              "tp": 7707
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.2682926829268293
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.8600595491280306
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.7842105263157895
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.7129424778761062
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.7657657657657657
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.6587301587301587
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.30180180180180183
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.8990887613904827
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.5402298850574713
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.034482758620689655
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.04164032214844127,
+          "average_precision_drop": 0.07608424922948198
+        },
+        {
+          "group": "service",
+          "fields": [
+            "Destination Port"
+          ],
+          "columns": [
+            0,
+            77
+          ],
+          "permutation_seed": 43,
+          "array_key": "service_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.94274,
+            "attack_precision": 0.9025389025389026,
+            "attack_recall": 0.7916666666666666,
+            "attack_f1": 0.8434749330271718,
+            "binary_macro_f1": 0.9042179766165122,
+            "benign_fpr": 0.020692567567567568,
+            "average_precision": 0.9027275333409341,
+            "roc_auc": 0.9464138271731689,
+            "confusion": {
+              "tn": 39423,
+              "fp": 833,
+              "fn": 2030,
+              "tp": 7714
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.3170731707317073
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.8575074436410038
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.7947368421052632
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.71875
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.7927927927927928
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.5873015873015873
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.30180180180180183
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.897401282483969
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.5402298850574713
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.04173042499109281,
+          "average_precision_drop": 0.07502411892567595
+        },
+        {
+          "group": "window_segment",
+          "fields": [
+            "Init_Win_bytes_forward",
+            "Init_Win_bytes_backward",
+            "min_seg_size_forward"
+          ],
+          "columns": [
+            65,
+            66,
+            68,
+            142,
+            143,
+            145,
+            154,
+            155
+          ],
+          "permutation_seed": 17,
+          "array_key": "window_segment_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.80468,
+            "attack_precision": 0.49859154929577465,
+            "attack_recall": 0.3996305418719212,
+            "attack_f1": 0.44365956477156204,
+            "binary_macro_f1": 0.6626031370664205,
+            "benign_fpr": 0.09727742448330684,
+            "average_precision": 0.49486534641163626,
+            "roc_auc": 0.6751848883993835,
+            "confusion": {
+              "tn": 36340,
+              "fp": 3916,
+              "fn": 5850,
+              "tp": 3894
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.04878048780487805
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.4368353891960868
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.4263157894736842
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.5243362831858407
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.1981981981981982
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.373015873015873
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.04504504504504504
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.27033412082348973
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.08045977011494253
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.034482758620689655
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.28334526454118447,
+          "average_precision_drop": 0.48288630585497383
+        },
+        {
+          "group": "window_segment",
+          "fields": [
+            "Init_Win_bytes_forward",
+            "Init_Win_bytes_backward",
+            "min_seg_size_forward"
+          ],
+          "columns": [
+            65,
+            66,
+            68,
+            142,
+            143,
+            145,
+            154,
+            155
+          ],
+          "permutation_seed": 29,
+          "array_key": "window_segment_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.80384,
+            "attack_precision": 0.495850622406639,
+            "attack_recall": 0.3924466338259442,
+            "attack_f1": 0.4381301558203483,
+            "binary_macro_f1": 0.6596543393949581,
+            "benign_fpr": 0.0965818759936407,
+            "average_precision": 0.48792384379920484,
+            "roc_auc": 0.6671682683514342,
+            "confusion": {
+              "tn": 36368,
+              "fp": 3888,
+              "fn": 5920,
+              "tp": 3824
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.0975609756097561
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.4257762654189706
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.3736842105263158
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.5160398230088495
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.22522522522522523
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.35714285714285715
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.04504504504504504
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.26763415457306783
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.10344827586206896
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.28629406221264686,
+          "average_precision_drop": 0.48982780846740526
+        },
+        {
+          "group": "window_segment",
+          "fields": [
+            "Init_Win_bytes_forward",
+            "Init_Win_bytes_backward",
+            "min_seg_size_forward"
+          ],
+          "columns": [
+            65,
+            66,
+            68,
+            142,
+            143,
+            145,
+            154,
+            155
+          ],
+          "permutation_seed": 43,
+          "array_key": "window_segment_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.80382,
+            "attack_precision": 0.49581131589122307,
+            "attack_recall": 0.3948070607553366,
+            "attack_f1": 0.4395817859795464,
+            "binary_macro_f1": 0.6603402462995905,
+            "benign_fpr": 0.09717806041335453,
+            "average_precision": 0.4891210145634242,
+            "roc_auc": 0.6722410251524887,
+            "confusion": {
+              "tn": 36344,
+              "fp": 3912,
+              "fn": 5897,
+              "tp": 3847
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.12195121951219512
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.4453424074861761
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.37894736842105264
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.5160398230088495
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.21621621621621623
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.2857142857142857
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.04504504504504504
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.2608842389470132
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.16091954022988506
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.2856081553080144,
+          "average_precision_drop": 0.4886306377031859
+        },
+        {
+          "group": "active_idle",
+          "fields": [
+            "Active Mean",
+            "Active Std",
+            "Active Max",
+            "Active Min",
+            "Idle Mean",
+            "Idle Std",
+            "Idle Max",
+            "Idle Min"
+          ],
+          "columns": [
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "permutation_seed": 17,
+          "array_key": "active_idle_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.95156,
+            "attack_precision": 0.9096911369740376,
+            "attack_recall": 0.8342569786535303,
+            "attack_f1": 0.8703426124197002,
+            "binary_macro_f1": 0.9202795206712373,
+            "benign_fpr": 0.020046701112877582,
+            "average_precision": 0.9421510529180727,
+            "roc_auc": 0.9800165435465891,
+            "confusion": {
+              "tn": 39449,
+              "fp": 807,
+              "fn": 1615,
+              "tp": 8129
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.24390243902439024
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.9770310506167589
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.6894736842105263
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8611725663716814
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.4774774774774775
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.46825396825396826
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.24324324324324326
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.8029024637192035
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.367816091954023
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.025668880936367655,
+          "average_precision_drop": 0.03560059934853743
+        },
+        {
+          "group": "active_idle",
+          "fields": [
+            "Active Mean",
+            "Active Std",
+            "Active Max",
+            "Active Min",
+            "Idle Mean",
+            "Idle Std",
+            "Idle Max",
+            "Idle Min"
+          ],
+          "columns": [
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "permutation_seed": 29,
+          "array_key": "active_idle_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.95214,
+            "attack_precision": 0.9085250639101923,
+            "attack_recall": 0.8388752052545156,
+            "attack_f1": 0.8723120431140281,
+            "binary_macro_f1": 0.9214314987349266,
+            "benign_fpr": 0.020444157392686804,
+            "average_precision": 0.9443725439756564,
+            "roc_auc": 0.9804629170517228,
+            "confusion": {
+              "tn": 39433,
+              "fp": 823,
+              "fn": 1570,
+              "tp": 8174
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.2682926829268293
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.9783071033602723
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.7210526315789474
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8675331858407079
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.4774774774774775
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.47619047619047616
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.23423423423423423
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.8059399257509281
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.41379310344827586
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.02451690287267838,
+          "average_precision_drop": 0.033379108290953696
+        },
+        {
+          "group": "active_idle",
+          "fields": [
+            "Active Mean",
+            "Active Std",
+            "Active Max",
+            "Active Min",
+            "Idle Mean",
+            "Idle Std",
+            "Idle Max",
+            "Idle Min"
+          ],
+          "columns": [
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "permutation_seed": 43,
+          "array_key": "active_idle_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.19488,
+            "accuracy": 0.95164,
+            "attack_precision": 0.909365221278498,
+            "attack_recall": 0.8350779967159278,
+            "attack_f1": 0.8706398459233897,
+            "binary_macro_f1": 0.9204505374153771,
+            "benign_fpr": 0.020146065182829888,
+            "average_precision": 0.9424486595018533,
+            "roc_auc": 0.9797923064554339,
+            "confusion": {
+              "tn": 39445,
+              "fp": 811,
+              "fn": 1607,
+              "tp": 8137
+            },
+            "attack_family_recall": {
+              "benign": {
+                "support": 40256,
+                "binary_attack_recall": null
+              },
+              "bot": {
+                "support": 41,
+                "binary_attack_recall": 0.2926829268292683
+              },
+              "ddos": {
+                "support": 2351,
+                "binary_attack_recall": 0.9770310506167589
+              },
+              "dos_goldeneye": {
+                "support": 190,
+                "binary_attack_recall": 0.6789473684210526
+              },
+              "dos_hulk": {
+                "support": 3616,
+                "binary_attack_recall": 0.8694690265486725
+              },
+              "dos_slowhttptest": {
+                "support": 111,
+                "binary_attack_recall": 0.46846846846846846
+              },
+              "dos_slowloris": {
+                "support": 126,
+                "binary_attack_recall": 0.42063492063492064
+              },
+              "ftp_patator": {
+                "support": 222,
+                "binary_attack_recall": 0.23423423423423423
+              },
+              "heartbleed": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "infiltration": {
+                "support": 1,
+                "binary_attack_recall": 0.0
+              },
+              "portscan": {
+                "support": 2963,
+                "binary_attack_recall": 0.7971650354370571
+              },
+              "ssh_patator": {
+                "support": 87,
+                "binary_attack_recall": 0.41379310344827586
+              },
+              "web_attack_brute_force": {
+                "support": 29,
+                "binary_attack_recall": 0.0
+              },
+              "web_attack_sql_injection": {
+                "support": 0,
+                "binary_attack_recall": null
+              },
+              "web_attack_xss": {
+                "support": 7,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.02549786419222788,
+          "average_precision_drop": 0.03530299276475679
+        }
+      ],
+      "saved_predictions": {
+        "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\diagnostics\\B2\\cic-ids-2017\\primary\\mlp-permutation.npz",
+        "sha256": "cdfd3a728de61a15d7afa7e3fc918ec9436a1213f16c1952ad6fd0606df622b6"
+      }
+    }
+  ],
+  "elapsed_seconds": 3.471715900000163,
+  "interpretation": "Marginal joint-group permutation sensitivity; potentially unrealistic combinations; not causal or retrained ablation scores",
+  "final_test_accessed": false,
+  "external_test_accessed": false
+}

@@ -1,0 +1,1652 @@
+{
+  "version": "B2",
+  "dataset": "ND-UNSW-NB15-v3",
+  "protocol": "primary",
+  "status": "COMPLETED",
+  "script_sha256": "63e638d7429f3f6efc7d271478bd5728fdd0519bf72231096b96e4cb337d5158",
+  "validation_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\validation.parquet",
+    "sha256": "639c981babdf0f65ffa5d57c4e0666472eac2828f97755dbec2c4f87cad4a926",
+    "binary_support": [
+      {
+        "binary_label": 0,
+        "rows": 447731
+      },
+      {
+        "binary_label": 1,
+        "rows": 24778
+      }
+    ]
+  },
+  "subset_rows": 50000,
+  "selection_seed": 17,
+  "row_indices_sha256": "f0060e64b8635bb88d28a0af6a703ff41ccbe23b30da9495051a37d566e3e1ee",
+  "runs": [
+    {
+      "model_kind": "extra_trees",
+      "baseline_run_id": "B1-ND-UNSW-NB15-v3-primary-extra_trees-s17",
+      "model_sha256": "42945711d51091a02687ff4c407a01d41deaac317df35f1ed4a01ad0d807f34c",
+      "control_metrics_05": {
+        "threshold": 0.5,
+        "rows": 50000,
+        "attack_prevalence": 0.05304,
+        "accuracy": 0.99986,
+        "attack_precision": 0.9981167608286252,
+        "attack_recall": 0.9992458521870287,
+        "attack_f1": 0.9986809873751649,
+        "binary_macro_f1": 0.9993035321381543,
+        "benign_fpr": 0.00010560108135507308,
+        "average_precision": 0.9999937794395117,
+        "roc_auc": 0.9999996495891721,
+        "confusion": {
+          "tn": 47343,
+          "fp": 5,
+          "fn": 2,
+          "tp": 2650
+        },
+        "attack_family_recall": {
+          "analysis": {
+            "support": 20,
+            "binary_attack_recall": 1.0
+          },
+          "backdoor": {
+            "support": 87,
+            "binary_attack_recall": 1.0
+          },
+          "benign": {
+            "support": 47348,
+            "binary_attack_recall": null
+          },
+          "dos": {
+            "support": 118,
+            "binary_attack_recall": 0.9915254237288136
+          },
+          "exploits": {
+            "support": 946,
+            "binary_attack_recall": 0.9989429175475687
+          },
+          "fuzzers": {
+            "support": 681,
+            "binary_attack_recall": 1.0
+          },
+          "generic": {
+            "support": 366,
+            "binary_attack_recall": 1.0
+          },
+          "reconnaissance": {
+            "support": 376,
+            "binary_attack_recall": 1.0
+          },
+          "shellcode": {
+            "support": 55,
+            "binary_attack_recall": 1.0
+          },
+          "worms": {
+            "support": 3,
+            "binary_attack_recall": 1.0
+          }
+        },
+        "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+      },
+      "changes": [
+        {
+          "group": "service",
+          "fields": [
+            "L4_SRC_PORT",
+            "L4_DST_PORT",
+            "PROTOCOL",
+            "L7_PROTO"
+          ],
+          "columns": [
+            0,
+            1,
+            2,
+            3,
+            49,
+            50,
+            51,
+            52
+          ],
+          "permutation_seed": 17,
+          "array_key": "service_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99982,
+            "attack_precision": 0.9981153411232567,
+            "attack_recall": 0.9984917043740573,
+            "attack_f1": 0.9983034872761546,
+            "binary_macro_f1": 0.9991042226496407,
+            "benign_fpr": 0.00010560108135507308,
+            "average_precision": 0.9999634370435215,
+            "roc_auc": 0.9999980010655038,
+            "confusion": {
+              "tn": 47343,
+              "fp": 5,
+              "fn": 4,
+              "tp": 2648
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9978858350951374
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0001993094885135438,
+          "average_precision_drop": 3.034239599020161e-05
+        },
+        {
+          "group": "service",
+          "fields": [
+            "L4_SRC_PORT",
+            "L4_DST_PORT",
+            "PROTOCOL",
+            "L7_PROTO"
+          ],
+          "columns": [
+            0,
+            1,
+            2,
+            3,
+            49,
+            50,
+            51,
+            52
+          ],
+          "permutation_seed": 29,
+          "array_key": "service_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99984,
+            "attack_precision": 0.9984917043740573,
+            "attack_recall": 0.9984917043740573,
+            "attack_f1": 0.9984917043740573,
+            "binary_macro_f1": 0.9992036117544867,
+            "benign_fpr": 8.448086508405846e-05,
+            "average_precision": 0.9999909067245227,
+            "roc_auc": 0.9999994903115229,
+            "confusion": {
+              "tn": 47344,
+              "fp": 4,
+              "fn": 4,
+              "tp": 2648
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9978858350951374
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 9.992038366757328e-05,
+          "average_precision_drop": 2.8727149889995474e-06
+        },
+        {
+          "group": "service",
+          "fields": [
+            "L4_SRC_PORT",
+            "L4_DST_PORT",
+            "PROTOCOL",
+            "L7_PROTO"
+          ],
+          "columns": [
+            0,
+            1,
+            2,
+            3,
+            49,
+            50,
+            51,
+            52
+          ],
+          "permutation_seed": 43,
+          "array_key": "service_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.9998,
+            "attack_precision": 0.9977392614920875,
+            "attack_recall": 0.9984917043740573,
+            "attack_f1": 0.9981153411232567,
+            "binary_macro_f1": 0.9990048689057685,
+            "benign_fpr": 0.0001267212976260877,
+            "average_precision": 0.9999869702188704,
+            "roc_auc": 0.9999992673228142,
+            "confusion": {
+              "tn": 47342,
+              "fp": 6,
+              "fn": 4,
+              "tp": 2648
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9978858350951374
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0002986632323858096,
+          "average_precision_drop": 6.809220641335045e-06
+        },
+        {
+          "group": "ttl_window",
+          "fields": [
+            "MIN_TTL",
+            "MAX_TTL",
+            "TCP_WIN_MAX_IN",
+            "TCP_WIN_MAX_OUT"
+          ],
+          "columns": [
+            14,
+            15,
+            33,
+            34,
+            63,
+            64,
+            82,
+            83
+          ],
+          "permutation_seed": 17,
+          "array_key": "ttl_window_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.91254,
+            "attack_precision": 0.13890054553084347,
+            "attack_recall": 0.12481146304675717,
+            "attack_f1": 0.13147964250248262,
+            "binary_macro_f1": 0.5427155491509938,
+            "benign_fpr": 0.04333868378812199,
+            "average_precision": 0.376944191781156,
+            "roc_auc": 0.9539554278700972,
+            "confusion": {
+              "tn": 45296,
+              "fp": 2052,
+              "fn": 2321,
+              "tp": 331
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 0.2
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.09195402298850575
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.211864406779661
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.1427061310782241
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 0.10425844346549193
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 0.07923497267759563
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 0.125
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 0.2
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 0.3333333333333333
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.4565879829871604,
+          "average_precision_drop": 0.6230495876583557
+        },
+        {
+          "group": "ttl_window",
+          "fields": [
+            "MIN_TTL",
+            "MAX_TTL",
+            "TCP_WIN_MAX_IN",
+            "TCP_WIN_MAX_OUT"
+          ],
+          "columns": [
+            14,
+            15,
+            33,
+            34,
+            63,
+            64,
+            82,
+            83
+          ],
+          "permutation_seed": 29,
+          "array_key": "ttl_window_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.91272,
+            "attack_precision": 0.14831552999178307,
+            "attack_recall": 0.1361236802413273,
+            "attack_f1": 0.14195831694848604,
+            "binary_macro_f1": 0.5479899261165297,
+            "benign_fpr": 0.0437822083298133,
+            "average_precision": 0.37803610240938385,
+            "roc_auc": 0.9541586860600584,
+            "confusion": {
+              "tn": 45275,
+              "fp": 2073,
+              "fn": 2291,
+              "tp": 361
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 0.2
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.13793103448275862
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.211864406779661
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.13742071881606766
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 0.13069016152716592
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 0.08196721311475409
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 0.15159574468085107
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 0.23636363636363636
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 0.3333333333333333
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.4513136060216245,
+          "average_precision_drop": 0.6219576770301278
+        },
+        {
+          "group": "ttl_window",
+          "fields": [
+            "MIN_TTL",
+            "MAX_TTL",
+            "TCP_WIN_MAX_IN",
+            "TCP_WIN_MAX_OUT"
+          ],
+          "columns": [
+            14,
+            15,
+            33,
+            34,
+            63,
+            64,
+            82,
+            83
+          ],
+          "permutation_seed": 43,
+          "array_key": "ttl_window_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.91318,
+            "attack_precision": 0.14827155351936694,
+            "attack_recall": 0.13423831070889894,
+            "attack_f1": 0.14090639224223234,
+            "binary_macro_f1": 0.5475930741583369,
+            "benign_fpr": 0.043190842274224886,
+            "average_precision": 0.38602390009075926,
+            "roc_auc": 0.9548548687545801,
+            "confusion": {
+              "tn": 45303,
+              "fp": 2045,
+              "fn": 2296,
+              "tp": 356
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 0.2
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.13793103448275862
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.19491525423728814
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.14059196617336153
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 0.1277533039647577
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 0.08469945355191257
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 0.14095744680851063
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 0.21818181818181817
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 0.3333333333333333
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.45171045797981735,
+          "average_precision_drop": 0.6139698793487525
+        },
+        {
+          "group": "dns_identifier",
+          "fields": [
+            "DNS_QUERY_ID"
+          ],
+          "columns": [
+            37,
+            86
+          ],
+          "permutation_seed": 17,
+          "array_key": "dns_identifier_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99988,
+            "attack_precision": 0.998868778280543,
+            "attack_recall": 0.998868778280543,
+            "attack_f1": 0.998868778280543,
+            "binary_macro_f1": 0.999402708815865,
+            "benign_fpr": 6.336064881304385e-05,
+            "average_precision": 0.9999926116258082,
+            "roc_auc": 0.9999995858781124,
+            "confusion": {
+              "tn": 47345,
+              "fp": 3,
+              "fn": 3,
+              "tp": 2649
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 1.0
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9978858350951374
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": -9.9176677710755e-05,
+          "average_precision_drop": 1.167813703517595e-06
+        },
+        {
+          "group": "dns_identifier",
+          "fields": [
+            "DNS_QUERY_ID"
+          ],
+          "columns": [
+            37,
+            86
+          ],
+          "permutation_seed": 29,
+          "array_key": "dns_identifier_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99986,
+            "attack_precision": 0.9981167608286252,
+            "attack_recall": 0.9992458521870287,
+            "attack_f1": 0.9986809873751649,
+            "binary_macro_f1": 0.9993035321381543,
+            "benign_fpr": 0.00010560108135507308,
+            "average_precision": 0.999992752083583,
+            "roc_auc": 0.9999995938419948,
+            "confusion": {
+              "tn": 47343,
+              "fp": 5,
+              "fn": 2,
+              "tp": 2650
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 1.0
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9989429175475687
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0,
+          "average_precision_drop": 1.0273559287732326e-06
+        },
+        {
+          "group": "dns_identifier",
+          "fields": [
+            "DNS_QUERY_ID"
+          ],
+          "columns": [
+            37,
+            86
+          ],
+          "permutation_seed": 43,
+          "array_key": "dns_identifier_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99988,
+            "attack_precision": 0.9984928409947249,
+            "attack_recall": 0.9992458521870287,
+            "attack_f1": 0.998869204673954,
+            "binary_macro_f1": 0.999402921343461,
+            "benign_fpr": 8.448086508405846e-05,
+            "average_precision": 0.9999928955666388,
+            "roc_auc": 0.9999996018058771,
+            "confusion": {
+              "tn": 47344,
+              "fp": 4,
+              "fn": 2,
+              "tp": 2650
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 1.0
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9989429175475687
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": -9.938920530672135e-05,
+          "average_precision_drop": 8.838728728921552e-07
+        }
+      ],
+      "saved_predictions": {
+        "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\diagnostics\\B2\\ND-UNSW-NB15-v3\\primary\\extra_trees-permutation.npz",
+        "sha256": "fc7349313e29b2ad7168fb770b7f6a52de5e0043e4526a27e6c31e5e46ce055f"
+      }
+    },
+    {
+      "model_kind": "mlp",
+      "baseline_run_id": "B1-ND-UNSW-NB15-v3-primary-mlp-s17",
+      "model_sha256": "da2a90700297b9bf7c5c0fa00dc9808c47edd8e33924953325b3b7652fb81f2b",
+      "control_metrics_05": {
+        "threshold": 0.5,
+        "rows": 50000,
+        "attack_prevalence": 0.05304,
+        "accuracy": 0.99982,
+        "attack_precision": 0.998491135420596,
+        "attack_recall": 0.9981146304675717,
+        "attack_f1": 0.9983028474448425,
+        "binary_macro_f1": 0.9991039037376277,
+        "benign_fpr": 8.448086508405846e-05,
+        "average_precision": 0.9990228077819532,
+        "roc_auc": 0.9997640221989719,
+        "confusion": {
+          "tn": 47344,
+          "fp": 4,
+          "fn": 5,
+          "tp": 2647
+        },
+        "attack_family_recall": {
+          "analysis": {
+            "support": 20,
+            "binary_attack_recall": 1.0
+          },
+          "backdoor": {
+            "support": 87,
+            "binary_attack_recall": 0.9885057471264368
+          },
+          "benign": {
+            "support": 47348,
+            "binary_attack_recall": null
+          },
+          "dos": {
+            "support": 118,
+            "binary_attack_recall": 0.9915254237288136
+          },
+          "exploits": {
+            "support": 946,
+            "binary_attack_recall": 0.9968287526427061
+          },
+          "fuzzers": {
+            "support": 681,
+            "binary_attack_recall": 1.0
+          },
+          "generic": {
+            "support": 366,
+            "binary_attack_recall": 1.0
+          },
+          "reconnaissance": {
+            "support": 376,
+            "binary_attack_recall": 1.0
+          },
+          "shellcode": {
+            "support": 55,
+            "binary_attack_recall": 1.0
+          },
+          "worms": {
+            "support": 3,
+            "binary_attack_recall": 1.0
+          }
+        },
+        "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+      },
+      "changes": [
+        {
+          "group": "service",
+          "fields": [
+            "L4_SRC_PORT",
+            "L4_DST_PORT",
+            "PROTOCOL",
+            "L7_PROTO"
+          ],
+          "columns": [
+            0,
+            1,
+            2,
+            3,
+            49,
+            50,
+            51,
+            52
+          ],
+          "permutation_seed": 17,
+          "array_key": "service_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99978,
+            "attack_precision": 0.9984899962249906,
+            "attack_recall": 0.9973604826546003,
+            "attack_f1": 0.9979249198264478,
+            "binary_macro_f1": 0.9989043811584324,
+            "benign_fpr": 8.448086508405846e-05,
+            "average_precision": 0.9970995834171602,
+            "roc_auc": 0.9997128701819626,
+            "confusion": {
+              "tn": 47344,
+              "fp": 4,
+              "fn": 7,
+              "tp": 2645
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9957716701902748
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 0.9985315712187959
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.00019952257919531036,
+          "average_precision_drop": 0.0019232243647929748
+        },
+        {
+          "group": "service",
+          "fields": [
+            "L4_SRC_PORT",
+            "L4_DST_PORT",
+            "PROTOCOL",
+            "L7_PROTO"
+          ],
+          "columns": [
+            0,
+            1,
+            2,
+            3,
+            49,
+            50,
+            51,
+            52
+          ],
+          "permutation_seed": 29,
+          "array_key": "service_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99982,
+            "attack_precision": 0.998491135420596,
+            "attack_recall": 0.9981146304675717,
+            "attack_f1": 0.9983028474448425,
+            "binary_macro_f1": 0.9991039037376277,
+            "benign_fpr": 8.448086508405846e-05,
+            "average_precision": 0.9984846467687476,
+            "roc_auc": 0.9997671281131294,
+            "confusion": {
+              "tn": 47344,
+              "fp": 4,
+              "fn": 5,
+              "tp": 2647
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9968287526427061
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0,
+          "average_precision_drop": 0.0005381610132055847
+        },
+        {
+          "group": "service",
+          "fields": [
+            "L4_SRC_PORT",
+            "L4_DST_PORT",
+            "PROTOCOL",
+            "L7_PROTO"
+          ],
+          "columns": [
+            0,
+            1,
+            2,
+            3,
+            49,
+            50,
+            51,
+            52
+          ],
+          "permutation_seed": 43,
+          "array_key": "service_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99978,
+            "attack_precision": 0.9984899962249906,
+            "attack_recall": 0.9973604826546003,
+            "attack_f1": 0.9979249198264478,
+            "binary_macro_f1": 0.9989043811584324,
+            "benign_fpr": 8.448086508405846e-05,
+            "average_precision": 0.9977227836175998,
+            "roc_auc": 0.9997426391745798,
+            "confusion": {
+              "tn": 47344,
+              "fp": 4,
+              "fn": 7,
+              "tp": 2645
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9957716701902748
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 0.9985315712187959
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.00019952257919531036,
+          "average_precision_drop": 0.001300024164353375
+        },
+        {
+          "group": "ttl_window",
+          "fields": [
+            "MIN_TTL",
+            "MAX_TTL",
+            "TCP_WIN_MAX_IN",
+            "TCP_WIN_MAX_OUT"
+          ],
+          "columns": [
+            14,
+            15,
+            33,
+            34,
+            63,
+            64,
+            82,
+            83
+          ],
+          "permutation_seed": 17,
+          "array_key": "ttl_window_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.89428,
+            "attack_precision": 0.12880496054114995,
+            "attack_recall": 0.17232277526395173,
+            "attack_f1": 0.1474193548387097,
+            "binary_macro_f1": 0.545532705137905,
+            "benign_fpr": 0.06528258849370618,
+            "average_precision": 0.14667390186581084,
+            "roc_auc": 0.8468085648943651,
+            "confusion": {
+              "tn": 44257,
+              "fp": 3091,
+              "fn": 2195,
+              "tp": 457
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 0.15
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.09195402298850575
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.1864406779661017
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.13002114164904863
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 0.20704845814977973
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 0.23497267759562843
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 0.1622340425531915
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 0.21818181818181817
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 0.3333333333333333
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.4535711985997227,
+          "average_precision_drop": 0.8523489059161423
+        },
+        {
+          "group": "ttl_window",
+          "fields": [
+            "MIN_TTL",
+            "MAX_TTL",
+            "TCP_WIN_MAX_IN",
+            "TCP_WIN_MAX_OUT"
+          ],
+          "columns": [
+            14,
+            15,
+            33,
+            34,
+            63,
+            64,
+            82,
+            83
+          ],
+          "permutation_seed": 29,
+          "array_key": "ttl_window_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.8929,
+            "attack_precision": 0.1257269454444752,
+            "attack_recall": 0.17119155354449472,
+            "attack_f1": 0.14497844483474373,
+            "binary_macro_f1": 0.5439252615481314,
+            "benign_fpr": 0.06667652276759314,
+            "average_precision": 0.14467289276947423,
+            "roc_auc": 0.8444102655846489,
+            "confusion": {
+              "tn": 44191,
+              "fp": 3157,
+              "fn": 2198,
+              "tp": 454
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 0.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.16091954022988506
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.17796610169491525
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.11522198731501057
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 0.20704845814977973
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 0.25136612021857924
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 0.18617021276595744
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 0.12727272727272726
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.45517864218949633,
+          "average_precision_drop": 0.8543499150124789
+        },
+        {
+          "group": "ttl_window",
+          "fields": [
+            "MIN_TTL",
+            "MAX_TTL",
+            "TCP_WIN_MAX_IN",
+            "TCP_WIN_MAX_OUT"
+          ],
+          "columns": [
+            14,
+            15,
+            33,
+            34,
+            63,
+            64,
+            82,
+            83
+          ],
+          "permutation_seed": 43,
+          "array_key": "ttl_window_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.89476,
+            "attack_precision": 0.13177200902934538,
+            "attack_recall": 0.17609351432880846,
+            "attack_f1": 0.15074241446094255,
+            "binary_macro_f1": 0.5473233627888696,
+            "benign_fpr": 0.06498690546591197,
+            "average_precision": 0.14857346579532493,
+            "roc_auc": 0.8485810862124042,
+            "confusion": {
+              "tn": 44271,
+              "fp": 3077,
+              "fn": 2185,
+              "tp": 467
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 0.05
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.13793103448275862
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.2033898305084746
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.11839323467230443
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 0.23494860499265785
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 0.2103825136612022
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 0.17819148936170212
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 0.2545454545454545
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 0.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.4517805409487581,
+          "average_precision_drop": 0.8504493419866282
+        },
+        {
+          "group": "dns_identifier",
+          "fields": [
+            "DNS_QUERY_ID"
+          ],
+          "columns": [
+            37,
+            86
+          ],
+          "permutation_seed": 17,
+          "array_key": "dns_identifier_s17",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99982,
+            "attack_precision": 0.998491135420596,
+            "attack_recall": 0.9981146304675717,
+            "attack_f1": 0.9983028474448425,
+            "binary_macro_f1": 0.9991039037376277,
+            "benign_fpr": 8.448086508405846e-05,
+            "average_precision": 0.9994121224925355,
+            "roc_auc": 0.9999329839291402,
+            "confusion": {
+              "tn": 47344,
+              "fp": 4,
+              "fn": 5,
+              "tp": 2647
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9968287526427061
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0,
+          "average_precision_drop": -0.0003893147105823447
+        },
+        {
+          "group": "dns_identifier",
+          "fields": [
+            "DNS_QUERY_ID"
+          ],
+          "columns": [
+            37,
+            86
+          ],
+          "permutation_seed": 29,
+          "array_key": "dns_identifier_s29",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99982,
+            "attack_precision": 0.998491135420596,
+            "attack_recall": 0.9981146304675717,
+            "attack_f1": 0.9983028474448425,
+            "binary_macro_f1": 0.9991039037376277,
+            "benign_fpr": 8.448086508405846e-05,
+            "average_precision": 0.9994109816530781,
+            "roc_auc": 0.99993298392914,
+            "confusion": {
+              "tn": 47344,
+              "fp": 4,
+              "fn": 5,
+              "tp": 2647
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9968287526427061
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0,
+          "average_precision_drop": -0.0003881738711248861
+        },
+        {
+          "group": "dns_identifier",
+          "fields": [
+            "DNS_QUERY_ID"
+          ],
+          "columns": [
+            37,
+            86
+          ],
+          "permutation_seed": 43,
+          "array_key": "dns_identifier_s43",
+          "metrics_05": {
+            "threshold": 0.5,
+            "rows": 50000,
+            "attack_prevalence": 0.05304,
+            "accuracy": 0.99982,
+            "attack_precision": 0.998491135420596,
+            "attack_recall": 0.9981146304675717,
+            "attack_f1": 0.9983028474448425,
+            "binary_macro_f1": 0.9991039037376277,
+            "benign_fpr": 8.448086508405846e-05,
+            "average_precision": 0.9994155234933099,
+            "roc_auc": 0.9999333502677329,
+            "confusion": {
+              "tn": 47344,
+              "fp": 4,
+              "fn": 5,
+              "tp": 2647
+            },
+            "attack_family_recall": {
+              "analysis": {
+                "support": 20,
+                "binary_attack_recall": 1.0
+              },
+              "backdoor": {
+                "support": 87,
+                "binary_attack_recall": 0.9885057471264368
+              },
+              "benign": {
+                "support": 47348,
+                "binary_attack_recall": null
+              },
+              "dos": {
+                "support": 118,
+                "binary_attack_recall": 0.9915254237288136
+              },
+              "exploits": {
+                "support": 946,
+                "binary_attack_recall": 0.9968287526427061
+              },
+              "fuzzers": {
+                "support": 681,
+                "binary_attack_recall": 1.0
+              },
+              "generic": {
+                "support": 366,
+                "binary_attack_recall": 1.0
+              },
+              "reconnaissance": {
+                "support": 376,
+                "binary_attack_recall": 1.0
+              },
+              "shellcode": {
+                "support": 55,
+                "binary_attack_recall": 1.0
+              },
+              "worms": {
+                "support": 3,
+                "binary_attack_recall": 1.0
+              }
+            },
+            "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+          },
+          "macro_f1_drop": 0.0,
+          "average_precision_drop": -0.0003927157113566837
+        }
+      ],
+      "saved_predictions": {
+        "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\diagnostics\\B2\\ND-UNSW-NB15-v3\\primary\\mlp-permutation.npz",
+        "sha256": "c303b3cbe2e0a2a8a96d56b62a43af59de0908ce04a313f508122ba4583881d8"
+      }
+    }
+  ],
+  "elapsed_seconds": 2.3120693999999276,
+  "interpretation": "Marginal joint-group permutation sensitivity; potentially unrealistic combinations; not causal or retrained ablation scores",
+  "final_test_accessed": false,
+  "external_test_accessed": false
+}

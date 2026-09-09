@@ -1,0 +1,223 @@
+{
+  "version": "B2",
+  "status": "FROZEN_FOR_SEED_SENSITIVITY",
+  "script_sha256": "0dc918bfc2876f5541588b81b014a20f7f5af6af1ec6d0c745175f6c48e34b1f",
+  "selected": [
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "model_kind": "logistic",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-primary-logistic-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-primary-logistic-s17.json",
+          "sha256": "84b4615dd75ba61be3af690d05d815ec4dd82749a67ab7ed2077aa0db4f765ad"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-primary-logistic-categorical_augmented-s17.json",
+          "sha256": "4ac8965aa0254933bc7c7eda9afd23ad1efb07b33ebb032b4cd4f80887560044"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "model_kind": "extra_trees",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-primary-extra_trees-s17.json",
+          "sha256": "4251fa01488279e2e2f5636c661e780383f6427fa2a105ac8a74d25109fa6fba"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s17.json",
+          "sha256": "34a94f07e5c6e10b7fe372a620535966bc3e4ad1b6e85ac3824413ee7b0ef131"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "model_kind": "mlp",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-primary-mlp-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-primary-mlp-s17.json",
+          "sha256": "a203a46a96b77091e2b49d8634d223c16b0f363bd674dad5b986ddebaed3d3fb"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-primary-mlp-categorical_augmented-s17.json",
+          "sha256": "e0b357753eb91c4004d008a3eaa6c405cdfe6de38e060f633e7bc24b3545ff10"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "model_kind": "logistic",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-stress-logistic-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-stress-logistic-s17.json",
+          "sha256": "8c5ae8a233b0cd04a8f05c3e86ceed64f5c401f6b4300cdc7041a23a8881a4f7"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-logistic-categorical_augmented-s17.json",
+          "sha256": "44168b40813f47da079892a6ac03331e9c4ad18f903a73c6e7a2e633bc27f85a"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "model_kind": "extra_trees",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-stress-extra_trees-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-stress-extra_trees-s17.json",
+          "sha256": "191109421168ef3d43990c8a9ce95d4b5dc8480a91a266926e2423512340b3cc"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-extra_trees-categorical_augmented-s17.json",
+          "sha256": "01e3deedbe1314b3cb6744ad51a8ef0131585b46769d66b8c0a76edc5bd7b1be"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "model_kind": "mlp",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-stress-mlp-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-stress-mlp-s17.json",
+          "sha256": "fe1499e1bfc8ada1f14aa511ff499fb1a0c3a1dcb20e7449d630b5e3dd8861fd"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-mlp-categorical_augmented-s17.json",
+          "sha256": "cc93cd891f8c45f0cc7d211de69815eaa9d85b72737cf69ea1644d2c42462693"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "model_kind": "logistic",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-primary-logistic-s17.json",
+          "sha256": "9ac880eb136fd407b3acf127fcceb8cc940450407406fa88a516f0d3c0aa6ee2"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s17.json",
+          "sha256": "8967c10a1c964482c42965eeb28e0ac5f7f2e1e1e061b2e45b834a6b15c9d952"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "model_kind": "extra_trees",
+      "representation": "full",
+      "seed17_run_id": "B1-ND-UNSW-NB15-v3-primary-extra_trees-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-primary-extra_trees-s17.json",
+          "sha256": "39b84cebc6a01c5497beb0b91c1c98d61864642fbc2a5be5494f62a0a360f4a8"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-primary-extra_trees-categorical_augmented-s17.json",
+          "sha256": "bca0dd8108cceef71bf70720a2c71153c1fdf4fc3f0777b5b4ca5d3425811d15"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "model_kind": "mlp",
+      "representation": "full",
+      "seed17_run_id": "B1-ND-UNSW-NB15-v3-primary-mlp-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-primary-mlp-s17.json",
+          "sha256": "6cbfc7efd8041f30a45dfb459ef9a7d8c6b0d4f7a82269aecdf2d5a42abfbd2e"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-primary-mlp-categorical_augmented-s17.json",
+          "sha256": "7918646da56851ff075700b7621850bdc716b25b62512b5ad7c23fa3798fc8a3"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "model_kind": "logistic",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-ND-UNSW-NB15-v3-stress-logistic-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-stress-logistic-s17.json",
+          "sha256": "dc9d6c4a70d81ea3e17ff6c0f9c4c6da6e2fc0432a7fcfc7febfd3c42dde6660"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-stress-logistic-categorical_augmented-s17.json",
+          "sha256": "4e38d67c4b1e27a9b1a02fd1e6b42236abe2bc863390527e3e2442911cc6dfb8"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "model_kind": "extra_trees",
+      "representation": "full",
+      "seed17_run_id": "B1-ND-UNSW-NB15-v3-stress-extra_trees-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-stress-extra_trees-s17.json",
+          "sha256": "d7eb94269e0dc7d7f791caa8f8dfb5baf4abbacdd9cab0e2136f0172ac4abcc7"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-stress-extra_trees-categorical_augmented-s17.json",
+          "sha256": "fc6e924bdab9d5d70391ac4c911648a1bd155110064f79b1898f870a26f70abb"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "model_kind": "mlp",
+      "representation": "full",
+      "seed17_run_id": "B1-ND-UNSW-NB15-v3-stress-mlp-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-stress-mlp-s17.json",
+          "sha256": "eb41cc10dde6e93cfdeef4b777d6456b2cd6bab634d4cb76bec92be9a54d3a9b"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-stress-mlp-categorical_augmented-s17.json",
+          "sha256": "c7cd99b78bb401f48d6599917cd60eda5d96be2393f5f9e5671bc26e2a6fd929"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full"
+    }
+  ]
+}

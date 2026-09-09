@@ -1,0 +1,17 @@
+# CP6 viva notes
+
+**What changed since CP5?** B2 adds controlled categorical augmentation, training-only feature ranking, renewed equality gates, two additional estimator seeds, grouped permutation diagnostics and NF endpoint-overlap analysis. It preserves every B1 training and validation row. No FL, privacy or CL model is implemented yet.
+
+**Why were reduced-feature models not trained?** Removing fields makes some previously different S1 feature groups identical across roles. Both the shortcut-field removal and top-32 selection fail this check in every namespace. Their detector scores would not meet our declared split protocol. A feature study with new grouping and a common population is possible, but it must be separately registered. Rejection is not evidence that fewer features produce worse detection.
+
+**Is categorical augmentation a proper categorical replacement?** It adds indicators for up to 16 common training values per registered nominal field and retains the entire original vector. Thus it offers an alternative path for learning common categories while preserving previously verified feature distinctions, including unseen values. Numeric coding and its limitations remain; there is no claim of pure one-hot replacement.
+
+**Does training-only feature selection guarantee a valid split?** No. Fitting the ranking only on training labels prevents validation-label selection leakage. It does not prevent projection from merging groups across reserved roles. Both checks are necessary under this project's declared S1 protocol.
+
+**What do the three seeds establish?** They measure estimator variability with fixed training rows, transforms and representation. Seed 17 selected the representation by a preregistered score/AP margin; seeds 29 and 43 still use the same validation population. They provide conditional seed sensitivity, not independent holdout confirmation or population confidence intervals. Deterministic LR may return identical scores.
+
+**What is the strongest shortcut warning?** NF validation overwhelmingly reuses training endpoint pairs. The unseen-pair subsets contain only 213 primary and 25 stress rows, all benign. B1 Extra Trees flags 15 and 7 of those rows respectively: 7.04% and 28% false positives. Unseen-pair attack recall and AP cannot be estimated. Fixed two-label macro-F1 on these benign-only subsets is not comparable to overall two-class macro-F1. This limits new-host claims without proving causal memorization.
+
+**Why use joint permutation?** Related numeric values and their missing/sentinel indicators are moved together, avoiding a mismatch within each shuffled field group. The model is unchanged, and the control and perturbed scores use the same validation subset. Nevertheless, combining shuffled groups with other fields can produce unrealistic flows, and correlated unshuffled variables can mask dependence. This measures model sensitivity, not causal importance or retrained ablation performance.
+
+**Can these results select the final system?** They support keeping a classical tree reference and a compact neural integration candidate. Host-aware split feasibility, client realism and a verified neural-framework migration remain necessary before stronger generalization and FL/DP claims. Final/external evaluation stays sealed. See [measured results](../reports/CP6-comparison-results.md) and the [registered protocol](CP6-comparison-protocol-B2.md).

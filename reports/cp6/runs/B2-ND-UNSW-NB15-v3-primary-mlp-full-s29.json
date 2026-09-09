@@ -1,0 +1,271 @@
+{
+  "run_id": "B2-ND-UNSW-NB15-v3-primary-mlp-full-s29",
+  "experiment_id": "EXP-003",
+  "architecture_version": "A0",
+  "version": "B2",
+  "status": "COMPLETED",
+  "dataset": "ND-UNSW-NB15-v3",
+  "protocol": "primary",
+  "model_kind": "mlp",
+  "representation": "full",
+  "seed": 29,
+  "preregistration_commit": "6734173",
+  "git_commit": "52461c2be9f1fcea545d62c301a676cb6141adb2",
+  "script_sha256": "0dc918bfc2876f5541588b81b014a20f7f5af6af1ec6d0c745175f6c48e34b1f",
+  "features_script_sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4",
+  "baseline_script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "feature_spec_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\ND-UNSW-NB15-v3-primary.json",
+  "feature_spec_sha256": "0656dcd0fb92e8a0c8dbeb0d5e800132f42320269ae33a1a2f002e4333be3b98",
+  "client_configuration": "Centralized CPU",
+  "privacy_configuration": "Non-private development only",
+  "cl_configuration": "No CL model training",
+  "preprocessing_version": "P1",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 472509,
+  "input_features": 98,
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\train.parquet",
+      "sha256": "1364ad0bc2e6b18027d57021ab05875ad6801affc18d5b070af829e1bbece155",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 94696
+        },
+        {
+          "binary_label": 1,
+          "rows": 5304
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\validation.parquet",
+      "sha256": "639c981babdf0f65ffa5d57c4e0666472eac2828f97755dbec2c4f87cad4a926",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 447731
+        },
+        {
+          "binary_label": 1,
+          "rows": 24778
+        }
+      ]
+    }
+  },
+  "fit_group_set_sha256": "c6b273618837b9f46462332a7c841ebb85c39001615d4ca69825e89b6b0f16f4",
+  "transform_sha256": "63fa5268ebf96bb4a59e65604b57f55649afee16227d3d6dcc66eafabb912bbe",
+  "hyperparameters": {
+    "activation": "relu",
+    "alpha": 0.0001,
+    "batch_size": 256,
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "early_stopping": false,
+    "epsilon": 1e-08,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "learning_rate": "constant",
+    "learning_rate_init": 0.001,
+    "max_fun": 15000,
+    "max_iter": 10,
+    "momentum": 0.9,
+    "n_iter_no_change": 11,
+    "nesterovs_momentum": true,
+    "power_t": 0.5,
+    "random_state": 29,
+    "shuffle": true,
+    "solver": "adam",
+    "tol": 0,
+    "validation_fraction": 0.1,
+    "verbose": false,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float64",
+  "load_seconds": 1.0088882000000012,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3"
+  },
+  "hardware": "reports/audit/environment.json",
+  "warnings": [
+    {
+      "category": "ConvergenceWarning",
+      "message": "Stochastic Optimizer: Maximum iterations (10) reached and the optimization hasn't converged yet."
+    }
+  ],
+  "fit_seconds": 5.298833600000762,
+  "validation_prediction_seconds": 0.3003828999999314,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 472509,
+    "attack_prevalence": 0.05243921279806311,
+    "accuracy": 0.9998201092465964,
+    "attack_precision": 0.9980234762615465,
+    "attack_recall": 0.9985470982323028,
+    "attack_f1": 0.9982852185841957,
+    "binary_macro_f1": 0.9990951470692353,
+    "benign_fpr": 0.00010944071328543255,
+    "average_precision": 0.9995232927525324,
+    "roc_auc": 0.9999548304057816,
+    "confusion": {
+      "tn": 447682,
+      "fp": 49,
+      "fn": 36,
+      "tp": 24742
+    },
+    "attack_family_recall": {
+      "analysis": {
+        "support": 228,
+        "binary_attack_recall": 1.0
+      },
+      "backdoor": {
+        "support": 895,
+        "binary_attack_recall": 0.9955307262569832
+      },
+      "benign": {
+        "support": 447731,
+        "binary_attack_recall": null
+      },
+      "dos": {
+        "support": 1170,
+        "binary_attack_recall": 0.9957264957264957
+      },
+      "exploits": {
+        "support": 8646,
+        "binary_attack_recall": 0.9972241498959056
+      },
+      "fuzzers": {
+        "support": 6539,
+        "binary_attack_recall": 0.999847071417648
+      },
+      "generic": {
+        "support": 3320,
+        "binary_attack_recall": 0.9993975903614458
+      },
+      "reconnaissance": {
+        "support": 3451,
+        "binary_attack_recall": 1.0
+      },
+      "shellcode": {
+        "support": 493,
+        "binary_attack_recall": 1.0
+      },
+      "worms": {
+        "support": 36,
+        "binary_attack_recall": 1.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.0010003057412161888,
+    "rows": 472509,
+    "attack_prevalence": 0.05243921279806311,
+    "accuracy": 0.9905038845820926,
+    "attack_precision": 0.8469140023935715,
+    "attack_recall": 0.9995964161756397,
+    "attack_f1": 0.916942783629195,
+    "binary_macro_f1": 0.955953420333276,
+    "benign_fpr": 0.009999307619977174,
+    "average_precision": 0.9995232927525324,
+    "roc_auc": 0.9999548304057816,
+    "confusion": {
+      "tn": 443254,
+      "fp": 4477,
+      "fn": 10,
+      "tp": 24768
+    },
+    "attack_family_recall": {
+      "analysis": {
+        "support": 228,
+        "binary_attack_recall": 1.0
+      },
+      "backdoor": {
+        "support": 895,
+        "binary_attack_recall": 0.9977653631284916
+      },
+      "benign": {
+        "support": 447731,
+        "binary_attack_recall": null
+      },
+      "dos": {
+        "support": 1170,
+        "binary_attack_recall": 0.9982905982905983
+      },
+      "exploits": {
+        "support": 8646,
+        "binary_attack_recall": 0.9995373583159842
+      },
+      "fuzzers": {
+        "support": 6539,
+        "binary_attack_recall": 1.0
+      },
+      "generic": {
+        "support": 3320,
+        "binary_attack_recall": 0.9993975903614458
+      },
+      "reconnaissance": {
+        "support": 3451,
+        "binary_attack_recall": 1.0
+      },
+      "shellcode": {
+        "support": 493,
+        "binary_attack_recall": 1.0
+      },
+      "worms": {
+        "support": 36,
+        "binary_attack_recall": 1.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": 10,
+  "loss_curve": [
+    0.08717357792129754,
+    0.006144896358902904,
+    0.0032490078368407806,
+    0.0024632103067748616,
+    0.0019783716288363914,
+    0.0015633511106596578,
+    0.0012614974095185945,
+    0.0010951170359755583,
+    0.0009296675015744317,
+    0.0008632603972291721
+  ],
+  "complexity": {
+    "parameters": 8449
+  },
+  "model_roundtrip_max_abs_delta": 0.0,
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 2.6215999996566097,
+    "batch_p95_ms": 3.0087400002230424
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\ND-UNSW-NB15-v3\\primary\\mlp\\full\\s29\\model.joblib",
+    "sha256": "1367060e8bf1dba7e66adbbba7cf5181db226aca988de09604d1201068c4d86c",
+    "bytes": 267361
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\ND-UNSW-NB15-v3\\primary\\mlp\\full\\s29\\validation-probabilities.npy",
+    "sha256": "f287da59ba23d58ecf2d54ec0f2f99f2e3546ce87be9009a5421ec682d86255c",
+    "rows": 472509
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "worker_seconds": 7.266709300000002,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 1054068736,
+  "supervised_wall_seconds": 8.691398599999957,
+  "rss_scope": "Sum of worker and descendants, sampled every 0.5s",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\logs\\B2-ND-UNSW-NB15-v3-primary-mlp-full-s29.log"
+}

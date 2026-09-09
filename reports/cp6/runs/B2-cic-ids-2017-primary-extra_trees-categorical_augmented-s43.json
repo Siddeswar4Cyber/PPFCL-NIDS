@@ -1,0 +1,289 @@
+{
+  "run_id": "B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s43",
+  "experiment_id": "EXP-003",
+  "architecture_version": "A0",
+  "version": "B2",
+  "status": "COMPLETED",
+  "dataset": "cic-ids-2017",
+  "protocol": "primary",
+  "model_kind": "extra_trees",
+  "representation": "categorical_augmented",
+  "seed": 43,
+  "preregistration_commit": "6734173",
+  "git_commit": "52461c2be9f1fcea545d62c301a676cb6141adb2",
+  "script_sha256": "0dc918bfc2876f5541588b81b014a20f7f5af6af1ec6d0c745175f6c48e34b1f",
+  "features_script_sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4",
+  "baseline_script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "feature_spec_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\cic-ids-2017-primary.json",
+  "feature_spec_sha256": "a60428238346f57454a667da2260a8abb7b64a80e4624b11dec3ad4c00782ecb",
+  "client_configuration": "Centralized CPU",
+  "privacy_configuration": "Non-private development only",
+  "cl_configuration": "No CL model training",
+  "preprocessing_version": "P2",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 533069,
+  "input_features": 172,
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\train.parquet",
+      "sha256": "9b64332e8cca684e33e4b75619c874400fadd914b174dc39fe79a60341b70478",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 82804
+        },
+        {
+          "binary_label": 1,
+          "rows": 17196
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\primary\\validation.parquet",
+      "sha256": "58a8dd64c8751bc211d3439d9a2f74a52edca1987bbb898a68bb135ab6147602",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 429553
+        },
+        {
+          "binary_label": 1,
+          "rows": 103516
+        }
+      ]
+    }
+  },
+  "fit_group_set_sha256": "9e3b8c95ee4a3afa1a2904cfc1cdb7d918b055e44ffe5baedc02e0eed48d8bca",
+  "transform_sha256": "7a3f53a4825c898758a969e0cccece5fe8c90419d73af7032ac564aa8f543a28",
+  "hyperparameters": {
+    "bootstrap": false,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 20,
+    "max_features": "sqrt",
+    "max_leaf_nodes": 4096,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 64,
+    "n_jobs": 4,
+    "oob_score": false,
+    "random_state": 43,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float32",
+  "load_seconds": 2.3221230999997715,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3"
+  },
+  "hardware": "reports/audit/environment.json",
+  "warnings": [],
+  "fit_seconds": 1.5983884999996008,
+  "validation_prediction_seconds": 0.5870738000003257,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 533069,
+    "attack_prevalence": 0.19418874479663983,
+    "accuracy": 0.9893334633977965,
+    "attack_precision": 0.9984612562670688,
+    "attack_recall": 0.946530005023378,
+    "attack_f1": 0.9718023486471475,
+    "binary_macro_f1": 0.9826125301518656,
+    "benign_fpr": 0.0003515282165413814,
+    "average_precision": 0.9985460238362756,
+    "roc_auc": 0.9995468860373546,
+    "confusion": {
+      "tn": 429402,
+      "fp": 151,
+      "fn": 5535,
+      "tp": 97981
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 429553,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 414,
+        "binary_attack_recall": 0.3647342995169082
+      },
+      "ddos": {
+        "support": 25521,
+        "binary_attack_recall": 0.9989028643078249
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.9643916913946587
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9196345080018168
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.9329517579721995
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.943801652892562
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.5312372396896693
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.0
+      },
+      "portscan": {
+        "support": 31789,
+        "binary_attack_recall": 0.998836075371984
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.6
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.06752411575562701
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.1540963521688626,
+    "rows": 533069,
+    "attack_prevalence": 0.19418874479663983,
+    "accuracy": 0.9913707231146437,
+    "attack_precision": 0.9600487414655926,
+    "attack_recall": 0.9970535955794273,
+    "attack_f1": 0.9782013249803339,
+    "binary_macro_f1": 0.9864109689281239,
+    "benign_fpr": 0.009998766159239954,
+    "average_precision": 0.9985460238362756,
+    "roc_auc": 0.9995468860373546,
+    "confusion": {
+      "tn": 425258,
+      "fp": 4295,
+      "fn": 305,
+      "tp": 103211
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 429553,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 414,
+        "binary_attack_recall": 0.6183574879227053
+      },
+      "ddos": {
+        "support": 25521,
+        "binary_attack_recall": 0.9995689824066455
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 1.0
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9999465654973416
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.9967293540474244
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.9991735537190083
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 1.0
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 1.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.3333333333333333
+      },
+      "portscan": {
+        "support": 31789,
+        "binary_attack_recall": 0.9998112554657271
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.9990147783251232
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.7620578778135049
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.5
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.6557377049180327
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": [],
+  "loss_curve": [],
+  "complexity": {
+    "nodes": 40452,
+    "leaves": 20258
+  },
+  "model_roundtrip_max_abs_delta": 6.938893903907228e-18,
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 13.42709999971703,
+    "batch_p95_ms": 25.637079999887646
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\primary\\extra_trees\\categorical_augmented\\s43\\model.joblib",
+    "sha256": "8ec3ce18636f31fe3247e97d4f3cabd70f04114a4badc9040bb2455ac0b4962c",
+    "bytes": 1029502
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\primary\\extra_trees\\categorical_augmented\\s43\\validation-probabilities.npy",
+    "sha256": "44ad4b99ba64624ef77134f62d973e8f13f758b1be8f3936d78deebf37fbafcb",
+    "rows": 533069
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "worker_seconds": 5.390975600000274,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 2391330816,
+  "supervised_wall_seconds": 7.162972099999934,
+  "rss_scope": "Sum of worker and descendants, sampled every 0.5s",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\logs\\B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s43.log"
+}

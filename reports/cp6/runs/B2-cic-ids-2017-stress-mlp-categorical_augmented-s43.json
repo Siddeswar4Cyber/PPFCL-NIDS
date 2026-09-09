@@ -1,0 +1,311 @@
+{
+  "run_id": "B2-cic-ids-2017-stress-mlp-categorical_augmented-s43",
+  "experiment_id": "EXP-003",
+  "architecture_version": "A0",
+  "version": "B2",
+  "status": "COMPLETED",
+  "dataset": "cic-ids-2017",
+  "protocol": "stress",
+  "model_kind": "mlp",
+  "representation": "categorical_augmented",
+  "seed": 43,
+  "preregistration_commit": "6734173",
+  "git_commit": "52461c2be9f1fcea545d62c301a676cb6141adb2",
+  "script_sha256": "0dc918bfc2876f5541588b81b014a20f7f5af6af1ec6d0c745175f6c48e34b1f",
+  "features_script_sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4",
+  "baseline_script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "feature_spec_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\cic-ids-2017-stress.json",
+  "feature_spec_sha256": "9550c281a7264bd91d930efde74b1f80db298c4fef3917fe371ec20dab5ad18a",
+  "client_configuration": "Centralized CPU",
+  "privacy_configuration": "Non-private development only",
+  "cl_configuration": "No CL model training",
+  "preprocessing_version": "P2",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 391594,
+  "input_features": 172,
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\train.parquet",
+      "sha256": "fa2f035d2937b17dc206953ed0263e2cb573bebd84a58cf30f8d8163eb05708a",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 88991
+        },
+        {
+          "binary_label": 1,
+          "rows": 11009
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\validation.parquet",
+      "sha256": "c1539e7f413479e807494d67fca153ca42dab1c5bc690d2bfe52e528d1d2aff2",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 345802
+        },
+        {
+          "binary_label": 1,
+          "rows": 45792
+        }
+      ]
+    }
+  },
+  "fit_group_set_sha256": "67bf1227ee11c2ef13db4e401658a6932e442af33a6a93577d77bc80b82c11f6",
+  "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+  "hyperparameters": {
+    "activation": "relu",
+    "alpha": 0.0001,
+    "batch_size": 256,
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "early_stopping": false,
+    "epsilon": 1e-08,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "learning_rate": "constant",
+    "learning_rate_init": 0.001,
+    "max_fun": 15000,
+    "max_iter": 10,
+    "momentum": 0.9,
+    "n_iter_no_change": 11,
+    "nesterovs_momentum": true,
+    "power_t": 0.5,
+    "random_state": 43,
+    "shuffle": true,
+    "solver": "adam",
+    "tol": 0,
+    "validation_fraction": 0.1,
+    "verbose": false,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float64",
+  "load_seconds": 1.647942200000216,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3"
+  },
+  "hardware": "reports/audit/environment.json",
+  "warnings": [
+    {
+      "category": "ConvergenceWarning",
+      "message": "Stochastic Optimizer: Maximum iterations (10) reached and the optimization hasn't converged yet."
+    }
+  ],
+  "fit_seconds": 6.242312700000184,
+  "validation_prediction_seconds": 0.330540199999632,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.993562209839783,
+    "attack_precision": 0.9696936803942426,
+    "attack_recall": 0.9754323899371069,
+    "attack_f1": 0.9725545697022481,
+    "binary_macro_f1": 0.9844539956402807,
+    "benign_fpr": 0.004036992267251202,
+    "average_precision": 0.9972114254675378,
+    "roc_auc": 0.999555551217308,
+    "confusion": {
+      "tn": 344406,
+      "fp": 1396,
+      "fn": 1125,
+      "tp": 44667
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.9490603363006924
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9890459269550349
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.9165985282093213
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.9446280991735537
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.9975500204164965
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.6666666666666666
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.9950738916256158
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.00964630225080386
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.040983606557377046
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.16613012554021384,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.9897623559094368,
+    "attack_precision": 0.9290452426426796,
+    "attack_recall": 0.9879018169112509,
+    "attack_f1": 0.9575699846536487,
+    "binary_macro_f1": 0.9758744488850215,
+    "benign_fpr": 0.009991266678619557,
+    "average_precision": 0.9972114254675378,
+    "roc_auc": 0.999555551217308,
+    "confusion": {
+      "tn": 342347,
+      "fp": 3455,
+      "fn": 554,
+      "tp": 45238
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.996538081107814
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9899810307515563
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.9476696647587899
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.9710743801652892
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.9987750102082482
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.6666666666666666
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.9960591133004926
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.8167202572347267
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.25
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.9754098360655737
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": 10,
+  "loss_curve": [
+    0.08339541684944216,
+    0.025307162735995217,
+    0.019346497225232375,
+    0.016436892977196943,
+    0.015226007143905877,
+    0.014486495042563437,
+    0.014022525356181655,
+    0.013556256900410592,
+    0.0135059555647528,
+    0.013160959786675485
+  ],
+  "complexity": {
+    "parameters": 13185
+  },
+  "model_roundtrip_max_abs_delta": 0.0,
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 2.9221000004326925,
+    "batch_p95_ms": 3.0616600004577776
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s43\\model.joblib",
+    "sha256": "a42b0cfeb4d86a2221c3be43c1a30ac5fb5bb0a43f7d843f9150ec786d716937",
+    "bytes": 415319
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s43\\validation-probabilities.npy",
+    "sha256": "c2972697e9b5dde9c9f6216943e16604c750d6f9743f03c4d1e0985b4f80ec10",
+    "rows": 391594
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "worker_seconds": 8.794414200000574,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 1570652160,
+  "supervised_wall_seconds": 10.204907700000149,
+  "rss_scope": "Sum of worker and descendants, sampled every 0.5s",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\logs\\B2-cic-ids-2017-stress-mlp-categorical_augmented-s43.log"
+}

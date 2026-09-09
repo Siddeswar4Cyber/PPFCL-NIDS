@@ -1,0 +1,249 @@
+{
+  "run_id": "B2-ND-UNSW-NB15-v3-primary-extra_trees-categorical_augmented-s17",
+  "experiment_id": "EXP-003",
+  "architecture_version": "A0",
+  "version": "B2",
+  "status": "COMPLETED",
+  "dataset": "ND-UNSW-NB15-v3",
+  "protocol": "primary",
+  "model_kind": "extra_trees",
+  "representation": "categorical_augmented",
+  "seed": 17,
+  "preregistration_commit": "6734173",
+  "git_commit": "52461c2be9f1fcea545d62c301a676cb6141adb2",
+  "script_sha256": "0dc918bfc2876f5541588b81b014a20f7f5af6af1ec6d0c745175f6c48e34b1f",
+  "features_script_sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4",
+  "baseline_script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
+  "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
+  "feature_spec_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\ND-UNSW-NB15-v3-primary.json",
+  "feature_spec_sha256": "0656dcd0fb92e8a0c8dbeb0d5e800132f42320269ae33a1a2f002e4333be3b98",
+  "client_configuration": "Centralized CPU",
+  "privacy_configuration": "Non-private development only",
+  "cl_configuration": "No CL model training",
+  "preprocessing_version": "P1",
+  "split_version": "S1",
+  "train_rows": 100000,
+  "validation_rows": 472509,
+  "input_features": 153,
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\train.parquet",
+      "sha256": "1364ad0bc2e6b18027d57021ab05875ad6801affc18d5b070af829e1bbece155",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 94696
+        },
+        {
+          "binary_label": 1,
+          "rows": 5304
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\validation.parquet",
+      "sha256": "639c981babdf0f65ffa5d57c4e0666472eac2828f97755dbec2c4f87cad4a926",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 447731
+        },
+        {
+          "binary_label": 1,
+          "rows": 24778
+        }
+      ]
+    }
+  },
+  "fit_group_set_sha256": "c6b273618837b9f46462332a7c841ebb85c39001615d4ca69825e89b6b0f16f4",
+  "transform_sha256": "63fa5268ebf96bb4a59e65604b57f55649afee16227d3d6dcc66eafabb912bbe",
+  "hyperparameters": {
+    "bootstrap": false,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 20,
+    "max_features": "sqrt",
+    "max_leaf_nodes": 4096,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 64,
+    "n_jobs": 4,
+    "oob_score": false,
+    "random_state": 17,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "effective_input_dtype": "float32",
+  "load_seconds": 1.5659641000002011,
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.3"
+  },
+  "hardware": "reports/audit/environment.json",
+  "warnings": [],
+  "fit_seconds": 0.9470277999998871,
+  "validation_prediction_seconds": 0.39950990000033926,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 472509,
+    "attack_prevalence": 0.05243921279806311,
+    "accuracy": 0.9999089964423958,
+    "attack_precision": 0.9991121514185399,
+    "attack_recall": 0.9991524739688433,
+    "attack_f1": 0.9991323122868616,
+    "binary_macro_f1": 0.9995421461642133,
+    "benign_fpr": 4.913664678121461e-05,
+    "average_precision": 0.9999968619073483,
+    "roc_auc": 0.9999998256696284,
+    "confusion": {
+      "tn": 447709,
+      "fp": 22,
+      "fn": 21,
+      "tp": 24757
+    },
+    "attack_family_recall": {
+      "analysis": {
+        "support": 228,
+        "binary_attack_recall": 1.0
+      },
+      "backdoor": {
+        "support": 895,
+        "binary_attack_recall": 0.9977653631284916
+      },
+      "benign": {
+        "support": 447731,
+        "binary_attack_recall": null
+      },
+      "dos": {
+        "support": 1170,
+        "binary_attack_recall": 0.9957264957264957
+      },
+      "exploits": {
+        "support": 8646,
+        "binary_attack_recall": 0.9986120749479528
+      },
+      "fuzzers": {
+        "support": 6539,
+        "binary_attack_recall": 1.0
+      },
+      "generic": {
+        "support": 3320,
+        "binary_attack_recall": 0.9993975903614458
+      },
+      "reconnaissance": {
+        "support": 3451,
+        "binary_attack_recall": 1.0
+      },
+      "shellcode": {
+        "support": 493,
+        "binary_attack_recall": 1.0
+      },
+      "worms": {
+        "support": 36,
+        "binary_attack_recall": 1.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.0476325525181983,
+    "rows": 472509,
+    "attack_prevalence": 0.05243921279806311,
+    "accuracy": 0.9929271188485299,
+    "attack_precision": 0.8811522048364153,
+    "attack_recall": 1.0,
+    "attack_f1": 0.9368218080078642,
+    "binary_macro_f1": 0.9665378376003093,
+    "benign_fpr": 0.00746430334285542,
+    "average_precision": 0.9999968619073483,
+    "roc_auc": 0.9999998256696284,
+    "confusion": {
+      "tn": 444389,
+      "fp": 3342,
+      "fn": 0,
+      "tp": 24778
+    },
+    "attack_family_recall": {
+      "analysis": {
+        "support": 228,
+        "binary_attack_recall": 1.0
+      },
+      "backdoor": {
+        "support": 895,
+        "binary_attack_recall": 1.0
+      },
+      "benign": {
+        "support": 447731,
+        "binary_attack_recall": null
+      },
+      "dos": {
+        "support": 1170,
+        "binary_attack_recall": 1.0
+      },
+      "exploits": {
+        "support": 8646,
+        "binary_attack_recall": 1.0
+      },
+      "fuzzers": {
+        "support": 6539,
+        "binary_attack_recall": 1.0
+      },
+      "generic": {
+        "support": 3320,
+        "binary_attack_recall": 1.0
+      },
+      "reconnaissance": {
+        "support": 3451,
+        "binary_attack_recall": 1.0
+      },
+      "shellcode": {
+        "support": 493,
+        "binary_attack_recall": 1.0
+      },
+      "worms": {
+        "support": 36,
+        "binary_attack_recall": 1.0
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "iterations": [],
+  "loss_curve": [],
+  "complexity": {
+    "nodes": 9020,
+    "leaves": 4542
+  },
+  "model_roundtrip_max_abs_delta": 0.0,
+  "latency": {
+    "batch_rows": 4096,
+    "warmup_batches": 1,
+    "repetitions": 7,
+    "batch_p50_ms": 13.383299999986775,
+    "batch_p95_ms": 20.89672999982212
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\ND-UNSW-NB15-v3\\primary\\extra_trees\\categorical_augmented\\s17\\model.joblib",
+    "sha256": "17c73381ac0d10d85a3b59b006f537ef586e16204762e647fa9d098732679dc2",
+    "bytes": 224078
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\ND-UNSW-NB15-v3\\primary\\extra_trees\\categorical_augmented\\s17\\validation-probabilities.npy",
+    "sha256": "369307edb6982c238582177553bff52bf00a2cd074dd5e759f4af3b77ca68203",
+    "rows": 472509
+  },
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "worker_seconds": 3.6133461999997962,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 1879961600,
+  "supervised_wall_seconds": 5.1199163000001136,
+  "rss_scope": "Sum of worker and descendants, sampled every 0.5s",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\logs\\B2-ND-UNSW-NB15-v3-primary-extra_trees-categorical_augmented-s17.log"
+}

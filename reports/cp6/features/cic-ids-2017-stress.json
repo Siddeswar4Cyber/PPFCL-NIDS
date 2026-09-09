@@ -1,0 +1,1534 @@
+{
+  "dataset": "cic-ids-2017",
+  "protocol": "stress",
+  "version": "B2",
+  "status": "COMPLETED",
+  "script_sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4",
+  "preprocessing_version": "P2",
+  "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+  "fit_group_set_sha256": "67bf1227ee11c2ef13db4e401658a6932e442af33a6a93577d77bc80b82c11f6",
+  "training_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\train.parquet",
+    "sha256": "fa2f035d2937b17dc206953ed0263e2cb573bebd84a58cf30f8d8163eb05708a",
+    "binary_support": [
+      {
+        "binary_label": 0,
+        "rows": 88991
+      },
+      {
+        "binary_label": 1,
+        "rows": 11009
+      }
+    ]
+  },
+  "cleaned": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\cleaned.parquet",
+    "sha256": "14b7015d3aeeea4397b57cc7c93e3735d1470a86fff300acc79d1f8221d64030",
+    "rows": 2830743
+  },
+  "training_only_ranking": [
+    {
+      "name": "Bwd Packet Length Std",
+      "input_id": "c013",
+      "columns": [
+        13,
+        90
+      ],
+      "score": 140345.54850290722,
+      "position": 13
+    },
+    {
+      "name": "Fwd IAT Std",
+      "input_id": "c022",
+      "columns": [
+        22,
+        99
+      ],
+      "score": 131294.02786891325,
+      "position": 22
+    },
+    {
+      "name": "Packet Length Std",
+      "input_id": "c041",
+      "columns": [
+        41,
+        118
+      ],
+      "score": 126657.7827487071,
+      "position": 41
+    },
+    {
+      "name": "Bwd Packet Length Max",
+      "input_id": "c010",
+      "columns": [
+        10,
+        87
+      ],
+      "score": 126041.6101535228,
+      "position": 10
+    },
+    {
+      "name": "Bwd Packet Length Mean",
+      "input_id": "c012",
+      "columns": [
+        12,
+        89
+      ],
+      "score": 123538.48687144704,
+      "position": 12
+    },
+    {
+      "name": "Avg Bwd Segment Size",
+      "input_id": "c054",
+      "columns": [
+        54,
+        131
+      ],
+      "score": 123538.48687141827,
+      "position": 54
+    },
+    {
+      "name": "Packet Length Variance",
+      "input_id": "c042",
+      "columns": [
+        42,
+        119
+      ],
+      "score": 117465.348165357,
+      "position": 42
+    },
+    {
+      "name": "Max Packet Length",
+      "input_id": "c039",
+      "columns": [
+        39,
+        116
+      ],
+      "score": 109868.84980826214,
+      "position": 39
+    },
+    {
+      "name": "Idle Max",
+      "input_id": "c076",
+      "columns": [
+        75,
+        152
+      ],
+      "score": 107855.24477556397,
+      "position": 75
+    },
+    {
+      "name": "Idle Mean",
+      "input_id": "c074",
+      "columns": [
+        73,
+        150
+      ],
+      "score": 106871.27966970245,
+      "position": 73
+    },
+    {
+      "name": "Fwd IAT Max",
+      "input_id": "c023",
+      "columns": [
+        23,
+        100
+      ],
+      "score": 106064.84365758528,
+      "position": 23
+    },
+    {
+      "name": "Flow IAT Max",
+      "input_id": "c018",
+      "columns": [
+        18,
+        95
+      ],
+      "score": 105562.41722894552,
+      "position": 18
+    },
+    {
+      "name": "Idle Min",
+      "input_id": "c077",
+      "columns": [
+        76,
+        153
+      ],
+      "score": 103788.16521318388,
+      "position": 76
+    },
+    {
+      "name": "Average Packet Size",
+      "input_id": "c052",
+      "columns": [
+        52,
+        129
+      ],
+      "score": 83119.60830916285,
+      "position": 52
+    },
+    {
+      "name": "Packet Length Mean",
+      "input_id": "c040",
+      "columns": [
+        40,
+        117
+      ],
+      "score": 81075.47621346942,
+      "position": 40
+    },
+    {
+      "name": "Flow IAT Std",
+      "input_id": "c017",
+      "columns": [
+        17,
+        94
+      ],
+      "score": 62988.62956189865,
+      "position": 17
+    },
+    {
+      "name": "Fwd IAT Total",
+      "input_id": "c020",
+      "columns": [
+        20,
+        97
+      ],
+      "score": 31811.06819940957,
+      "position": 20
+    },
+    {
+      "name": "Flow Duration",
+      "input_id": "c001",
+      "columns": [
+        1,
+        78
+      ],
+      "score": 31684.812609542318,
+      "position": 1
+    },
+    {
+      "name": "FIN Flag Count",
+      "input_id": "c043",
+      "columns": [
+        43,
+        120
+      ],
+      "score": 22830.35641302843,
+      "position": 43
+    },
+    {
+      "name": "Bwd IAT Std",
+      "input_id": "c027",
+      "columns": [
+        27,
+        104
+      ],
+      "score": 15027.220545973783,
+      "position": 27
+    },
+    {
+      "name": "Flow IAT Mean",
+      "input_id": "c016",
+      "columns": [
+        16,
+        93
+      ],
+      "score": 14710.51290229889,
+      "position": 16
+    },
+    {
+      "name": "Fwd IAT Mean",
+      "input_id": "c021",
+      "columns": [
+        21,
+        98
+      ],
+      "score": 12140.856972632231,
+      "position": 21
+    },
+    {
+      "name": "Bwd IAT Max",
+      "input_id": "c028",
+      "columns": [
+        28,
+        105
+      ],
+      "score": 10424.9754568423,
+      "position": 28
+    },
+    {
+      "name": "Init_Win_bytes_backward",
+      "input_id": "c067",
+      "columns": [
+        66,
+        143,
+        155
+      ],
+      "score": 9423.248335659044,
+      "position": 66
+    },
+    {
+      "name": "Init_Win_bytes_forward",
+      "input_id": "c066",
+      "columns": [
+        65,
+        142,
+        154
+      ],
+      "score": 8204.444831139826,
+      "position": 65
+    },
+    {
+      "name": "Min Packet Length",
+      "input_id": "c038",
+      "columns": [
+        38,
+        115
+      ],
+      "score": 5562.182189326443,
+      "position": 38
+    },
+    {
+      "name": "Bwd Packet Length Min",
+      "input_id": "c011",
+      "columns": [
+        11,
+        88
+      ],
+      "score": 5113.491524187516,
+      "position": 11
+    },
+    {
+      "name": "Fwd Packet Length Min",
+      "input_id": "c007",
+      "columns": [
+        7,
+        84
+      ],
+      "score": 2798.6306114905183,
+      "position": 7
+    },
+    {
+      "name": "Destination Port",
+      "input_id": "c000",
+      "columns": [
+        0,
+        77
+      ],
+      "score": 2691.765646949282,
+      "position": 0
+    },
+    {
+      "name": "ACK Flag Count",
+      "input_id": "c047",
+      "columns": [
+        47,
+        124
+      ],
+      "score": 2612.642578018851,
+      "position": 47
+    },
+    {
+      "name": "Bwd IAT Total",
+      "input_id": "c025",
+      "columns": [
+        25,
+        102
+      ],
+      "score": 1693.4077028588524,
+      "position": 25
+    },
+    {
+      "name": "URG Flag Count",
+      "input_id": "c048",
+      "columns": [
+        48,
+        125
+      ],
+      "score": 1260.4563444814492,
+      "position": 48
+    },
+    {
+      "name": "Down/Up Ratio",
+      "input_id": "c051",
+      "columns": [
+        51,
+        128
+      ],
+      "score": 1140.3763334505657,
+      "position": 51
+    },
+    {
+      "name": "Idle Std",
+      "input_id": "c075",
+      "columns": [
+        74,
+        151
+      ],
+      "score": 1033.1629290238163,
+      "position": 74
+    },
+    {
+      "name": "Fwd Packet Length Std",
+      "input_id": "c009",
+      "columns": [
+        9,
+        86
+      ],
+      "score": 932.9711761693674,
+      "position": 9
+    },
+    {
+      "name": "Bwd IAT Mean",
+      "input_id": "c026",
+      "columns": [
+        26,
+        103
+      ],
+      "score": 884.1664815508872,
+      "position": 26
+    },
+    {
+      "name": "Flow Packets/s",
+      "input_id": "c015",
+      "columns": [
+        15,
+        92
+      ],
+      "score": 659.6986165747809,
+      "position": 15
+    },
+    {
+      "name": "Fwd Packets/s",
+      "input_id": "c036",
+      "columns": [
+        36,
+        113
+      ],
+      "score": 556.460941728188,
+      "position": 36
+    },
+    {
+      "name": "PSH Flag Count",
+      "input_id": "c046",
+      "columns": [
+        46,
+        123
+      ],
+      "score": 386.79754063548484,
+      "position": 46
+    },
+    {
+      "name": "Bwd Packets/s",
+      "input_id": "c037",
+      "columns": [
+        37,
+        114
+      ],
+      "score": 303.4801824112891,
+      "position": 37
+    },
+    {
+      "name": "min_seg_size_forward",
+      "input_id": "c069",
+      "columns": [
+        68,
+        145
+      ],
+      "score": 302.68797673418555,
+      "position": 68
+    },
+    {
+      "name": "Fwd PSH Flags",
+      "input_id": "c030",
+      "columns": [
+        30,
+        107
+      ],
+      "score": 281.8933478779348,
+      "position": 30
+    },
+    {
+      "name": "SYN Flag Count",
+      "input_id": "c044",
+      "columns": [
+        44,
+        121
+      ],
+      "score": 281.8933478779348,
+      "position": 44
+    },
+    {
+      "name": "Fwd Packet Length Max",
+      "input_id": "c006",
+      "columns": [
+        6,
+        83
+      ],
+      "score": 280.7413939065696,
+      "position": 6
+    },
+    {
+      "name": "Flow IAT Min",
+      "input_id": "c019",
+      "columns": [
+        19,
+        96
+      ],
+      "score": 174.9472418227569,
+      "position": 19
+    },
+    {
+      "name": "Active Min",
+      "input_id": "c073",
+      "columns": [
+        72,
+        149
+      ],
+      "score": 80.25701188863245,
+      "position": 72
+    },
+    {
+      "name": "Active Mean",
+      "input_id": "c070",
+      "columns": [
+        69,
+        146
+      ],
+      "score": 78.88577119310321,
+      "position": 69
+    },
+    {
+      "name": "Fwd Header Length",
+      "input_id": "c034",
+      "columns": [
+        34,
+        111
+      ],
+      "score": 62.774408559767956,
+      "position": 34
+    },
+    {
+      "name": "Total Length of Bwd Packets",
+      "input_id": "c005",
+      "columns": [
+        5,
+        82
+      ],
+      "score": 50.10211632733854,
+      "position": 5
+    },
+    {
+      "name": "Subflow Bwd Bytes",
+      "input_id": "c065",
+      "columns": [
+        64,
+        141
+      ],
+      "score": 50.10211632733854,
+      "position": 64
+    },
+    {
+      "name": "act_data_pkt_fwd",
+      "input_id": "c068",
+      "columns": [
+        67,
+        144
+      ],
+      "score": 41.56297863181246,
+      "position": 67
+    },
+    {
+      "name": "Flow Bytes/s",
+      "input_id": "c014",
+      "columns": [
+        14,
+        91
+      ],
+      "score": 35.738566519424246,
+      "position": 14
+    },
+    {
+      "name": "Bwd IAT Min",
+      "input_id": "c029",
+      "columns": [
+        29,
+        106
+      ],
+      "score": 26.848798794343473,
+      "position": 29
+    },
+    {
+      "name": "Total Length of Fwd Packets",
+      "input_id": "c004",
+      "columns": [
+        4,
+        81
+      ],
+      "score": 16.536096924813645,
+      "position": 4
+    },
+    {
+      "name": "Subflow Fwd Bytes",
+      "input_id": "c063",
+      "columns": [
+        62,
+        139
+      ],
+      "score": 16.536096924813645,
+      "position": 62
+    },
+    {
+      "name": "Bwd Header Length",
+      "input_id": "c035",
+      "columns": [
+        35,
+        112
+      ],
+      "score": 15.316756811261113,
+      "position": 35
+    },
+    {
+      "name": "Fwd Packet Length Mean",
+      "input_id": "c008",
+      "columns": [
+        8,
+        85
+      ],
+      "score": 4.699133650444293,
+      "position": 8
+    },
+    {
+      "name": "Avg Fwd Segment Size",
+      "input_id": "c053",
+      "columns": [
+        53,
+        130
+      ],
+      "score": 4.699133650444293,
+      "position": 53
+    },
+    {
+      "name": "RST Flag Count",
+      "input_id": "c045",
+      "columns": [
+        45,
+        122
+      ],
+      "score": 3.9600372558144716,
+      "position": 45
+    },
+    {
+      "name": "ECE Flag Count",
+      "input_id": "c050",
+      "columns": [
+        50,
+        127
+      ],
+      "score": 3.9600372558144716,
+      "position": 50
+    },
+    {
+      "name": "Total Fwd Packets",
+      "input_id": "c002",
+      "columns": [
+        2,
+        79
+      ],
+      "score": 2.0208423407117704,
+      "position": 2
+    },
+    {
+      "name": "Subflow Fwd Packets",
+      "input_id": "c062",
+      "columns": [
+        61,
+        138
+      ],
+      "score": 2.0208423407117704,
+      "position": 61
+    },
+    {
+      "name": "Fwd URG Flags",
+      "input_id": "c032",
+      "columns": [
+        32,
+        109
+      ],
+      "score": 1.1134725942325414,
+      "position": 32
+    },
+    {
+      "name": "CWE Flag Count",
+      "input_id": "c049",
+      "columns": [
+        49,
+        126
+      ],
+      "score": 1.1134725942325414,
+      "position": 49
+    },
+    {
+      "name": "Total Backward Packets",
+      "input_id": "c003",
+      "columns": [
+        3,
+        80
+      ],
+      "score": 1.0152590120353338,
+      "position": 3
+    },
+    {
+      "name": "Subflow Bwd Packets",
+      "input_id": "c064",
+      "columns": [
+        63,
+        140
+      ],
+      "score": 1.0152590120353338,
+      "position": 63
+    },
+    {
+      "name": "Active Std",
+      "input_id": "c071",
+      "columns": [
+        70,
+        147
+      ],
+      "score": 0.7636268398786653,
+      "position": 70
+    },
+    {
+      "name": "Fwd IAT Min",
+      "input_id": "c024",
+      "columns": [
+        24,
+        101
+      ],
+      "score": 0.39718475781570056,
+      "position": 24
+    },
+    {
+      "name": "Active Max",
+      "input_id": "c072",
+      "columns": [
+        71,
+        148
+      ],
+      "score": 0.016234537251170238,
+      "position": 71
+    },
+    {
+      "name": "Bwd PSH Flags",
+      "input_id": "c031",
+      "columns": [
+        31,
+        108
+      ],
+      "score": 0.0,
+      "position": 31
+    },
+    {
+      "name": "Bwd URG Flags",
+      "input_id": "c033",
+      "columns": [
+        33,
+        110
+      ],
+      "score": 0.0,
+      "position": 33
+    },
+    {
+      "name": "Fwd Avg Bytes/Bulk",
+      "input_id": "c056",
+      "columns": [
+        55,
+        132
+      ],
+      "score": 0.0,
+      "position": 55
+    },
+    {
+      "name": "Fwd Avg Packets/Bulk",
+      "input_id": "c057",
+      "columns": [
+        56,
+        133
+      ],
+      "score": 0.0,
+      "position": 56
+    },
+    {
+      "name": "Fwd Avg Bulk Rate",
+      "input_id": "c058",
+      "columns": [
+        57,
+        134
+      ],
+      "score": 0.0,
+      "position": 57
+    },
+    {
+      "name": "Bwd Avg Bytes/Bulk",
+      "input_id": "c059",
+      "columns": [
+        58,
+        135
+      ],
+      "score": 0.0,
+      "position": 58
+    },
+    {
+      "name": "Bwd Avg Packets/Bulk",
+      "input_id": "c060",
+      "columns": [
+        59,
+        136
+      ],
+      "score": 0.0,
+      "position": 59
+    },
+    {
+      "name": "Bwd Avg Bulk Rate",
+      "input_id": "c061",
+      "columns": [
+        60,
+        137
+      ],
+      "score": 0.0,
+      "position": 60
+    }
+  ],
+  "ranking_warnings": [
+    {
+      "category": "UserWarning",
+      "message": "Features [ 31  33  55  56  57  58  59  60  77  78  79  80  81  82  83  84  85  86\n  87  88  89  90  93  94  95  96  97  98  99 100 101 102 103 104 105 106\n 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124\n 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 144\n 145 146 147 148 149 150 151 152 153] are constant."
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in divide"
+    }
+  ],
+  "definitions": {
+    "full": {
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "output_width": 156,
+      "gate": {
+        "status": "PASSED",
+        "basis": "Verified B1 full vector; injective unchanged prefix for augmentation",
+        "float64": "PASSED",
+        "float32": "PASSED"
+      }
+    },
+    "no_shortcut": {
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        67,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        144,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153
+      ],
+      "output_width": 146,
+      "gate": {
+        "status": "REJECTED_UNDER_S1",
+        "checks": [
+          {
+            "dtype": "float64",
+            "nonfinite_vectors": 0,
+            "merged_vectors": 25821,
+            "implicated_groups": 494878,
+            "cross_primary_role_vectors": 22278,
+            "cross_stress_role_vectors": 22289,
+            "status": "REJECTED_UNDER_S1"
+          },
+          {
+            "dtype": "float32",
+            "nonfinite_vectors": 0,
+            "merged_vectors": 25919,
+            "implicated_groups": 505045,
+            "cross_primary_role_vectors": 22249,
+            "cross_stress_role_vectors": 22366,
+            "status": "REJECTED_UNDER_S1"
+          }
+        ]
+      }
+    },
+    "top32": {
+      "columns": [
+        0,
+        1,
+        7,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        25,
+        27,
+        28,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        47,
+        48,
+        52,
+        54,
+        65,
+        66,
+        73,
+        75,
+        76,
+        77,
+        78,
+        84,
+        87,
+        88,
+        89,
+        90,
+        93,
+        94,
+        95,
+        97,
+        98,
+        99,
+        100,
+        102,
+        104,
+        105,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        124,
+        125,
+        129,
+        131,
+        142,
+        143,
+        150,
+        152,
+        153,
+        154,
+        155
+      ],
+      "output_width": 66,
+      "gate": {
+        "status": "REJECTED_UNDER_S1",
+        "checks": [
+          {
+            "dtype": "float64",
+            "nonfinite_vectors": 0,
+            "merged_vectors": 26082,
+            "implicated_groups": 54787,
+            "cross_primary_role_vectors": 19791,
+            "cross_stress_role_vectors": 19396,
+            "status": "REJECTED_UNDER_S1"
+          },
+          {
+            "dtype": "float32",
+            "nonfinite_vectors": 0,
+            "merged_vectors": 34765,
+            "implicated_groups": 74213,
+            "cross_primary_role_vectors": 26499,
+            "cross_stress_role_vectors": 26357,
+            "status": "REJECTED_UNDER_S1"
+          }
+        ]
+      }
+    },
+    "categorical_augmented": {
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "categories": [
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0008087158203125,
+          "training_count": 36585,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0067596435546875,
+          "training_count": 20709,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.001220703125,
+          "training_count": 19617,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0018768310546875,
+          "training_count": 853,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.000335693359375,
+          "training_count": 481,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0003204345703125,
+          "training_count": 396,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0059356689453125,
+          "training_count": 239,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0013427734375,
+          "training_count": 196,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0020904541015625,
+          "training_count": 134,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.04986572265625,
+          "training_count": 107,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0070953369140625,
+          "training_count": 104,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0021209716796875,
+          "training_count": 100,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0,
+          "training_count": 86,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0067901611328125,
+          "training_count": 85,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.0020599365234375,
+          "training_count": 48,
+          "field": "Destination Port"
+        },
+        {
+          "column": 0,
+          "missing_column": 77,
+          "value": 0.002105712890625,
+          "training_count": 33,
+          "field": "Destination Port"
+        }
+      ],
+      "output_width": 172,
+      "gate": {
+        "status": "PASSED",
+        "basis": "Verified B1 full vector; injective unchanged prefix for augmentation",
+        "float64": "PASSED",
+        "float32": "PASSED"
+      }
+    }
+  },
+  "population_changed": false,
+  "all_role_representatives": 2472405,
+  "elapsed_seconds": 154.9562761999996
+}

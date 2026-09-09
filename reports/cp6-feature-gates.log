@@ -1,0 +1,32 @@
+cic-ids-2017/primary/full: gate
+{"status": "PASSED", "basis": "Verified B1 full vector; injective unchanged prefix for augmentation", "float64": "PASSED", "float32": "PASSED"}
+cic-ids-2017/primary/no_shortcut: gate
+{"status": "REJECTED_UNDER_S1", "checks": [{"dtype": "float64", "nonfinite_vectors": 0, "merged_vectors": 25821, "implicated_groups": 494878, "cross_primary_role_vectors": 22278, "cross_stress_role_vectors": 22289, "status": "REJECTED_UNDER_S1"}, {"dtype": "float32", "nonfinite_vectors": 0, "merged_vectors": 25919, "implicated_groups": 505045, "cross_primary_role_vectors": 22249, "cross_stress_role_vectors": 22366, "status": "REJECTED_UNDER_S1"}]}
+cic-ids-2017/primary/top32: gate
+{"status": "REJECTED_UNDER_S1", "checks": [{"dtype": "float64", "nonfinite_vectors": 0, "merged_vectors": 26126, "implicated_groups": 54875, "cross_primary_role_vectors": 19826, "cross_stress_role_vectors": 19433, "status": "REJECTED_UNDER_S1"}, {"dtype": "float32", "nonfinite_vectors": 0, "merged_vectors": 34809, "implicated_groups": 74301, "cross_primary_role_vectors": 26534, "cross_stress_role_vectors": 26394, "status": "REJECTED_UNDER_S1"}]}
+cic-ids-2017/primary/categorical_augmented: gate
+{"status": "PASSED", "basis": "Verified B1 full vector; injective unchanged prefix for augmentation", "float64": "PASSED", "float32": "PASSED"}
+cic-ids-2017/stress/full: gate
+{"status": "PASSED", "basis": "Verified B1 full vector; injective unchanged prefix for augmentation", "float64": "PASSED", "float32": "PASSED"}
+cic-ids-2017/stress/no_shortcut: gate
+{"status": "REJECTED_UNDER_S1", "checks": [{"dtype": "float64", "nonfinite_vectors": 0, "merged_vectors": 25821, "implicated_groups": 494878, "cross_primary_role_vectors": 22278, "cross_stress_role_vectors": 22289, "status": "REJECTED_UNDER_S1"}, {"dtype": "float32", "nonfinite_vectors": 0, "merged_vectors": 25919, "implicated_groups": 505045, "cross_primary_role_vectors": 22249, "cross_stress_role_vectors": 22366, "status": "REJECTED_UNDER_S1"}]}
+cic-ids-2017/stress/top32: gate
+{"status": "REJECTED_UNDER_S1", "checks": [{"dtype": "float64", "nonfinite_vectors": 0, "merged_vectors": 26082, "implicated_groups": 54787, "cross_primary_role_vectors": 19791, "cross_stress_role_vectors": 19396, "status": "REJECTED_UNDER_S1"}, {"dtype": "float32", "nonfinite_vectors": 0, "merged_vectors": 34765, "implicated_groups": 74213, "cross_primary_role_vectors": 26499, "cross_stress_role_vectors": 26357, "status": "REJECTED_UNDER_S1"}]}
+cic-ids-2017/stress/categorical_augmented: gate
+{"status": "PASSED", "basis": "Verified B1 full vector; injective unchanged prefix for augmentation", "float64": "PASSED", "float32": "PASSED"}
+ND-UNSW-NB15-v3/primary/full: gate
+{"status": "PASSED", "basis": "Verified B1 full vector; injective unchanged prefix for augmentation", "float64": "PASSED", "float32": "PASSED"}
+ND-UNSW-NB15-v3/primary/no_shortcut: gate
+{"status": "REJECTED_UNDER_S1", "checks": [{"dtype": "float64", "nonfinite_vectors": 0, "merged_vectors": 105556, "implicated_groups": 1207744, "cross_primary_role_vectors": 90677, "cross_stress_role_vectors": 80209, "status": "REJECTED_UNDER_S1"}, {"dtype": "float32", "nonfinite_vectors": 0, "merged_vectors": 105556, "implicated_groups": 1207744, "cross_primary_role_vectors": 90677, "cross_stress_role_vectors": 80209, "status": "REJECTED_UNDER_S1"}]}
+ND-UNSW-NB15-v3/primary/top32: gate
+{"status": "REJECTED_UNDER_S1", "checks": [{"dtype": "float64", "nonfinite_vectors": 0, "merged_vectors": 62292, "implicated_groups": 645765, "cross_primary_role_vectors": 53068, "cross_stress_role_vectors": 47006, "status": "REJECTED_UNDER_S1"}, {"dtype": "float32", "nonfinite_vectors": 0, "merged_vectors": 62292, "implicated_groups": 645765, "cross_primary_role_vectors": 53068, "cross_stress_role_vectors": 47006, "status": "REJECTED_UNDER_S1"}]}
+ND-UNSW-NB15-v3/primary/categorical_augmented: gate
+{"status": "PASSED", "basis": "Verified B1 full vector; injective unchanged prefix for augmentation", "float64": "PASSED", "float32": "PASSED"}
+ND-UNSW-NB15-v3/stress/full: gate
+{"status": "PASSED", "basis": "Verified B1 full vector; injective unchanged prefix for augmentation", "float64": "PASSED", "float32": "PASSED"}
+ND-UNSW-NB15-v3/stress/no_shortcut: gate
+{"status": "REJECTED_UNDER_S1", "checks": [{"dtype": "float64", "nonfinite_vectors": 0, "merged_vectors": 105556, "implicated_groups": 1207744, "cross_primary_role_vectors": 90677, "cross_stress_role_vectors": 80209, "status": "REJECTED_UNDER_S1"}, {"dtype": "float32", "nonfinite_vectors": 0, "merged_vectors": 105556, "implicated_groups": 1207744, "cross_primary_role_vectors": 90677, "cross_stress_role_vectors": 80209, "status": "REJECTED_UNDER_S1"}]}
+ND-UNSW-NB15-v3/stress/top32: gate
+{"status": "REJECTED_UNDER_S1", "checks": [{"dtype": "float64", "nonfinite_vectors": 0, "merged_vectors": 62293, "implicated_groups": 645768, "cross_primary_role_vectors": 53068, "cross_stress_role_vectors": 47006, "status": "REJECTED_UNDER_S1"}, {"dtype": "float32", "nonfinite_vectors": 0, "merged_vectors": 62293, "implicated_groups": 645768, "cross_primary_role_vectors": 53068, "cross_stress_role_vectors": 47006, "status": "REJECTED_UNDER_S1"}]}
+ND-UNSW-NB15-v3/stress/categorical_augmented: gate
+{"status": "PASSED", "basis": "Verified B1 full vector; injective unchanged prefix for augmentation", "float64": "PASSED", "float32": "PASSED"}

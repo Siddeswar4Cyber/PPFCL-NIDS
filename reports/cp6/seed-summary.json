@@ -1,0 +1,955 @@
+{
+  "version": "B2",
+  "status": "COMPLETED",
+  "summaries": [
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "model_kind": "logistic",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-primary-logistic-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-primary-logistic-s17.json",
+          "sha256": "84b4615dd75ba61be3af690d05d815ec4dd82749a67ab7ed2077aa0db4f765ad"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-primary-logistic-categorical_augmented-s17.json",
+          "sha256": "4ac8965aa0254933bc7c7eda9afd23ad1efb07b33ebb032b4cd4f80887560044"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B2-cic-ids-2017-primary-logistic-categorical_augmented-s17",
+        "B2-cic-ids-2017-primary-logistic-categorical_augmented-s29",
+        "B2-cic-ids-2017-primary-logistic-categorical_augmented-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9249944113630253,
+        "29": 0.9249944113630253,
+        "43": 0.9249944113630253
+      },
+      "macro_f1_mean": 0.9249944113630253,
+      "macro_f1_sample_sd": 0.0,
+      "average_precision_mean": 0.9552623345229235,
+      "benign_fpr_mean": 0.028878857789376395,
+      "recall_at_calibrated_fpr01_mean": 0.7066347231345879,
+      "fit_seconds_mean": 1.1120440999996692,
+      "attack_family_recall": {
+        "bot": {
+          "support": 414,
+          "mean_binary_attack_recall": 0.24879227053140096
+        },
+        "ddos": {
+          "support": 25521,
+          "mean_binary_attack_recall": 0.8516123976333215
+        },
+        "dos_goldeneye": {
+          "support": 2022,
+          "mean_binary_attack_recall": 0.97675568743818
+        },
+        "dos_hulk": {
+          "support": 37429,
+          "mean_binary_attack_recall": 0.9770231638569024
+        },
+        "dos_slowhttptest": {
+          "support": 1223,
+          "mean_binary_attack_recall": 0.8495502861815208
+        },
+        "dos_slowloris": {
+          "support": 1210,
+          "mean_binary_attack_recall": 0.9247933884297521
+        },
+        "ftp_patator": {
+          "support": 2449,
+          "mean_binary_attack_recall": 0.9795835034708044
+        },
+        "heartbleed": {
+          "support": 1,
+          "mean_binary_attack_recall": 0.0
+        },
+        "infiltration": {
+          "support": 6,
+          "mean_binary_attack_recall": 0.0
+        },
+        "portscan": {
+          "support": 31789,
+          "mean_binary_attack_recall": 0.8165403126867784
+        },
+        "ssh_patator": {
+          "support": 1015,
+          "mean_binary_attack_recall": 0.008866995073891626
+        },
+        "web_attack_brute_force": {
+          "support": 311,
+          "mean_binary_attack_recall": 0.006430868167202573
+        },
+        "web_attack_sql_injection": {
+          "support": 4,
+          "mean_binary_attack_recall": 0.5
+        },
+        "web_attack_xss": {
+          "support": 122,
+          "mean_binary_attack_recall": 0.040983606557377046
+        }
+      }
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "model_kind": "extra_trees",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-primary-extra_trees-s17.json",
+          "sha256": "4251fa01488279e2e2f5636c661e780383f6427fa2a105ac8a74d25109fa6fba"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s17.json",
+          "sha256": "34a94f07e5c6e10b7fe372a620535966bc3e4ad1b6e85ac3824413ee7b0ef131"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s17",
+        "B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s29",
+        "B2-cic-ids-2017-primary-extra_trees-categorical_augmented-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9831111749359768,
+        "29": 0.9823845440937427,
+        "43": 0.9826125301518656
+      },
+      "macro_f1_mean": 0.9827027497271951,
+      "macro_f1_sample_sd": 0.00037162181589747245,
+      "average_precision_mean": 0.9984913930985181,
+      "benign_fpr_mean": 0.0003468722136732837,
+      "recall_at_calibrated_fpr01_mean": 0.9977684609142549,
+      "fit_seconds_mean": 1.5820713999998286,
+      "attack_family_recall": {
+        "bot": {
+          "support": 414,
+          "mean_binary_attack_recall": 0.35507246376811596
+        },
+        "ddos": {
+          "support": 25521,
+          "mean_binary_attack_recall": 0.9989551088645952
+        },
+        "dos_goldeneye": {
+          "support": 2022,
+          "mean_binary_attack_recall": 0.9620837454665349
+        },
+        "dos_hulk": {
+          "support": 37429,
+          "mean_binary_attack_recall": 0.9223151388851782
+        },
+        "dos_slowhttptest": {
+          "support": 1223,
+          "mean_binary_attack_recall": 0.8729899155083128
+        },
+        "dos_slowloris": {
+          "support": 1210,
+          "mean_binary_attack_recall": 0.9438016528925619
+        },
+        "ftp_patator": {
+          "support": 2449,
+          "mean_binary_attack_recall": 0.5312372396896693
+        },
+        "heartbleed": {
+          "support": 1,
+          "mean_binary_attack_recall": 0.0
+        },
+        "infiltration": {
+          "support": 6,
+          "mean_binary_attack_recall": 0.0
+        },
+        "portscan": {
+          "support": 31789,
+          "mean_binary_attack_recall": 0.999150649595772
+        },
+        "ssh_patator": {
+          "support": 1015,
+          "mean_binary_attack_recall": 0.5973727422003284
+        },
+        "web_attack_brute_force": {
+          "support": 311,
+          "mean_binary_attack_recall": 0.06645230439442658
+        },
+        "web_attack_sql_injection": {
+          "support": 4,
+          "mean_binary_attack_recall": 0.0
+        },
+        "web_attack_xss": {
+          "support": 122,
+          "mean_binary_attack_recall": 0.00273224043715847
+        }
+      }
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "model_kind": "mlp",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-primary-mlp-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-primary-mlp-s17.json",
+          "sha256": "a203a46a96b77091e2b49d8634d223c16b0f363bd674dad5b986ddebaed3d3fb"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-primary-mlp-categorical_augmented-s17.json",
+          "sha256": "e0b357753eb91c4004d008a3eaa6c405cdfe6de38e060f633e7bc24b3545ff10"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B2-cic-ids-2017-primary-mlp-categorical_augmented-s17",
+        "B2-cic-ids-2017-primary-mlp-categorical_augmented-s29",
+        "B2-cic-ids-2017-primary-mlp-categorical_augmented-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9657846794283664,
+        "29": 0.9254715072825537,
+        "43": 0.9614910296870478
+      },
+      "macro_f1_mean": 0.9509157387993227,
+      "macro_f1_sample_sd": 0.022139682588837757,
+      "average_precision_mean": 0.9915277189931673,
+      "benign_fpr_mean": 0.012430751657343022,
+      "recall_at_calibrated_fpr01_mean": 0.9329121424063268,
+      "fit_seconds_mean": 6.790727766666653,
+      "attack_family_recall": {
+        "bot": {
+          "support": 414,
+          "mean_binary_attack_recall": 0.38888888888888884
+        },
+        "ddos": {
+          "support": 25521,
+          "mean_binary_attack_recall": 0.9817144051304155
+        },
+        "dos_goldeneye": {
+          "support": 2022,
+          "mean_binary_attack_recall": 0.9418067919551598
+        },
+        "dos_hulk": {
+          "support": 37429,
+          "mean_binary_attack_recall": 0.924194252228664
+        },
+        "dos_slowhttptest": {
+          "support": 1223,
+          "mean_binary_attack_recall": 0.9482147724175526
+        },
+        "dos_slowloris": {
+          "support": 1210,
+          "mean_binary_attack_recall": 0.9432506887052341
+        },
+        "ftp_patator": {
+          "support": 2449,
+          "mean_binary_attack_recall": 0.6866748332652785
+        },
+        "heartbleed": {
+          "support": 1,
+          "mean_binary_attack_recall": 0.0
+        },
+        "infiltration": {
+          "support": 6,
+          "mean_binary_attack_recall": 0.49999999999999994
+        },
+        "portscan": {
+          "support": 31789,
+          "mean_binary_attack_recall": 0.8332546897773864
+        },
+        "ssh_patator": {
+          "support": 1015,
+          "mean_binary_attack_recall": 0.8656814449917899
+        },
+        "web_attack_brute_force": {
+          "support": 311,
+          "mean_binary_attack_recall": 0.00964630225080386
+        },
+        "web_attack_sql_injection": {
+          "support": 4,
+          "mean_binary_attack_recall": 0.0
+        },
+        "web_attack_xss": {
+          "support": 122,
+          "mean_binary_attack_recall": 0.0
+        }
+      }
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "model_kind": "logistic",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-stress-logistic-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-stress-logistic-s17.json",
+          "sha256": "8c5ae8a233b0cd04a8f05c3e86ceed64f5c401f6b4300cdc7041a23a8881a4f7"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-logistic-categorical_augmented-s17.json",
+          "sha256": "44168b40813f47da079892a6ac03331e9c4ad18f903a73c6e7a2e633bc27f85a"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B2-cic-ids-2017-stress-logistic-categorical_augmented-s17",
+        "B2-cic-ids-2017-stress-logistic-categorical_augmented-s29",
+        "B2-cic-ids-2017-stress-logistic-categorical_augmented-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9715718629368104,
+        "29": 0.9715718629368104,
+        "43": 0.9715718629368104
+      },
+      "macro_f1_mean": 0.9715718629368104,
+      "macro_f1_sample_sd": 0.0,
+      "average_precision_mean": 0.9910508529407033,
+      "benign_fpr_mean": 0.006052596572605133,
+      "recall_at_calibrated_fpr01_mean": 0.9742313067784766,
+      "fit_seconds_mean": 0.4075049999998252,
+      "attack_family_recall": {
+        "dos_goldeneye": {
+          "support": 2022,
+          "mean_binary_attack_recall": 0.9342235410484668
+        },
+        "dos_hulk": {
+          "support": 37429,
+          "mean_binary_attack_recall": 0.9813246413209008
+        },
+        "dos_slowhttptest": {
+          "support": 1223,
+          "mean_binary_attack_recall": 0.8863450531479967
+        },
+        "dos_slowloris": {
+          "support": 1210,
+          "mean_binary_attack_recall": 0.9355371900826445
+        },
+        "ftp_patator": {
+          "support": 2449,
+          "mean_binary_attack_recall": 1.0
+        },
+        "heartbleed": {
+          "support": 1,
+          "mean_binary_attack_recall": 0.0
+        },
+        "infiltration": {
+          "support": 6,
+          "mean_binary_attack_recall": 0.0
+        },
+        "ssh_patator": {
+          "support": 1015,
+          "mean_binary_attack_recall": 0.011822660098522168
+        },
+        "web_attack_brute_force": {
+          "support": 311,
+          "mean_binary_attack_recall": 0.00964630225080386
+        },
+        "web_attack_sql_injection": {
+          "support": 4,
+          "mean_binary_attack_recall": 0.0
+        },
+        "web_attack_xss": {
+          "support": 122,
+          "mean_binary_attack_recall": 0.040983606557377046
+        }
+      }
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "model_kind": "extra_trees",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-stress-extra_trees-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-stress-extra_trees-s17.json",
+          "sha256": "191109421168ef3d43990c8a9ce95d4b5dc8480a91a266926e2423512340b3cc"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-extra_trees-categorical_augmented-s17.json",
+          "sha256": "01e3deedbe1314b3cb6744ad51a8ef0131585b46769d66b8c0a76edc5bd7b1be"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B2-cic-ids-2017-stress-extra_trees-categorical_augmented-s17",
+        "B2-cic-ids-2017-stress-extra_trees-categorical_augmented-s29",
+        "B2-cic-ids-2017-stress-extra_trees-categorical_augmented-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9729796921140363,
+        "29": 0.9736336614443711,
+        "43": 0.9729853182778192
+      },
+      "macro_f1_mean": 0.9731995572787423,
+      "macro_f1_sample_sd": 0.00037595575988672676,
+      "average_precision_mean": 0.9988250040716196,
+      "benign_fpr_mean": 8.000724884953433e-05,
+      "recall_at_calibrated_fpr01_mean": 0.9997670626601445,
+      "fit_seconds_mean": 1.3794135333331117,
+      "attack_family_recall": {
+        "dos_goldeneye": {
+          "support": 2022,
+          "mean_binary_attack_recall": 0.9589515331355094
+        },
+        "dos_hulk": {
+          "support": 37429,
+          "mean_binary_attack_recall": 0.9197324712566904
+        },
+        "dos_slowhttptest": {
+          "support": 1223,
+          "mean_binary_attack_recall": 0.8372853638593621
+        },
+        "dos_slowloris": {
+          "support": 1210,
+          "mean_binary_attack_recall": 0.956198347107438
+        },
+        "ftp_patator": {
+          "support": 2449,
+          "mean_binary_attack_recall": 0.9983666802776644
+        },
+        "heartbleed": {
+          "support": 1,
+          "mean_binary_attack_recall": 0.0
+        },
+        "infiltration": {
+          "support": 6,
+          "mean_binary_attack_recall": 0.0
+        },
+        "ssh_patator": {
+          "support": 1015,
+          "mean_binary_attack_recall": 0.6341543513957307
+        },
+        "web_attack_brute_force": {
+          "support": 311,
+          "mean_binary_attack_recall": 0.06752411575562701
+        },
+        "web_attack_sql_injection": {
+          "support": 4,
+          "mean_binary_attack_recall": 0.0
+        },
+        "web_attack_xss": {
+          "support": 122,
+          "mean_binary_attack_recall": 0.00273224043715847
+        }
+      }
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "model_kind": "mlp",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-cic-ids-2017-stress-mlp-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-cic-ids-2017-stress-mlp-s17.json",
+          "sha256": "fe1499e1bfc8ada1f14aa511ff499fb1a0c3a1dcb20e7449d630b5e3dd8861fd"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-mlp-categorical_augmented-s17.json",
+          "sha256": "cc93cd891f8c45f0cc7d211de69815eaa9d85b72737cf69ea1644d2c42462693"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B2-cic-ids-2017-stress-mlp-categorical_augmented-s17",
+        "B2-cic-ids-2017-stress-mlp-categorical_augmented-s29",
+        "B2-cic-ids-2017-stress-mlp-categorical_augmented-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9852649267708649,
+        "29": 0.9673885974953474,
+        "43": 0.9844539956402807
+      },
+      "macro_f1_mean": 0.979035839968831,
+      "macro_f1_sample_sd": 0.010094953949955743,
+      "average_precision_mean": 0.9967418097609236,
+      "benign_fpr_mean": 0.0027385613732714095,
+      "recall_at_calibrated_fpr01_mean": 0.9875305730258561,
+      "fit_seconds_mean": 6.427011733333226,
+      "attack_family_recall": {
+        "dos_goldeneye": {
+          "support": 2022,
+          "mean_binary_attack_recall": 0.9469172436531487
+        },
+        "dos_hulk": {
+          "support": 37429,
+          "mean_binary_attack_recall": 0.956985225360015
+        },
+        "dos_slowhttptest": {
+          "support": 1223,
+          "mean_binary_attack_recall": 0.8868901608067593
+        },
+        "dos_slowloris": {
+          "support": 1210,
+          "mean_binary_attack_recall": 0.9460055096418732
+        },
+        "ftp_patator": {
+          "support": 2449,
+          "mean_binary_attack_recall": 0.9975500204164965
+        },
+        "heartbleed": {
+          "support": 1,
+          "mean_binary_attack_recall": 0.0
+        },
+        "infiltration": {
+          "support": 6,
+          "mean_binary_attack_recall": 0.611111111111111
+        },
+        "ssh_patator": {
+          "support": 1015,
+          "mean_binary_attack_recall": 0.993431855500821
+        },
+        "web_attack_brute_force": {
+          "support": 311,
+          "mean_binary_attack_recall": 0.00964630225080386
+        },
+        "web_attack_sql_injection": {
+          "support": 4,
+          "mean_binary_attack_recall": 0.0
+        },
+        "web_attack_xss": {
+          "support": 122,
+          "mean_binary_attack_recall": 0.0273224043715847
+        }
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "model_kind": "logistic",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-primary-logistic-s17.json",
+          "sha256": "9ac880eb136fd407b3acf127fcceb8cc940450407406fa88a516f0d3c0aa6ee2"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s17.json",
+          "sha256": "8967c10a1c964482c42965eeb28e0ac5f7f2e1e1e061b2e45b834a6b15c9d952"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s17",
+        "B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s29",
+        "B2-ND-UNSW-NB15-v3-primary-logistic-categorical_augmented-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9977405635857006,
+        "29": 0.9977405635857006,
+        "43": 0.9977405635857006
+      },
+      "macro_f1_mean": 0.9977405635857006,
+      "macro_f1_sample_sd": 0.0,
+      "average_precision_mean": 0.9974346122179213,
+      "benign_fpr_mean": 0.00018314568345725448,
+      "recall_at_calibrated_fpr01_mean": 0.9987892485269191,
+      "fit_seconds_mean": 0.2748095666665904,
+      "attack_family_recall": {
+        "analysis": {
+          "support": 228,
+          "mean_binary_attack_recall": 1.0
+        },
+        "backdoor": {
+          "support": 895,
+          "mean_binary_attack_recall": 0.9899441340782124
+        },
+        "dos": {
+          "support": 1170,
+          "mean_binary_attack_recall": 0.9794871794871794
+        },
+        "exploits": {
+          "support": 8646,
+          "mean_binary_attack_recall": 0.9924820726347444
+        },
+        "fuzzers": {
+          "support": 6539,
+          "mean_binary_attack_recall": 0.9974002141000153
+        },
+        "generic": {
+          "support": 3320,
+          "mean_binary_attack_recall": 0.9957831325301205
+        },
+        "reconnaissance": {
+          "support": 3451,
+          "mean_binary_attack_recall": 0.9997102289191538
+        },
+        "shellcode": {
+          "support": 493,
+          "mean_binary_attack_recall": 1.0
+        },
+        "worms": {
+          "support": 36,
+          "mean_binary_attack_recall": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "model_kind": "extra_trees",
+      "representation": "full",
+      "seed17_run_id": "B1-ND-UNSW-NB15-v3-primary-extra_trees-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-primary-extra_trees-s17.json",
+          "sha256": "39b84cebc6a01c5497beb0b91c1c98d61864642fbc2a5be5494f62a0a360f4a8"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-primary-extra_trees-categorical_augmented-s17.json",
+          "sha256": "bca0dd8108cceef71bf70720a2c71153c1fdf4fc3f0777b5b4ca5d3425811d15"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B1-ND-UNSW-NB15-v3-primary-extra_trees-s17",
+        "B2-ND-UNSW-NB15-v3-primary-extra_trees-full-s29",
+        "B2-ND-UNSW-NB15-v3-primary-extra_trees-full-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9992974752527524,
+        "29": 0.9993186080713514,
+        "43": 0.9994569847571384
+      },
+      "macro_f1_mean": 0.999357689360414,
+      "macro_f1_sample_sd": 8.663908392560419e-05,
+      "average_precision_mean": 0.9999951395374729,
+      "benign_fpr_mean": 7.742744341282304e-05,
+      "recall_at_calibrated_fpr01_mean": 1.0,
+      "fit_seconds_mean": 0.8230241000004147,
+      "attack_family_recall": {
+        "analysis": {
+          "support": 228,
+          "mean_binary_attack_recall": 1.0
+        },
+        "backdoor": {
+          "support": 895,
+          "mean_binary_attack_recall": 0.9970204841713222
+        },
+        "dos": {
+          "support": 1170,
+          "mean_binary_attack_recall": 0.9957264957264957
+        },
+        "exploits": {
+          "support": 8646,
+          "mean_binary_attack_recall": 0.998226540211273
+        },
+        "fuzzers": {
+          "support": 6539,
+          "mean_binary_attack_recall": 0.9998470714176481
+        },
+        "generic": {
+          "support": 3320,
+          "mean_binary_attack_recall": 0.9994979919678716
+        },
+        "reconnaissance": {
+          "support": 3451,
+          "mean_binary_attack_recall": 1.0
+        },
+        "shellcode": {
+          "support": 493,
+          "mean_binary_attack_recall": 1.0
+        },
+        "worms": {
+          "support": 36,
+          "mean_binary_attack_recall": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "model_kind": "mlp",
+      "representation": "full",
+      "seed17_run_id": "B1-ND-UNSW-NB15-v3-primary-mlp-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-primary-mlp-s17.json",
+          "sha256": "6cbfc7efd8041f30a45dfb459ef9a7d8c6b0d4f7a82269aecdf2d5a42abfbd2e"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-primary-mlp-categorical_augmented-s17.json",
+          "sha256": "7918646da56851ff075700b7621850bdc716b25b62512b5ad7c23fa3798fc8a3"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B1-ND-UNSW-NB15-v3-primary-mlp-s17",
+        "B2-ND-UNSW-NB15-v3-primary-mlp-full-s29",
+        "B2-ND-UNSW-NB15-v3-primary-mlp-full-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9990312012471658,
+        "29": 0.9990951470692353,
+        "43": 0.9990631218118182
+      },
+      "macro_f1_mean": 0.9990631567094065,
+      "macro_f1_sample_sd": 3.197292531840924e-05,
+      "average_precision_mean": 0.9993582528271104,
+      "benign_fpr_mean": 0.00010944071328543255,
+      "recall_at_calibrated_fpr01_mean": 0.9995426049990583,
+      "fit_seconds_mean": 3.9138960000000225,
+      "attack_family_recall": {
+        "analysis": {
+          "support": 228,
+          "mean_binary_attack_recall": 1.0
+        },
+        "backdoor": {
+          "support": 895,
+          "mean_binary_attack_recall": 0.9947858472998137
+        },
+        "dos": {
+          "support": 1170,
+          "mean_binary_attack_recall": 0.9937321937321938
+        },
+        "exploits": {
+          "support": 8646,
+          "mean_binary_attack_recall": 0.9972241498959056
+        },
+        "fuzzers": {
+          "support": 6539,
+          "mean_binary_attack_recall": 0.9998470714176481
+        },
+        "generic": {
+          "support": 3320,
+          "mean_binary_attack_recall": 0.9993975903614457
+        },
+        "reconnaissance": {
+          "support": 3451,
+          "mean_binary_attack_recall": 1.0
+        },
+        "shellcode": {
+          "support": 493,
+          "mean_binary_attack_recall": 1.0
+        },
+        "worms": {
+          "support": 36,
+          "mean_binary_attack_recall": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "model_kind": "logistic",
+      "representation": "categorical_augmented",
+      "seed17_run_id": "B2-ND-UNSW-NB15-v3-stress-logistic-categorical_augmented-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-stress-logistic-s17.json",
+          "sha256": "dc9d6c4a70d81ea3e17ff6c0f9c4c6da6e2fc0432a7fcfc7febfd3c42dde6660"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-stress-logistic-categorical_augmented-s17.json",
+          "sha256": "4e38d67c4b1e27a9b1a02fd1e6b42236abe2bc863390527e3e2442911cc6dfb8"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B2-ND-UNSW-NB15-v3-stress-logistic-categorical_augmented-s17",
+        "B2-ND-UNSW-NB15-v3-stress-logistic-categorical_augmented-s29",
+        "B2-ND-UNSW-NB15-v3-stress-logistic-categorical_augmented-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9970183600816956,
+        "29": 0.9970183600816956,
+        "43": 0.9970183600816956
+      },
+      "macro_f1_mean": 0.9970183600816956,
+      "macro_f1_sample_sd": 0.0,
+      "average_precision_mean": 0.9983883315971825,
+      "benign_fpr_mean": 0.00016137708445400752,
+      "recall_at_calibrated_fpr01_mean": 0.9992214869599065,
+      "fit_seconds_mean": 0.24229546666659493,
+      "attack_family_recall": {
+        "analysis": {
+          "support": 60,
+          "mean_binary_attack_recall": 1.0
+        },
+        "backdoor": {
+          "support": 31,
+          "mean_binary_attack_recall": 1.0
+        },
+        "dos": {
+          "support": 442,
+          "mean_binary_attack_recall": 0.9819004524886877
+        },
+        "exploits": {
+          "support": 3225,
+          "mean_binary_attack_recall": 0.984186046511628
+        },
+        "fuzzers": {
+          "support": 2226,
+          "mean_binary_attack_recall": 0.9982030548068282
+        },
+        "generic": {
+          "support": 429,
+          "mean_binary_attack_recall": 0.9836829836829836
+        },
+        "reconnaissance": {
+          "support": 1116,
+          "mean_binary_attack_recall": 0.9991039426523297
+        },
+        "shellcode": {
+          "support": 164,
+          "mean_binary_attack_recall": 1.0
+        },
+        "worms": {
+          "support": 14,
+          "mean_binary_attack_recall": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "model_kind": "extra_trees",
+      "representation": "full",
+      "seed17_run_id": "B1-ND-UNSW-NB15-v3-stress-extra_trees-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-stress-extra_trees-s17.json",
+          "sha256": "d7eb94269e0dc7d7f791caa8f8dfb5baf4abbacdd9cab0e2136f0172ac4abcc7"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-stress-extra_trees-categorical_augmented-s17.json",
+          "sha256": "fc6e924bdab9d5d70391ac4c911648a1bd155110064f79b1898f870a26f70abb"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B1-ND-UNSW-NB15-v3-stress-extra_trees-s17",
+        "B2-ND-UNSW-NB15-v3-stress-extra_trees-full-s29",
+        "B2-ND-UNSW-NB15-v3-stress-extra_trees-full-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9994629677812956,
+        "29": 0.9993198382998243,
+        "43": 0.9994630926757129
+      },
+      "macro_f1_mean": 0.9994152995856109,
+      "macro_f1_sample_sd": 8.267192215427276e-05,
+      "average_precision_mean": 0.9999964414814003,
+      "benign_fpr_mean": 0.00011655011655011655,
+      "recall_at_calibrated_fpr01_mean": 1.0,
+      "fit_seconds_mean": 0.844153866666602,
+      "attack_family_recall": {
+        "analysis": {
+          "support": 60,
+          "mean_binary_attack_recall": 1.0
+        },
+        "backdoor": {
+          "support": 31,
+          "mean_binary_attack_recall": 1.0
+        },
+        "dos": {
+          "support": 442,
+          "mean_binary_attack_recall": 0.9992458521870287
+        },
+        "exploits": {
+          "support": 3225,
+          "mean_binary_attack_recall": 0.9980361757105943
+        },
+        "fuzzers": {
+          "support": 2226,
+          "mean_binary_attack_recall": 1.0
+        },
+        "generic": {
+          "support": 429,
+          "mean_binary_attack_recall": 0.9976689976689976
+        },
+        "reconnaissance": {
+          "support": 1116,
+          "mean_binary_attack_recall": 1.0
+        },
+        "shellcode": {
+          "support": 164,
+          "mean_binary_attack_recall": 1.0
+        },
+        "worms": {
+          "support": 14,
+          "mean_binary_attack_recall": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "model_kind": "mlp",
+      "representation": "full",
+      "seed17_run_id": "B1-ND-UNSW-NB15-v3-stress-mlp-s17",
+      "candidate_reports": [
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-stress-mlp-s17.json",
+          "sha256": "eb41cc10dde6e93cfdeef4b777d6456b2cd6bab634d4cb76bec92be9a54d3a9b"
+        },
+        {
+          "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-ND-UNSW-NB15-v3-stress-mlp-categorical_augmented-s17.json",
+          "sha256": "c7cd99b78bb401f48d6599917cd60eda5d96be2393f5f9e5671bc26e2a6fd929"
+        }
+      ],
+      "rule": "Improve full macro-F1 by >=0.002 and lose <=0.002 AP; rank macro-F1/AP/width/name; otherwise retain full",
+      "seed_run_ids": [
+        "B1-ND-UNSW-NB15-v3-stress-mlp-s17",
+        "B2-ND-UNSW-NB15-v3-stress-mlp-full-s29",
+        "B2-ND-UNSW-NB15-v3-stress-mlp-full-s43"
+      ],
+      "macro_f1_by_seed": {
+        "17": 0.9992123985495396,
+        "29": 0.9993199173892362,
+        "43": 0.9992123985495396
+      },
+      "macro_f1_mean": 0.9992482381627719,
+      "macro_f1_sample_sd": 6.207603104179902e-05,
+      "average_precision_mean": 0.9988287763922611,
+      "benign_fpr_mean": 0.00014792899408284024,
+      "recall_at_calibrated_fpr01_mean": 0.9998702478266511,
+      "fit_seconds_mean": 3.7044853000000635,
+      "attack_family_recall": {
+        "analysis": {
+          "support": 60,
+          "mean_binary_attack_recall": 1.0
+        },
+        "backdoor": {
+          "support": 31,
+          "mean_binary_attack_recall": 1.0
+        },
+        "dos": {
+          "support": 442,
+          "mean_binary_attack_recall": 1.0
+        },
+        "exploits": {
+          "support": 3225,
+          "mean_binary_attack_recall": 0.9985529715762275
+        },
+        "fuzzers": {
+          "support": 2226,
+          "mean_binary_attack_recall": 0.9983528002395928
+        },
+        "generic": {
+          "support": 429,
+          "mean_binary_attack_recall": 0.9976689976689976
+        },
+        "reconnaissance": {
+          "support": 1116,
+          "mean_binary_attack_recall": 0.9994026284348866
+        },
+        "shellcode": {
+          "support": 164,
+          "mean_binary_attack_recall": 1.0
+        },
+        "worms": {
+          "support": 14,
+          "mean_binary_attack_recall": 1.0
+        }
+      }
+    }
+  ],
+  "interpretation": "Conditional model-seed sensitivity on the same validation population; no population confidence intervals"
+}
