@@ -1233,7 +1233,7 @@
         "merged_S1_groups": 0,
         "verified_ledger_rows": 5196167
       },
-      "git_commit": null,
+      "git_commit": "40f634f57270271cfd2964ecb3b7e63cf6076f05",
       "preprocessing_version": "P1",
       "split_version": "S1",
       "architecture_version": "A0",
