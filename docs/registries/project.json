@@ -221,35 +221,68 @@
     },
     {
       "experiment_id": "EXP-002",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "research_question": "Which split, task and feature protocols are supported?",
       "hypothesis": "Group/time controls expose leakage and confounding.",
       "architecture_version": "A0",
-      "dataset_version": "Audited families from EXP-001",
-      "split_version": "PLANNED \u00e2\u20ac\u201d EXP-002 gate",
-      "feature_set": "PLANNED \u00e2\u20ac\u201d semantic audit then versioning",
-      "model": "Split manifest and feature contracts",
-      "hyperparameters": "See docs/experiment-plan-A0.md; exact run config required before RUNNING",
-      "seed": null,
+      "dataset_version": "EXP-001 source SHA-256 manifests",
+      "split_version": "S1",
+      "feature_set": "S1 positional contracts: CIC 77, NF 49 candidate predictors",
+      "model": "N/A - deterministic membership construction",
+      "hyperparameters": {
+        "group_hash": "SHA-256 prefix S1|17|",
+        "role_buckets": [
+          100,
+          500,
+          600,
+          800,
+          1000
+        ],
+        "memory_limit": "4GB",
+        "threads": 8
+      },
+      "seed": 17,
       "client_configuration": "Per-family plan; pilot five logical clients where applicable",
-      "privacy_configuration": "No guarantee established; EXP-005 and EXP-007 require privacy gate",
-      "cl_configuration": "Per-family plan; tasks require support audit",
-      "hardware": "User reported; not yet independently benchmarked",
-      "environment_versions": "NOT MEASURED",
-      "preprocessing_version": "NOT FITTED",
-      "metrics": null,
-      "runtime": null,
-      "memory_usage": null,
+      "privacy_configuration": "Separate public/development/private/validation/final groups; conditional curation only, no DP claim",
+      "cl_configuration": "Two NF capture-period tasks; no CIC CL stream defined",
+      "hardware": "reports/audit/environment.json",
+      "environment_versions": {
+        "python": "3.13.13",
+        "duckdb": "1.5.5",
+        "psutil": "7.2.2"
+      },
+      "preprocessing_version": "Deterministic grouping projection only; nothing fitted",
+      "metrics": {
+        "cic-ids-2017": {
+          "rows": 2830743,
+          "normalized_groups": 2521664
+        },
+        "ND-UNSW-NB15-v3": {
+          "rows": 2365424,
+          "normalized_groups": 2138684
+        }
+      },
+      "runtime": {
+        "cic-ids-2017": 88.88571499999944,
+        "ND-UNSW-NB15-v3": 67.72513179999987
+      },
+      "memory_usage": "4GB DuckDB buffer cap; peak process RSS not instrumented for this invocation",
       "artifacts": [
-        "docs/experiment-plan-A0.md"
+        "docs/CP3-split-protocol-S1.md",
+        "reports/CP3-split-results.md",
+        "reports/splits/verification.json",
+        "reports/splits/contracts",
+        "reports/splits/external"
       ],
-      "logs": null,
+      "logs": [
+        "reports/split-console-S1.log"
+      ],
       "git_commit": null,
-      "result": null,
-      "interpretation": "No experiment executed",
-      "decision": "PLANNED only",
-      "architecture_impact": "Revisit A0 after valid result",
-      "status": "PLANNED"
+      "result": "Two complete row-level development-family manifests and three external source seals; no model scores",
+      "interpretation": "Binary roles/tasks supported; rare-class conclusions restricted by unique-group support",
+      "decision": "Accept S1; advance to CP4 transformations and transformed-overlap checks",
+      "architecture_impact": "A0 remains provisional; data contracts and two-task NF evaluation now concrete",
+      "status": "COMPLETED"
     },
     {
       "experiment_id": "EXP-003",
@@ -889,6 +922,42 @@
       "confidence": "High for observed anomalies; split design remains provisional",
       "architecture_version": "A0",
       "revisit_condition": "EXP-002 support and normalized-overlap checks"
+    },
+    {
+      "decision_id": "DEC-014",
+      "question": "Which data protocol supports the next model gate?",
+      "candidate_alternatives": [
+        "Raw row stratification",
+        "Three calendar-day tasks",
+        "S1 normalized groups with two capture periods"
+      ],
+      "evidence_considered": [
+        "EXP-001 audit",
+        "docs/CP3-split-protocol-S1.md",
+        "reports/CP3-split-results.md"
+      ],
+      "experiments_used": [
+        "EXP-002"
+      ],
+      "selected_option": "S1 conservative conflict quarantine and global disjoint roles; two NF tasks, separate stress namespaces",
+      "why_selected": "Persisted coverage/overlap checks pass and every binary role/task has both classes",
+      "rejected_alternatives": [
+        "Treat numeric spellings as different groups",
+        "Promote benign-only day to comparable third task"
+      ],
+      "why_rejected": "Would weaken leakage checks or task interpretation",
+      "risks": [
+        "Rare classes lose support",
+        "No host/session independence",
+        "Later feature transforms can merge groups"
+      ],
+      "trade_offs": [
+        "Conservative exclusions reduce samples",
+        "Time stress uses smaller role-filtered populations"
+      ],
+      "confidence": "High for verified membership invariants; limited for real deployment generalization",
+      "architecture_version": "A0",
+      "revisit_condition": "CP4 transformed-overlap or semantic checks fail"
     }
   ],
   "architectures": [
@@ -908,7 +977,10 @@
       ],
       "changes_from_previous": "First provisional architecture",
       "reason_for_change": "Initial targeted research gate completed",
-      "supporting_experiments": [],
+      "supporting_experiments": [
+        "EXP-001",
+        "EXP-002"
+      ],
       "supporting_decisions": [
         "DEC-006",
         "DEC-007",
@@ -916,7 +988,9 @@
         "DEC-009",
         "DEC-010",
         "DEC-011",
-        "DEC-012"
+        "DEC-012",
+        "DEC-013",
+        "DEC-014"
       ],
       "known_limitations": [
         "Not implemented or validated",
@@ -945,6 +1019,16 @@
       "suspected_cause": "Intentional optimization for v1.0; later process termination cause not established",
       "investigation": "Completed family artifacts retained; no surviving foreground audit process",
       "fix": "Resume with full source hash checks and v1.3 staged recovery; all families eventually completed",
+      "scientifically_invalid": false,
+      "rerun_required": false
+    },
+    {
+      "experiment_id": "EXP-002",
+      "what_failed": "Initial split fixture schema",
+      "error": "DuckDB reserved keyword binary used as a column name",
+      "suspected_cause": "SQL identifier choice",
+      "investigation": "Fixture failed before any source processing",
+      "fix": "Renamed field binary_label; all three split fixtures passed",
       "scientifically_invalid": false,
       "rerun_required": false
     }
@@ -1023,7 +1107,7 @@
     }
   ],
   "progress": {
-    "checkpoint": "CP2",
+    "checkpoint": "CP3",
     "status": "COMPLETE",
     "architecture_version": "A0",
     "methodology_version": "M0.2",
@@ -1037,13 +1121,15 @@
       "Isolated pinned audit environment",
       "Full row audit of five datasets",
       "Four correctness tests and artifact invariants",
-      "Local ZIP manifest consistency checks"
+      "Local ZIP manifest consistency checks",
+      "S1 labels/features/groups and split manifests",
+      "Two supported NF capture-period tasks",
+      "Three sealed external source contracts"
     ],
     "current": [],
     "next": [
-      "CP3 / EXP-002: finalize split/task/feature manifests and quarantine policy",
-      "CP4: implement deterministic cleaning and fit training-only transforms",
-      "CP5: resource pilot and controlled baselines"
+      "CP4: deterministic cleaning, training-only imputation/encoding/scaling, transformed-overlap checks",
+      "CP5 / EXP-003: baseline resource pilot after CP4 passes"
     ],
     "blocked": [],
     "deferred": [
@@ -1064,11 +1150,11 @@
       "Recent-literature update before submission"
     ],
     "needs_validation": [
-      "Numeric-normalized duplicates after proposed transformations",
-      "Cleaning impact on minority support",
-      "Split independence and task support",
-      "All detection, FL, privacy and CL results",
-      "Training-framework CUDA support"
+      "CP4 transformed-feature overlap and training-only fitting",
+      "External feature semantics and cross-domain overlap",
+      "Host/session dependence remains unresolved",
+      "Training framework CUDA support",
+      "All detection, FL, DP and CL results"
     ]
   },
   "user_constraints": {

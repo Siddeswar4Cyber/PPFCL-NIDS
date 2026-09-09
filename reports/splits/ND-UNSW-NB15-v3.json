@@ -1,0 +1,2205 @@
+{
+  "rows": 2365424,
+  "groups": 2138684,
+  "support": {
+    "primary_role": [
+      {
+        "role": "development_train",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 485,
+        "groups": 485,
+        "representatives": 485
+      },
+      {
+        "role": "development_train",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 1700,
+        "groups": 1685,
+        "representatives": 1685
+      },
+      {
+        "role": "development_train",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 895468,
+        "groups": 810506,
+        "representatives": 810506
+      },
+      {
+        "role": "development_train",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 2422,
+        "groups": 2405,
+        "representatives": 2405
+      },
+      {
+        "role": "development_train",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 16870,
+        "groups": 16864,
+        "representatives": 16864
+      },
+      {
+        "role": "development_train",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 13341,
+        "groups": 13162,
+        "representatives": 13162
+      },
+      {
+        "role": "development_train",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 7154,
+        "groups": 3046,
+        "representatives": 3046
+      },
+      {
+        "role": "development_train",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 6716,
+        "groups": 6650,
+        "representatives": 6650
+      },
+      {
+        "role": "development_train",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 895,
+        "groups": 895,
+        "representatives": 895
+      },
+      {
+        "role": "development_train",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 66,
+        "groups": 66,
+        "representatives": 66
+      },
+      {
+        "role": "private_train",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 140,
+        "groups": 140,
+        "representatives": 140
+      },
+      {
+        "role": "private_train",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 435,
+        "groups": 432,
+        "representatives": 432
+      },
+      {
+        "role": "private_train",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 222194,
+        "groups": 201055,
+        "representatives": 201055
+      },
+      {
+        "role": "private_train",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 550,
+        "groups": 544,
+        "representatives": 544
+      },
+      {
+        "role": "private_train",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 4079,
+        "groups": 4076,
+        "representatives": 4076
+      },
+      {
+        "role": "private_train",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 3349,
+        "groups": 3304,
+        "representatives": 3304
+      },
+      {
+        "role": "private_train",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 1665,
+        "groups": 751,
+        "representatives": 751
+      },
+      {
+        "role": "private_train",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 1712,
+        "groups": 1693,
+        "representatives": 1693
+      },
+      {
+        "role": "private_train",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 248,
+        "groups": 248,
+        "representatives": 248
+      },
+      {
+        "role": "private_train",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 14,
+        "groups": 14,
+        "representatives": 14
+      },
+      {
+        "role": "public_reference",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 122,
+        "groups": 122,
+        "representatives": 122
+      },
+      {
+        "role": "public_reference",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 468,
+        "groups": 464,
+        "representatives": 464
+      },
+      {
+        "role": "public_reference",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 224352,
+        "groups": 203055,
+        "representatives": 203055
+      },
+      {
+        "role": "public_reference",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 580,
+        "groups": 579,
+        "representatives": 579
+      },
+      {
+        "role": "public_reference",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 4245,
+        "groups": 4245,
+        "representatives": 4245
+      },
+      {
+        "role": "public_reference",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 3391,
+        "groups": 3359,
+        "representatives": 3359
+      },
+      {
+        "role": "public_reference",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 1918,
+        "groups": 824,
+        "representatives": 824
+      },
+      {
+        "role": "public_reference",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 1692,
+        "groups": 1679,
+        "representatives": 1679
+      },
+      {
+        "role": "public_reference",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 227,
+        "groups": 227,
+        "representatives": 227
+      },
+      {
+        "role": "public_reference",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 17,
+        "groups": 17,
+        "representatives": 17
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 282,
+        "groups": 279,
+        "representatives": 93
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 48,
+        "groups": 45,
+        "representatives": 22
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 378,
+        "groups": 297,
+        "representatives": 66
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 595,
+        "groups": 220,
+        "representatives": 107
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 2183,
+        "groups": 409,
+        "representatives": 323
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 146,
+        "groups": 123,
+        "representatives": 30
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 14,
+        "groups": 11,
+        "representatives": 1
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 1,
+        "groups": 1,
+        "representatives": 0
+      },
+      {
+        "role": "sealed_test",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 251,
+        "groups": 251,
+        "representatives": 251
+      },
+      {
+        "role": "sealed_test",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 879,
+        "groups": 872,
+        "representatives": 872
+      },
+      {
+        "role": "sealed_test",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 447986,
+        "groups": 404581,
+        "representatives": 404581
+      },
+      {
+        "role": "sealed_test",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 1210,
+        "groups": 1205,
+        "representatives": 1205
+      },
+      {
+        "role": "sealed_test",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 8530,
+        "groups": 8528,
+        "representatives": 8528
+      },
+      {
+        "role": "sealed_test",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 6601,
+        "groups": 6524,
+        "representatives": 6524
+      },
+      {
+        "role": "sealed_test",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 3411,
+        "groups": 1485,
+        "representatives": 1485
+      },
+      {
+        "role": "sealed_test",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 3357,
+        "groups": 3315,
+        "representatives": 3315
+      },
+      {
+        "role": "sealed_test",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 504,
+        "groups": 504,
+        "representatives": 504
+      },
+      {
+        "role": "sealed_test",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 24,
+        "groups": 24,
+        "representatives": 24
+      },
+      {
+        "role": "validation",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 228,
+        "groups": 228,
+        "representatives": 228
+      },
+      {
+        "role": "validation",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 895,
+        "groups": 889,
+        "representatives": 889
+      },
+      {
+        "role": "validation",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 447731,
+        "groups": 405263,
+        "representatives": 405263
+      },
+      {
+        "role": "validation",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 1170,
+        "groups": 1167,
+        "representatives": 1167
+      },
+      {
+        "role": "validation",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 8646,
+        "groups": 8641,
+        "representatives": 8641
+      },
+      {
+        "role": "validation",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 6539,
+        "groups": 6475,
+        "representatives": 6475
+      },
+      {
+        "role": "validation",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 3320,
+        "groups": 1551,
+        "representatives": 1551
+      },
+      {
+        "role": "validation",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 3451,
+        "groups": 3418,
+        "representatives": 3418
+      },
+      {
+        "role": "validation",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 493,
+        "groups": 493,
+        "representatives": 493
+      },
+      {
+        "role": "validation",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 36,
+        "groups": 36,
+        "representatives": 36
+      }
+    ],
+    "stress_role": [
+      {
+        "role": "development_train",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 219,
+        "groups": 219,
+        "representatives": 219
+      },
+      {
+        "role": "development_train",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 1221,
+        "groups": 1207,
+        "representatives": 1207
+      },
+      {
+        "role": "development_train",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 503838,
+        "groups": 488498,
+        "representatives": 488498
+      },
+      {
+        "role": "development_train",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 699,
+        "groups": 697,
+        "representatives": 697
+      },
+      {
+        "role": "development_train",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 5190,
+        "groups": 5190,
+        "representatives": 5190
+      },
+      {
+        "role": "development_train",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 4664,
+        "groups": 4652,
+        "representatives": 4652
+      },
+      {
+        "role": "development_train",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 685,
+        "groups": 685,
+        "representatives": 685
+      },
+      {
+        "role": "development_train",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 2055,
+        "groups": 2048,
+        "representatives": 2048
+      },
+      {
+        "role": "development_train",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 366,
+        "groups": 366,
+        "representatives": 366
+      },
+      {
+        "role": "development_train",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 19,
+        "groups": 19,
+        "representatives": 19
+      },
+      {
+        "role": "excluded_stress",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 733,
+        "groups": 733,
+        "representatives": 733
+      },
+      {
+        "role": "excluded_stress",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 2293,
+        "groups": 2279,
+        "representatives": 2279
+      },
+      {
+        "role": "excluded_stress",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 1333242,
+        "groups": 1143800,
+        "representatives": 1143800
+      },
+      {
+        "role": "excluded_stress",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 4081,
+        "groups": 4053,
+        "representatives": 4053
+      },
+      {
+        "role": "excluded_stress",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 28559,
+        "groups": 28543,
+        "representatives": 28543
+      },
+      {
+        "role": "excluded_stress",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 22032,
+        "groups": 21668,
+        "representatives": 21668
+      },
+      {
+        "role": "excluded_stress",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 15574,
+        "groups": 5763,
+        "representatives": 5763
+      },
+      {
+        "role": "excluded_stress",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 11607,
+        "groups": 11451,
+        "representatives": 11451
+      },
+      {
+        "role": "excluded_stress",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 1513,
+        "groups": 1513,
+        "representatives": 1513
+      },
+      {
+        "role": "excluded_stress",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 101,
+        "groups": 101,
+        "representatives": 101
+      },
+      {
+        "role": "private_train",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 52,
+        "groups": 52,
+        "representatives": 52
+      },
+      {
+        "role": "private_train",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 307,
+        "groups": 304,
+        "representatives": 304
+      },
+      {
+        "role": "private_train",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 125547,
+        "groups": 121650,
+        "representatives": 121650
+      },
+      {
+        "role": "private_train",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 166,
+        "groups": 166,
+        "representatives": 166
+      },
+      {
+        "role": "private_train",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 1237,
+        "groups": 1237,
+        "representatives": 1237
+      },
+      {
+        "role": "private_train",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 1171,
+        "groups": 1168,
+        "representatives": 1168
+      },
+      {
+        "role": "private_train",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 166,
+        "groups": 166,
+        "representatives": 166
+      },
+      {
+        "role": "private_train",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 512,
+        "groups": 511,
+        "representatives": 511
+      },
+      {
+        "role": "private_train",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 107,
+        "groups": 107,
+        "representatives": 107
+      },
+      {
+        "role": "private_train",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 6,
+        "groups": 6,
+        "representatives": 6
+      },
+      {
+        "role": "public_reference",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 56,
+        "groups": 56,
+        "representatives": 56
+      },
+      {
+        "role": "public_reference",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 327,
+        "groups": 323,
+        "representatives": 323
+      },
+      {
+        "role": "public_reference",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 126007,
+        "groups": 122198,
+        "representatives": 122198
+      },
+      {
+        "role": "public_reference",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 155,
+        "groups": 155,
+        "representatives": 155
+      },
+      {
+        "role": "public_reference",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 1293,
+        "groups": 1293,
+        "representatives": 1293
+      },
+      {
+        "role": "public_reference",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 1160,
+        "groups": 1158,
+        "representatives": 1158
+      },
+      {
+        "role": "public_reference",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 171,
+        "groups": 171,
+        "representatives": 171
+      },
+      {
+        "role": "public_reference",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 539,
+        "groups": 538,
+        "representatives": 538
+      },
+      {
+        "role": "public_reference",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 81,
+        "groups": 81,
+        "representatives": 81
+      },
+      {
+        "role": "public_reference",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 7,
+        "groups": 7,
+        "representatives": 7
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 282,
+        "groups": 279,
+        "representatives": 93
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 48,
+        "groups": 45,
+        "representatives": 22
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 378,
+        "groups": 297,
+        "representatives": 66
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 595,
+        "groups": 220,
+        "representatives": 107
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 2183,
+        "groups": 409,
+        "representatives": 323
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 146,
+        "groups": 123,
+        "representatives": 30
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 14,
+        "groups": 11,
+        "representatives": 1
+      },
+      {
+        "role": "quarantine_conflict",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 1,
+        "groups": 1,
+        "representatives": 0
+      },
+      {
+        "role": "sealed_test",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 106,
+        "groups": 106,
+        "representatives": 106
+      },
+      {
+        "role": "sealed_test",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 198,
+        "groups": 198,
+        "representatives": 198
+      },
+      {
+        "role": "sealed_test",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 74737,
+        "groups": 74357,
+        "representatives": 74357
+      },
+      {
+        "role": "sealed_test",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 389,
+        "groups": 388,
+        "representatives": 388
+      },
+      {
+        "role": "sealed_test",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 2866,
+        "groups": 2866,
+        "representatives": 2866
+      },
+      {
+        "role": "sealed_test",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 1968,
+        "groups": 1958,
+        "representatives": 1958
+      },
+      {
+        "role": "sealed_test",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 443,
+        "groups": 443,
+        "representatives": 443
+      },
+      {
+        "role": "sealed_test",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 1099,
+        "groups": 1093,
+        "representatives": 1093
+      },
+      {
+        "role": "sealed_test",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 136,
+        "groups": 136,
+        "representatives": 136
+      },
+      {
+        "role": "sealed_test",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 10,
+        "groups": 10,
+        "representatives": 10
+      },
+      {
+        "role": "validation",
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 60,
+        "groups": 60,
+        "representatives": 60
+      },
+      {
+        "role": "validation",
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 31,
+        "groups": 31,
+        "representatives": 31
+      },
+      {
+        "role": "validation",
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 74360,
+        "groups": 73957,
+        "representatives": 73957
+      },
+      {
+        "role": "validation",
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 442,
+        "groups": 441,
+        "representatives": 441
+      },
+      {
+        "role": "validation",
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 3225,
+        "groups": 3225,
+        "representatives": 3225
+      },
+      {
+        "role": "validation",
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 2226,
+        "groups": 2220,
+        "representatives": 2220
+      },
+      {
+        "role": "validation",
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 429,
+        "groups": 429,
+        "representatives": 429
+      },
+      {
+        "role": "validation",
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 1116,
+        "groups": 1114,
+        "representatives": 1114
+      },
+      {
+        "role": "validation",
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 164,
+        "groups": 164,
+        "representatives": 164
+      },
+      {
+        "role": "validation",
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 14,
+        "groups": 14,
+        "representatives": 14
+      }
+    ],
+    "task_role": [
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 124,
+        "groups": 124,
+        "representatives": 124
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 15,
+        "groups": 15,
+        "representatives": 15
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 404068,
+        "groups": 395185,
+        "representatives": 395185
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 258,
+        "groups": 257,
+        "representatives": 257
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 2199,
+        "groups": 2199,
+        "representatives": 2199
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 2421,
+        "groups": 2414,
+        "representatives": 2414
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 255,
+        "groups": 255,
+        "representatives": 255
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 852,
+        "groups": 851,
+        "representatives": 851
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 111,
+        "groups": 111,
+        "representatives": 111
+      },
+      {
+        "role": "development_train",
+        "task_id": 1,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 11,
+        "groups": 11,
+        "representatives": 11
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 361,
+        "groups": 361,
+        "representatives": 361
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 1685,
+        "groups": 1670,
+        "representatives": 1670
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 398838,
+        "groups": 390502,
+        "representatives": 390502
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 2158,
+        "groups": 2147,
+        "representatives": 2147
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 14667,
+        "groups": 14663,
+        "representatives": 14663
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 10782,
+        "groups": 10721,
+        "representatives": 10721
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 2450,
+        "groups": 2151,
+        "representatives": 2151
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 5828,
+        "groups": 5781,
+        "representatives": 5781
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 784,
+        "groups": 784,
+        "representatives": 784
+      },
+      {
+        "role": "development_train",
+        "task_id": 2,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 55,
+        "groups": 55,
+        "representatives": 55
+      },
+      {
+        "role": "excluded_task_boundary",
+        "task_id": null,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 231903,
+        "groups": 61838,
+        "representatives": 61838
+      },
+      {
+        "role": "excluded_task_boundary",
+        "task_id": null,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 11,
+        "groups": 2,
+        "representatives": 2
+      },
+      {
+        "role": "excluded_task_boundary",
+        "task_id": null,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 6,
+        "groups": 3,
+        "representatives": 3
+      },
+      {
+        "role": "excluded_task_boundary",
+        "task_id": null,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 313,
+        "groups": 59,
+        "representatives": 59
+      },
+      {
+        "role": "excluded_task_boundary",
+        "task_id": null,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 10649,
+        "groups": 1549,
+        "representatives": 1549
+      },
+      {
+        "role": "excluded_task_boundary",
+        "task_id": null,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 91,
+        "groups": 45,
+        "representatives": 45
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 27,
+        "groups": 27,
+        "representatives": 27
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 4,
+        "groups": 4,
+        "representatives": 4
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 100746,
+        "groups": 98418,
+        "representatives": 98418
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 57,
+        "groups": 57,
+        "representatives": 57
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 542,
+        "groups": 542,
+        "representatives": 542
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 552,
+        "groups": 550,
+        "representatives": 550
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 47,
+        "groups": 47,
+        "representatives": 47
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 187,
+        "groups": 187,
+        "representatives": 187
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 34,
+        "groups": 34,
+        "representatives": 34
+      },
+      {
+        "role": "private_train",
+        "task_id": 1,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 1,
+        "groups": 1,
+        "representatives": 1
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 113,
+        "groups": 113,
+        "representatives": 113
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 431,
+        "groups": 428,
+        "representatives": 428
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 98962,
+        "groups": 96584,
+        "representatives": 96584
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 488,
+        "groups": 486,
+        "representatives": 486
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 3535,
+        "groups": 3533,
+        "representatives": 3533
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 2761,
+        "groups": 2748,
+        "representatives": 2748
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 660,
+        "groups": 567,
+        "representatives": 567
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 1509,
+        "groups": 1498,
+        "representatives": 1498
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 214,
+        "groups": 214,
+        "representatives": 214
+      },
+      {
+        "role": "private_train",
+        "task_id": 2,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 13,
+        "groups": 13,
+        "representatives": 13
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 27,
+        "groups": 27,
+        "representatives": 27
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 5,
+        "groups": 5,
+        "representatives": 5
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 101195,
+        "groups": 99031,
+        "representatives": 99031
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 56,
+        "groups": 56,
+        "representatives": 56
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 519,
+        "groups": 519,
+        "representatives": 519
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 626,
+        "groups": 624,
+        "representatives": 624
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 51,
+        "groups": 51,
+        "representatives": 51
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 216,
+        "groups": 216,
+        "representatives": 216
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 23,
+        "groups": 23,
+        "representatives": 23
+      },
+      {
+        "role": "public_reference",
+        "task_id": 1,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 2,
+        "groups": 2,
+        "representatives": 2
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 95,
+        "groups": 95,
+        "representatives": 95
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 463,
+        "groups": 459,
+        "representatives": 459
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 99957,
+        "groups": 97825,
+        "representatives": 97825
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 524,
+        "groups": 523,
+        "representatives": 523
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 3726,
+        "groups": 3726,
+        "representatives": 3726
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 2736,
+        "groups": 2728,
+        "representatives": 2728
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 691,
+        "groups": 598,
+        "representatives": 598
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 1472,
+        "groups": 1461,
+        "representatives": 1461
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 204,
+        "groups": 204,
+        "representatives": 204
+      },
+      {
+        "role": "public_reference",
+        "task_id": 2,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 15,
+        "groups": 15,
+        "representatives": 15
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 1,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 4,
+        "groups": 4,
+        "representatives": 4
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 1,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 4,
+        "groups": 4,
+        "representatives": 0
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 2,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 71,
+        "groups": 68,
+        "representatives": 43
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 2,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 36,
+        "groups": 34,
+        "representatives": 20
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 2,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 79,
+        "groups": 77,
+        "representatives": 36
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 2,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 131,
+        "groups": 109,
+        "representatives": 59
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 2,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 187,
+        "groups": 42,
+        "representatives": 13
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 2,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 58,
+        "groups": 56,
+        "representatives": 18
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": 2,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 5,
+        "groups": 5,
+        "representatives": 1
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": null,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 211,
+        "groups": 211,
+        "representatives": 50
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": null,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 12,
+        "groups": 11,
+        "representatives": 2
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": null,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 295,
+        "groups": 216,
+        "representatives": 26
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": null,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 460,
+        "groups": 107,
+        "representatives": 48
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": null,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 1996,
+        "groups": 367,
+        "representatives": 310
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": null,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 88,
+        "groups": 67,
+        "representatives": 12
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": null,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 9,
+        "groups": 6,
+        "representatives": 0
+      },
+      {
+        "role": "quarantine_conflict",
+        "task_id": null,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 1,
+        "groups": 1,
+        "representatives": 0
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 44,
+        "groups": 44,
+        "representatives": 44
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 11,
+        "groups": 11,
+        "representatives": 11
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 201261,
+        "groups": 197023,
+        "representatives": 197023
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 121,
+        "groups": 120,
+        "representatives": 120
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 1053,
+        "groups": 1052,
+        "representatives": 1052
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 1164,
+        "groups": 1161,
+        "representatives": 1161
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 110,
+        "groups": 110,
+        "representatives": 110
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 422,
+        "groups": 422,
+        "representatives": 422
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 56,
+        "groups": 56,
+        "representatives": 56
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 1,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 1,
+        "groups": 1,
+        "representatives": 1
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 207,
+        "groups": 207,
+        "representatives": 207
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 868,
+        "groups": 861,
+        "representatives": 861
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 199529,
+        "groups": 195242,
+        "representatives": 195242
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 1089,
+        "groups": 1085,
+        "representatives": 1085
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 7477,
+        "groups": 7476,
+        "representatives": 7476
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 5377,
+        "groups": 5354,
+        "representatives": 5354
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 1169,
+        "groups": 1063,
+        "representatives": 1063
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 2917,
+        "groups": 2884,
+        "representatives": 2884
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 448,
+        "groups": 448,
+        "representatives": 448
+      },
+      {
+        "role": "sealed_test",
+        "task_id": 2,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 23,
+        "groups": 23,
+        "representatives": 23
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 45,
+        "groups": 45,
+        "representatives": 45
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 7,
+        "groups": 7,
+        "representatives": 7
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 201586,
+        "groups": 197287,
+        "representatives": 197287
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 129,
+        "groups": 129,
+        "representatives": 129
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 1122,
+        "groups": 1122,
+        "representatives": 1122
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 1164,
+        "groups": 1159,
+        "representatives": 1159
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 115,
+        "groups": 115,
+        "representatives": 115
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 424,
+        "groups": 424,
+        "representatives": 424
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 55,
+        "groups": 55,
+        "representatives": 55
+      },
+      {
+        "role": "validation",
+        "task_id": 1,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 4,
+        "groups": 4,
+        "representatives": 4
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "analysis",
+        "binary_label": 1,
+        "rows": 183,
+        "groups": 183,
+        "representatives": 183
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "backdoor",
+        "binary_label": 1,
+        "rows": 888,
+        "groups": 882,
+        "representatives": 882
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "benign",
+        "binary_label": 0,
+        "rows": 199686,
+        "groups": 195525,
+        "representatives": 195525
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "dos",
+        "binary_label": 1,
+        "rows": 1041,
+        "groups": 1038,
+        "representatives": 1038
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "exploits",
+        "binary_label": 1,
+        "rows": 7524,
+        "groups": 7519,
+        "representatives": 7519
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "fuzzers",
+        "binary_label": 1,
+        "rows": 5325,
+        "groups": 5306,
+        "representatives": 5306
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "generic",
+        "binary_label": 1,
+        "rows": 1271,
+        "groups": 1151,
+        "representatives": 1151
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "reconnaissance",
+        "binary_label": 1,
+        "rows": 3010,
+        "groups": 2986,
+        "representatives": 2986
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "shellcode",
+        "binary_label": 1,
+        "rows": 438,
+        "groups": 438,
+        "representatives": 438
+      },
+      {
+        "role": "validation",
+        "task_id": 2,
+        "label": "worms",
+        "binary_label": 1,
+        "rows": 32,
+        "groups": 32,
+        "representatives": 32
+      }
+    ]
+  },
+  "quarantine_by_label": [
+    {
+      "label": "backdoor",
+      "binary_label": 1,
+      "rows": 282,
+      "groups": 279,
+      "binary_conflict_rows": 0
+    },
+    {
+      "label": "dos",
+      "binary_label": 1,
+      "rows": 48,
+      "groups": 45,
+      "binary_conflict_rows": 0
+    },
+    {
+      "label": "exploits",
+      "binary_label": 1,
+      "rows": 378,
+      "groups": 297,
+      "binary_conflict_rows": 0
+    },
+    {
+      "label": "fuzzers",
+      "binary_label": 1,
+      "rows": 595,
+      "groups": 220,
+      "binary_conflict_rows": 0
+    },
+    {
+      "label": "generic",
+      "binary_label": 1,
+      "rows": 2183,
+      "groups": 409,
+      "binary_conflict_rows": 0
+    },
+    {
+      "label": "reconnaissance",
+      "binary_label": 1,
+      "rows": 146,
+      "groups": 123,
+      "binary_conflict_rows": 0
+    },
+    {
+      "label": "shellcode",
+      "binary_label": 1,
+      "rows": 14,
+      "groups": 11,
+      "binary_conflict_rows": 0
+    },
+    {
+      "label": "worms",
+      "binary_label": 1,
+      "rows": 1,
+      "groups": 1,
+      "binary_conflict_rows": 0
+    }
+  ],
+  "assertions": {
+    "row_coverage": true,
+    "unique_row_ids": true,
+    "no_group_role_overlap": true,
+    "one_representative_per_group": true,
+    "hash_collision_check": true,
+    "global_sealed_role_preserved": true
+  },
+  "dataset": "ND-UNSW-NB15-v3",
+  "version": "S1",
+  "status": "COMPLETED",
+  "elapsed_seconds": 67.72513179999987,
+  "manifest_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\splits\\S1\\ND-UNSW-NB15-v3\\memberships.parquet",
+  "manifest_sha256": "1d125b7dfeda44dcb13bed04dd5c07f63cb743c216183073d6a3e2b42c80259c",
+  "contract_sha256": "016292b3a28db48d04b0aa610b5f9abc1e8977fae23d2c9c85cc6c88ff8d9a40",
+  "script_sha256": "b39a8f7eb53cd745bc6fdfef75062d85103ea3c06f17fcc48d45c46527c2cb42",
+  "stress_cutoffs_ms": [
+    1424229622862.0,
+    1424246259998.0
+  ]
+}

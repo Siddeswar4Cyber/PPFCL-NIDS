@@ -1,0 +1,769 @@
+{
+  "version": "S1",
+  "dataset": "NF-BoT-IoT-v3",
+  "columns": [
+    {
+      "position": 0,
+      "id": "c000",
+      "raw_name": "FLOW_START_MILLISECONDS",
+      "name": "FLOW_START_MILLISECONDS",
+      "role": "metadata"
+    },
+    {
+      "position": 1,
+      "id": "c001",
+      "raw_name": "FLOW_END_MILLISECONDS",
+      "name": "FLOW_END_MILLISECONDS",
+      "role": "metadata"
+    },
+    {
+      "position": 2,
+      "id": "c002",
+      "raw_name": "IPV4_SRC_ADDR",
+      "name": "IPV4_SRC_ADDR",
+      "role": "metadata"
+    },
+    {
+      "position": 3,
+      "id": "c003",
+      "raw_name": "L4_SRC_PORT",
+      "name": "L4_SRC_PORT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 4,
+      "id": "c004",
+      "raw_name": "IPV4_DST_ADDR",
+      "name": "IPV4_DST_ADDR",
+      "role": "metadata"
+    },
+    {
+      "position": 5,
+      "id": "c005",
+      "raw_name": "L4_DST_PORT",
+      "name": "L4_DST_PORT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 6,
+      "id": "c006",
+      "raw_name": "PROTOCOL",
+      "name": "PROTOCOL",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 7,
+      "id": "c007",
+      "raw_name": "L7_PROTO",
+      "name": "L7_PROTO",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 8,
+      "id": "c008",
+      "raw_name": "IN_BYTES",
+      "name": "IN_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 9,
+      "id": "c009",
+      "raw_name": "IN_PKTS",
+      "name": "IN_PKTS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 10,
+      "id": "c010",
+      "raw_name": "OUT_BYTES",
+      "name": "OUT_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 11,
+      "id": "c011",
+      "raw_name": "OUT_PKTS",
+      "name": "OUT_PKTS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 12,
+      "id": "c012",
+      "raw_name": "TCP_FLAGS",
+      "name": "TCP_FLAGS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 13,
+      "id": "c013",
+      "raw_name": "CLIENT_TCP_FLAGS",
+      "name": "CLIENT_TCP_FLAGS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 14,
+      "id": "c014",
+      "raw_name": "SERVER_TCP_FLAGS",
+      "name": "SERVER_TCP_FLAGS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 15,
+      "id": "c015",
+      "raw_name": "FLOW_DURATION_MILLISECONDS",
+      "name": "FLOW_DURATION_MILLISECONDS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 16,
+      "id": "c016",
+      "raw_name": "DURATION_IN",
+      "name": "DURATION_IN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 17,
+      "id": "c017",
+      "raw_name": "DURATION_OUT",
+      "name": "DURATION_OUT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 18,
+      "id": "c018",
+      "raw_name": "MIN_TTL",
+      "name": "MIN_TTL",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 19,
+      "id": "c019",
+      "raw_name": "MAX_TTL",
+      "name": "MAX_TTL",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 20,
+      "id": "c020",
+      "raw_name": "LONGEST_FLOW_PKT",
+      "name": "LONGEST_FLOW_PKT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 21,
+      "id": "c021",
+      "raw_name": "SHORTEST_FLOW_PKT",
+      "name": "SHORTEST_FLOW_PKT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 22,
+      "id": "c022",
+      "raw_name": "MIN_IP_PKT_LEN",
+      "name": "MIN_IP_PKT_LEN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 23,
+      "id": "c023",
+      "raw_name": "MAX_IP_PKT_LEN",
+      "name": "MAX_IP_PKT_LEN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 24,
+      "id": "c024",
+      "raw_name": "SRC_TO_DST_SECOND_BYTES",
+      "name": "SRC_TO_DST_SECOND_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 25,
+      "id": "c025",
+      "raw_name": "DST_TO_SRC_SECOND_BYTES",
+      "name": "DST_TO_SRC_SECOND_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 26,
+      "id": "c026",
+      "raw_name": "RETRANSMITTED_IN_BYTES",
+      "name": "RETRANSMITTED_IN_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 27,
+      "id": "c027",
+      "raw_name": "RETRANSMITTED_IN_PKTS",
+      "name": "RETRANSMITTED_IN_PKTS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 28,
+      "id": "c028",
+      "raw_name": "RETRANSMITTED_OUT_BYTES",
+      "name": "RETRANSMITTED_OUT_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 29,
+      "id": "c029",
+      "raw_name": "RETRANSMITTED_OUT_PKTS",
+      "name": "RETRANSMITTED_OUT_PKTS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 30,
+      "id": "c030",
+      "raw_name": "SRC_TO_DST_AVG_THROUGHPUT",
+      "name": "SRC_TO_DST_AVG_THROUGHPUT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 31,
+      "id": "c031",
+      "raw_name": "DST_TO_SRC_AVG_THROUGHPUT",
+      "name": "DST_TO_SRC_AVG_THROUGHPUT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 32,
+      "id": "c032",
+      "raw_name": "NUM_PKTS_UP_TO_128_BYTES",
+      "name": "NUM_PKTS_UP_TO_128_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 33,
+      "id": "c033",
+      "raw_name": "NUM_PKTS_128_TO_256_BYTES",
+      "name": "NUM_PKTS_128_TO_256_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 34,
+      "id": "c034",
+      "raw_name": "NUM_PKTS_256_TO_512_BYTES",
+      "name": "NUM_PKTS_256_TO_512_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 35,
+      "id": "c035",
+      "raw_name": "NUM_PKTS_512_TO_1024_BYTES",
+      "name": "NUM_PKTS_512_TO_1024_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 36,
+      "id": "c036",
+      "raw_name": "NUM_PKTS_1024_TO_1514_BYTES",
+      "name": "NUM_PKTS_1024_TO_1514_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 37,
+      "id": "c037",
+      "raw_name": "TCP_WIN_MAX_IN",
+      "name": "TCP_WIN_MAX_IN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 38,
+      "id": "c038",
+      "raw_name": "TCP_WIN_MAX_OUT",
+      "name": "TCP_WIN_MAX_OUT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 39,
+      "id": "c039",
+      "raw_name": "ICMP_TYPE",
+      "name": "ICMP_TYPE",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 40,
+      "id": "c040",
+      "raw_name": "ICMP_IPV4_TYPE",
+      "name": "ICMP_IPV4_TYPE",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 41,
+      "id": "c041",
+      "raw_name": "DNS_QUERY_ID",
+      "name": "DNS_QUERY_ID",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 42,
+      "id": "c042",
+      "raw_name": "DNS_QUERY_TYPE",
+      "name": "DNS_QUERY_TYPE",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 43,
+      "id": "c043",
+      "raw_name": "DNS_TTL_ANSWER",
+      "name": "DNS_TTL_ANSWER",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 44,
+      "id": "c044",
+      "raw_name": "FTP_COMMAND_RET_CODE",
+      "name": "FTP_COMMAND_RET_CODE",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 45,
+      "id": "c045",
+      "raw_name": "SRC_TO_DST_IAT_MIN",
+      "name": "SRC_TO_DST_IAT_MIN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 46,
+      "id": "c046",
+      "raw_name": "SRC_TO_DST_IAT_MAX",
+      "name": "SRC_TO_DST_IAT_MAX",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 47,
+      "id": "c047",
+      "raw_name": "SRC_TO_DST_IAT_AVG",
+      "name": "SRC_TO_DST_IAT_AVG",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 48,
+      "id": "c048",
+      "raw_name": "SRC_TO_DST_IAT_STDDEV",
+      "name": "SRC_TO_DST_IAT_STDDEV",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 49,
+      "id": "c049",
+      "raw_name": "DST_TO_SRC_IAT_MIN",
+      "name": "DST_TO_SRC_IAT_MIN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 50,
+      "id": "c050",
+      "raw_name": "DST_TO_SRC_IAT_MAX",
+      "name": "DST_TO_SRC_IAT_MAX",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 51,
+      "id": "c051",
+      "raw_name": "DST_TO_SRC_IAT_AVG",
+      "name": "DST_TO_SRC_IAT_AVG",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 52,
+      "id": "c052",
+      "raw_name": "DST_TO_SRC_IAT_STDDEV",
+      "name": "DST_TO_SRC_IAT_STDDEV",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 53,
+      "id": "c053",
+      "raw_name": "Label",
+      "name": "Label",
+      "role": "label"
+    },
+    {
+      "position": 54,
+      "id": "c054",
+      "raw_name": "Attack",
+      "name": "Attack",
+      "role": "label"
+    }
+  ],
+  "predictors": [
+    {
+      "position": 3,
+      "id": "c003",
+      "raw_name": "L4_SRC_PORT",
+      "name": "L4_SRC_PORT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 5,
+      "id": "c005",
+      "raw_name": "L4_DST_PORT",
+      "name": "L4_DST_PORT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 6,
+      "id": "c006",
+      "raw_name": "PROTOCOL",
+      "name": "PROTOCOL",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 7,
+      "id": "c007",
+      "raw_name": "L7_PROTO",
+      "name": "L7_PROTO",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 8,
+      "id": "c008",
+      "raw_name": "IN_BYTES",
+      "name": "IN_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 9,
+      "id": "c009",
+      "raw_name": "IN_PKTS",
+      "name": "IN_PKTS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 10,
+      "id": "c010",
+      "raw_name": "OUT_BYTES",
+      "name": "OUT_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 11,
+      "id": "c011",
+      "raw_name": "OUT_PKTS",
+      "name": "OUT_PKTS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 12,
+      "id": "c012",
+      "raw_name": "TCP_FLAGS",
+      "name": "TCP_FLAGS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 13,
+      "id": "c013",
+      "raw_name": "CLIENT_TCP_FLAGS",
+      "name": "CLIENT_TCP_FLAGS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 14,
+      "id": "c014",
+      "raw_name": "SERVER_TCP_FLAGS",
+      "name": "SERVER_TCP_FLAGS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 15,
+      "id": "c015",
+      "raw_name": "FLOW_DURATION_MILLISECONDS",
+      "name": "FLOW_DURATION_MILLISECONDS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 16,
+      "id": "c016",
+      "raw_name": "DURATION_IN",
+      "name": "DURATION_IN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 17,
+      "id": "c017",
+      "raw_name": "DURATION_OUT",
+      "name": "DURATION_OUT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 18,
+      "id": "c018",
+      "raw_name": "MIN_TTL",
+      "name": "MIN_TTL",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 19,
+      "id": "c019",
+      "raw_name": "MAX_TTL",
+      "name": "MAX_TTL",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 20,
+      "id": "c020",
+      "raw_name": "LONGEST_FLOW_PKT",
+      "name": "LONGEST_FLOW_PKT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 21,
+      "id": "c021",
+      "raw_name": "SHORTEST_FLOW_PKT",
+      "name": "SHORTEST_FLOW_PKT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 22,
+      "id": "c022",
+      "raw_name": "MIN_IP_PKT_LEN",
+      "name": "MIN_IP_PKT_LEN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 23,
+      "id": "c023",
+      "raw_name": "MAX_IP_PKT_LEN",
+      "name": "MAX_IP_PKT_LEN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 24,
+      "id": "c024",
+      "raw_name": "SRC_TO_DST_SECOND_BYTES",
+      "name": "SRC_TO_DST_SECOND_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 25,
+      "id": "c025",
+      "raw_name": "DST_TO_SRC_SECOND_BYTES",
+      "name": "DST_TO_SRC_SECOND_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 26,
+      "id": "c026",
+      "raw_name": "RETRANSMITTED_IN_BYTES",
+      "name": "RETRANSMITTED_IN_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 27,
+      "id": "c027",
+      "raw_name": "RETRANSMITTED_IN_PKTS",
+      "name": "RETRANSMITTED_IN_PKTS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 28,
+      "id": "c028",
+      "raw_name": "RETRANSMITTED_OUT_BYTES",
+      "name": "RETRANSMITTED_OUT_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 29,
+      "id": "c029",
+      "raw_name": "RETRANSMITTED_OUT_PKTS",
+      "name": "RETRANSMITTED_OUT_PKTS",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 30,
+      "id": "c030",
+      "raw_name": "SRC_TO_DST_AVG_THROUGHPUT",
+      "name": "SRC_TO_DST_AVG_THROUGHPUT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 31,
+      "id": "c031",
+      "raw_name": "DST_TO_SRC_AVG_THROUGHPUT",
+      "name": "DST_TO_SRC_AVG_THROUGHPUT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 32,
+      "id": "c032",
+      "raw_name": "NUM_PKTS_UP_TO_128_BYTES",
+      "name": "NUM_PKTS_UP_TO_128_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 33,
+      "id": "c033",
+      "raw_name": "NUM_PKTS_128_TO_256_BYTES",
+      "name": "NUM_PKTS_128_TO_256_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 34,
+      "id": "c034",
+      "raw_name": "NUM_PKTS_256_TO_512_BYTES",
+      "name": "NUM_PKTS_256_TO_512_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 35,
+      "id": "c035",
+      "raw_name": "NUM_PKTS_512_TO_1024_BYTES",
+      "name": "NUM_PKTS_512_TO_1024_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 36,
+      "id": "c036",
+      "raw_name": "NUM_PKTS_1024_TO_1514_BYTES",
+      "name": "NUM_PKTS_1024_TO_1514_BYTES",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 37,
+      "id": "c037",
+      "raw_name": "TCP_WIN_MAX_IN",
+      "name": "TCP_WIN_MAX_IN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 38,
+      "id": "c038",
+      "raw_name": "TCP_WIN_MAX_OUT",
+      "name": "TCP_WIN_MAX_OUT",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 39,
+      "id": "c039",
+      "raw_name": "ICMP_TYPE",
+      "name": "ICMP_TYPE",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 40,
+      "id": "c040",
+      "raw_name": "ICMP_IPV4_TYPE",
+      "name": "ICMP_IPV4_TYPE",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 41,
+      "id": "c041",
+      "raw_name": "DNS_QUERY_ID",
+      "name": "DNS_QUERY_ID",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 42,
+      "id": "c042",
+      "raw_name": "DNS_QUERY_TYPE",
+      "name": "DNS_QUERY_TYPE",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 43,
+      "id": "c043",
+      "raw_name": "DNS_TTL_ANSWER",
+      "name": "DNS_TTL_ANSWER",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 44,
+      "id": "c044",
+      "raw_name": "FTP_COMMAND_RET_CODE",
+      "name": "FTP_COMMAND_RET_CODE",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 45,
+      "id": "c045",
+      "raw_name": "SRC_TO_DST_IAT_MIN",
+      "name": "SRC_TO_DST_IAT_MIN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 46,
+      "id": "c046",
+      "raw_name": "SRC_TO_DST_IAT_MAX",
+      "name": "SRC_TO_DST_IAT_MAX",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 47,
+      "id": "c047",
+      "raw_name": "SRC_TO_DST_IAT_AVG",
+      "name": "SRC_TO_DST_IAT_AVG",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 48,
+      "id": "c048",
+      "raw_name": "SRC_TO_DST_IAT_STDDEV",
+      "name": "SRC_TO_DST_IAT_STDDEV",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 49,
+      "id": "c049",
+      "raw_name": "DST_TO_SRC_IAT_MIN",
+      "name": "DST_TO_SRC_IAT_MIN",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 50,
+      "id": "c050",
+      "raw_name": "DST_TO_SRC_IAT_MAX",
+      "name": "DST_TO_SRC_IAT_MAX",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 51,
+      "id": "c051",
+      "raw_name": "DST_TO_SRC_IAT_AVG",
+      "name": "DST_TO_SRC_IAT_AVG",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 52,
+      "id": "c052",
+      "raw_name": "DST_TO_SRC_IAT_STDDEV",
+      "name": "DST_TO_SRC_IAT_STDDEV",
+      "role": "candidate_feature"
+    }
+  ],
+  "raw_to_canonical_label": {
+    "Benign": "benign",
+    "DDoS": "ddos",
+    "DoS": "dos",
+    "Reconnaissance": "reconnaissance",
+    "Theft": "theft"
+  },
+  "canonicalization": "Lowercase ASCII alphanumeric tokens joined by underscore; exact raw-key lookup, no fuzzy matching. Labels remain dataset-scoped.",
+  "group_projection": "Ordered DOUBLE predictors; trim strings; nonfinite/uncastable/blank -> NULL; signed zero -> 0. Negative finite values retained.",
+  "projection_limit": "No imputation or scaling fitted. CP4 must recheck collisions after any additional transformation.",
+  "source_files": [
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\NF-BoT-IoT-v3\\NF-BoT-IoT-v3.csv",
+      "bytes": 3817527532,
+      "mtime_ns": 1788883786267794200,
+      "sha256": "8bde1f6f1c8bc59dcb49828fb5b9d65c0b63e06d92b2b9f15b37159e923009ea",
+      "encoding": "utf-8",
+      "physical_lines": 16933809,
+      "source_file": 0,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    }
+  ],
+  "status": "SEALED_EXTERNAL_SOURCE",
+  "role": "sealed_external_test",
+  "membership_rule": "Every parsed row of each listed source; eligibility transformation not fitted. Verify source hashes before use.",
+  "last_hash_verification": "EXP-001 audit",
+  "performance_access": "Finalization stage only; no selection feedback",
+  "semantic_adapter_status": "UNVERIFIED - CP4 gate before zero-shot use"
+}

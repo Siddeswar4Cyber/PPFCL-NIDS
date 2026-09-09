@@ -1,0 +1,1243 @@
+{
+  "version": "S1",
+  "dataset": "cic-ids-2017",
+  "columns": [
+    {
+      "position": 0,
+      "id": "c000",
+      "raw_name": " Destination Port",
+      "name": "Destination Port",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 1,
+      "id": "c001",
+      "raw_name": " Flow Duration",
+      "name": "Flow Duration",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 2,
+      "id": "c002",
+      "raw_name": " Total Fwd Packets",
+      "name": "Total Fwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 3,
+      "id": "c003",
+      "raw_name": " Total Backward Packets",
+      "name": "Total Backward Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 4,
+      "id": "c004",
+      "raw_name": "Total Length of Fwd Packets",
+      "name": "Total Length of Fwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 5,
+      "id": "c005",
+      "raw_name": " Total Length of Bwd Packets",
+      "name": "Total Length of Bwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 6,
+      "id": "c006",
+      "raw_name": " Fwd Packet Length Max",
+      "name": "Fwd Packet Length Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 7,
+      "id": "c007",
+      "raw_name": " Fwd Packet Length Min",
+      "name": "Fwd Packet Length Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 8,
+      "id": "c008",
+      "raw_name": " Fwd Packet Length Mean",
+      "name": "Fwd Packet Length Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 9,
+      "id": "c009",
+      "raw_name": " Fwd Packet Length Std",
+      "name": "Fwd Packet Length Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 10,
+      "id": "c010",
+      "raw_name": "Bwd Packet Length Max",
+      "name": "Bwd Packet Length Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 11,
+      "id": "c011",
+      "raw_name": " Bwd Packet Length Min",
+      "name": "Bwd Packet Length Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 12,
+      "id": "c012",
+      "raw_name": " Bwd Packet Length Mean",
+      "name": "Bwd Packet Length Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 13,
+      "id": "c013",
+      "raw_name": " Bwd Packet Length Std",
+      "name": "Bwd Packet Length Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 14,
+      "id": "c014",
+      "raw_name": "Flow Bytes/s",
+      "name": "Flow Bytes/s",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 15,
+      "id": "c015",
+      "raw_name": " Flow Packets/s",
+      "name": "Flow Packets/s",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 16,
+      "id": "c016",
+      "raw_name": " Flow IAT Mean",
+      "name": "Flow IAT Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 17,
+      "id": "c017",
+      "raw_name": " Flow IAT Std",
+      "name": "Flow IAT Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 18,
+      "id": "c018",
+      "raw_name": " Flow IAT Max",
+      "name": "Flow IAT Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 19,
+      "id": "c019",
+      "raw_name": " Flow IAT Min",
+      "name": "Flow IAT Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 20,
+      "id": "c020",
+      "raw_name": "Fwd IAT Total",
+      "name": "Fwd IAT Total",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 21,
+      "id": "c021",
+      "raw_name": " Fwd IAT Mean",
+      "name": "Fwd IAT Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 22,
+      "id": "c022",
+      "raw_name": " Fwd IAT Std",
+      "name": "Fwd IAT Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 23,
+      "id": "c023",
+      "raw_name": " Fwd IAT Max",
+      "name": "Fwd IAT Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 24,
+      "id": "c024",
+      "raw_name": " Fwd IAT Min",
+      "name": "Fwd IAT Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 25,
+      "id": "c025",
+      "raw_name": "Bwd IAT Total",
+      "name": "Bwd IAT Total",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 26,
+      "id": "c026",
+      "raw_name": " Bwd IAT Mean",
+      "name": "Bwd IAT Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 27,
+      "id": "c027",
+      "raw_name": " Bwd IAT Std",
+      "name": "Bwd IAT Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 28,
+      "id": "c028",
+      "raw_name": " Bwd IAT Max",
+      "name": "Bwd IAT Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 29,
+      "id": "c029",
+      "raw_name": " Bwd IAT Min",
+      "name": "Bwd IAT Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 30,
+      "id": "c030",
+      "raw_name": "Fwd PSH Flags",
+      "name": "Fwd PSH Flags",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 31,
+      "id": "c031",
+      "raw_name": " Bwd PSH Flags",
+      "name": "Bwd PSH Flags",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 32,
+      "id": "c032",
+      "raw_name": " Fwd URG Flags",
+      "name": "Fwd URG Flags",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 33,
+      "id": "c033",
+      "raw_name": " Bwd URG Flags",
+      "name": "Bwd URG Flags",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 34,
+      "id": "c034",
+      "raw_name": " Fwd Header Length",
+      "name": "Fwd Header Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 35,
+      "id": "c035",
+      "raw_name": " Bwd Header Length",
+      "name": "Bwd Header Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 36,
+      "id": "c036",
+      "raw_name": "Fwd Packets/s",
+      "name": "Fwd Packets/s",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 37,
+      "id": "c037",
+      "raw_name": " Bwd Packets/s",
+      "name": "Bwd Packets/s",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 38,
+      "id": "c038",
+      "raw_name": " Min Packet Length",
+      "name": "Min Packet Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 39,
+      "id": "c039",
+      "raw_name": " Max Packet Length",
+      "name": "Max Packet Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 40,
+      "id": "c040",
+      "raw_name": " Packet Length Mean",
+      "name": "Packet Length Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 41,
+      "id": "c041",
+      "raw_name": " Packet Length Std",
+      "name": "Packet Length Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 42,
+      "id": "c042",
+      "raw_name": " Packet Length Variance",
+      "name": "Packet Length Variance",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 43,
+      "id": "c043",
+      "raw_name": "FIN Flag Count",
+      "name": "FIN Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 44,
+      "id": "c044",
+      "raw_name": " SYN Flag Count",
+      "name": "SYN Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 45,
+      "id": "c045",
+      "raw_name": " RST Flag Count",
+      "name": "RST Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 46,
+      "id": "c046",
+      "raw_name": " PSH Flag Count",
+      "name": "PSH Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 47,
+      "id": "c047",
+      "raw_name": " ACK Flag Count",
+      "name": "ACK Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 48,
+      "id": "c048",
+      "raw_name": " URG Flag Count",
+      "name": "URG Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 49,
+      "id": "c049",
+      "raw_name": " CWE Flag Count",
+      "name": "CWE Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 50,
+      "id": "c050",
+      "raw_name": " ECE Flag Count",
+      "name": "ECE Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 51,
+      "id": "c051",
+      "raw_name": " Down/Up Ratio",
+      "name": "Down/Up Ratio",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 52,
+      "id": "c052",
+      "raw_name": " Average Packet Size",
+      "name": "Average Packet Size",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 53,
+      "id": "c053",
+      "raw_name": " Avg Fwd Segment Size",
+      "name": "Avg Fwd Segment Size",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 54,
+      "id": "c054",
+      "raw_name": " Avg Bwd Segment Size",
+      "name": "Avg Bwd Segment Size",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 55,
+      "id": "c055",
+      "raw_name": " Fwd Header Length",
+      "name": "Fwd Header Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 56,
+      "id": "c056",
+      "raw_name": "Fwd Avg Bytes/Bulk",
+      "name": "Fwd Avg Bytes/Bulk",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 57,
+      "id": "c057",
+      "raw_name": " Fwd Avg Packets/Bulk",
+      "name": "Fwd Avg Packets/Bulk",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 58,
+      "id": "c058",
+      "raw_name": " Fwd Avg Bulk Rate",
+      "name": "Fwd Avg Bulk Rate",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 59,
+      "id": "c059",
+      "raw_name": " Bwd Avg Bytes/Bulk",
+      "name": "Bwd Avg Bytes/Bulk",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 60,
+      "id": "c060",
+      "raw_name": " Bwd Avg Packets/Bulk",
+      "name": "Bwd Avg Packets/Bulk",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 61,
+      "id": "c061",
+      "raw_name": "Bwd Avg Bulk Rate",
+      "name": "Bwd Avg Bulk Rate",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 62,
+      "id": "c062",
+      "raw_name": "Subflow Fwd Packets",
+      "name": "Subflow Fwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 63,
+      "id": "c063",
+      "raw_name": " Subflow Fwd Bytes",
+      "name": "Subflow Fwd Bytes",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 64,
+      "id": "c064",
+      "raw_name": " Subflow Bwd Packets",
+      "name": "Subflow Bwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 65,
+      "id": "c065",
+      "raw_name": " Subflow Bwd Bytes",
+      "name": "Subflow Bwd Bytes",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 66,
+      "id": "c066",
+      "raw_name": "Init_Win_bytes_forward",
+      "name": "Init_Win_bytes_forward",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 67,
+      "id": "c067",
+      "raw_name": " Init_Win_bytes_backward",
+      "name": "Init_Win_bytes_backward",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 68,
+      "id": "c068",
+      "raw_name": " act_data_pkt_fwd",
+      "name": "act_data_pkt_fwd",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 69,
+      "id": "c069",
+      "raw_name": " min_seg_size_forward",
+      "name": "min_seg_size_forward",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 70,
+      "id": "c070",
+      "raw_name": "Active Mean",
+      "name": "Active Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 71,
+      "id": "c071",
+      "raw_name": " Active Std",
+      "name": "Active Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 72,
+      "id": "c072",
+      "raw_name": " Active Max",
+      "name": "Active Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 73,
+      "id": "c073",
+      "raw_name": " Active Min",
+      "name": "Active Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 74,
+      "id": "c074",
+      "raw_name": "Idle Mean",
+      "name": "Idle Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 75,
+      "id": "c075",
+      "raw_name": " Idle Std",
+      "name": "Idle Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 76,
+      "id": "c076",
+      "raw_name": " Idle Max",
+      "name": "Idle Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 77,
+      "id": "c077",
+      "raw_name": " Idle Min",
+      "name": "Idle Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 78,
+      "id": "c078",
+      "raw_name": " Label",
+      "name": "Label",
+      "role": "label"
+    }
+  ],
+  "predictors": [
+    {
+      "position": 0,
+      "id": "c000",
+      "raw_name": " Destination Port",
+      "name": "Destination Port",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 1,
+      "id": "c001",
+      "raw_name": " Flow Duration",
+      "name": "Flow Duration",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 2,
+      "id": "c002",
+      "raw_name": " Total Fwd Packets",
+      "name": "Total Fwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 3,
+      "id": "c003",
+      "raw_name": " Total Backward Packets",
+      "name": "Total Backward Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 4,
+      "id": "c004",
+      "raw_name": "Total Length of Fwd Packets",
+      "name": "Total Length of Fwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 5,
+      "id": "c005",
+      "raw_name": " Total Length of Bwd Packets",
+      "name": "Total Length of Bwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 6,
+      "id": "c006",
+      "raw_name": " Fwd Packet Length Max",
+      "name": "Fwd Packet Length Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 7,
+      "id": "c007",
+      "raw_name": " Fwd Packet Length Min",
+      "name": "Fwd Packet Length Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 8,
+      "id": "c008",
+      "raw_name": " Fwd Packet Length Mean",
+      "name": "Fwd Packet Length Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 9,
+      "id": "c009",
+      "raw_name": " Fwd Packet Length Std",
+      "name": "Fwd Packet Length Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 10,
+      "id": "c010",
+      "raw_name": "Bwd Packet Length Max",
+      "name": "Bwd Packet Length Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 11,
+      "id": "c011",
+      "raw_name": " Bwd Packet Length Min",
+      "name": "Bwd Packet Length Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 12,
+      "id": "c012",
+      "raw_name": " Bwd Packet Length Mean",
+      "name": "Bwd Packet Length Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 13,
+      "id": "c013",
+      "raw_name": " Bwd Packet Length Std",
+      "name": "Bwd Packet Length Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 14,
+      "id": "c014",
+      "raw_name": "Flow Bytes/s",
+      "name": "Flow Bytes/s",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 15,
+      "id": "c015",
+      "raw_name": " Flow Packets/s",
+      "name": "Flow Packets/s",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 16,
+      "id": "c016",
+      "raw_name": " Flow IAT Mean",
+      "name": "Flow IAT Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 17,
+      "id": "c017",
+      "raw_name": " Flow IAT Std",
+      "name": "Flow IAT Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 18,
+      "id": "c018",
+      "raw_name": " Flow IAT Max",
+      "name": "Flow IAT Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 19,
+      "id": "c019",
+      "raw_name": " Flow IAT Min",
+      "name": "Flow IAT Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 20,
+      "id": "c020",
+      "raw_name": "Fwd IAT Total",
+      "name": "Fwd IAT Total",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 21,
+      "id": "c021",
+      "raw_name": " Fwd IAT Mean",
+      "name": "Fwd IAT Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 22,
+      "id": "c022",
+      "raw_name": " Fwd IAT Std",
+      "name": "Fwd IAT Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 23,
+      "id": "c023",
+      "raw_name": " Fwd IAT Max",
+      "name": "Fwd IAT Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 24,
+      "id": "c024",
+      "raw_name": " Fwd IAT Min",
+      "name": "Fwd IAT Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 25,
+      "id": "c025",
+      "raw_name": "Bwd IAT Total",
+      "name": "Bwd IAT Total",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 26,
+      "id": "c026",
+      "raw_name": " Bwd IAT Mean",
+      "name": "Bwd IAT Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 27,
+      "id": "c027",
+      "raw_name": " Bwd IAT Std",
+      "name": "Bwd IAT Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 28,
+      "id": "c028",
+      "raw_name": " Bwd IAT Max",
+      "name": "Bwd IAT Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 29,
+      "id": "c029",
+      "raw_name": " Bwd IAT Min",
+      "name": "Bwd IAT Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 30,
+      "id": "c030",
+      "raw_name": "Fwd PSH Flags",
+      "name": "Fwd PSH Flags",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 31,
+      "id": "c031",
+      "raw_name": " Bwd PSH Flags",
+      "name": "Bwd PSH Flags",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 32,
+      "id": "c032",
+      "raw_name": " Fwd URG Flags",
+      "name": "Fwd URG Flags",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 33,
+      "id": "c033",
+      "raw_name": " Bwd URG Flags",
+      "name": "Bwd URG Flags",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 34,
+      "id": "c034",
+      "raw_name": " Fwd Header Length",
+      "name": "Fwd Header Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 35,
+      "id": "c035",
+      "raw_name": " Bwd Header Length",
+      "name": "Bwd Header Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 36,
+      "id": "c036",
+      "raw_name": "Fwd Packets/s",
+      "name": "Fwd Packets/s",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 37,
+      "id": "c037",
+      "raw_name": " Bwd Packets/s",
+      "name": "Bwd Packets/s",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 38,
+      "id": "c038",
+      "raw_name": " Min Packet Length",
+      "name": "Min Packet Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 39,
+      "id": "c039",
+      "raw_name": " Max Packet Length",
+      "name": "Max Packet Length",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 40,
+      "id": "c040",
+      "raw_name": " Packet Length Mean",
+      "name": "Packet Length Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 41,
+      "id": "c041",
+      "raw_name": " Packet Length Std",
+      "name": "Packet Length Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 42,
+      "id": "c042",
+      "raw_name": " Packet Length Variance",
+      "name": "Packet Length Variance",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 43,
+      "id": "c043",
+      "raw_name": "FIN Flag Count",
+      "name": "FIN Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 44,
+      "id": "c044",
+      "raw_name": " SYN Flag Count",
+      "name": "SYN Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 45,
+      "id": "c045",
+      "raw_name": " RST Flag Count",
+      "name": "RST Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 46,
+      "id": "c046",
+      "raw_name": " PSH Flag Count",
+      "name": "PSH Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 47,
+      "id": "c047",
+      "raw_name": " ACK Flag Count",
+      "name": "ACK Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 48,
+      "id": "c048",
+      "raw_name": " URG Flag Count",
+      "name": "URG Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 49,
+      "id": "c049",
+      "raw_name": " CWE Flag Count",
+      "name": "CWE Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 50,
+      "id": "c050",
+      "raw_name": " ECE Flag Count",
+      "name": "ECE Flag Count",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 51,
+      "id": "c051",
+      "raw_name": " Down/Up Ratio",
+      "name": "Down/Up Ratio",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 52,
+      "id": "c052",
+      "raw_name": " Average Packet Size",
+      "name": "Average Packet Size",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 53,
+      "id": "c053",
+      "raw_name": " Avg Fwd Segment Size",
+      "name": "Avg Fwd Segment Size",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 54,
+      "id": "c054",
+      "raw_name": " Avg Bwd Segment Size",
+      "name": "Avg Bwd Segment Size",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 56,
+      "id": "c056",
+      "raw_name": "Fwd Avg Bytes/Bulk",
+      "name": "Fwd Avg Bytes/Bulk",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 57,
+      "id": "c057",
+      "raw_name": " Fwd Avg Packets/Bulk",
+      "name": "Fwd Avg Packets/Bulk",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 58,
+      "id": "c058",
+      "raw_name": " Fwd Avg Bulk Rate",
+      "name": "Fwd Avg Bulk Rate",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 59,
+      "id": "c059",
+      "raw_name": " Bwd Avg Bytes/Bulk",
+      "name": "Bwd Avg Bytes/Bulk",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 60,
+      "id": "c060",
+      "raw_name": " Bwd Avg Packets/Bulk",
+      "name": "Bwd Avg Packets/Bulk",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 61,
+      "id": "c061",
+      "raw_name": "Bwd Avg Bulk Rate",
+      "name": "Bwd Avg Bulk Rate",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 62,
+      "id": "c062",
+      "raw_name": "Subflow Fwd Packets",
+      "name": "Subflow Fwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 63,
+      "id": "c063",
+      "raw_name": " Subflow Fwd Bytes",
+      "name": "Subflow Fwd Bytes",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 64,
+      "id": "c064",
+      "raw_name": " Subflow Bwd Packets",
+      "name": "Subflow Bwd Packets",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 65,
+      "id": "c065",
+      "raw_name": " Subflow Bwd Bytes",
+      "name": "Subflow Bwd Bytes",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 66,
+      "id": "c066",
+      "raw_name": "Init_Win_bytes_forward",
+      "name": "Init_Win_bytes_forward",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 67,
+      "id": "c067",
+      "raw_name": " Init_Win_bytes_backward",
+      "name": "Init_Win_bytes_backward",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 68,
+      "id": "c068",
+      "raw_name": " act_data_pkt_fwd",
+      "name": "act_data_pkt_fwd",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 69,
+      "id": "c069",
+      "raw_name": " min_seg_size_forward",
+      "name": "min_seg_size_forward",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 70,
+      "id": "c070",
+      "raw_name": "Active Mean",
+      "name": "Active Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 71,
+      "id": "c071",
+      "raw_name": " Active Std",
+      "name": "Active Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 72,
+      "id": "c072",
+      "raw_name": " Active Max",
+      "name": "Active Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 73,
+      "id": "c073",
+      "raw_name": " Active Min",
+      "name": "Active Min",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 74,
+      "id": "c074",
+      "raw_name": "Idle Mean",
+      "name": "Idle Mean",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 75,
+      "id": "c075",
+      "raw_name": " Idle Std",
+      "name": "Idle Std",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 76,
+      "id": "c076",
+      "raw_name": " Idle Max",
+      "name": "Idle Max",
+      "role": "candidate_feature"
+    },
+    {
+      "position": 77,
+      "id": "c077",
+      "raw_name": " Idle Min",
+      "name": "Idle Min",
+      "role": "candidate_feature"
+    }
+  ],
+  "raw_to_canonical_label": {
+    "BENIGN": "benign",
+    "Bot": "bot",
+    "DDoS": "ddos",
+    "DoS GoldenEye": "dos_goldeneye",
+    "DoS Hulk": "dos_hulk",
+    "DoS Slowhttptest": "dos_slowhttptest",
+    "DoS slowloris": "dos_slowloris",
+    "FTP-Patator": "ftp_patator",
+    "Heartbleed": "heartbleed",
+    "Infiltration": "infiltration",
+    "PortScan": "portscan",
+    "SSH-Patator": "ssh_patator",
+    "Web Attack \ufffd Brute Force": "web_attack_brute_force",
+    "Web Attack \ufffd Sql Injection": "web_attack_sql_injection",
+    "Web Attack \ufffd XSS": "web_attack_xss"
+  },
+  "canonicalization": "Lowercase ASCII alphanumeric tokens joined by underscore; exact raw-key lookup, no fuzzy matching. Labels remain dataset-scoped.",
+  "group_projection": "Ordered DOUBLE predictors; trim strings; nonfinite/uncastable/blank -> NULL; signed zero -> 0. Negative finite values retained.",
+  "projection_limit": "No imputation or scaling fitted. CP4 must recheck collisions after any additional transformation.",
+  "source_files": [
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Friday_DDos.csv",
+      "bytes": 77123859,
+      "mtime_ns": 1784820085586598500,
+      "sha256": "6ff1580f5f81c0ae28a26f7631721018577f5f7c5e0feac28b795fcfe7b411ee",
+      "encoding": "utf-8",
+      "physical_lines": 225746,
+      "source_file": 0,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Friday_Morning.csv",
+      "bytes": 58316725,
+      "mtime_ns": 1784820083717993700,
+      "sha256": "53a41c24d570ea83b7ac55b2e94df94e7a8216aeb80a2af0246b6bc8bb543000",
+      "encoding": "utf-8",
+      "physical_lines": 191034,
+      "source_file": 1,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Friday_PortScan.csv",
+      "bytes": 76906168,
+      "mtime_ns": 1784820089704384000,
+      "sha256": "ca1824c51bfbb7b3c72290a11be04366ba8815878c6a1cc5c44cb1cee269e99b",
+      "encoding": "utf-8",
+      "physical_lines": 286468,
+      "source_file": 2,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Monday.csv",
+      "bytes": 176927918,
+      "mtime_ns": 1784820099226334000,
+      "sha256": "852c4beb34eda186f32561fa79df7a0747e92e1a6535b01270820dd9ffe17f34",
+      "encoding": "utf-8",
+      "physical_lines": 529919,
+      "source_file": 3,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Thursday_Infiltration.csv",
+      "bytes": 83102436,
+      "mtime_ns": 1784820089183295300,
+      "sha256": "6bcda3857c2504676034e3ea57762d38393cc734cb377a726bd5cb153961b1b5",
+      "encoding": "utf-8",
+      "physical_lines": 288603,
+      "source_file": 4,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Thursday_Web.csv",
+      "bytes": 52023263,
+      "mtime_ns": 1784820094933017600,
+      "sha256": "d67066211fb1689c78406f1506f4c44704ecb92088353d5c96d96d6474eb819d",
+      "encoding": "utf-8",
+      "physical_lines": 170367,
+      "source_file": 5,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Tuesday.csv",
+      "bytes": 135078995,
+      "mtime_ns": 1784820098418573400,
+      "sha256": "52b8692ae8c7d2ed04671fe2b98335693c0a92c7ab157d8c8b534d6523080851",
+      "encoding": "utf-8",
+      "physical_lines": 445910,
+      "source_file": 6,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    },
+    {
+      "path": "C:\\Users\\nimma\\Downloads\\Datasets\\cic-ids-2017\\Wednesday.csv",
+      "bytes": 225166395,
+      "mtime_ns": 1784820096938778600,
+      "sha256": "893c27dc968bf7a8adef1689f90be55ca4a4dc3088fb63d6ff247ac56856df2a",
+      "encoding": "utf-8",
+      "physical_lines": 692704,
+      "source_file": 7,
+      "parsing": {
+        "error_events": 0,
+        "rejected_physical_line_locations": 0,
+        "error_types": [],
+        "first_100_locations": []
+      }
+    }
+  ],
+  "stress_cutoffs_ms": null
+}

@@ -1,0 +1,24 @@
+cic-ids-2017: verify Friday_DDos.csv
+cic-ids-2017: verify Friday_Morning.csv
+cic-ids-2017: verify Friday_PortScan.csv
+cic-ids-2017: verify Monday.csv
+cic-ids-2017: verify Thursday_Infiltration.csv
+cic-ids-2017: verify Thursday_Web.csv
+cic-ids-2017: verify Tuesday.csv
+cic-ids-2017: verify Wednesday.csv
+cic-ids-2017: stage Friday_DDos.csv
+cic-ids-2017: stage Friday_Morning.csv
+cic-ids-2017: stage Friday_PortScan.csv
+cic-ids-2017: stage Monday.csv
+cic-ids-2017: stage Thursday_Infiltration.csv
+cic-ids-2017: stage Thursday_Web.csv
+cic-ids-2017: stage Tuesday.csv
+cic-ids-2017: stage Wednesday.csv
+cic-ids-2017: normalize for grouping
+cic-ids-2017: exact normalized groups and memberships
+cic-ids-2017: COMPLETED 2,830,743 rows, 2,521,664 groups
+ND-UNSW-NB15-v3: verify NF-UNSW-NB15-v3.csv
+ND-UNSW-NB15-v3: stage NF-UNSW-NB15-v3.csv
+ND-UNSW-NB15-v3: normalize for grouping
+ND-UNSW-NB15-v3: exact normalized groups and memberships
+ND-UNSW-NB15-v3: COMPLETED 2,365,424 rows, 2,138,684 groups

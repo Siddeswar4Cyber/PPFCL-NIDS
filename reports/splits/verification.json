@@ -1,0 +1,206 @@
+{
+  "version": "S1",
+  "status": "PASSED",
+  "checks": [
+    {
+      "dataset": "cic-ids-2017",
+      "manifest_hash_verified": true,
+      "contract_hash_verified": true,
+      "persisted_row_and_group_checks": true,
+      "stress_boundaries_verified": true,
+      "binary_support": [
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "public_reference",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "development_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "private_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "validation",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "sealed_test",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "public_reference",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "development_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "private_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "validation",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "sealed_test",
+          "both_binary_classes": true
+        }
+      ]
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "manifest_hash_verified": true,
+      "contract_hash_verified": true,
+      "persisted_row_and_group_checks": true,
+      "stress_boundaries_verified": true,
+      "binary_support": [
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "public_reference",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "development_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "private_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "validation",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "primary_role",
+          "task": null,
+          "role": "sealed_test",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "public_reference",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "development_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "private_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "validation",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "stress_role",
+          "task": null,
+          "role": "sealed_test",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 1,
+          "role": "public_reference",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 1,
+          "role": "development_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 1,
+          "role": "private_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 1,
+          "role": "validation",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 1,
+          "role": "sealed_test",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 2,
+          "role": "public_reference",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 2,
+          "role": "development_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 2,
+          "role": "private_train",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 2,
+          "role": "validation",
+          "both_binary_classes": true
+        },
+        {
+          "protocol": "task_role",
+          "task": 2,
+          "role": "sealed_test",
+          "both_binary_classes": true
+        }
+      ]
+    }
+  ],
+  "tests": "Three split tests passed; see tests/test_splits.py",
+  "limits": "No model evaluation or host/session independence certificate"
+}
