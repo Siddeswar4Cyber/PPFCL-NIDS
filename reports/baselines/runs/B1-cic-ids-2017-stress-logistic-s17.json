@@ -8,7 +8,7 @@
   "status": "COMPLETED",
   "script_sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6",
   "metrics_script_sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763",
-  "git_commit": null,
+  "git_commit": "fa95b9e9bdaaf87bfc0524ff6f5658e207f2f24b",
   "preprocessing_version": "P2",
   "split_version": "S1",
   "train_rows": 100000,
