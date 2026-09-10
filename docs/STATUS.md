@@ -2,7 +2,7 @@
 
 Updated: 2026-09-10.
 
-Current checkpoint: CP8 IN PROGRESS, awaiting explicit PyTorch download approval. CP0 through CP7 remain complete. N1 / M0.8 protocol and four local NumPy reconstruction gates pass; all 29 tests pass. Torch/CUDA migration, optimizer checks and 24 registered fresh fits have not executed. See [CP8 preparation](../reports/CP8-preparation-status.md). Automatic approval review rejected package installation under the original no-download instruction; no alternative installation was attempted. EXP-003 remains open; EXP-004 has completed client preparation but has no model trials yet.
+Current checkpoint: CP8 IN PROGRESS; continuation authorized. The approved PyTorch 2.10.0+cu128 installation and CPU/GPU arithmetic/autograd smoke checks pass on the RTX 4050. The previous download block is resolved. N1 preparation and the prior 29 tests remain passed; Torch model migration, optimizer checks and 24 planned fits remain outstanding. CP0 through CP7 remain complete. See [runtime setup](../reports/CP8-runtime-setup.md).
 
 Architecture: A0, data pipeline, centralized comparisons and logical-client ownership implemented; model/FL/DP/CL choices PROVISIONAL. Methodology: M0.8 / N1 / S1 / CIC P2 / NF P1 / B2 / C1 / H1. DEC-021 through DEC-023 record host-support rejection, client allocation and the narrowed synthetic-client scope; DEC-024 separates migration correctness from native-optimizer stability. The research registry now contains 61 sources, including two CP8 implementation references.
 

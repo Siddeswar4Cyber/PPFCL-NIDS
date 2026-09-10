@@ -1,0 +1,131 @@
+{
+  "status": "INSTALLED_SMOKE_CHECK_PASSED",
+  "scope": "Package installation and synthetic arithmetic smoke check only",
+  "script_sha256": "5f48dff273e297b49cbcf261c332ed2fe1d8e687aa2f9e3f4f9cf7a62d7ab628",
+  "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26220-SP0",
+  "torch": "2.10.0+cu128",
+  "numpy": "2.5.3",
+  "wheel_cuda_version": "12.8",
+  "cuda_available": true,
+  "package_index": "https://download.pytorch.org/whl/cu128",
+  "requested_package": "torch==2.10.0",
+  "authorization": "User explicitly requested download and installation, then approval before project continuation",
+  "dataset_accessed": false,
+  "project_model_trained": false,
+  "migration_gate_executed": false,
+  "checkpoint_complete": false,
+  "checks": [
+    {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "forward_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status": "PASSED"
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "forward_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status": "PASSED"
+    }
+  ],
+  "packages": [
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "name": "duckdb",
+      "version": "1.5.5"
+    },
+    {
+      "name": "filelock",
+      "version": "3.32.3"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.7.0"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "narwhals",
+      "version": "2.26.0"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.3"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "pyarrow",
+      "version": "25.0.1"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.9.0"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1"
+    },
+    {
+      "name": "setuptools",
+      "version": "78.1.0"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0"
+    },
+    {
+      "name": "torch",
+      "version": "2.10.0+cu128"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    }
+  ],
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "device_total_memory_bytes": 6438780928,
+  "compute_capability": [
+    8,
+    9
+  ],
+  "gpu_driver_query": "NVIDIA GeForce RTX 4050 Laptop GPU, 581.86, 6141 MiB",
+  "torch_cpu_threads": 2,
+  "deterministic_algorithms": true,
+  "tf32_enabled": false,
+  "cuda_allocator_limit_bytes": 4294967296,
+  "cuda_peak_allocated_bytes": 67112448,
+  "cuda_peak_reserved_bytes": 69206016,
+  "elapsed_seconds": 10.91056549999999
+}

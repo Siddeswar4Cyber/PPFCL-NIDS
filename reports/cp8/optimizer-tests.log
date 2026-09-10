@@ -1,0 +1,8 @@
+test_bce_extreme_logits_remains_finite (test_neural_runtime.RuntimeTests.test_bce_extreme_logits_remains_finite) ... ok
+test_converter_uses_transpose_biases_and_logits (test_neural_runtime.RuntimeTests.test_converter_uses_transpose_biases_and_logits) ... ok
+test_native_adam_three_steps_and_partial_batch (test_neural_runtime.RuntimeTests.test_native_adam_three_steps_and_partial_batch) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.168s
+
+OK

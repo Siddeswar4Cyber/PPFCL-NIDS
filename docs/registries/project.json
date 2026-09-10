@@ -1810,7 +1810,7 @@
   ],
   "progress": {
     "checkpoint": "CP8",
-    "status": "IN_PROGRESS_AWAITING_PACKAGE_APPROVAL",
+    "status": "IN_PROGRESS",
     "architecture_version": "A0",
     "methodology_version": "M0.8",
     "completed": [
@@ -1835,19 +1835,17 @@
       "Grouped permutation and NF endpoint-overlap diagnostics",
       "H1 host feasibility with explicit support rejections",
       "Twelve verified C1 logical-client manifests",
-      "N1 four saved-model NumPy prediction-layout checks"
+      "N1 four saved-model NumPy prediction-layout checks",
+      "PyTorch 2.10.0+cu128 installed; CPU/GPU arithmetic and autograd smoke checks pass"
     ],
     "current": [
-      "N1 protocol and local prediction-layout preparation complete; CPU/CUDA migration and fresh training unexecuted"
+      "N1 preparation and approved PyTorch CUDA installation complete; continuation authorized"
     ],
     "next": [
-      "Approve pinned PyTorch package download",
-      "Verify N1 CPU/CUDA/optimizer gates and execute the fixed stability comparison",
+      "Execute N1 migration/optimizer gates and registered stability comparison",
       "Preregister comparable central/local/FL pilots on C1"
     ],
-    "blocked": [
-      "Automatic approval review rejected PyTorch installation; explicit download authorization required"
-    ],
+    "blocked": [],
     "deferred": [
       "Optional model/FL/CL candidates",
       "HE/SMPC/TEE implementation",
@@ -33220,5 +33218,14 @@
     "numpy_prediction_gates_passed": 4,
     "torch_gates_executed": 0,
     "new_model_fits": 0
+  },
+  "runtime_installation": {
+    "status": "INSTALLED_SMOKE_CHECK_PASSED",
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runtime-installation.json",
+    "sha256": "5b01f6b99f5d8980a7ca27cb985f9ac7455b267422a6c64a56e50103a68b5455",
+    "lock_path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\requirements-neural-lock.txt",
+    "lock_sha256": "579a744bb4c001d8ce8063f84c4c50c94146756a36a30112d50ae7ed7365f130",
+    "baseline_dependency_drift": false,
+    "project_continuation": "AUTHORIZED_BY_USER_CONTINUE"
   }
 }

@@ -2,7 +2,7 @@
 
 Privacy-Preserving Federated Continual Learning Network Intrusion Detection System for Financial Networks.
 
-Current checkpoint: CP8 IN PROGRESS. The N1 migration/stability protocol and four saved-model NumPy reconstruction checks are complete; all 29 tests pass. PyTorch installation awaits explicit download approval after automatic review rejected it. Torch/CUDA migration and the 24 planned stability fits remain unexecuted. See [CP8 preparation](reports/CP8-preparation-status.md), [N1 protocol](docs/CP8-neural-migration-protocol-N1.md), and [project status](docs/STATUS.md). CP7's twelve five-client manifests remain verified. Model/FL/privacy/CL choices remain provisional, and final-test scores remain sealed.
+Current checkpoint: CP8 IN PROGRESS. PyTorch 2.10.0+cu128 is installed and CPU/GPU smoke checks pass on the RTX 4050. Setup is saved; the user authorized continuation. The four prior NumPy reconstruction checks and 29 tests passed; Torch model migration, optimizer checks and 24 planned stability fits remain outstanding. See [runtime setup](reports/CP8-runtime-setup.md), [N1 protocol](docs/CP8-neural-migration-protocol-N1.md), and [project status](docs/STATUS.md).
 
 Before any model fit, a float32 gate found CIC precision collisions. The P2 amendment excludes 119,119 associated rows for every CIC candidate and refits the transforms; both precision gates then pass. NF candidates retain P1. This population change must accompany reported scores; validation results do not establish deployment performance.
 
