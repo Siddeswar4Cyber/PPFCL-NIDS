@@ -17,3 +17,7 @@ docs/CP9-federated-pilot-F1.md -text
 reports/cp9/**/*.json -text
 reports/cp9/*.log -text
 tests/test_federated_f1.py -text
+docs/CP10-federated-comparison-F2.md -text
+reports/cp10/**/*.json -text
+reports/cp10/*.log -text
+tests/test_federated_f2.py -text
