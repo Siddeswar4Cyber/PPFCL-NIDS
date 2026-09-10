@@ -1,0 +1,212 @@
+{
+  "status": "RECOVERY_REGISTERED",
+  "failed_attempt": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-central-all-s29-c1-attempt1-failed.json",
+    "sha256": "ce45bc7d2519dc05f1eec634f4a52c0394b8470cb859a7da2b39b975edff7340"
+  },
+  "failed_log": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\logs\\F2-cic-ids-2017-primary-central-all-s29-c1-attempt1-failed.log",
+    "sha256": "8ef2367a2612547b430c996ba1b88d8f865147544f1287f26e22d7d980153c88"
+  },
+  "partial_models": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\F2\\F2-cic-ids-2017-primary-central-all-s29-c1-attempt1-failed\\initial.pt",
+      "sha256": "32571042dca494ff926b9926155efaa827a66292eed7a17ebd89b39a55d36568"
+    }
+  ],
+  "original_paths": {
+    "report": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-central-all-s29-c1.json",
+    "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\logs\\F2-cic-ids-2017-primary-central-all-s29-c1.log",
+    "models": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\F2\\F2-cic-ids-2017-primary-central-all-s29-c1"
+  },
+  "logical_run_id": "F2-cic-ids-2017-primary-central-all-s29-c1",
+  "retry_configuration": {
+    "dataset": "cic-ids-2017",
+    "protocol": "primary",
+    "method": "central",
+    "scenario": "all",
+    "seed": 29,
+    "candidate": 1
+  },
+  "charged_supervised_seconds": 2387.0306482999986,
+  "completed_before_recovery": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedadam-dirichlet_a0p1-s17-c2.json",
+      "sha256": "150729c5e651e1b30dffdaa44c75348c7e32b1b2a5fc623d38dd83dad4477b08"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedadam-dirichlet_a1-s17-c0.json",
+      "sha256": "56fca4d8e378c50e7185de871168eac28675134b39c4e1100487e6f3a5286766"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedadam-dirichlet_a1-s17-c1.json",
+      "sha256": "17da1ea2208aa178032360598e13a48fc2673379c59a138e075f1807835f0cc4"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedadam-dirichlet_a1-s17-c2.json",
+      "sha256": "2be0ad848e6ef49d7e15a7df028917d4e4cc5227319b70c9c5a607113b012f31"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedadam-iid-s17-c2.json",
+      "sha256": "2ed3a7742a966f8bf4a476765d5ea5d0c74bf3cad3b90098d90e2cc0d338d9de"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedavg-dirichlet_a1-s17-c0.json",
+      "sha256": "bf9e5129e9d31c7682e9fec09713e747657484f7d924c999e10e4ca38ccc8023"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedavg-dirichlet_a1-s17-c2.json",
+      "sha256": "53a53812b9738e4cec48dfea6408f3c07527d3da92d5f79ed4b286716be69711"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedprox-dirichlet_a0p1-s17-c0.json",
+      "sha256": "6eb1d02d4305fdae4701a9f29861729b541785984ef63459516d1c2978d36350"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedprox-dirichlet_a1-s17-c0.json",
+      "sha256": "a14f47b9f0b7ed5f5a589ad83c05c78a89f9753e00068d9ce4dab94f1e11df8b"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedprox-dirichlet_a1-s17-c1.json",
+      "sha256": "be9e4740406a7ed51c73430676b44355b72035780a0e39b4568ab44440858c82"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedprox-dirichlet_a1-s17-c2.json",
+      "sha256": "d67325997b36f7917a1631f1ee75fde5e64378bb352f1d463a2f68cf7f594f0f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-primary-fedprox-iid-s17-c0.json",
+      "sha256": "3d9fa08ee5ff0f87308082413878490f45d05e78eab8564f4b19a67c4235e0fc"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-stress-fedadam-dirichlet_a1-s17-c0.json",
+      "sha256": "d0b55c4605e898482eca690c8288f4553bf489d612512f9b14a3eb7dd955c5b7"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-stress-fedadam-dirichlet_a1-s17-c1.json",
+      "sha256": "fa742562f3b7cd56d6fdf0cb01295d0cc1ff306bac6630a2340527c6f53ed466"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-stress-fedadam-dirichlet_a1-s17-c2.json",
+      "sha256": "a21243207886e683290abe14b1c2536e54ccf019ee3d6b68a3129e0fa795547f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-stress-fedavg-dirichlet_a1-s17-c0.json",
+      "sha256": "15208d923f86c85d8d792520c66ec66e41470506ee74e9e2ab63fc283d2c4541"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-stress-fedavg-dirichlet_a1-s17-c2.json",
+      "sha256": "0b7b20e8ae7d25e377e1bb6c72e66efd17bf191e365e0f00a2a0c554251c8b3f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-stress-fedprox-dirichlet_a1-s17-c0.json",
+      "sha256": "8b5f3610eee23fb981966a9d93fa8e5c509ba289858eed1b15b70c7ebf7f69c4"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-stress-fedprox-dirichlet_a1-s17-c1.json",
+      "sha256": "dffb13991713259353e1b3bd47173f77f9c4b47c5574c66d106af29a73f74f0e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-cic-ids-2017-stress-fedprox-dirichlet_a1-s17-c2.json",
+      "sha256": "05d1a1c2fd587ae2cffe0b8260fe0c715e2b525c6f49de9e11b868d0894805a1"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-primary-fedadam-dirichlet_a1-s17-c0.json",
+      "sha256": "c0d9db7c24a6701de9e1d8279c4e8832c8aa4ba828687f5f1d635710165b856e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-primary-fedadam-dirichlet_a1-s17-c1.json",
+      "sha256": "445cdb1a4b06d136568f076cf59dc4462e98c9433d20295fa02534fc0a61a6c6"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-primary-fedadam-dirichlet_a1-s17-c2.json",
+      "sha256": "35ca532e6647ac303e342da1913e3eceda84e81d74452bb0129eb09b01cfcb2e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-primary-fedavg-dirichlet_a1-s17-c0.json",
+      "sha256": "3d764cd2ccac3fc40ad8099c2824b905b0ccde21a8eddc7632270e8ebad37bc1"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-primary-fedavg-dirichlet_a1-s17-c2.json",
+      "sha256": "c55fb486cfa201dd47a6c2bed2431ab6e20425449659966bb16c57866827039d"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-primary-fedprox-dirichlet_a1-s17-c0.json",
+      "sha256": "2ae7ff16f92c3524fe341c42b9d3ff655f5b94aeaa320cc4a73c6f9acb0edbde"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-primary-fedprox-dirichlet_a1-s17-c1.json",
+      "sha256": "02d330da4bc8efe1abbe712934c1d0f1ca388fc624e2991f4a65e87c4b44b28e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-primary-fedprox-dirichlet_a1-s17-c2.json",
+      "sha256": "d43b49806dae9fc68e18a1387ff10c7916d3513adc0fc0873c6515a88f316373"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-stress-fedadam-dirichlet_a1-s17-c0.json",
+      "sha256": "2ebdd7a3c4b2537733eb7607f43a046a086105ea18a8979c52b66f899a7e7ba0"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-stress-fedadam-dirichlet_a1-s17-c1.json",
+      "sha256": "a08c4c615e17aec70be9e8132f78a9e73774553391d6bac35f08136c600fcd09"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-stress-fedadam-dirichlet_a1-s17-c2.json",
+      "sha256": "bc2ef3732495e70d45e48261c00baa6f3a67865c0b0a9db555afd29bc092db51"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-stress-fedavg-dirichlet_a1-s17-c0.json",
+      "sha256": "33251b4d705724516cc2a5de54ba17d8371b3043ef887bea08b8040dfb57f990"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-stress-fedavg-dirichlet_a1-s17-c2.json",
+      "sha256": "05de38c06a8a61f266083d13ad26e5bde7e7d7ebef40ccd7650a93e35d606d71"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-stress-fedprox-dirichlet_a1-s17-c0.json",
+      "sha256": "b603387130fde70a1e4ad2fb22ad5da7db18ebd841031b12a43646dbb1f9cac8"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-stress-fedprox-dirichlet_a1-s17-c1.json",
+      "sha256": "4e45c02f6256e85c96665dceee19f7a071589d671d8a010355e3be6b929ea34a"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\runs\\F2-ND-UNSW-NB15-v3-stress-fedprox-dirichlet_a1-s17-c2.json",
+      "sha256": "36591c4f965043c17fa5d63f1d4696f4b5f5aed0f2e488b81d5fdf8b54ac3312"
+    }
+  ],
+  "selection": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\tuning-selection.json",
+    "sha256": "b106d53b0109e0ae88745539510f1a178c3dea8513cb612e9d1203877f1e0232"
+  },
+  "recovery_protocol": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\docs\\CP10-recovery-1.md",
+    "sha256": "e53fb966f2ea0a9740cf1aa3ee219671b0a153aac624d4944f653019c84daa86"
+  },
+  "power_observation": {
+    "observed_utc": "2026-09-10 10:01 UTC approximate",
+    "ACLineStatus": 1,
+    "BatteryLifePercent": 10,
+    "BatteryFlag": 10
+  },
+  "event_observations_local": [
+    {
+      "time": "2026-09-10 14:49:51",
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "id": 524,
+      "message": "Critical Battery Trigger Met"
+    },
+    {
+      "time": "2026-09-10 14:49:53",
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "id": 42,
+      "message": "The system is entering sleep."
+    },
+    {
+      "time": "2026-09-10 15:29:19",
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "id": 105,
+      "message": "Power source change."
+    }
+  ]
+}

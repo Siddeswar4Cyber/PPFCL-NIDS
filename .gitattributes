@@ -21,3 +21,5 @@ docs/CP10-federated-comparison-F2.md -text
 reports/cp10/**/*.json -text
 reports/cp10/*.log -text
 tests/test_federated_f2.py -text
+tests/test_cp10_verification.py -text
+docs/CP10-recovery-1.md -text

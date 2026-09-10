@@ -1,0 +1,105 @@
+{
+  "run_id": "F2-cic-ids-2017-primary-central-all-s29-c1",
+  "version": "F2",
+  "experiment_id": "EXP-004",
+  "architecture_version": "A0",
+  "dataset": "cic-ids-2017",
+  "protocol": "primary",
+  "method": "central",
+  "scenario": "all",
+  "seed": 29,
+  "candidate": 1,
+  "status": "FAILED",
+  "script_sha256": "a99cbbc204b8888403884fdf070ceb7407d6ae7e701e9f06da7d6ac2410afc87",
+  "git_commit": "5245063805333059894f469c8ee91b0900d0f994",
+  "source_bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\drive_cp10.py",
+      "sha256": "b9107a8cd10a775cd1d21f32a1b5d8e30f87b3e2a2749533a95ab56d41969615"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\federated_f2.py",
+      "sha256": "63f9532694707799cf85e73e6d2cfb1df85b897d1e451d700c99a5dd387edad4"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\federated_f1.py",
+      "sha256": "e27a8995adc13475ad7713fbbbf0a3900045deee8ff19ac55adf75f6a1579492"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\run_cp9.py",
+      "sha256": "e428ce0befc795fe4c9d289a5d74bc264928a6fc43a172bbda43df92f61dc25d"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\neural_runtime.py",
+      "sha256": "53ac113518846ab3ba2e4da958b68e075ea989041adb7d4d65e60edef5419dad"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\run_cp8.py",
+      "sha256": "016c413e935e79f30f3b051191cff7b463728f124e0af07714643d222d33fe3f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\run_baseline_pilot.py",
+      "sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\cp6_features.py",
+      "sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\baseline_metrics.py",
+      "sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\build_clients_c1.py",
+      "sha256": "cdb028e2185b566ff9b29e7e1757f7c56c411e18bc62cd0fec6d449e28a52f84"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\tests\\test_federated_f2.py",
+      "sha256": "7886a0896f62463429df2099a215840f85d17e3835e24df16a6bab5a6f50c34f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\tests\\test_federated_f1.py",
+      "sha256": "ce8ec0293b6057811dd42e705bcbf36c4a7017ff56b92279270725e1fe6ccbd9"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\docs\\CP10-federated-comparison-F2.md",
+      "sha256": "823aa0eb7ab3231f3dab970755f1c79726907f0498015e88f221f2956562b901"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\verification.json",
+      "sha256": "8d1bd9713eace126178a0df4f8696aab66516c83be3598f724105f0a20524034"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\verification.json",
+      "sha256": "7339859566207d16579b7c589d80de20251967c0d314b8c8707da1e550dcc8aa"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\selection.json",
+      "sha256": "c7344d9d891f6e69629f4e55fa4b84c682376e2ea51c970b09050c476e9e6566"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\verification.json",
+      "sha256": "2b428b4a463a810ed16834349b484bd553f78403c01a8c381a4561142f6175e5"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\requirements-neural-lock.txt",
+      "sha256": "579a744bb4c001d8ce8063f84c4c50c94146756a36a30112d50ae7ed7365f130"
+    }
+  ],
+  "privacy_configuration": "Non-private single-process synthetic-client simulation; no DP or secure aggregation",
+  "cl_configuration": "No CL",
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.5.3",
+    "python": "3.13.13"
+  },
+  "work": [],
+  "exit_code": 15,
+  "sampled_peak_process_rss_bytes": 3160498176,
+  "supervised_wall_seconds": 2387.0306482999986,
+  "rss_scope": "Worker and descendants sampled every 0.5 seconds",
+  "resource_limit_stop": "Worker-tree RSS or wall-time cap exceeded",
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp10\\logs\\F2-cic-ids-2017-primary-central-all-s29-c1.log"
+}
