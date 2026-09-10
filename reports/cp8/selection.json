@@ -1,0 +1,211 @@
+{
+  "version": "N1",
+  "status": "FROZEN",
+  "rule": "N1: SD<=.01; mean macro-F1/AP loss<=.002 vs B2; rank F1/AP/lower LR",
+  "historical_baseline": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\seed-summary.json",
+    "sha256": "117fb91080df020507f5b8fa9eb0a782c1dfc8174d3a1fa037b2b8d6f0d3caeb"
+  },
+  "scopes": [
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "representation": "categorical_augmented",
+      "historical_b2_mlp_macro_f1_mean": 0.9509157387993227,
+      "historical_b2_mlp_macro_f1_sample_sd": 0.022139682588837757,
+      "historical_b2_mlp_ap_mean": 0.9915277189931673,
+      "candidates": [
+        {
+          "candidate": "lr001",
+          "learning_rate": 0.001,
+          "run_ids": [
+            "N1-train-cic-ids-2017-primary-lr001-s17",
+            "N1-train-cic-ids-2017-primary-lr001-s29",
+            "N1-train-cic-ids-2017-primary-lr001-s43"
+          ],
+          "macro_f1_by_seed": {
+            "17": 0.9712111196340398,
+            "29": 0.9615929252660855,
+            "43": 0.9714983228525541
+          },
+          "macro_f1_mean": 0.9681007892508932,
+          "macro_f1_sample_sd": 0.005637804684072373,
+          "average_precision_mean": 0.9933157315022076,
+          "fit_seconds_total": 66.90668140000014,
+          "eligible": true
+        },
+        {
+          "candidate": "lr0003",
+          "learning_rate": 0.0003,
+          "run_ids": [
+            "N1-train-cic-ids-2017-primary-lr0003-s17",
+            "N1-train-cic-ids-2017-primary-lr0003-s29",
+            "N1-train-cic-ids-2017-primary-lr0003-s43"
+          ],
+          "macro_f1_by_seed": {
+            "17": 0.9574818564332157,
+            "29": 0.9655409779744694,
+            "43": 0.9645027607553642
+          },
+          "macro_f1_mean": 0.9625085317210166,
+          "macro_f1_sample_sd": 0.004384070264634395,
+          "average_precision_mean": 0.9911191002105361,
+          "fit_seconds_total": 64.4221313999999,
+          "eligible": true
+        }
+      ],
+      "selected_candidate": "lr001",
+      "status": "PILOT_ELIGIBLE"
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "representation": "categorical_augmented",
+      "historical_b2_mlp_macro_f1_mean": 0.979035839968831,
+      "historical_b2_mlp_macro_f1_sample_sd": 0.010094953949955743,
+      "historical_b2_mlp_ap_mean": 0.9967418097609236,
+      "candidates": [
+        {
+          "candidate": "lr001",
+          "learning_rate": 0.001,
+          "run_ids": [
+            "N1-train-cic-ids-2017-stress-lr001-s17",
+            "N1-train-cic-ids-2017-stress-lr001-s29",
+            "N1-train-cic-ids-2017-stress-lr001-s43"
+          ],
+          "macro_f1_by_seed": {
+            "17": 0.9848843723426316,
+            "29": 0.9856348539505877,
+            "43": 0.9849521527733478
+          },
+          "macro_f1_mean": 0.9851571263555222,
+          "macro_f1_sample_sd": 0.00041510997098624116,
+          "average_precision_mean": 0.9957221174525821,
+          "fit_seconds_total": 63.34076630000004,
+          "eligible": true
+        },
+        {
+          "candidate": "lr0003",
+          "learning_rate": 0.0003,
+          "run_ids": [
+            "N1-train-cic-ids-2017-stress-lr0003-s17",
+            "N1-train-cic-ids-2017-stress-lr0003-s29",
+            "N1-train-cic-ids-2017-stress-lr0003-s43"
+          ],
+          "macro_f1_by_seed": {
+            "17": 0.9855597679848032,
+            "29": 0.9852251683024582,
+            "43": 0.9854897114545929
+          },
+          "macro_f1_mean": 0.9854248825806181,
+          "macro_f1_sample_sd": 0.00017646904553480093,
+          "average_precision_mean": 0.9967532433138087,
+          "fit_seconds_total": 66.50659619999988,
+          "eligible": true
+        }
+      ],
+      "selected_candidate": "lr0003",
+      "status": "PILOT_ELIGIBLE"
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "representation": "full",
+      "historical_b2_mlp_macro_f1_mean": 0.9990631567094065,
+      "historical_b2_mlp_macro_f1_sample_sd": 3.197292531840924e-05,
+      "historical_b2_mlp_ap_mean": 0.9993582528271104,
+      "candidates": [
+        {
+          "candidate": "lr001",
+          "learning_rate": 0.001,
+          "run_ids": [
+            "N1-train-ND-UNSW-NB15-v3-primary-lr001-s17",
+            "N1-train-ND-UNSW-NB15-v3-primary-lr001-s29",
+            "N1-train-ND-UNSW-NB15-v3-primary-lr001-s43"
+          ],
+          "macro_f1_by_seed": {
+            "17": 0.9990307948556392,
+            "29": 0.9991480652319166,
+            "43": 0.9988938343913427
+          },
+          "macro_f1_mean": 0.9990242314929662,
+          "macro_f1_sample_sd": 0.00012724243935065594,
+          "average_precision_mean": 0.9997024325489939,
+          "fit_seconds_total": 64.24121670000011,
+          "eligible": true
+        },
+        {
+          "candidate": "lr0003",
+          "learning_rate": 0.0003,
+          "run_ids": [
+            "N1-train-ND-UNSW-NB15-v3-primary-lr0003-s17",
+            "N1-train-ND-UNSW-NB15-v3-primary-lr0003-s29",
+            "N1-train-ND-UNSW-NB15-v3-primary-lr0003-s43"
+          ],
+          "macro_f1_by_seed": {
+            "17": 0.9988923580980987,
+            "29": 0.9990204991025677,
+            "43": 0.9988923580980987
+          },
+          "macro_f1_mean": 0.9989350717662551,
+          "macro_f1_sample_sd": 7.39822434244101e-05,
+          "average_precision_mean": 0.9992056703647284,
+          "fit_seconds_total": 65.08635049999998,
+          "eligible": true
+        }
+      ],
+      "selected_candidate": "lr001",
+      "status": "PILOT_ELIGIBLE"
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "representation": "full",
+      "historical_b2_mlp_macro_f1_mean": 0.9992482381627719,
+      "historical_b2_mlp_macro_f1_sample_sd": 6.207603104179902e-05,
+      "historical_b2_mlp_ap_mean": 0.9988287763922611,
+      "candidates": [
+        {
+          "candidate": "lr001",
+          "learning_rate": 0.001,
+          "run_ids": [
+            "N1-train-ND-UNSW-NB15-v3-stress-lr001-s17",
+            "N1-train-ND-UNSW-NB15-v3-stress-lr001-s29",
+            "N1-train-ND-UNSW-NB15-v3-stress-lr001-s43"
+          ],
+          "macro_f1_by_seed": {
+            "17": 0.9992482423313849,
+            "29": 0.9978829934837037,
+            "43": 0.9992840819443434
+          },
+          "macro_f1_mean": 0.9988051059198106,
+          "macro_f1_sample_sd": 0.0007987738278646756,
+          "average_precision_mean": 0.9994267697671292,
+          "fit_seconds_total": 63.46427689999996,
+          "eligible": true
+        },
+        {
+          "candidate": "lr0003",
+          "learning_rate": 0.0003,
+          "run_ids": [
+            "N1-train-ND-UNSW-NB15-v3-stress-lr0003-s17",
+            "N1-train-ND-UNSW-NB15-v3-stress-lr0003-s29",
+            "N1-train-ND-UNSW-NB15-v3-stress-lr0003-s43"
+          ],
+          "macro_f1_by_seed": {
+            "17": 0.9991048421824715,
+            "29": 0.9992840819443434,
+            "43": 0.9991765505979866
+          },
+          "macro_f1_mean": 0.9991884915749338,
+          "macro_f1_sample_sd": 9.021454016293241e-05,
+          "average_precision_mean": 0.9987760696668945,
+          "fit_seconds_total": 64.75881440000012,
+          "eligible": true
+        }
+      ],
+      "selected_candidate": "lr0003",
+      "status": "PILOT_ELIGIBLE"
+    }
+  ]
+}

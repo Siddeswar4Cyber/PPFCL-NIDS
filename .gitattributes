@@ -12,3 +12,4 @@ docs/CP8-neural-migration-protocol-N1.md -text
 reports/cp8-tests.log -text
 reports/cp8/*.log -text
 requirements-neural-lock.txt -text
+tests/test_neural_runtime.py -text

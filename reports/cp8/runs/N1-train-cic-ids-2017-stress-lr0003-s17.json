@@ -1,0 +1,363 @@
+{
+  "run_id": "N1-train-cic-ids-2017-stress-lr0003-s17",
+  "version": "N1",
+  "experiment_id": "EXP-003",
+  "architecture_version": "A0",
+  "stage": "train",
+  "dataset": "cic-ids-2017",
+  "protocol": "stress",
+  "candidate": "lr0003",
+  "seed": 17,
+  "status": "COMPLETED",
+  "git_commit": "de412e91624236eebb0956e2e535de7358bb5bc5",
+  "script_sha256": "016c413e935e79f30f3b051191cff7b463728f124e0af07714643d222d33fe3f",
+  "runtime_script_sha256": "53ac113518846ab3ba2e4da958b68e075ea989041adb7d4d65e60edef5419dad",
+  "source_bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\neural_migration.py",
+      "sha256": "ef849b89397d56e5efecc2de262224c52754775f9cd5e2684e4e6e2a47847e15"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\baseline_metrics.py",
+      "sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\cp6_features.py",
+      "sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\run_baseline_pilot.py",
+      "sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\tests\\test_neural_runtime.py",
+      "sha256": "f80ca3227c74ad1be57be45f32bf5bef7d1549e29b20e0bec084e81cbd7f2e55"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\docs\\CP8-neural-migration-protocol-N1.md",
+      "sha256": "ed3bae8edd164026a024a6ab7ac3eeb2a007acdedbcc44898b429ebdd9d3d431"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runtime-installation.json",
+      "sha256": "5b01f6b99f5d8980a7ca27cb985f9ac7455b267422a6c64a56e50103a68b5455"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\requirements-neural-lock.txt",
+      "sha256": "579a744bb4c001d8ce8063f84c4c50c94146756a36a30112d50ae7ed7365f130"
+    }
+  ],
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.5.3",
+    "python": "3.13.13"
+  },
+  "client_configuration": "Centralized development; C1 unused and unchanged",
+  "privacy_configuration": "Non-private",
+  "cl_configuration": "No CL",
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "representation": "categorical_augmented",
+  "bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\selection.json",
+      "sha256": "630f6d5d851043bcde425f0f056ad0a5b8b579f074b415854d1a76732aad7067"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-mlp-categorical_augmented-s17.json",
+      "sha256": "cc93cd891f8c45f0cc7d211de69815eaa9d85b72737cf69ea1644d2c42462693"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\cic-ids-2017-stress.json",
+      "sha256": "9550c281a7264bd91d930efde74b1f80db298c4fef3917fe371ec20dab5ad18a"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\transform.json",
+      "sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s17\\model.joblib",
+      "sha256": "13a4b61afdf5271f7d5830d5591c67db56018753b816886a5bdaa0b99853d537",
+      "bytes": 415578
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s17\\validation-probabilities.npy",
+      "sha256": "def02227326af05d614053a6550408283dcc52e830f6318b980898e7ca8e5811",
+      "rows": 391594
+    }
+  ],
+  "migration_gate": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-migration-cic-ids-2017-stress-none-s17.json",
+    "sha256": "1dc996e4f645baefa9216bf5951572de78460bd78c6af1e78fa4b5e0712d0fc9"
+  },
+  "optimizer_tests": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\optimizer-tests.log",
+    "sha256": "147365fd7aeb19a36c107f0a24ce2660d14578d9f60ffd5c44df72d153e39ecf"
+  },
+  "preprocessing_version": "P2",
+  "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+  "fit_group_set_sha256": "67bf1227ee11c2ef13db4e401658a6932e442af33a6a93577d77bc80b82c11f6",
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\train.parquet",
+      "sha256": "fa2f035d2937b17dc206953ed0263e2cb573bebd84a58cf30f8d8163eb05708a",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 88991
+        },
+        {
+          "binary_label": 1,
+          "rows": 11009
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\validation.parquet",
+      "sha256": "c1539e7f413479e807494d67fca153ca42dab1c5bc690d2bfe52e528d1d2aff2",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 345802
+        },
+        {
+          "binary_label": 1,
+          "rows": 45792
+        }
+      ]
+    }
+  },
+  "train_rows": 100000,
+  "validation_rows": 391594,
+  "input_features": 172,
+  "input_dtype": "float32",
+  "initial_weights": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-train-cic-ids-2017-stress-lr0003-s17\\initial-weights.pt",
+    "sha256": "61a0e018870472136edae719d694bf5fb92ac5ab853845f78f5ba40c5587dbcb"
+  },
+  "hyperparameters": {
+    "lr": 0.0003,
+    "epochs": 20,
+    "batch_size": 256,
+    "hidden_sizes": [
+      64,
+      32
+    ],
+    "alpha_weight_only_per_actual_batch": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "foreach": false,
+    "fused": false,
+    "early_stopping": false
+  },
+  "loss_curve": [
+    0.17349187096595767,
+    0.042563162636160855,
+    0.03060848037004471,
+    0.02578377696037293,
+    0.02287445179641247,
+    0.02090870296061039,
+    0.019547127169370654,
+    0.018474455208182337,
+    0.017632070603966713,
+    0.016918821898698807,
+    0.016298668282590807,
+    0.015838703794777396,
+    0.015276249322295191,
+    0.014963584798872472,
+    0.014698391766548158,
+    0.014303264532089235,
+    0.014133510535359384,
+    0.013908575292229653,
+    0.013622127254605295,
+    0.013485373755842448
+  ],
+  "fit_seconds": 21.92760069999997,
+  "validation_prediction_seconds": 0.10890930000005028,
+  "metrics_05": {
+    "threshold": 0.5,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.9940346379158006,
+    "attack_precision": 0.9743483386455922,
+    "attack_recall": 0.9746462264150944,
+    "attack_f1": 0.9744972597654971,
+    "binary_macro_f1": 0.9855597679848032,
+    "benign_fpr": 0.0033978982192121505,
+    "average_precision": 0.9965816575494216,
+    "roc_auc": 0.9994553908139493,
+    "confusion": {
+      "tn": 344627,
+      "fp": 1175,
+      "fn": 1161,
+      "tp": 44631
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.9460929772502473
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9884581474257929
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.9092395748160261
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.9454545454545454
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.9983666802776644
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.3333333333333333
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 0.9950738916256158
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.00964630225080386
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.0
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.040983606557377046
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "metrics_fpr01": {
+    "threshold": 0.1289900988340378,
+    "rows": 391594,
+    "attack_prevalence": 0.11693744030807418,
+    "accuracy": 0.9897087289386456,
+    "attack_precision": 0.9289617486338798,
+    "attack_recall": 0.9875087351502446,
+    "attack_f1": 0.9573409548004658,
+    "binary_macro_f1": 0.9757447516314857,
+    "benign_fpr": 0.009999942163434566,
+    "average_precision": 0.9965816575494216,
+    "roc_auc": 0.9994553908139493,
+    "confusion": {
+      "tn": 342344,
+      "fp": 3458,
+      "fn": 572,
+      "tp": 45220
+    },
+    "attack_family_recall": {
+      "benign": {
+        "support": 345802,
+        "binary_attack_recall": null
+      },
+      "bot": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ddos": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "dos_goldeneye": {
+        "support": 2022,
+        "binary_attack_recall": 0.9990108803165183
+      },
+      "dos_hulk": {
+        "support": 37429,
+        "binary_attack_recall": 0.9892863822169975
+      },
+      "dos_slowhttptest": {
+        "support": 1223,
+        "binary_attack_recall": 0.9476696647587899
+      },
+      "dos_slowloris": {
+        "support": 1210,
+        "binary_attack_recall": 0.9710743801652892
+      },
+      "ftp_patator": {
+        "support": 2449,
+        "binary_attack_recall": 0.9987750102082482
+      },
+      "heartbleed": {
+        "support": 1,
+        "binary_attack_recall": 0.0
+      },
+      "infiltration": {
+        "support": 6,
+        "binary_attack_recall": 0.3333333333333333
+      },
+      "portscan": {
+        "support": 0,
+        "binary_attack_recall": null
+      },
+      "ssh_patator": {
+        "support": 1015,
+        "binary_attack_recall": 1.0
+      },
+      "web_attack_brute_force": {
+        "support": 311,
+        "binary_attack_recall": 0.819935691318328
+      },
+      "web_attack_sql_injection": {
+        "support": 4,
+        "binary_attack_recall": 0.25
+      },
+      "web_attack_xss": {
+        "support": 122,
+        "binary_attack_recall": 0.9754098360655737
+      }
+    },
+    "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+  },
+  "model_artifact": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-train-cic-ids-2017-stress-lr0003-s17\\model.pt",
+    "sha256": "f59544126e78cc78a3bad52db200f8f2c505354175bbccee1a078a3ae28365dc"
+  },
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-train-cic-ids-2017-stress-lr0003-s17\\validation-probabilities.npy",
+    "sha256": "5c0f445ee7d27d9c2cf450f3e8329d277065cf1d325072caaab99d1a2053205b"
+  },
+  "model_roundtrip_max_abs_delta": 0.0,
+  "parameter_count": 13185,
+  "worker_seconds": 25.794579999999996,
+  "cuda_peak_allocated_bytes": 147236352,
+  "cuda_peak_reserved_bytes": 163577856,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 2325815296,
+  "supervised_wall_seconds": 29.398667899999964,
+  "rss_scope": "Worker and descendants sampled every 0.5 seconds",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\logs\\N1-train-cic-ids-2017-stress-lr0003-s17.log"
+}

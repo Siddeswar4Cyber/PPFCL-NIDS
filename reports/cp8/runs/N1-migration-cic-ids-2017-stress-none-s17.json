@@ -1,0 +1,127 @@
+{
+  "run_id": "N1-migration-cic-ids-2017-stress-none-s17",
+  "version": "N1",
+  "experiment_id": "EXP-003",
+  "architecture_version": "A0",
+  "stage": "migration",
+  "dataset": "cic-ids-2017",
+  "protocol": "stress",
+  "candidate": "none",
+  "seed": 17,
+  "status": "COMPLETED",
+  "git_commit": "de412e91624236eebb0956e2e535de7358bb5bc5",
+  "script_sha256": "016c413e935e79f30f3b051191cff7b463728f124e0af07714643d222d33fe3f",
+  "runtime_script_sha256": "53ac113518846ab3ba2e4da958b68e075ea989041adb7d4d65e60edef5419dad",
+  "source_bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\neural_migration.py",
+      "sha256": "ef849b89397d56e5efecc2de262224c52754775f9cd5e2684e4e6e2a47847e15"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\baseline_metrics.py",
+      "sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\cp6_features.py",
+      "sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\run_baseline_pilot.py",
+      "sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\tests\\test_neural_runtime.py",
+      "sha256": "f80ca3227c74ad1be57be45f32bf5bef7d1549e29b20e0bec084e81cbd7f2e55"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\docs\\CP8-neural-migration-protocol-N1.md",
+      "sha256": "ed3bae8edd164026a024a6ab7ac3eeb2a007acdedbcc44898b429ebdd9d3d431"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runtime-installation.json",
+      "sha256": "5b01f6b99f5d8980a7ca27cb985f9ac7455b267422a6c64a56e50103a68b5455"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\requirements-neural-lock.txt",
+      "sha256": "579a744bb4c001d8ce8063f84c4c50c94146756a36a30112d50ae7ed7365f130"
+    }
+  ],
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.5.3",
+    "python": "3.13.13"
+  },
+  "client_configuration": "Centralized development; C1 unused and unchanged",
+  "privacy_configuration": "Non-private",
+  "cl_configuration": "No CL",
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "representation": "categorical_augmented",
+  "bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\selection.json",
+      "sha256": "630f6d5d851043bcde425f0f056ad0a5b8b579f074b415854d1a76732aad7067"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-mlp-categorical_augmented-s17.json",
+      "sha256": "cc93cd891f8c45f0cc7d211de69815eaa9d85b72737cf69ea1644d2c42462693"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\cic-ids-2017-stress.json",
+      "sha256": "9550c281a7264bd91d930efde74b1f80db298c4fef3917fe371ec20dab5ad18a"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\transform.json",
+      "sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s17\\model.joblib",
+      "sha256": "13a4b61afdf5271f7d5830d5591c67db56018753b816886a5bdaa0b99853d537",
+      "bytes": 415578
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s17\\validation-probabilities.npy",
+      "sha256": "def02227326af05d614053a6550408283dcc52e830f6318b980898e7ca8e5811",
+      "rows": 391594
+    }
+  ],
+  "preprocessing_version": "P2",
+  "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+  "rows": 391594,
+  "input_features": 172,
+  "cpu_max_abs_delta": 3.885780586188048e-16,
+  "cpu_decision_disagreements": 0,
+  "roundtrip_max_abs_delta": 0.0,
+  "cuda_max_abs_delta": 1.0904486066332097e-06,
+  "cuda_decision_disagreements": 0,
+  "cuda_disagreement_rate": 0.0,
+  "changed_reference_distances_to_threshold": [],
+  "changed_cuda_distances_to_threshold": [],
+  "migrated_model": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-migration-cic-ids-2017-stress-none-s17\\migrated-cpu.pt",
+    "sha256": "addea6c77ada3f997f35578f2208e533f5db2222432b7124b3691887b5368d18"
+  },
+  "gates": {
+    "cpu": true,
+    "roundtrip": true,
+    "cuda_probability": true,
+    "cuda_decisions": true
+  },
+  "cpu_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-migration-cic-ids-2017-stress-none-s17\\cpu-validation-probabilities.npy",
+    "sha256": "9943af8751a8d35ff85c04647b6254ebdf1279fcf0b88a90355dd9801fc1306a"
+  },
+  "cuda_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-migration-cic-ids-2017-stress-none-s17\\cuda-validation-probabilities.npy",
+    "sha256": "c29b857b46e93615875da2ecd74146e5aa0ce81c2d76cfd7eed88f89c03aa061"
+  },
+  "worker_seconds": 3.4810836000000336,
+  "cuda_peak_allocated_bytes": 43111424,
+  "cuda_peak_reserved_bytes": 58720256,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 2097131520,
+  "supervised_wall_seconds": 7.118104899999935,
+  "rss_scope": "Worker and descendants sampled every 0.5 seconds",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\logs\\N1-migration-cic-ids-2017-stress-none-s17.log"
+}

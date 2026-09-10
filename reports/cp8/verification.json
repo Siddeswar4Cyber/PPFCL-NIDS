@@ -1,0 +1,333 @@
+{
+  "status": "PASSED",
+  "script_sha256": "127c348c3692897a1782473981dddcfeccd06a276e8febcfb2ed18546b8968df",
+  "tests_passed": 32,
+  "report_bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-migration-cic-ids-2017-primary-none-s17.json",
+      "sha256": "f6188b68aa5bc1b483f2cde25db7280a8f543a676b4ed39009f0a9cc9257f5cf"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-primary-lr001-s17.json",
+      "sha256": "52a51256f09880d7fe66b8d853683e9b339b6f86f7bf7e5987e46c4ffed26b2a"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-primary-lr001-s29.json",
+      "sha256": "45319bc64f1276e395c317350a714c9df6db286daebb094a23490db8ac0c492b"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-primary-lr001-s43.json",
+      "sha256": "88e4dd55d60816e008a1c493942223e6d270084a55c7b20113e002ab76dc1552"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-primary-lr0003-s17.json",
+      "sha256": "cba03c89bb9562079e2e34c582a28a3650fef0d07a5ba643e1348e8850b74381"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-primary-lr0003-s29.json",
+      "sha256": "9291c94a46ea524222c6c500af7c95cb6e6dbdbfa1c81e725ff01558519526bd"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-primary-lr0003-s43.json",
+      "sha256": "973f88f865c6fad8240c333975d477f612e0705ba5802ef80ff3fd25f3d4c61f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-migration-cic-ids-2017-stress-none-s17.json",
+      "sha256": "1dc996e4f645baefa9216bf5951572de78460bd78c6af1e78fa4b5e0712d0fc9"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-stress-lr001-s17.json",
+      "sha256": "31a7154e0298061e9d2a9f98b09d0d79fc65d903c1eff8f05e43c09e6ab2d971"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-stress-lr001-s29.json",
+      "sha256": "e8ad654dbbb88798f91973db674b0e4e4588e4668ae5ad429ab1a62e953cba5b"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-stress-lr001-s43.json",
+      "sha256": "1bb90bdcc9325b4ebb8a27a2bfd995811f99058b7a7479ee66d74da2a9707826"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-stress-lr0003-s17.json",
+      "sha256": "edf1d9a4810d26403c06a3e6425c923c6a00897c700b109f4994d924e3e29905"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-stress-lr0003-s29.json",
+      "sha256": "b0ece0b13333ecc1d531a0053ecd44ea469d1c6cac0998ad1c226575a9502df9"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-cic-ids-2017-stress-lr0003-s43.json",
+      "sha256": "f1eca0990aba34da6d0c5dc3788fd0dbbe8d45784ebaa91064fe2f95f327b1ea"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-migration-ND-UNSW-NB15-v3-primary-none-s17.json",
+      "sha256": "d2066cdf892d569780d235d8c46c68207ed9cd0a9c74722f5a2b01e78b0007a3"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-primary-lr001-s17.json",
+      "sha256": "c5dad9a2c35ebef1e0144048c6e749ea0f8ceea77477748badf21ac0b8d7f428"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-primary-lr001-s29.json",
+      "sha256": "8579f9b2ee57547ac8815dc5bf37adfc223e61471d3d5b933b7a8c16021f675b"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-primary-lr001-s43.json",
+      "sha256": "26c093ec0f7024d180dd5a22066f45e7cebfa51370c4feb5a94ae9fe982fcab1"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-primary-lr0003-s17.json",
+      "sha256": "f5a13bf63a3e05a8848dd65bd9b9ce887e725d3d66949c008c86a5ebb343c71c"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-primary-lr0003-s29.json",
+      "sha256": "7a3d80c4129e515c310045984bf69138452d1a1b5da7657d19feec19cc3deb12"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-primary-lr0003-s43.json",
+      "sha256": "596b7fb41b82c4811d912cabdc1c72534e560eb28352bb195f526b12461629b3"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-migration-ND-UNSW-NB15-v3-stress-none-s17.json",
+      "sha256": "9a4ec94afbf314c4819e43e10bea51514f24701fa09aa16d49b35251b4234125"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-stress-lr001-s17.json",
+      "sha256": "1304783f92fef6ca88440bada54b77543f394e53aa01a7cf0245158e3c18f22b"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-stress-lr001-s29.json",
+      "sha256": "b6f13a6478c27efb3cb6d9070d27ddd62184f6a410e38c7bd127475c9b397688"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-stress-lr001-s43.json",
+      "sha256": "a7155732273555c12dddf9349274ad1ee015e815e60e9928f3b75a86cc2445f1"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-stress-lr0003-s17.json",
+      "sha256": "90eff5e00094df2e8fbaa73db7c367aa4932a0b164488244fb5fcd1bbea93694"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-stress-lr0003-s29.json",
+      "sha256": "a595b54b987c1a26e354ae5d7c9fa42708aae09543552fc23b4fae4806ec025a"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runs\\N1-train-ND-UNSW-NB15-v3-stress-lr0003-s43.json",
+      "sha256": "c50ef18f5ff8a2677c9d20909f6bfda51d34c9e62323bed3ced441552fdb92d6"
+    }
+  ],
+  "migration_checks": [
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "primary",
+      "status": "PASSED",
+      "errors": {
+        "cpu": 9.43689570931383e-16,
+        "cuda": 1.0657865379126719e-06
+      }
+    },
+    {
+      "dataset": "cic-ids-2017",
+      "protocol": "stress",
+      "status": "PASSED",
+      "errors": {
+        "cpu": 3.885780586188048e-16,
+        "cuda": 1.0904486066332097e-06
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "primary",
+      "status": "PASSED",
+      "errors": {
+        "cpu": 2.220446049250313e-16,
+        "cuda": 3.2496277702076526e-07
+      }
+    },
+    {
+      "dataset": "ND-UNSW-NB15-v3",
+      "protocol": "stress",
+      "status": "PASSED",
+      "errors": {
+        "cpu": 2.220446049250313e-16,
+        "cuda": 1.7368350674340505e-07
+      }
+    }
+  ],
+  "training_checks": [
+    {
+      "run_id": "N1-train-cic-ids-2017-primary-lr001-s17",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-primary-lr001-s29",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-primary-lr001-s43",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-primary-lr0003-s17",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-primary-lr0003-s29",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-primary-lr0003-s43",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-stress-lr001-s17",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-stress-lr001-s29",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-stress-lr001-s43",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-stress-lr0003-s17",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-stress-lr0003-s29",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-cic-ids-2017-stress-lr0003-s43",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-primary-lr001-s17",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-primary-lr001-s29",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-primary-lr001-s43",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-primary-lr0003-s17",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-primary-lr0003-s29",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-primary-lr0003-s43",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-stress-lr001-s17",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-stress-lr001-s29",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-stress-lr001-s43",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-stress-lr0003-s17",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-stress-lr0003-s29",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    },
+    {
+      "run_id": "N1-train-ND-UNSW-NB15-v3-stress-lr0003-s43",
+      "status": "PASSED",
+      "full_prediction_reproduction": true,
+      "metrics_reproduced": true,
+      "registered_initialization_verified": true
+    }
+  ],
+  "final_test_accessed": false,
+  "selection": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\selection.json",
+    "sha256": "c7344d9d891f6e69629f4e55fa4b84c682376e2ea51c970b09050c476e9e6566"
+  },
+  "elapsed_seconds": 20.511383100000103
+}

@@ -1,0 +1,127 @@
+{
+  "run_id": "N1-migration-ND-UNSW-NB15-v3-primary-none-s17",
+  "version": "N1",
+  "experiment_id": "EXP-003",
+  "architecture_version": "A0",
+  "stage": "migration",
+  "dataset": "ND-UNSW-NB15-v3",
+  "protocol": "primary",
+  "candidate": "none",
+  "seed": 17,
+  "status": "COMPLETED",
+  "git_commit": "de412e91624236eebb0956e2e535de7358bb5bc5",
+  "script_sha256": "016c413e935e79f30f3b051191cff7b463728f124e0af07714643d222d33fe3f",
+  "runtime_script_sha256": "53ac113518846ab3ba2e4da958b68e075ea989041adb7d4d65e60edef5419dad",
+  "source_bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\neural_migration.py",
+      "sha256": "ef849b89397d56e5efecc2de262224c52754775f9cd5e2684e4e6e2a47847e15"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\baseline_metrics.py",
+      "sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\cp6_features.py",
+      "sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\run_baseline_pilot.py",
+      "sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\tests\\test_neural_runtime.py",
+      "sha256": "f80ca3227c74ad1be57be45f32bf5bef7d1549e29b20e0bec084e81cbd7f2e55"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\docs\\CP8-neural-migration-protocol-N1.md",
+      "sha256": "ed3bae8edd164026a024a6ab7ac3eeb2a007acdedbcc44898b429ebdd9d3d431"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\runtime-installation.json",
+      "sha256": "5b01f6b99f5d8980a7ca27cb985f9ac7455b267422a6c64a56e50103a68b5455"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\requirements-neural-lock.txt",
+      "sha256": "579a744bb4c001d8ce8063f84c4c50c94146756a36a30112d50ae7ed7365f130"
+    }
+  ],
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.5.3",
+    "python": "3.13.13"
+  },
+  "client_configuration": "Centralized development; C1 unused and unchanged",
+  "privacy_configuration": "Non-private",
+  "cl_configuration": "No CL",
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "representation": "full",
+  "bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\selection.json",
+      "sha256": "630f6d5d851043bcde425f0f056ad0a5b8b579f074b415854d1a76732aad7067"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\baselines\\runs\\B1-ND-UNSW-NB15-v3-primary-mlp-s17.json",
+      "sha256": "6cbfc7efd8041f30a45dfb459ef9a7d8c6b0d4f7a82269aecdf2d5a42abfbd2e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\ND-UNSW-NB15-v3-primary.json",
+      "sha256": "0656dcd0fb92e8a0c8dbeb0d5e800132f42320269ae33a1a2f002e4333be3b98"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P1\\ND-UNSW-NB15-v3\\primary\\transform.json",
+      "sha256": "63fa5268ebf96bb4a59e65604b57f55649afee16227d3d6dcc66eafabb912bbe"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\ND-UNSW-NB15-v3\\primary\\mlp\\model.joblib",
+      "sha256": "da2a90700297b9bf7c5c0fa00dc9808c47edd8e33924953325b3b7652fb81f2b",
+      "bytes": 267317
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B1\\ND-UNSW-NB15-v3\\primary\\mlp\\validation-probabilities.npy",
+      "sha256": "5a8766c18c4353e3fa542e62d8027a512cab483f8ba98a67ec30058dbe963b31",
+      "rows": 472509
+    }
+  ],
+  "preprocessing_version": "P1",
+  "transform_sha256": "63fa5268ebf96bb4a59e65604b57f55649afee16227d3d6dcc66eafabb912bbe",
+  "rows": 472509,
+  "input_features": 98,
+  "cpu_max_abs_delta": 2.220446049250313e-16,
+  "cpu_decision_disagreements": 0,
+  "roundtrip_max_abs_delta": 0.0,
+  "cuda_max_abs_delta": 3.2496277702076526e-07,
+  "cuda_decision_disagreements": 0,
+  "cuda_disagreement_rate": 0.0,
+  "changed_reference_distances_to_threshold": [],
+  "changed_cuda_distances_to_threshold": [],
+  "migrated_model": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-migration-ND-UNSW-NB15-v3-primary-none-s17\\migrated-cpu.pt",
+    "sha256": "4c3dc830864097adb3e6bb1500373957a7ea39ae0a0d9ba0c1b6f7ffa4c0263b"
+  },
+  "gates": {
+    "cpu": true,
+    "roundtrip": true,
+    "cuda_probability": true,
+    "cuda_decisions": true
+  },
+  "cpu_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-migration-ND-UNSW-NB15-v3-primary-none-s17\\cpu-validation-probabilities.npy",
+    "sha256": "71074d76b370fb40909a0392e404b7fc806fa9ff56270fb4c7f3d8a130b05ed9"
+  },
+  "cuda_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\N1\\N1-migration-ND-UNSW-NB15-v3-primary-none-s17\\cuda-validation-probabilities.npy",
+    "sha256": "0bc7aa1cceea3d79bf0bca3b44bdb1d67cf83e43b620141adc4270e156e6cb85"
+  },
+  "worker_seconds": 2.7961715999999797,
+  "cuda_peak_allocated_bytes": 39455232,
+  "cuda_peak_reserved_bytes": 58720256,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 1308901376,
+  "supervised_wall_seconds": 6.612768599999981,
+  "rss_scope": "Worker and descendants sampled every 0.5 seconds",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\logs\\N1-migration-ND-UNSW-NB15-v3-primary-none-s17.log"
+}
