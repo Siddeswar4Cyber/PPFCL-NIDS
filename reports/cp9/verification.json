@@ -1,0 +1,322 @@
+{
+  "status": "PASSED",
+  "script_sha256": "77d40e758bc6187d3a3e5fda7b681cd28c7145813701834a15c3991d5643a62e",
+  "test_log": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\tests.log",
+    "sha256": "5090b11482dbdb07205155c3b2ee040632c65d4abd104039f279924327a07e35"
+  },
+  "targeted_test_log": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\f1-tests.log",
+    "sha256": "0e83ff0d55007222c6a6631d0cfda583c9bb068cfc7ca234f7f248e62542d484"
+  },
+  "tests_passed": 36,
+  "report_bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-primary-central-all-s17.json",
+      "sha256": "f225b2f136acd88d1d5e7af16a63f19be3e693873a869645c6126dad7894d891"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-primary-local-iid-s17.json",
+      "sha256": "b580deb92e5f10b7aaee0776d68dbafe21cead8b7e6100f45570809059ea8a5f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-primary-fedavg-iid-s17.json",
+      "sha256": "a87f12708577599fab00c458602d04272d4acca17440b937c8b09070d17f0c3c"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-primary-local-dirichlet_a1-s17.json",
+      "sha256": "e96196f4e5738efc81d5d43a7b026982399524921996aec5ceecaa32017a2a5c"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-primary-fedavg-dirichlet_a1-s17.json",
+      "sha256": "4e5f79ca1153f9f8d6ee2f12d8e57020ed77c26a61b5e1454beb961c3e32c1a1"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-primary-local-dirichlet_a0p1-s17.json",
+      "sha256": "0ccb35637259f3bc1620476f0667a7a6cecb81cc6f3f503fd043977abee83c0e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-primary-fedavg-dirichlet_a0p1-s17.json",
+      "sha256": "c33a555574eefc073ad4fd207f93e93affe561e3f432a163c11e226195610391"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-stress-central-all-s17.json",
+      "sha256": "b45e8d41883a24864fb900a2f62befa3c48019f068daa44be912dcac2b68e763"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-stress-local-iid-s17.json",
+      "sha256": "2e161de58257a59cb3597030cfa55f2255b91b6fb31625f974b1f63848669169"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-stress-fedavg-iid-s17.json",
+      "sha256": "1d2f9b97d9e4b6279ab8699c008a17ac61d790b16a1a3b346246c0529bd0fe55"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-stress-local-dirichlet_a1-s17.json",
+      "sha256": "70c4aff56e830f01882bc15736f61ad5756f6926790f042cf5e9c0ba9348486e"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-stress-fedavg-dirichlet_a1-s17.json",
+      "sha256": "82d1f61f422c8bcbd76ab7e2303853e3e3b442040dddb2b60c6cc8f6225a14eb"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-stress-local-dirichlet_a0p1-s17.json",
+      "sha256": "733636916144e36c5c7187f4eae4b7038ddd0bfdf134a7e370e9db8c65b4a51c"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-cic-ids-2017-stress-fedavg-dirichlet_a0p1-s17.json",
+      "sha256": "6ec131700ede26e8b027c88f7da01bbc7d66ee4218842d13cf7006388b57b66b"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-primary-central-all-s17.json",
+      "sha256": "525b396e468540766be35f52bfa9c40b9c8a378b107113b751ff7046b8800579"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-primary-local-iid-s17.json",
+      "sha256": "1bd5fb3005bbe07ae9fff2e2de967aa2b99354a1d520c12ab696e7da26a1e96c"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-primary-fedavg-iid-s17.json",
+      "sha256": "3a50570aa2f954d4e9629f9d27d1b4011b60f6a61fce41bc62cb8956b910601d"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-primary-local-dirichlet_a1-s17.json",
+      "sha256": "bada3b84dfa08d23e914a7a80df2b4ef468124f0c4cf2ffc784f6d86e8ade8b1"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-primary-fedavg-dirichlet_a1-s17.json",
+      "sha256": "16a0c138bf03c0955171364f3e8b20ea05ea360360351bb944fe3adbad3ebbbb"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-primary-local-dirichlet_a0p1-s17.json",
+      "sha256": "9fed0bd2fbfb28f0cae76483f9cd39975af8c03c0b90b909f75807274f4c4aa0"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-primary-fedavg-dirichlet_a0p1-s17.json",
+      "sha256": "6495f5fda4f6b85c8828f596a52eb7342fb0d3f289763c970e81d906482a406b"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-stress-central-all-s17.json",
+      "sha256": "3ccea9978f6e58c69d5f2fa609e45c43fe51e182034a5cc014a7862a34513d53"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-stress-local-iid-s17.json",
+      "sha256": "2bca7fd0a7bc3a6a72b55a7bb94a5291672e7b4966bfa79c419a84175e508fce"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-stress-fedavg-iid-s17.json",
+      "sha256": "18da1b3dc07822066ef289e5e3868ef26e8b17bd4e3eed95ac7c1a1f32ff3ad0"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-stress-local-dirichlet_a1-s17.json",
+      "sha256": "8d8c270d9cddc3f39ff90cc98a3ef37bc9a253846c0be03039a719c415a53817"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-stress-fedavg-dirichlet_a1-s17.json",
+      "sha256": "18325bfad634ce63000d95b0045725bf4d23973ff7c3c6775eade4ffe66a9f12"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-stress-local-dirichlet_a0p1-s17.json",
+      "sha256": "058b5d512b5e44937bde6db68a1d2e661cba3010d83d5713388fa177a8b592a9"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\runs\\F1-ND-UNSW-NB15-v3-stress-fedavg-dirichlet_a0p1-s17.json",
+      "sha256": "6c862fd03edfe40187891b83ac8b1ffb6a9ba79f067ab3128c309be937041629"
+    }
+  ],
+  "checks": [
+    {
+      "run_id": "F1-cic-ids-2017-primary-central-all-s17",
+      "status": "PASSED"
+    },
+    {
+      "run_id": "F1-cic-ids-2017-primary-local-iid-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-cic-ids-2017-primary-fedavg-iid-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-cic-ids-2017-primary-local-dirichlet_a1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-cic-ids-2017-primary-fedavg-dirichlet_a1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-cic-ids-2017-primary-local-dirichlet_a0p1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-cic-ids-2017-primary-fedavg-dirichlet_a0p1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-cic-ids-2017-stress-central-all-s17",
+      "status": "PASSED"
+    },
+    {
+      "run_id": "F1-cic-ids-2017-stress-local-iid-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-cic-ids-2017-stress-fedavg-iid-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-cic-ids-2017-stress-local-dirichlet_a1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-cic-ids-2017-stress-fedavg-dirichlet_a1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-cic-ids-2017-stress-local-dirichlet_a0p1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-cic-ids-2017-stress-fedavg-dirichlet_a0p1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-primary-central-all-s17",
+      "status": "PASSED"
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-primary-local-iid-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-primary-fedavg-iid-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-primary-local-dirichlet_a1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-primary-fedavg-dirichlet_a1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-primary-local-dirichlet_a0p1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-primary-fedavg-dirichlet_a0p1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-stress-central-all-s17",
+      "status": "PASSED"
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-stress-local-iid-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-stress-fedavg-iid-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-stress-local-dirichlet_a1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-stress-fedavg-dirichlet_a1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-stress-local-dirichlet_a0p1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 0
+    },
+    {
+      "run_id": "F1-ND-UNSW-NB15-v3-stress-fedavg-dirichlet_a0p1-s17",
+      "status": "PASSED",
+      "full_predictions_reproduced": true,
+      "work_order_verified": true,
+      "aggregation_rounds_verified": 20
+    }
+  ],
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "comparison": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\comparison.json",
+    "sha256": "8c89d1e21c1e330b82832e6d302d817129119b6a1f2ffc8d6b93468b95a8a406"
+  },
+  "supervised_model_worker_seconds": 971.2741855000017,
+  "four_hour_family_budget_remaining_seconds": 13428.725814499998,
+  "elapsed_seconds": 50.51329950000036
+}

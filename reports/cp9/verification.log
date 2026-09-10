@@ -1,0 +1,12 @@
+cic-ids-2017/primary/iid: 20 aggregations, paired orders and predictions verified
+cic-ids-2017/primary/dirichlet_a1: 20 aggregations, paired orders and predictions verified
+cic-ids-2017/primary/dirichlet_a0p1: 20 aggregations, paired orders and predictions verified
+cic-ids-2017/stress/iid: 20 aggregations, paired orders and predictions verified
+cic-ids-2017/stress/dirichlet_a1: 20 aggregations, paired orders and predictions verified
+cic-ids-2017/stress/dirichlet_a0p1: 20 aggregations, paired orders and predictions verified
+ND-UNSW-NB15-v3/primary/iid: 20 aggregations, paired orders and predictions verified
+ND-UNSW-NB15-v3/primary/dirichlet_a1: 20 aggregations, paired orders and predictions verified
+ND-UNSW-NB15-v3/primary/dirichlet_a0p1: 20 aggregations, paired orders and predictions verified
+ND-UNSW-NB15-v3/stress/iid: 20 aggregations, paired orders and predictions verified
+ND-UNSW-NB15-v3/stress/dirichlet_a1: 20 aggregations, paired orders and predictions verified
+ND-UNSW-NB15-v3/stress/dirichlet_a0p1: 20 aggregations, paired orders and predictions verified

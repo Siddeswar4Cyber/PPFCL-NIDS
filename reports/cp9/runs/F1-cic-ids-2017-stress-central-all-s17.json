@@ -1,0 +1,590 @@
+{
+  "run_id": "F1-cic-ids-2017-stress-central-all-s17",
+  "version": "F1",
+  "experiment_id": "EXP-004",
+  "architecture_version": "A0",
+  "dataset": "cic-ids-2017",
+  "protocol": "stress",
+  "method": "central",
+  "scenario": "all",
+  "seed": 17,
+  "status": "COMPLETED",
+  "script_sha256": "e428ce0befc795fe4c9d289a5d74bc264928a6fc43a172bbda43df92f61dc25d",
+  "git_commit": "b367cf614e04bfc375cf4faa5675d120a8c3cc93",
+  "source_bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\federated_f1.py",
+      "sha256": "e27a8995adc13475ad7713fbbbf0a3900045deee8ff19ac55adf75f6a1579492"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\neural_runtime.py",
+      "sha256": "53ac113518846ab3ba2e4da958b68e075ea989041adb7d4d65e60edef5419dad"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\run_cp8.py",
+      "sha256": "016c413e935e79f30f3b051191cff7b463728f124e0af07714643d222d33fe3f"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\run_baseline_pilot.py",
+      "sha256": "66698f8140b493a37b5274db58ed9603ca38db96e139afc249ec4c82e313c9b6"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\cp6_features.py",
+      "sha256": "44520733dd538519e9bd0d0f1369c2a18898951ff3e6432ac5d41e63271b8fa4"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\baseline_metrics.py",
+      "sha256": "ccddebeba724aa7fed5e4a4ff13ae7a985d0fd36edf564eec72d5245da086763"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\scripts\\build_clients_c1.py",
+      "sha256": "cdb028e2185b566ff9b29e7e1757f7c56c411e18bc62cd0fec6d449e28a52f84"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\tests\\test_federated_f1.py",
+      "sha256": "ce8ec0293b6057811dd42e705bcbf36c4a7017ff56b92279270725e1fe6ccbd9"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\docs\\CP9-federated-pilot-F1.md",
+      "sha256": "9b2797fcafb1749503e94ff7ca856f9e1d6b11ead0a34cc78f897c261a66f52d"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\verification.json",
+      "sha256": "7339859566207d16579b7c589d80de20251967c0d314b8c8707da1e550dcc8aa"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp8\\selection.json",
+      "sha256": "c7344d9d891f6e69629f4e55fa4b84c682376e2ea51c970b09050c476e9e6566"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp7\\verification.json",
+      "sha256": "2b428b4a463a810ed16834349b484bd553f78403c01a8c381a4561142f6175e5"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\requirements-neural-lock.txt",
+      "sha256": "579a744bb4c001d8ce8063f84c4c50c94146756a36a30112d50ae7ed7365f130"
+    }
+  ],
+  "privacy_configuration": "Non-private single-process synthetic-client simulation; no DP or secure aggregation",
+  "cl_configuration": "No CL",
+  "final_test_accessed": false,
+  "external_test_accessed": false,
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.5.3",
+    "python": "3.13.13"
+  },
+  "work": [
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.17308720190525057,
+      "order_sha256": "f4301b75fc5a5cae394183fae00c1c3e0f07674822c70c26f3675d3f75f471fa",
+      "epoch": 1,
+      "client_id": -1,
+      "start_state_sha256": "ca593867a8a7662fc0f2a12fc74a4307ecc10e0c2e88059e8467c307fc95ca84",
+      "end_state_sha256": "dfbdfae5e857ef8be544c4ef5375390803283e1773e85a47ec7683ee7642ee4e",
+      "global_row_order_sha256": "f4301b75fc5a5cae394183fae00c1c3e0f07674822c70c26f3675d3f75f471fa"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.03944832754135132,
+      "order_sha256": "79850d5a7438d643b0c4a7e714141964f566e3c3f649e75cd661708eae309694",
+      "epoch": 2,
+      "client_id": -1,
+      "start_state_sha256": "dfbdfae5e857ef8be544c4ef5375390803283e1773e85a47ec7683ee7642ee4e",
+      "end_state_sha256": "c551353526687c2a23a3d14f5155f07d61e9fb318178bb1912fb2d597ba46456",
+      "global_row_order_sha256": "79850d5a7438d643b0c4a7e714141964f566e3c3f649e75cd661708eae309694"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.027531569813489917,
+      "order_sha256": "0cadf488b44d13ac97a6235f8bef3862f493fef2729112569dcae8351410b58a",
+      "epoch": 3,
+      "client_id": -1,
+      "start_state_sha256": "c551353526687c2a23a3d14f5155f07d61e9fb318178bb1912fb2d597ba46456",
+      "end_state_sha256": "410060fedd9ca4e0d8eae1ecf6ee7e76efb1af824ffa94bb83bc1599735714c0",
+      "global_row_order_sha256": "0cadf488b44d13ac97a6235f8bef3862f493fef2729112569dcae8351410b58a"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.023104016613364222,
+      "order_sha256": "10bd95f7de8925831565e668c26bbf260c162463490652e563470d0010089d23",
+      "epoch": 4,
+      "client_id": -1,
+      "start_state_sha256": "410060fedd9ca4e0d8eae1ecf6ee7e76efb1af824ffa94bb83bc1599735714c0",
+      "end_state_sha256": "927ebd2c6c6aeeae84bd3eb64b55948fa5ec71ab8a9f87c5f661245cee4d7c22",
+      "global_row_order_sha256": "10bd95f7de8925831565e668c26bbf260c162463490652e563470d0010089d23"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.020532226899266245,
+      "order_sha256": "6e1383b296d9f9b9fae4a6f4eeafc72b5579e6a86c4b5da4f5e61272de2c2339",
+      "epoch": 5,
+      "client_id": -1,
+      "start_state_sha256": "927ebd2c6c6aeeae84bd3eb64b55948fa5ec71ab8a9f87c5f661245cee4d7c22",
+      "end_state_sha256": "44154d57e15e68a708e53e201ac42fec0bc6462a858939064ebd214725ca0fa3",
+      "global_row_order_sha256": "6e1383b296d9f9b9fae4a6f4eeafc72b5579e6a86c4b5da4f5e61272de2c2339"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.018793510887026788,
+      "order_sha256": "49b0eb845dd72b7d203f8fc72b81219547655a5097789b41b1f416fcf35c61a7",
+      "epoch": 6,
+      "client_id": -1,
+      "start_state_sha256": "44154d57e15e68a708e53e201ac42fec0bc6462a858939064ebd214725ca0fa3",
+      "end_state_sha256": "3998f6444fb50d80c3208fdebfc636830ad4b05d5940ff3a90c1b63a2a88bb29",
+      "global_row_order_sha256": "49b0eb845dd72b7d203f8fc72b81219547655a5097789b41b1f416fcf35c61a7"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.017475924035906792,
+      "order_sha256": "46b5ec51d0bbcfa55c35aa0a591d69c63a6b2e1e40aa174085ef800a52d969fa",
+      "epoch": 7,
+      "client_id": -1,
+      "start_state_sha256": "3998f6444fb50d80c3208fdebfc636830ad4b05d5940ff3a90c1b63a2a88bb29",
+      "end_state_sha256": "52ffa80128e594217f89cfc37e8b08a9db273912fd45bf1031bc3bd2f338575d",
+      "global_row_order_sha256": "46b5ec51d0bbcfa55c35aa0a591d69c63a6b2e1e40aa174085ef800a52d969fa"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.016491723257601263,
+      "order_sha256": "2e844fab8350cf2319e0d0b7732ba387bb1ed3e589bc520de222df0c0cd4c546",
+      "epoch": 8,
+      "client_id": -1,
+      "start_state_sha256": "52ffa80128e594217f89cfc37e8b08a9db273912fd45bf1031bc3bd2f338575d",
+      "end_state_sha256": "6c870ee037395a488ea9b6b0a875557c13cfc3ae9c1c2e57db22b5a899c34988",
+      "global_row_order_sha256": "2e844fab8350cf2319e0d0b7732ba387bb1ed3e589bc520de222df0c0cd4c546"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.015760945951193574,
+      "order_sha256": "b77cd4f9bedd66247c1009d3304ac23c9e79c3a8eea2dcd4e4d8ae697edce371",
+      "epoch": 9,
+      "client_id": -1,
+      "start_state_sha256": "6c870ee037395a488ea9b6b0a875557c13cfc3ae9c1c2e57db22b5a899c34988",
+      "end_state_sha256": "1143c56c22259fadcaa9b01399224837bc28e6dbcfcbb483fb0f560429418f83",
+      "global_row_order_sha256": "b77cd4f9bedd66247c1009d3304ac23c9e79c3a8eea2dcd4e4d8ae697edce371"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.01519552872478962,
+      "order_sha256": "334cbeb5747fd4aa52c7460566f7339f9b6ab4ae5257f281c2a1cf9faf2dc3f6",
+      "epoch": 10,
+      "client_id": -1,
+      "start_state_sha256": "1143c56c22259fadcaa9b01399224837bc28e6dbcfcbb483fb0f560429418f83",
+      "end_state_sha256": "c155ab29d5e45d4a85ebbbc8de2be5344dc1f71c868d0840839922f76f2a9cad",
+      "global_row_order_sha256": "334cbeb5747fd4aa52c7460566f7339f9b6ab4ae5257f281c2a1cf9faf2dc3f6"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.014775168829858304,
+      "order_sha256": "c431293aa6550c1a4ae85dcf5dda6c21e1f8094512b32f7f2c982154f0ad7ac1",
+      "epoch": 11,
+      "client_id": -1,
+      "start_state_sha256": "c155ab29d5e45d4a85ebbbc8de2be5344dc1f71c868d0840839922f76f2a9cad",
+      "end_state_sha256": "fe1be322f3ab13a0d148832b45a51d2664f3c9ddac046aa384f3071289b9e955",
+      "global_row_order_sha256": "c431293aa6550c1a4ae85dcf5dda6c21e1f8094512b32f7f2c982154f0ad7ac1"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.014283355505764485,
+      "order_sha256": "80d999ae7fdb335ec5d5ca57b13e4bf402515ecb2213c301d1c80c771ee42626",
+      "epoch": 12,
+      "client_id": -1,
+      "start_state_sha256": "fe1be322f3ab13a0d148832b45a51d2664f3c9ddac046aa384f3071289b9e955",
+      "end_state_sha256": "4e151a4fc52d22c3f695eba09588e279a35c18c1cfbfed610bba573ffcb237d9",
+      "global_row_order_sha256": "80d999ae7fdb335ec5d5ca57b13e4bf402515ecb2213c301d1c80c771ee42626"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.014046838309168816,
+      "order_sha256": "f9854e695d468ab3e53a773598be6491647945a4925f6119ab7e8f6bd0198560",
+      "epoch": 13,
+      "client_id": -1,
+      "start_state_sha256": "4e151a4fc52d22c3f695eba09588e279a35c18c1cfbfed610bba573ffcb237d9",
+      "end_state_sha256": "53be9b0ad212f9ea4a236a666c5f8c045ff79f8c0a675964536e54638e751626",
+      "global_row_order_sha256": "f9854e695d468ab3e53a773598be6491647945a4925f6119ab7e8f6bd0198560"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.013849696828573944,
+      "order_sha256": "189cc04908f8056e608ee363e5017c19b8cbf4d051792263a09bc086ebcfdf9c",
+      "epoch": 14,
+      "client_id": -1,
+      "start_state_sha256": "53be9b0ad212f9ea4a236a666c5f8c045ff79f8c0a675964536e54638e751626",
+      "end_state_sha256": "50710db175edac545075f3d5fdb468889d6819770f9ffa3c7d762808eacc0e4b",
+      "global_row_order_sha256": "189cc04908f8056e608ee363e5017c19b8cbf4d051792263a09bc086ebcfdf9c"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.013693816369473935,
+      "order_sha256": "ad9e4b92c3ca0adf6ce4beb8910e0bc3ef2449e1c527690fae84ece106888cf5",
+      "epoch": 15,
+      "client_id": -1,
+      "start_state_sha256": "50710db175edac545075f3d5fdb468889d6819770f9ffa3c7d762808eacc0e4b",
+      "end_state_sha256": "18f27a0ba2b516729dbad2716a23f4a93542e6800387eb106e90b8467277d9e4",
+      "global_row_order_sha256": "ad9e4b92c3ca0adf6ce4beb8910e0bc3ef2449e1c527690fae84ece106888cf5"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.013534297856092455,
+      "order_sha256": "324dc6587e4a66a794235e61f5e43874908eb20322531d0088442e653ac58099",
+      "epoch": 16,
+      "client_id": -1,
+      "start_state_sha256": "18f27a0ba2b516729dbad2716a23f4a93542e6800387eb106e90b8467277d9e4",
+      "end_state_sha256": "93df33a976009952b36bf682fb65bfb6e6bec25e88e68a084d4232c820bc674d",
+      "global_row_order_sha256": "324dc6587e4a66a794235e61f5e43874908eb20322531d0088442e653ac58099"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.013295375560075045,
+      "order_sha256": "056f4ca5faf05270b6b2821781ab202da67d366c5046a33be46edcecd390e8ac",
+      "epoch": 17,
+      "client_id": -1,
+      "start_state_sha256": "93df33a976009952b36bf682fb65bfb6e6bec25e88e68a084d4232c820bc674d",
+      "end_state_sha256": "22086095c9c2487a95a00e0e19738fb8bc99892eef7da905b71d2775e29429da",
+      "global_row_order_sha256": "056f4ca5faf05270b6b2821781ab202da67d366c5046a33be46edcecd390e8ac"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.013176012677103282,
+      "order_sha256": "f93d4e77197c21b2dd9f80bd051df1e6f27d71f071ca5a1e0946d8d30d5d1ca5",
+      "epoch": 18,
+      "client_id": -1,
+      "start_state_sha256": "22086095c9c2487a95a00e0e19738fb8bc99892eef7da905b71d2775e29429da",
+      "end_state_sha256": "ec11b40692540dde72e2ac1a43e46c23ea542285292f4db2653856e15fc18ed5",
+      "global_row_order_sha256": "f93d4e77197c21b2dd9f80bd051df1e6f27d71f071ca5a1e0946d8d30d5d1ca5"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.013046297115385533,
+      "order_sha256": "cd7d1f59d50f5e8909560852a3c11fddc596e5b1479220b7b51ed2e178aca57c",
+      "epoch": 19,
+      "client_id": -1,
+      "start_state_sha256": "ec11b40692540dde72e2ac1a43e46c23ea542285292f4db2653856e15fc18ed5",
+      "end_state_sha256": "7f7345848e4b7d87e7216e57b4129d6d8d0a57068104882e2b6d475d0be7acf4",
+      "global_row_order_sha256": "cd7d1f59d50f5e8909560852a3c11fddc596e5b1479220b7b51ed2e178aca57c"
+    },
+    {
+      "rows": 100000,
+      "steps": 391,
+      "mean_training_objective": 0.012891181183308365,
+      "order_sha256": "85fd5c2443599ea7706584c4950d354ef78db18331da532f7b4d63ef5cabff99",
+      "epoch": 20,
+      "client_id": -1,
+      "start_state_sha256": "7f7345848e4b7d87e7216e57b4129d6d8d0a57068104882e2b6d475d0be7acf4",
+      "end_state_sha256": "65cdeca99fd4f6339699c84ccfc6af30104ba551c169a0afaffc94b12e95460c",
+      "global_row_order_sha256": "85fd5c2443599ea7706584c4950d354ef78db18331da532f7b4d63ef5cabff99"
+    }
+  ],
+  "representation": "categorical_augmented",
+  "bindings": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\selection.json",
+      "sha256": "630f6d5d851043bcde425f0f056ad0a5b8b579f074b415854d1a76732aad7067"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\runs\\B2-cic-ids-2017-stress-mlp-categorical_augmented-s17.json",
+      "sha256": "cc93cd891f8c45f0cc7d211de69815eaa9d85b72737cf69ea1644d2c42462693"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp6\\features\\cic-ids-2017-stress.json",
+      "sha256": "9550c281a7264bd91d930efde74b1f80db298c4fef3917fe371ec20dab5ad18a"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\transform.json",
+      "sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3"
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s17\\model.joblib",
+      "sha256": "13a4b61afdf5271f7d5830d5591c67db56018753b816886a5bdaa0b99853d537",
+      "bytes": 415578
+    },
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\B2\\cic-ids-2017\\stress\\mlp\\categorical_augmented\\s17\\validation-probabilities.npy",
+      "sha256": "def02227326af05d614053a6550408283dcc52e830f6318b980898e7ca8e5811",
+      "rows": 391594
+    }
+  ],
+  "preprocessing_version": "P2",
+  "input_artifacts": {
+    "train": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\train.parquet",
+      "sha256": "fa2f035d2937b17dc206953ed0263e2cb573bebd84a58cf30f8d8163eb05708a",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 88991
+        },
+        {
+          "binary_label": 1,
+          "rows": 11009
+        }
+      ]
+    },
+    "validation": {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\data\\processed\\P2\\cic-ids-2017\\stress\\validation.parquet",
+      "sha256": "c1539e7f413479e807494d67fca153ca42dab1c5bc690d2bfe52e528d1d2aff2",
+      "binary_support": [
+        {
+          "binary_label": 0,
+          "rows": 345802
+        },
+        {
+          "binary_label": 1,
+          "rows": 45792
+        }
+      ]
+    }
+  },
+  "transform_sha256": "e46a4a217b4bd112b541a4ce8bda1ee2d90b31ff612606597248e8c39813ead3",
+  "fit_group_set_sha256": "67bf1227ee11c2ef13db4e401658a6932e442af33a6a93577d77bc80b82c11f6",
+  "input_features": 172,
+  "train_rows": 100000,
+  "validation_rows": 391594,
+  "client_train_rows": [
+    100000
+  ],
+  "initial_weights": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\F1\\F1-cic-ids-2017-stress-central-all-s17\\initial.pt",
+    "sha256": "3e841a7fceffb18897107e4a192337010e6a5d38f14d356f587605be2106c49e"
+  },
+  "rounds": [],
+  "hyperparameters": {
+    "learning_rate": 0.0003,
+    "epochs_or_rounds": 20,
+    "local_epochs_per_round": 1,
+    "batch_size": 256,
+    "regularizer_lambda": 3.90625e-07,
+    "weight_only": true,
+    "optimizer": "Native Adam, reset every epoch/round",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "foreach": false,
+    "fused": false,
+    "server_optimizer": null,
+    "participation": 1.0,
+    "aggregation": null
+  },
+  "fit_seconds": 33.68346500000007,
+  "prediction_seconds": 0.3976059000001442,
+  "final_models": [
+    {
+      "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\F1\\F1-cic-ids-2017-stress-central-all-s17\\model-0.pt",
+      "sha256": "66563c15cd8b359d7e93eeae26143a44c84aece9d8ef75d0c48ee346a4bebe0d"
+    }
+  ],
+  "validation_predictions": {
+    "path": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\models\\F1\\F1-cic-ids-2017-stress-central-all-s17\\validation-probabilities.npy",
+    "sha256": "f47e3a43ca3bccab075a3e64602a5189223fcf80c1d10c977e896bcefa0a9f16"
+  },
+  "evaluation": {
+    "metrics_05": {
+      "threshold": 0.5,
+      "rows": 391594,
+      "attack_prevalence": 0.11693744030807418,
+      "accuracy": 0.9935136901995434,
+      "attack_precision": 0.9715245072387929,
+      "attack_recall": 0.9730520614954578,
+      "attack_f1": 0.972287684385092,
+      "binary_macro_f1": 0.9843073400494782,
+      "benign_fpr": 0.003776727722800909,
+      "average_precision": 0.9955235591514892,
+      "roc_auc": 0.9991934486845033,
+      "confusion": {
+        "tn": 344496,
+        "fp": 1306,
+        "fn": 1234,
+        "tp": 44558
+      },
+      "attack_family_recall": {
+        "benign": {
+          "support": 345802,
+          "binary_attack_recall": null
+        },
+        "bot": {
+          "support": 0,
+          "binary_attack_recall": null
+        },
+        "ddos": {
+          "support": 0,
+          "binary_attack_recall": null
+        },
+        "dos_goldeneye": {
+          "support": 2022,
+          "binary_attack_recall": 0.9520276953511375
+        },
+        "dos_hulk": {
+          "support": 37429,
+          "binary_attack_recall": 0.9885382991797804
+        },
+        "dos_slowhttptest": {
+          "support": 1223,
+          "binary_attack_recall": 0.8348323793949305
+        },
+        "dos_slowloris": {
+          "support": 1210,
+          "binary_attack_recall": 0.9495867768595041
+        },
+        "ftp_patator": {
+          "support": 2449,
+          "binary_attack_recall": 0.9983666802776644
+        },
+        "heartbleed": {
+          "support": 1,
+          "binary_attack_recall": 0.0
+        },
+        "infiltration": {
+          "support": 6,
+          "binary_attack_recall": 0.5
+        },
+        "portscan": {
+          "support": 0,
+          "binary_attack_recall": null
+        },
+        "ssh_patator": {
+          "support": 1015,
+          "binary_attack_recall": 0.9921182266009853
+        },
+        "web_attack_brute_force": {
+          "support": 311,
+          "binary_attack_recall": 0.00964630225080386
+        },
+        "web_attack_sql_injection": {
+          "support": 4,
+          "binary_attack_recall": 0.0
+        },
+        "web_attack_xss": {
+          "support": 122,
+          "binary_attack_recall": 0.040983606557377046
+        }
+      },
+      "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+    },
+    "metrics_fpr01": {
+      "threshold": 0.1607097685337067,
+      "rows": 391594,
+      "attack_prevalence": 0.11693744030807418,
+      "accuracy": 0.9893461084694862,
+      "attack_precision": 0.9288245961094626,
+      "attack_recall": 0.9843204053109713,
+      "attack_f1": 0.9557675996607294,
+      "binary_macro_f1": 0.9748556434927209,
+      "benign_fpr": 0.009988374850347887,
+      "average_precision": 0.9955235591514892,
+      "roc_auc": 0.9991934486845033,
+      "confusion": {
+        "tn": 342348,
+        "fp": 3454,
+        "fn": 718,
+        "tp": 45074
+      },
+      "attack_family_recall": {
+        "benign": {
+          "support": 345802,
+          "binary_attack_recall": null
+        },
+        "bot": {
+          "support": 0,
+          "binary_attack_recall": null
+        },
+        "ddos": {
+          "support": 0,
+          "binary_attack_recall": null
+        },
+        "dos_goldeneye": {
+          "support": 2022,
+          "binary_attack_recall": 0.9990108803165183
+        },
+        "dos_hulk": {
+          "support": 37429,
+          "binary_attack_recall": 0.9892863822169975
+        },
+        "dos_slowhttptest": {
+          "support": 1223,
+          "binary_attack_recall": 0.8364677023712184
+        },
+        "dos_slowloris": {
+          "support": 1210,
+          "binary_attack_recall": 0.9603305785123967
+        },
+        "ftp_patator": {
+          "support": 2449,
+          "binary_attack_recall": 0.9987750102082482
+        },
+        "heartbleed": {
+          "support": 1,
+          "binary_attack_recall": 0.0
+        },
+        "infiltration": {
+          "support": 6,
+          "binary_attack_recall": 0.5
+        },
+        "portscan": {
+          "support": 0,
+          "binary_attack_recall": null
+        },
+        "ssh_patator": {
+          "support": 1015,
+          "binary_attack_recall": 1.0
+        },
+        "web_attack_brute_force": {
+          "support": 311,
+          "binary_attack_recall": 0.8231511254019293
+        },
+        "web_attack_sql_injection": {
+          "support": 4,
+          "binary_attack_recall": 0.25
+        },
+        "web_attack_xss": {
+          "support": 122,
+          "binary_attack_recall": 0.9836065573770492
+        }
+      },
+      "zero_division_policy": "precision/recall/F1=0 for undefined denominator; absent family recall=null; AUC=null without both classes"
+    }
+  },
+  "examples_seen": 2000000,
+  "optimizer_steps": 7820,
+  "parameter_count": 13185,
+  "communication": {
+    "kind": "Calculated float32 tensor payload; not measured network",
+    "upload_bytes": null,
+    "download_bytes": null,
+    "includes_biases": true,
+    "includes_protocol_or_crypto": false,
+    "raw_data_transfer_estimated": false
+  },
+  "worker_seconds": 39.208420899999965,
+  "cuda_peak_allocated_bytes": 143454208,
+  "cuda_peak_reserved_bytes": 163577856,
+  "exit_code": 0,
+  "sampled_peak_process_rss_bytes": 2164559872,
+  "supervised_wall_seconds": 43.37917019999986,
+  "rss_scope": "Worker and descendants sampled every 0.5 seconds",
+  "resource_limit_stop": null,
+  "log": "C:\\Users\\nimma\\OneDrive\\Documents\\ChatGPT\\capstone-project witj astra\\reports\\cp9\\logs\\F1-cic-ids-2017-stress-central-all-s17.log"
+}

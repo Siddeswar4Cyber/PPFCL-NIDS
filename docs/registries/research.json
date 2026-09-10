@@ -161,7 +161,8 @@
       "accessed": "2026-09-08",
       "verification_depth": "Original PDF abstract and MNIST partition section reviewed",
       "numeric_locator": "Official page/abstract; see numerical context",
-      "follow_up": "Exact chosen benchmark table and hardware needed only for reproduction."
+      "follow_up": "Exact chosen benchmark table and hardware needed only for reproduction.",
+      "cp9_follow_up": "2026-09-10: author PDF objective section and Algorithm 1 re-read; F1 uses the weighted aggregation structure but changes local SGD to epoch-reset Adam; no new paper numerical result adopted."
     },
     {
       "id": "R007",
