@@ -1,0 +1,60 @@
+tmpirrowd9g: hash/load latin.csv
+tmpirrowd9g: column statistics
+tmpirrowd9g: exact duplicate/conflict grouping
+tmpirrowd9g: temporal checks
+test_lossless_encoding_and_quoted_fields (test_audit.AuditTests.test_lossless_encoding_and_quoted_fields) ... ok
+tmprvkh_f8_: hash/load sample.csv
+tmprvkh_f8_: column statistics
+tmprvkh_f8_: exact duplicate/conflict grouping
+tmprvkh_f8_: temporal checks
+test_quality_duplicates_conflicts_and_malformed_rows (test_audit.AuditTests.test_quality_duplicates_conflicts_and_malformed_rows) ... ok
+tmpxpzl3fx4: hash/load sample.csv
+tmpxpzl3fx4: column statistics
+tmpxpzl3fx4: exact duplicate/conflict grouping
+tmpxpzl3fx4: resume exact grouping
+tmpxpzl3fx4: resume temporal checks
+test_resume_after_interruption_preserves_completed_profile (test_audit.AuditTests.test_resume_after_interruption_preserves_completed_profile) ... ok
+tmptyzq_yhd: hash/load one.csv
+tmptyzq_yhd: hash/load two.csv
+tmptyzq_yhd: column statistics
+tmptyzq_yhd: exact duplicate/conflict grouping
+tmptyzq_yhd: predictor-only collisions
+tmptyzq_yhd: temporal checks
+test_temporal_and_cross_file_duplicates (test_audit.AuditTests.test_temporal_and_cross_file_duplicates) ... ok
+test_all_estimators_fit_and_emit_finite_binary_probabilities (test_baselines.BaselineTests.test_all_estimators_fit_and_emit_finite_binary_probabilities) ... ok
+test_confusion_and_absent_family (test_baselines.BaselineTests.test_confusion_and_absent_family) ... ok
+test_float32_can_merge_float64_inputs (test_baselines.BaselineTests.test_float32_can_merge_float64_inputs) ... ok
+test_invalid_probability_and_sealed_access_rejected (test_baselines.BaselineTests.test_invalid_probability_and_sealed_access_rejected) ... ok
+test_ties_do_not_exceed_false_positive_budget (test_baselines.BaselineTests.test_ties_do_not_exceed_false_positive_budget) ... ok
+test_duplicate_groups_keep_owner_and_input_order_does_not_matter (test_clients_c1.ClientTests.test_duplicate_groups_keep_owner_and_input_order_does_not_matter) ... ok
+test_failed_attempts_preserved_without_relaxing_floors (test_clients_c1.ClientTests.test_failed_attempts_preserved_without_relaxing_floors) ... ok
+test_iid_training_acceptance_is_deterministic (test_clients_c1.ClientTests.test_iid_training_acceptance_is_deterministic) ... ok
+test_unknown_validation_label_uses_fixed_uniform (test_clients_c1.ClientTests.test_unknown_validation_label_uses_fixed_uniform) ... ok
+test_augmentation_preserves_unknown_and_missing_values (test_cp6.CP6Tests.test_augmentation_preserves_unknown_and_missing_values) ... ok
+test_complete_field_groups_and_unknown_name (test_cp6.CP6Tests.test_complete_field_groups_and_unknown_name) ... ok
+test_reduction_rejects_cross_role_merge (test_cp6.CP6Tests.test_reduction_rejects_cross_role_merge) ... ok
+test_selection_requires_macro_gain_and_ap_guard (test_cp6.CP6Tests.test_selection_requires_macro_gain_and_ap_guard) ... ok
+test_invalid_uploads_rejected (test_federated_f1.FederatedTests.test_invalid_uploads_rejected) ... ok
+test_regularizer_is_independent_of_short_batch (test_federated_f1.FederatedTests.test_regularizer_is_independent_of_short_batch) ... ok
+test_single_client_matches_local_and_preserves_start (test_federated_f1.FederatedTests.test_single_client_matches_local_and_preserves_start) ... ok
+test_unequal_weights_and_biases (test_federated_f1.FederatedTests.test_unequal_weights_and_biases) ... ok
+test_one_class_or_overlap_is_not_accepted (test_host_h1.HostTests.test_one_class_or_overlap_is_not_accepted) ... ok
+test_shared_endpoint_and_feature_group_bridges (test_host_h1.HostTests.test_shared_endpoint_and_feature_group_bridges) ... ok
+test_invalid_dimensions_rejected (test_neural_migration.MigrationTests.test_invalid_dimensions_rejected) ... ok
+test_invalid_order_and_nonfinite_rejected (test_neural_migration.MigrationTests.test_invalid_order_and_nonfinite_rejected) ... ok
+test_orientation_bias_relu_and_final_partial_batch (test_neural_migration.MigrationTests.test_orientation_bias_relu_and_final_partial_batch) ... ok
+test_bce_extreme_logits_remains_finite (test_neural_runtime.RuntimeTests.test_bce_extreme_logits_remains_finite) ... ok
+test_converter_uses_transpose_biases_and_logits (test_neural_runtime.RuntimeTests.test_converter_uses_transpose_biases_and_logits) ... ok
+test_native_adam_three_steps_and_partial_batch (test_neural_runtime.RuntimeTests.test_native_adam_three_steps_and_partial_batch) ... ok
+test_all_missing_column_has_explicit_fixed_fallback (test_preprocessing.PreprocessingTests.test_all_missing_column_has_explicit_fixed_fallback) ... ok
+test_forbidden_roles_and_future_tasks_do_not_change_fit (test_preprocessing.PreprocessingTests.test_forbidden_roles_and_future_tasks_do_not_change_fit) ... ok
+test_missing_sentinel_and_negative_policy (test_preprocessing.PreprocessingTests.test_missing_sentinel_and_negative_policy) ... ok
+test_saved_transform_preserves_missing_distinction_and_future_range (test_preprocessing.PreprocessingTests.test_saved_transform_preserves_missing_distinction_and_future_range) ... ok
+test_conflicts_are_quarantined_and_cross_file_groups_stay_together (test_splits.SplitTests.test_conflicts_are_quarantined_and_cross_file_groups_stay_together) ... ok
+test_normalized_missing_and_signed_zero_equivalence (test_splits.SplitTests.test_normalized_missing_and_signed_zero_equivalence) ... ok
+test_time_boundary_exclusion_seal_and_determinism (test_splits.SplitTests.test_time_boundary_exclusion_seal_and_determinism) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 33.535s
+
+OK

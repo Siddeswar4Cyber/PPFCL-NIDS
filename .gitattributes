@@ -13,3 +13,7 @@ reports/cp8-tests.log -text
 reports/cp8/*.log -text
 requirements-neural-lock.txt -text
 tests/test_neural_runtime.py -text
+docs/CP9-federated-pilot-F1.md -text
+reports/cp9/**/*.json -text
+reports/cp9/*.log -text
+tests/test_federated_f1.py -text

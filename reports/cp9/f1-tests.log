@@ -1,0 +1,9 @@
+test_invalid_uploads_rejected (test_federated_f1.FederatedTests.test_invalid_uploads_rejected) ... ok
+test_regularizer_is_independent_of_short_batch (test_federated_f1.FederatedTests.test_regularizer_is_independent_of_short_batch) ... ok
+test_single_client_matches_local_and_preserves_start (test_federated_f1.FederatedTests.test_single_client_matches_local_and_preserves_start) ... ok
+test_unequal_weights_and_biases (test_federated_f1.FederatedTests.test_unequal_weights_and_biases) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.077s
+
+OK
